@@ -1,0 +1,8 @@
+
+install pcre
+
+http://www.pcre.org/
+
+on Ubuntu
+
+apt-get install libpcre3 libpcre3-dev

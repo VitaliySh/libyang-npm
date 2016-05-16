@@ -1,9 +1,13 @@
 {
 	"name" : "libyang",
-  	"version": "1.0.4",
+  	"version": "1.0.6",
 	"description": "yang library",
 	"keywords":["libyang"],
 	"main" : "./build/Release/yang.node",
+	"keywords": [
+		"yang",
+		"libyang"
+	],
 	"engines": {
 		"node": ">= 0.4.x"
 	},
@@ -18,7 +22,6 @@
 		  "url" : "https://github.com/freenetconf/libyang-npm.git"
 	},
 	"devDependencies": {
-		"pcre": "*",
-		"node-gyp": "~1.0.1"
+		"node-gyp": ">=1.0.1"
 	}
 }
