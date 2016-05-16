@@ -1,11 +1,16 @@
 {
 	"name" : "libyang",
-  	"version": "1.0.2",
+  	"version": "1.0.4",
 	"description": "yang library",
 	"keywords":["libyang"],
 	"main" : "./build/Release/yang.node",
 	"engines": {
 		"node": ">= 0.4.x"
 	},
-  	"author": "mislavn"
+  	"author": "mislavn",
+	"license": "BSD-3-Clause",
+	"scripts": {
+		"start": "node test.js",
+		"test": "node test.js"
+	}
 }
