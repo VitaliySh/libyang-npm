@@ -1,0 +1,11 @@
+{
+	"name" : "libyang",
+  	"version": "1.0.2",
+	"description": "yang library",
+	"keywords":["libyang"],
+	"main" : "./build/Release/yang.node",
+	"engines": {
+		"node": ">= 0.4.x"
+	},
+  	"author": "mislavn"
+}
