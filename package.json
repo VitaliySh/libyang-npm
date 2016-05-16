@@ -12,5 +12,6 @@
 	"scripts": {
 		"start": "node test.js",
 		"test": "node test.js"
-	}
+	},
+	"libraries": [ "/usr/lib/libpcre.so"]
 }
