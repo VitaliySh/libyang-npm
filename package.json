@@ -13,9 +13,12 @@
 		"start": "node test.js",
 		"test": "node test.js"
 	},
-	"libraries": [ "/usr/lib/libpcre.so"],
 	"repository" :
 		{ "type" : "git",
 		  "url" : "https://github.com/freenetconf/libyang-npm.git"
+	},
+	"devDependencies": {
+		"pcre": "*",
+		"node-gyp": "~1.0.1"
 	}
 }
