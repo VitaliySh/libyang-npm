@@ -1597,6 +1597,11 @@ static swig_module_info swig_module = {swig_types, 91, 0, 0, 0, 0};
 #include "dict.h"
 
 
+void ly_ctx_destroy(struct ly_ctx *ctx) {
+        ly_ctx_destroy(ctx, NULL);
+}
+
+
 
 SWIGINTERN swig_type_info*
 SWIG_pchar_descriptor(void)
@@ -2580,7 +2585,8 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_ly_ctx_destroy(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_ly_ctx_destroy__SWIG_0(const SwigV8Arguments &args, V8ErrorHandler &SWIGV8_ErrorHandler)
+{
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
@@ -2588,8 +2594,6 @@ static SwigV8ReturnValue _wrap_ly_ctx_destroy(const SwigV8Arguments &args) {
   void (*arg2)(lys_node const *,void *) = (void (*)(lys_node const *,void *)) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_ly_ctx_destroy.");
   
   res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
@@ -36797,6 +36801,79 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_ly_ctx_destroy__SWIG_1(const SwigV8Arguments &args, V8ErrorHandler &SWIGV8_ErrorHandler)
+{
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  ly_ctx *arg1 = (ly_ctx *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ly_ctx_destroy" "', argument " "1"" of type '" "ly_ctx *""'"); 
+  }
+  arg1 = (ly_ctx *)(argp1);
+  ly_ctx_destroy(arg1);
+  jsresult = SWIGV8_UNDEFINED();
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap___wrap_ly_ctx_destroy(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  OverloadErrorHandler errorHandler;
+  
+  
+  if(args.Length() == 2) {
+    errorHandler.err.Clear();
+#if (SWIG_V8_VERSION < 0x031903)
+    jsresult = _wrap_ly_ctx_destroy__SWIG_0(args, errorHandler);
+    if(errorHandler.err.IsEmpty()) {
+      SWIGV8_ESCAPE(jsresult);
+    }
+#else
+    _wrap_ly_ctx_destroy__SWIG_0(args, errorHandler);
+    if(errorHandler.err.IsEmpty()) {
+      return;
+    }
+#endif
+  }
+  
+  
+  if(args.Length() == 1) {
+    errorHandler.err.Clear();
+#if (SWIG_V8_VERSION < 0x031903)
+    jsresult = _wrap_ly_ctx_destroy__SWIG_1(args, errorHandler);
+    if(errorHandler.err.IsEmpty()) {
+      SWIGV8_ESCAPE(jsresult);
+    }
+#else
+    _wrap_ly_ctx_destroy__SWIG_1(args, errorHandler);
+    if(errorHandler.err.IsEmpty()) {
+      return;
+    }
+#endif
+  }
+  
+  
+  SWIG_exception_fail(SWIG_ERROR, "Illegal arguments for function ly_ctx_destroy.");
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
 static swig_type_info _swigt__p_FILE = {"_p_FILE", "FILE *", 0, 0, (void*)0, 0};
@@ -38907,7 +38984,6 @@ SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_get_submodule", _wrap_ly_ctx_get_s
 SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_get_submodule2", _wrap_ly_ctx_get_submodule2);
 SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_get_node", _wrap_ly_ctx_get_node);
 SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_get_node2", _wrap_ly_ctx_get_node2);
-SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_destroy", _wrap_ly_ctx_destroy);
 SWIGV8_AddStaticFunction(exports_obj, "ly_set_new", _wrap_ly_set_new);
 SWIGV8_AddStaticFunction(exports_obj, "ly_set_add", _wrap_ly_set_add);
 SWIGV8_AddStaticFunction(exports_obj, "ly_set_rm", _wrap_ly_set_rm);
@@ -38986,6 +39062,7 @@ SWIGV8_AddStaticFunction(exports_obj, "lyxml_get_ns", _wrap_lyxml_get_ns);
 SWIGV8_AddStaticFunction(exports_obj, "lydict_insert", _wrap_lydict_insert);
 SWIGV8_AddStaticFunction(exports_obj, "lydict_insert_zc", _wrap_lydict_insert_zc);
 SWIGV8_AddStaticFunction(exports_obj, "lydict_remove", _wrap_lydict_remove);
+SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_destroy", _wrap___wrap_ly_ctx_destroy);
 
 
   /* register classes */

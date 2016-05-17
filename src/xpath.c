@@ -1225,6 +1225,13 @@ set_sorted_merge(struct lyxp_set *trg, struct lyxp_set *src, struct lyd_node *cu
         return -1;
     }
 
+#ifndef NDEBUG
+    LOGDBG("XPATH: MERGE target");
+    print_set_debug(trg);
+    LOGDBG("XPATH: MERGE source");
+    print_set_debug(src);
+#endif
+
     /* make memory for the merge (duplicates are not detected yet, so space
      * will likely be wasted on them, too bad) */
     if (trg->size - trg->used < src->used) {
@@ -1255,6 +1262,7 @@ set_sorted_merge(struct lyxp_set *trg, struct lyxp_set *src, struct lyd_node *cu
                 ++count;
                 ++dup_count;
                 ++i;
+                ++j;
             }
         } else if (cmp < 0) {
             /* inserting src node into trg, just remember it for now */
@@ -1266,10 +1274,10 @@ copy_nodes:
             memmove(&trg->val.nodes[j + (count - dup_count)],
                     &trg->val.nodes[j],
                     (trg->used - j) * sizeof *trg->val.nodes);
-            memcpy(&trg->val.nodes[j], &src->val.nodes[i - count], count * sizeof *src->val.nodes);
+            memcpy(&trg->val.nodes[j - dup_count], &src->val.nodes[i - count], count * sizeof *src->val.nodes);
 
             trg->used += count - dup_count;
-            ++i;
+            /* do not change i, except the copying above, we are basically doing exactly what is in the else branch below */
             j += count - dup_count;
 
             count = 0;
@@ -1279,12 +1287,17 @@ copy_nodes:
         }
     } while ((i < src->used) && (j < trg->used));
 
-    if (i < src->used) {
+    if ((i < src->used) || count) {
         /* loop ended, but we need to copy something at trg end */
         count += src->used - i;
         i = src->used;
         goto copy_nodes;
     }
+
+#ifndef NDEBUG
+    LOGDBG("XPATH: MERGE result");
+    print_set_debug(trg);
+#endif
 
     lyxp_set_cast(src, LYXP_SET_EMPTY, cur_node, options);
     return 0;
@@ -6516,7 +6529,7 @@ static int
 eval_and_expr(struct lyxp_expr *exp, uint16_t *exp_idx, struct lyd_node *cur_node, struct lyxp_set *set,
               int options)
 {
-    int is_false = 0, ret;
+    int ret;
     uint16_t op_exp;
     struct lyxp_set orig_set;
     struct ly_ctx *ctx;
@@ -6544,9 +6557,6 @@ eval_and_expr(struct lyxp_expr *exp, uint16_t *exp_idx, struct lyd_node *cur_nod
     /* cast to boolean, we know that will be the final result */
     if (op_exp) {
         lyxp_set_cast(set, LYXP_SET_BOOLEAN, cur_node, options);
-        if (!set->val.bool) {
-            is_false = 1;
-        }
     }
 
     /* ('and' EqualityExpr)* */
@@ -6564,7 +6574,11 @@ eval_and_expr(struct lyxp_expr *exp, uint16_t *exp_idx, struct lyd_node *cur_nod
         }
 
         /* lazy evaluation */
-        if (is_false) {
+        if (!set || !set->val.bool) {
+            ret = eval_equality_expr(exp, exp_idx, cur_node, NULL, options);
+            if (ret) {
+                return ret;
+            }
             continue;
         }
 
@@ -6577,9 +6591,6 @@ eval_and_expr(struct lyxp_expr *exp, uint16_t *exp_idx, struct lyd_node *cur_nod
 
         /* eval - just get boolean value actually */
         lyxp_set_cast(set, LYXP_SET_BOOLEAN, cur_node, options);
-        if (!set->val.bool) {
-            is_false = 1;
-        }
     }
 
     lyxp_set_cast(&orig_set, LYXP_SET_EMPTY, cur_node, options);
@@ -6602,7 +6613,7 @@ eval_and_expr(struct lyxp_expr *exp, uint16_t *exp_idx, struct lyd_node *cur_nod
 static int
 eval_expr(struct lyxp_expr *exp, uint16_t *exp_idx, struct lyd_node *cur_node, struct lyxp_set *set, int options)
 {
-    int is_true = 0, ret;
+    int ret;
     uint16_t op_exp;
     struct lyxp_set orig_set;
     struct ly_ctx *ctx;
@@ -6630,9 +6641,6 @@ eval_expr(struct lyxp_expr *exp, uint16_t *exp_idx, struct lyd_node *cur_node, s
     /* cast to boolean, we know that will be the final result */
     if (op_exp) {
         lyxp_set_cast(set, LYXP_SET_BOOLEAN, cur_node, options);
-        if (set->val.bool) {
-            is_true = 1;
-        }
     }
 
     /* ('or' AndExpr)* */
@@ -6650,7 +6658,11 @@ eval_expr(struct lyxp_expr *exp, uint16_t *exp_idx, struct lyd_node *cur_node, s
         }
 
         /* lazy evaluation */
-        if (is_true) {
+        if (!set || set->val.bool) {
+            ret = eval_and_expr(exp, exp_idx, cur_node, NULL, options);
+            if (ret) {
+                return ret;
+            }
             continue;
         }
 
@@ -6663,9 +6675,6 @@ eval_expr(struct lyxp_expr *exp, uint16_t *exp_idx, struct lyd_node *cur_node, s
 
         /* eval - just get boolean value actually */
         lyxp_set_cast(set, LYXP_SET_BOOLEAN, cur_node, options);
-        if (set->val.bool) {
-            is_true = 1;
-        }
     }
 
     lyxp_set_cast(&orig_set, LYXP_SET_EMPTY, cur_node, options);
