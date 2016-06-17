@@ -1,6 +1,6 @@
 {
 	"name" : "libyang",
-  	"version": "1.0.9.134.1",
+  	"version": "1.0.10",
 	"description": "yang library",
 	"keywords":["libyang"],
 	"main" : "./build/Release/yang.node",
