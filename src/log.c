@@ -84,7 +84,9 @@ log_vprintf(LY_LOG_LEVEL level, uint8_t hide, const char *format, const char *pa
         if (!path) {
             /* erase previous path */
             ((struct ly_err *)&ly_errno)->path_index = LY_BUF_SIZE - 1;
-            ((struct ly_err *)&ly_errno)->path_obj = NULL;
+            if (((struct ly_err *)&ly_errno)->path_obj != NULL + 1) {
+                ((struct ly_err *)&ly_errno)->path_obj = NULL;
+            }
         }
 
         /* if the error-app-tag should be set, do it after calling LOGVAL */
@@ -158,10 +160,11 @@ const char *ly_errs[] = {
 /* LYE_INREGEX */      "Regular expression \"%s\" is not valid (%s).",
 /* LYE_INRESOLV */     "Failed to resolve %s \"%s\".",
 /* LYE_INSTATUS */     "A \"%s\" definition %s references \"%s\" definition %s.",
+/* LYE_CIRC_LEAFREFS */"A circular chain of leafrefs detected.",
 
 /* LYE_OBSDATA */      "Obsolete data \"%s\" instantiated.",
 /* LYE_OBSTYPE */      "Data node \"%s\" with obsolete type \"%s\" instantiated.",
-/* LYE_NORESOLV */     "No resolvents found for \"%s\".",
+/* LYE_NORESOLV */     "No resolvents found for %s \"%s\".",
 /* LYE_INELEM */       "Unknown element \"%s\".",
 /* LYE_INELEM_LEN */   "Unknown element \"%.*s\".",
 /* LYE_MISSELEM */     "Missing required element \"%s\" in \"%s\".",
@@ -237,6 +240,7 @@ static const LY_VECODE ecode2vecode[] = {
     LYVE_INREGEX,      /* LYE_INREGEX */
     LYVE_INRESOLV,     /* LYE_INRESOLV */
     LYVE_INSTATUS,     /* LYE_INSTATUS */
+    LYVE_CIRC_LEAFREFS,/* LYE_CIRC_LEAFREFS */
 
     LYVE_OBSDATA,      /* LYE_OBSDATA */
     LYVE_OBSDATA,      /* LYE_OBSTYPE */
@@ -293,6 +297,7 @@ ly_vlog_build_path_reverse(enum LY_VLOG_ELEM elem_type, const void *elem, char *
 {
     int i;
     struct lys_node_list *slist;
+    struct lys_node *sparent;
     struct lyd_node *dlist, *diter;
     const char *name, *prefix = NULL;
     size_t len;
@@ -306,9 +311,11 @@ ly_vlog_build_path_reverse(enum LY_VLOG_ELEM elem_type, const void *elem, char *
             break;
         case LY_VLOG_LYS:
             name = ((struct lys_node *)elem)->name;
-            if (!((struct lys_node *)elem)->parent ||
-                    lys_node_module((struct lys_node *)elem) != lys_node_module(lys_parent((struct lys_node *)elem))) {
+            if (!(sparent = lys_parent((struct lys_node *)elem)) ||
+                    lys_node_module((struct lys_node *)elem) != lys_node_module(sparent)) {
                 prefix = lys_node_module((struct lys_node *)elem)->name;
+            } else {
+                prefix = NULL;
             }
             do {
                 elem = lys_parent((struct lys_node *)elem);
@@ -319,6 +326,8 @@ ly_vlog_build_path_reverse(enum LY_VLOG_ELEM elem_type, const void *elem, char *
             if (!((struct lyd_node *)elem)->parent ||
                     lyd_node_module((struct lyd_node *)elem) != lyd_node_module(((struct lyd_node *)elem)->parent)) {
                 prefix = lyd_node_module((struct lyd_node *)elem)->name;
+            } else {
+                prefix = NULL;
             }
 
             /* handle predicates (keys) in case of lists */
@@ -351,6 +360,15 @@ ly_vlog_build_path_reverse(enum LY_VLOG_ELEM elem_type, const void *elem, char *
                         path[--(*index)] = '[';
                     }
                 }
+            } else if (((struct lyd_node *)elem)->schema->nodetype == LYS_LEAFLIST &&
+                    ((struct lyd_node_leaf_list *)elem)->value_str) {
+                (*index) -= 2;
+                memcpy(&path[(*index)], "']", 2);
+                len = strlen(((struct lyd_node_leaf_list *)elem)->value_str);
+                (*index) -= len;
+                memcpy(&path[(*index)], ((struct lyd_node_leaf_list *)elem)->value_str, len);
+                (*index) -= 4;
+                memcpy(&path[(*index)], "[.='", 4);
             }
 
             elem = ((struct lyd_node *)elem)->parent;

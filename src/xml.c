@@ -97,7 +97,7 @@ lyxml_correct_attr_ns(struct ly_ctx *ctx, struct lyxml_attr *attr, struct lyxml_
             if (copy_ns) {
                 tmp_ns = attr->ns;
                 /* we may have already copied the NS over? */
-                attr->ns = lyxml_get_ns(attr->ns->parent, tmp_ns->prefix);
+                attr->ns = lyxml_get_ns(attr_parent, tmp_ns->prefix);
 
                 /* we haven't copied it over, copy it now */
                 if (!attr->ns) {
@@ -398,6 +398,27 @@ lyxml_free(struct ly_ctx *ctx, struct lyxml_elem *elem)
     lyxml_free_elem(ctx, elem);
 }
 
+API void
+lyxml_free_withsiblings(struct ly_ctx *ctx, struct lyxml_elem *elem)
+{
+    struct lyxml_elem *iter, *aux;
+
+    if (!elem) {
+        return;
+    }
+
+    /* optimization - avoid freeing (unlinking) the last node of the siblings list */
+    /* so, first, free the node's predecessors to the beginning of the list ... */
+    for(iter = elem->prev; iter->next; iter = aux) {
+        aux = iter->prev;
+        lyxml_free(ctx, iter);
+    }
+    /* ... then, the node is the first in the siblings list, so free them all */
+    LY_TREE_FOR_SAFE(elem, aux, iter) {
+        lyxml_free(ctx, iter);
+    }
+}
+
 API const char *
 lyxml_get_attr(const struct lyxml_elem *elem, const char *name, const char *ns)
 {
@@ -573,7 +594,7 @@ parse_text(const char *data, char delim, unsigned int *len)
     int32_t n;
 
     for (*len = o = 0; cdsect || data[*len] != delim; o++) {
-        if (!data[*len] || (!cdsect && !memcmp(&data[*len], "]]>", 2))) {
+        if (!data[*len] || (!cdsect && !memcmp(&data[*len], "]]>", 3))) {
             LOGVAL(LYE_XML_INVAL, LY_VLOG_NONE, NULL, "element content, \"]]>\" found");
             goto error;
         }

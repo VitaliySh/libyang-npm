@@ -45,17 +45,8 @@
 #define ENABLE_INHERIT 0x01
 
 void yyerror(YYLTYPE *yylloc, void *scanner, ...);
-char *s, *tmp_s;
-char rev[LY_REV_SIZE];
-struct lys_module *trg;
-struct lys_node *tpdf_parent;
-/* temporary pointer for the check extension nacm */
-struct lys_node *data_node;
-/* pointer on the current parsed element*/
-void *actual;
-int config_inherit;
-int actual_type;
-int64_t cnt_val;
+/* temporary pointer for the check extension nacm 'data_node' */
+/* pointer on the current parsed element 'actual' */
 %}
 
 %union {
@@ -243,6 +234,8 @@ int64_t cnt_val;
                 yang_delete_type(module, $$);
               }
             } type_stmtsep
+
+%initial-action { yylloc.last_column = 0; }
 
 %%
 
@@ -1103,7 +1096,7 @@ message_opt_stmt: %empty { switch (actual_type) {
                                            }
                                            s = NULL;
                                          }
-  |  message_opt_stmt error_app_tag_stmt { if (yang_read_message(trg, actual, s, $1, ERROR_APP_TAG_KEYWORD)) {
+  |  message_opt_stmt error_app_tag_stmt { if (read_all && yang_read_message(trg, actual, s, $1, ERROR_APP_TAG_KEYWORD)) {
                                              YYABORT;
                                            }
                                            s = NULL;
@@ -1646,7 +1639,7 @@ leaf_stmt: LEAF_KEYWORD sep identifier_arg_str { if (read_all) {
                      actual = $1.node.ptr_leaf;
                      actual_type = LEAF_KEYWORD;
                      $1.node.flag |= LYS_TYPE_DEF;
-                     if (unres_schema_add_node(trg, unres, &$1.node.ptr_leaf->type, UNRES_TYPE_DER,(struct lys_node *)$1.node.ptr_leaf->parent)) {
+                     if (unres_schema_add_node(trg, unres, &$1.node.ptr_leaf->type, UNRES_TYPE_DER,(struct lys_node *)$1.node.ptr_leaf)) {
                        YYABORT;
                      }
                    }
@@ -1765,7 +1758,7 @@ leaf_list_opt_stmt: %empty { if (read_all) {
                    actual = $1.node.ptr_leaflist;
                    actual_type = LEAF_LIST_KEYWORD;
                    $1.node.flag |= LYS_TYPE_DEF;
-                   if (unres_schema_add_node(trg, unres, &$1.node.ptr_leaflist->type, UNRES_TYPE_DER, (struct lys_node *)$1.node.ptr_leaflist->parent)) {
+                   if (unres_schema_add_node(trg, unres, &$1.node.ptr_leaflist->type, UNRES_TYPE_DER, (struct lys_node *)$1.node.ptr_leaflist)) {
                      YYABORT;
                    }
                  }
@@ -2461,7 +2454,7 @@ refine_body_opt_stmts: %empty { if (read_all) {
                                       LOGMEM;
                                       YYABORT;
                                     }
-                                    $$.refine->target_type = LYS_LIST | LYS_LEAFLIST | LYS_CONTAINER | LYS_ANYXML;
+                                    $$.refine->target_type = LYS_LEAF | LYS_LIST | LYS_LEAFLIST | LYS_CONTAINER | LYS_ANYXML;
                                   }
                                   size_arrays->next++;
                                 } else {

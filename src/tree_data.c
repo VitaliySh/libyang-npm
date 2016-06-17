@@ -38,17 +38,19 @@
 #include "validation.h"
 #include "xpath.h"
 
+static int lyd_unlink_internal(struct lyd_node *node, int permanent);
+
 int
 lyd_check_topmandatory(struct lyd_node *data, struct ly_ctx *ctx, int options)
 {
     int i;
     struct lyd_node *node;
 
-    assert(ctx);
-
     if ((options & LYD_OPT_NOSIBLINGS) || (options & (LYD_OPT_EDIT | LYD_OPT_GET | LYD_OPT_GETCONFIG))) {
         return EXIT_SUCCESS;
     }
+
+    assert(ctx);
 
     if (data && lys_parent(data->schema)) {
         LOGERR(LY_EINVAL, "Subtree are not top-level data.");
@@ -99,7 +101,7 @@ lyd_check_topmandatory(struct lyd_node *data, struct ly_ctx *ctx, int options)
 static struct lyd_node *
 lyd_parse_(struct ly_ctx *ctx, const struct lys_node *parent, const char *data, LYD_FORMAT format, int options)
 {
-    struct lyxml_elem *xml, *xmlnext;
+    struct lyxml_elem *xml;
     struct lyd_node *result = NULL;
     int xmlopt = LYXML_PARSE_MULTIROOT;
 
@@ -119,9 +121,7 @@ lyd_parse_(struct ly_ctx *ctx, const struct lys_node *parent, const char *data, 
             return NULL;
         }
         result = lyd_parse_xml(ctx, &xml, options, parent);
-        LY_TREE_FOR_SAFE(xml, xmlnext, xml) {
-            lyxml_free(ctx, xml);
-        }
+        lyxml_free_withsiblings(ctx, xml);
         break;
     case LYD_JSON:
         result = lyd_parse_json(ctx, parent, data, options);
@@ -173,13 +173,12 @@ lyd_parse_mem(struct ly_ctx *ctx, const char *data, LYD_FORMAT format, int optio
     return result;
 }
 
-API struct lyd_node *
-lyd_parse_fd(struct ly_ctx *ctx, int fd, LYD_FORMAT format, int options, ...)
+static struct lyd_node *
+lyd_parse_fd_(struct ly_ctx *ctx, int fd, LYD_FORMAT format, int options, va_list ap)
 {
     struct lyd_node *ret;
     struct stat sb;
     char *data;
-    va_list ap;
 
     if (!ctx || (fd == -1)) {
         LOGERR(LY_EINVAL, "%s: Invalid parameter.", __func__);
@@ -202,11 +201,22 @@ lyd_parse_fd(struct ly_ctx *ctx, int fd, LYD_FORMAT format, int options, ...)
         return NULL;
     }
 
-    va_start(ap, options);
     ret = lyd_parse_data_(ctx, data, format, options, ap);
 
-    va_end(ap);
     munmap(data, sb.st_size + 1);
+
+    return ret;
+}
+
+API struct lyd_node *
+lyd_parse_fd(struct ly_ctx *ctx, int fd, LYD_FORMAT format, int options, ...)
+{
+    struct lyd_node *ret;
+    va_list ap;
+
+    va_start(ap, options);
+    ret = lyd_parse_fd_(ctx, fd, format, options, ap);
+    va_end(ap);
 
     return ret;
 }
@@ -230,7 +240,7 @@ lyd_parse_path(struct ly_ctx *ctx, const char *path, LYD_FORMAT format, int opti
     }
 
     va_start(ap, options);
-    ret = lyd_parse_fd(ctx, fd, format, options);
+    ret = lyd_parse_fd_(ctx, fd, format, options, ap);
 
     va_end(ap);
     close(fd);
@@ -413,7 +423,7 @@ lyd_change_leaf(struct lyd_node_leaf_list *leaf, const char *val_str)
     if (leaf->parent && (leaf->parent->schema->nodetype == LYS_LIST)) {
         slist = (struct lys_node_list *)leaf->parent->schema;
         for (i = 0; i < slist->keys_size; ++i) {
-            if (slist->keys[i]->name == leaf->schema->name) {
+            if (ly_strequal(slist->keys[i]->name, leaf->schema->name, 1)) {
                 LOGVAL(LYE_SPEC, LY_VLOG_LYD, leaf, "List key value cannot be changed.");
                 return EXIT_FAILURE;
             }
@@ -1067,7 +1077,7 @@ lyd_merge_node_equal(struct lyd_node *node1, struct lyd_node *node2)
     case LYS_ANYXML:
         return 1;
     case LYS_LEAFLIST:
-        if (strcmp(((struct lyd_node_leaf_list *)node1)->value_str, ((struct lyd_node_leaf_list *)node2)->value_str)) {
+        if (!strcmp(((struct lyd_node_leaf_list *)node1)->value_str, ((struct lyd_node_leaf_list *)node2)->value_str)) {
             return 1;
         }
         break;
@@ -1099,7 +1109,7 @@ lyd_merge_node_equal(struct lyd_node *node1, struct lyd_node *node2)
 static int
 lyd_merge_parent_children(struct lyd_node *target, struct lyd_node *source)
 {
-    struct lyd_node *trg_parent, *src, *src_backup, *src_elem, *src_next, *trg_child;
+    struct lyd_node *trg_parent, *src, *src_backup, *src_elem, *src_elem_backup, *src_next, *trg_child, *trg_parent_backup;
 
     LY_TREE_FOR_SAFE(source, src_backup, src) {
         for (src_elem = src_next = src, trg_parent = target;
@@ -1112,20 +1122,44 @@ lyd_merge_parent_children(struct lyd_node *target, struct lyd_node *source)
                     if (trg_child->schema->nodetype & (LYS_LEAF | LYS_ANYXML)) {
                         lyd_merge_node_update(trg_child, src_elem);
                     }
-                    trg_parent = trg_child;
                     break;
                 }
             }
 
-            /* no - link it there as a subtree, continue with siblings */
-            if (!trg_child) {
-                /* prepare a bit for the next iteration, src_elem will be unlinked! */
-                src_next = src_elem->next;
-                if (!src_next) {
-                    src_next = src_elem->parent;
+            /* first prepare for the next iteration */
+            src_elem_backup = src_elem;
+            trg_parent_backup = trg_parent;
+            if ((src_elem->schema->nodetype & (LYS_CONTAINER | LYS_LIST)) && trg_child) {
+                /* go into children */
+                src_next = src_elem->child;
+                trg_parent = trg_child;
+            } else {
+                /* no children (or the whole subtree will be inserted), try siblings */
+                if (src_elem == src) {
+                    /* we are done, src has no children, but we still need to insert it */
+                    src_next = NULL;
+                    src_elem = src_elem->child;
+                } else {
+                    src_next = src_elem->next;
+                    /* trg_parent does not change */
+                }
+            }
+            while (!src_next) {
+                src_elem = src_elem->parent;
+                if (src_elem->parent == src->parent) {
+                    /* we are done, no next element to process */
+                    break;
                 }
 
-                if (lyd_insert(trg_parent, src_elem)) {
+                /* parent is already processed, go to its sibling */
+                src_next = src_elem->next;
+                trg_parent = trg_parent->parent;
+            }
+
+            if (!trg_child) {
+                /* we need to insert the whole subtree */
+                if (lyd_insert(trg_parent_backup, src_elem_backup)) {
+                    LOGINT;
                     lyd_free_withsiblings(source);
                     return -1;
                 }
@@ -1135,36 +1169,6 @@ lyd_merge_parent_children(struct lyd_node *target, struct lyd_node *source)
                         source = source->next;
                     }
                     break;
-                }
-            /* yes - normally continue the merge and the tree search */
-            } else {
-                if (src_elem->schema->nodetype & (LYS_CONTAINER | LYS_LIST)) {
-                    src_next = src_elem->child;
-                } else {
-                    /* no children */
-                    if (src_elem == src) {
-                        /* we are done, src has no children */
-                        break;
-                    }
-                    /* try siblings */
-                    src_next = src_elem->next;
-                }
-            }
-
-            while (!src_next) {
-                /* parent is already processed, go to its sibling */
-                src_elem = src_elem->parent;
-
-                if (src_elem->parent == src->parent) {
-                    /* we are done, no next element to process */
-                    break;
-                }
-                src_next = src_elem->next;
-
-                trg_parent = trg_parent->parent;
-                /* TODO needed even? move back to the first sibling */
-                while (trg_parent->prev->next) {
-                    trg_parent = trg_parent->prev;
                 }
             }
         }
@@ -1203,6 +1207,10 @@ lyd_merge_siblings(struct lyd_node *target, struct lyd_node *source)
         /* sibling not found, insert it */
         if (!trg) {
             lyd_insert_after(target->prev, src);
+            if (src == source) {
+                /* just so source is not freed, we inserted it and need it further */
+                source = src_backup;
+            }
         }
     }
 
@@ -1346,6 +1354,764 @@ error:
     lyd_free_withsiblings(node);
     lyd_free_withsiblings(src_merge_start);
     return -1;
+}
+
+API void
+lyd_free_diff(struct lyd_difflist *diff)
+{
+    if (diff) {
+        free(diff->type);
+        free(diff->first);
+        free(diff->second);
+        free(diff);
+    }
+}
+
+static int
+lyd_difflist_add(struct lyd_difflist *diff, unsigned int *size, unsigned int index,
+                 LYD_DIFFTYPE type, struct lyd_node *first, struct lyd_node *second)
+{
+    void *new;
+
+    assert(diff);
+    assert(size && *size);
+
+    if (index + 1 == *size) {
+        /* it's time to enlarge */
+        *size = *size + 16;
+        new = realloc(diff->type, *size * sizeof *diff->type);
+        if (!new) {
+            LOGMEM;
+            return EXIT_FAILURE;
+        }
+        diff->type = new;
+
+        new = realloc(diff->first, *size * sizeof *diff->first);
+        if (!new) {
+            LOGMEM;
+            return EXIT_FAILURE;
+        }
+        diff->first = new;
+
+        new = realloc(diff->second, *size * sizeof *diff->second);
+        if (!new) {
+            LOGMEM;
+            return EXIT_FAILURE;
+        }
+        diff->second = new;
+    }
+
+    /* insert the item */
+    diff->type[index] = type;
+    diff->first[index] = first;
+    diff->second[index] = second;
+
+    /* terminate the arrays */
+    index++;
+    diff->type[index] = LYD_DIFF_END;
+    diff->first[index] = NULL;
+    diff->second[index] = NULL;
+
+    return EXIT_SUCCESS;
+}
+
+struct diff_ordered_dist {
+    struct diff_ordered_dist *next;
+    int dist;
+};
+struct diff_ordered_item {
+    struct lyd_node *first;
+    struct lyd_node *second;
+    struct diff_ordered_dist *dist;
+};
+struct diff_ordered {
+    struct lys_node *schema;
+    unsigned int count;
+    struct diff_ordered_item *items; /* array */
+    struct diff_ordered_dist *dist;  /* linked list (1-way, ring) */
+    struct diff_ordered_dist *dist_last;  /* aux pointer for faster insertion sort */
+};
+
+static void
+diff_ordset_insert(struct lyd_node *node, struct ly_set *ordset_keys, struct ly_set *ordset)
+{
+    unsigned int i;
+    struct diff_ordered *new_ordered;
+
+    i = ly_set_add(ordset_keys, node->schema);
+    if (i == ordset->number) {
+        /* not seen user-ordered list */
+        new_ordered = malloc(sizeof *new_ordered);
+        new_ordered->schema = node->schema;
+        new_ordered->count = 0;
+        new_ordered->items = NULL;
+        new_ordered->dist = NULL;
+        ly_set_add(ordset, new_ordered);
+    }
+    ((struct diff_ordered *)ordset->set.g[i])->count++;
+}
+
+static void
+diff_ordset_free(struct ly_set *set)
+{
+    unsigned int i, j;
+    struct diff_ordered *ord;
+
+    if (!set) {
+        return;
+    }
+
+    for (i = 0; i < set->number; i++) {
+        ord = (struct diff_ordered *)set->set.g[i];
+        for (j = 0; j < ord->count; j++) {
+            free(ord->items[j].dist);
+        }
+        free(ord->items);
+        free(ord);
+    }
+
+    ly_set_free(set);
+}
+
+/*
+ * -1 - error
+ *  0 - ok
+ *  1 - first and second not the same
+ */
+static int
+lyd_diff_compare(struct lyd_node *first, struct lyd_node *second,
+                 struct lyd_difflist *diff, unsigned int *size, unsigned int *i, struct ly_set *matchset,
+                 struct ly_set *ordset_keys, struct ly_set *ordset)
+{
+    int rc;
+    char *str1, *str2;
+    struct lyd_node_anyxml *axml;
+
+    switch (first->schema->nodetype) {
+    case LYS_LEAFLIST:
+    case LYS_LIST:
+        rc = lyd_list_equal(first, second, 0);
+        if (rc == -1) {
+            return -1;
+        } else if (!rc) {
+            /* list instances differs */
+            return 1;
+        } /* else matches */
+
+        /* additional work for future move matching in case of user ordered lists */
+        if (first->schema->flags & LYS_USERORDERED) {
+            diff_ordset_insert(first, ordset_keys, ordset);
+        }
+
+        /* no break, fall through */
+    case LYS_CONTAINER:
+        second->validity |= LYD_VAL_INUSE;
+        /* remember the matching node in first for keeping correct pointer in first
+         * for comparing when passing through the second tree in lyd_diff().
+         */
+        ly_set_add(matchset, first);
+        break;
+    case LYS_LEAF:
+        /* check for leaf's modification */
+        if (!ly_strequal(((struct lyd_node_leaf_list * )first)->value_str,
+                         ((struct lyd_node_leaf_list * )second)->value_str, 1)) {
+            if (lyd_difflist_add(diff, size, (*i)++, LYD_DIFF_CHANGED, first, second)) {
+               return -1;
+            }
+        }
+        break;
+    case LYS_ANYXML:
+        /* check for anyxml's modification */
+        axml = (struct lyd_node_anyxml *)first;
+        if (!axml->value.str) {
+            lyxml_print_mem(&str1, axml->value.xml, LYXML_PRINT_SIBLINGS);
+            axml->value.str = lydict_insert_zc(axml->schema->module->ctx, str1);
+        }
+        str1 = (char *)axml->value.str;
+
+        axml = (struct lyd_node_anyxml *)second;
+        if (!axml->value.str) {
+            lyxml_print_mem(&str2, axml->value.xml, LYXML_PRINT_SIBLINGS);
+            axml->value.str = lydict_insert_zc(axml->schema->module->ctx, str2);
+        }
+        str2 = (char *)axml->value.str;
+
+        if (!ly_strequal(str1, str2, 1)) {
+            if (lyd_difflist_add(diff, size, (*i)++, LYD_DIFF_CHANGED, first, second)) {
+                return -1;
+            }
+        }
+        break;
+    default:
+        LOGINT;
+        return -1;
+    }
+
+    /* mark both that they have matching instance in the other tree */
+    first->validity |= LYD_VAL_INUSE;
+
+    return 0;
+}
+
+static int
+lyd_diff_move_preprocess(struct diff_ordered *ordered, struct lyd_node *first, struct lyd_node *second)
+{
+    struct lyd_node *iter;
+    unsigned int pos = 0;
+    int abs_dist;
+    struct diff_ordered_dist *dist_aux;
+    struct diff_ordered_dist *dist_iter, *dist_last;
+    char *str = NULL;
+
+    /* ordered->count was zeroed and now it is incremented with each added
+     * item's information, so it is actually position of the second node
+     */
+
+    /* get the position of the first node */
+    for (iter = first->prev; iter->next; iter = iter->prev) {
+        if (!(iter->validity & LYD_VAL_INUSE)) {
+            /* skip deleted nodes */
+            continue;
+        }
+        if (iter->schema == first->schema) {
+            pos++;
+        }
+    }
+    if (pos != ordered->count) {
+        LOGDBG("DIFF: Detected moved element \"%s\" from %d to %d (distance %d)",
+               str = lyd_path(first), pos, ordered->count, ordered->count - pos);
+        free(str);
+    }
+
+    /* store information, count distance */
+    ordered->items[pos].dist = dist_aux = calloc(1, sizeof *dist_aux);
+    ordered->items[pos].dist->dist = ordered->count - pos;
+    abs_dist = abs(ordered->items[pos].dist->dist);
+    ordered->items[pos].first = first;
+    ordered->items[pos].second = second;
+    ordered->count++;
+
+    /* insert sort of distances, higher first */
+    for (dist_iter = ordered->dist, dist_last = NULL;
+            dist_iter;
+            dist_last = dist_iter, dist_iter = dist_iter->next) {
+        if (abs_dist >= abs(dist_iter->dist)) {
+            /* found correct place */
+            dist_aux->next = dist_iter;
+            if (dist_last) {
+                dist_last->next = dist_aux;
+            }
+            break;
+        } else if (dist_iter->next == ordered->dist) {
+            /* last item */
+            dist_aux->next = ordered->dist; /* ring list */
+            ordered->dist_last = dist_aux;
+            break;
+        }
+    }
+    if (dist_aux->next == ordered->dist) {
+        /* first item */
+        ordered->dist = dist_aux;
+        if (dist_aux->next) {
+            /* more than one item, update the last one's next */
+            ordered->dist_last->next = dist_aux;
+        } else {
+            /* the only item */
+            ordered->dist_last = dist_aux;
+            dist_aux->next = dist_aux; /* ring list */
+        }
+    }
+
+    return 0;
+}
+
+static struct lyd_difflist *
+lyd_diff_init_difflist(unsigned int *size)
+{
+    struct lyd_difflist *result;
+
+    result = malloc(sizeof *result);
+    *size = 1;
+    result->type = calloc(*size, sizeof *result->type);
+    result->first = calloc(*size, sizeof *result->first);
+    result->second = calloc(*size, sizeof *result->second);
+
+    return result;
+}
+
+API struct lyd_difflist *
+lyd_diff(struct lyd_node *first, struct lyd_node *second, int options)
+{
+    int rc;
+    struct lyd_node *elem1, *elem2, *iter, *aux, *parent = NULL, *next1, *next2;
+    struct lyd_difflist *result, *result2 = NULL;
+    void *new;
+    unsigned int size, size2, index = 0, index2 = 0, i, j, k;
+    struct matchlist_s {
+        struct matchlist_s *prev;
+        struct ly_set *match;
+    } *matchlist = NULL, *mlaux;
+    struct ly_set *ordset_keys = NULL, *ordset = NULL;
+    struct diff_ordered *ordered;
+    struct diff_ordered_dist *dist_aux, *dist_iter;
+    struct diff_ordered_item item_aux;
+
+    if (!first) {
+        /* all nodes in second were created,
+         * but the second must be top level */
+        if (second && second->parent) {
+            LOGERR(LY_EINVAL, "%s: \"first\" parameter is NULL and \"second\" is not top level.", __func__);
+            return NULL;
+        }
+        result = lyd_diff_init_difflist(&size);
+        LY_TREE_FOR(second, iter) {
+            if (lyd_difflist_add(result, &size, index++, LYD_DIFF_CREATED, NULL, iter)) {
+                goto error;
+            }
+            if (options & LYD_OPT_NOSIBLINGS) {
+                break;
+            }
+        }
+        return result;
+    } else if (!second) {
+        /* all nodes from first were deleted */
+        result = lyd_diff_init_difflist(&size);
+        LY_TREE_FOR(first, iter) {
+            if (lyd_difflist_add(result, &size, index++, LYD_DIFF_DELETED, iter, NULL)) {
+                goto error;
+            }
+            if (options & LYD_OPT_NOSIBLINGS) {
+                break;
+            }
+        }
+        return result;
+    }
+
+    if (options & LYD_OPT_NOSIBLINGS) {
+        /* both trees must start at the same (schema) node */
+        if (first->schema != second->schema) {
+            LOGERR(LY_EINVAL, "%s: incompatible trees to compare with LYD_OPT_NOSIBLINGS option.", __func__);
+            return NULL;
+        }
+        /* use first's and second's child to make comparison the same as without LYD_OPT_NOSIBLINGS */
+        first = first->child;
+        second = second->child;
+    } else {
+        /* go to the first sibling in both trees */
+        if (first->parent) {
+            first = first->parent->child;
+        } else {
+            while (first->prev->next) {
+                first = first->prev;
+            }
+        }
+
+        if (second->parent) {
+            second = second->parent->child;
+        } else {
+            for (; second->prev->next; second = second->prev);
+        }
+
+        /* check that both has the same (schema) parent or that they are top-level nodes */
+        if ((first->parent && second->parent && first->parent->schema != second->parent->schema) ||
+                (!first->parent && first->parent != second->parent)) {
+            LOGERR(LY_EINVAL, "%s: incompatible trees with different parents.", __func__);
+            return NULL;
+        }
+    }
+    if (first == second) {
+        LOGERR(LY_EINVAL, "%s: comparing the same tree does not make sense.", __func__);
+        return NULL;
+    }
+
+    /* initiate resulting structure */
+    result = lyd_diff_init_difflist(&size);
+
+    /* the records about created and moved items are created in
+     * bad order, so the records about created nodes (and their
+     * possible moving) is stored separately and added to the
+     * main result at the end.
+     */
+    result2 = lyd_diff_init_difflist(&size2);
+
+    matchlist = malloc(sizeof *matchlist);
+    matchlist->match = ly_set_new();
+    matchlist->prev = NULL;
+
+    ordset = ly_set_new();
+    ordset_keys = ly_set_new();
+
+    /*
+     * compare trees
+     */
+    /* 1) newly created nodes + changed leafs/anyxmls */
+    next1 = first;
+    for (elem2 = next2 = second; elem2; elem2 = next2) {
+        /* keep right pointer for searching in the first tree */
+        elem1 = next1;
+
+        /* search for elem2 instance in the first */
+        LY_TREE_FOR(elem1, iter) {
+            if (iter->schema != elem2->schema) {
+                continue;
+            }
+
+            /* elem2 instance found */
+            rc = lyd_diff_compare(iter, elem2, result, &size, &index, matchlist->match, ordset_keys, ordset);
+            if (rc == -1) {
+                goto error;
+            } else if (rc == 0) {
+                /* match */
+                break;
+            } /* else, continue */
+        }
+
+        if (!iter) {
+            /* elem2 not found in the first tree */
+            if (lyd_difflist_add(result2, &size2, index2++, LYD_DIFF_CREATED, elem1 ? elem1->parent : parent, elem2)) {
+                goto error;
+            }
+
+            if (elem1 && (elem2->schema->flags & LYS_USERORDERED)) {
+                /* store the correct place where the node is supposed to be moved after creation */
+                /* if elem1 does not exist, all nodes were created and they will be created in
+                 * correct order, so it is not needed to detect moves */
+                for (aux = elem2->prev; aux->next; aux = aux->prev) {
+                    if (aux->schema == elem2->schema) {
+                        /* predecessor found */
+                        break;
+                    }
+                }
+                if (!aux->next) {
+                    /* predecessor not found */
+                    aux = NULL;
+                }
+                if (lyd_difflist_add(result2, &size2, index2++, LYD_DIFF_MOVEDAFTER2, aux, elem2)) {
+                    goto error;
+                }
+            }
+        }
+
+        /* select element for the next run                                    1     2
+         * - first, process all siblings of a single parent                  / \   / \
+         * - then, go to children (deep)                                    3   4 7   8
+         * - return to the parent's next sibling children                  / \
+         *                                                                5   6
+         */
+        /* siblings first */
+        next1 = elem1;
+        next2 = elem2->next;
+
+        if (!next2) {
+            /* children */
+
+            /* first pass of the siblings done, some additional work for future
+             * detection of move may be needed */
+            for (i = ordset->number; i > 0; i--) {
+                ordered = (struct diff_ordered *)ordset->set.g[i - 1];
+                if (ordered->items) {
+                    /* already preprocessed ordered structure */
+                    break;
+                }
+                ordered->items = calloc(ordered->count, sizeof *ordered->items);
+                ordered->dist = NULL;
+                /* zero the count to be used as a node position in lyd_diff_move_preprocess() */
+                ordered->count = 0;
+            }
+
+            /* first, get the first sibling */
+            if (elem2->parent == second->parent) {
+                elem2 = second;
+            } else {
+                elem2 = elem2->parent->child;
+            }
+
+            /* and then find the first child */
+            for (iter = elem2, i = 0; iter; iter = iter->next) {
+                if (!(iter->validity & LYD_VAL_INUSE)) {
+                    continue;
+                }
+
+                iter->validity &= ~LYD_VAL_INUSE;
+                if ((iter->schema->nodetype & (LYS_LEAFLIST | LYS_LIST)) && (iter->schema->flags & LYS_USERORDERED)) {
+                    for (j = ordset->number; j > 0; j--) {
+                        ordered = (struct diff_ordered *)ordset->set.g[j - 1];
+                        if (ordered->schema != iter->schema) {
+                            continue;
+                        }
+
+                        /* store necessary information for move detection */
+                        lyd_diff_move_preprocess(ordered, matchlist->match->set.d[i], iter);
+                        break;
+                    }
+                }
+
+                if ((iter->schema->nodetype & (LYS_CONTAINER | LYS_LIST)) && iter->child) {
+                    next1 = matchlist->match->set.d[i]->child;
+                    if (!next1) {
+                        parent = matchlist->match->set.d[i];
+                    }
+                    matchlist->match->set.d[i] = NULL;
+                    next2 = iter->child;
+                    break;
+                }
+                i++;
+            }
+
+            if (!iter) {
+                /* no child/data on next level */
+                if (elem2 == second) {
+                    /* done */
+                    break;
+                }
+            } else {
+                /* create new matchlist item */
+                mlaux = malloc(sizeof *mlaux);
+                mlaux->match = ly_set_new();
+                mlaux->prev = matchlist;
+                matchlist = mlaux;
+            }
+        }
+
+        while (!next2) {
+            /* parent */
+
+            /* clean the last match set */
+            ly_set_clean(matchlist->match);
+
+            /* try to go to a cousin - child of the next parent's sibling */
+            mlaux = matchlist->prev;
+            for (i = 0; (i < mlaux->match->number) && !mlaux->match->set.d[i]; i++);
+            for (iter = elem2->parent->next; iter; iter = iter->next) {
+                if (!(iter->validity & LYD_VAL_INUSE)) {
+                    continue;
+                }
+
+                iter->validity &= ~LYD_VAL_INUSE;
+                if ((iter->schema->nodetype & (LYS_LEAFLIST | LYS_LIST)) && (iter->schema->flags & LYS_USERORDERED)) {
+                    for (j = ordset->number ; j > 0; j--) {
+                        ordered = (struct diff_ordered *)ordset->set.g[j - 1];
+                        if (ordered->schema != iter->schema) {
+                            continue;
+                        }
+
+                        /* store necessary information for move detection */
+                        lyd_diff_move_preprocess(ordered, mlaux->match->set.d[i], iter);
+                        break;
+                    }
+                }
+
+                if ((iter->schema->nodetype & (LYS_CONTAINER | LYS_LIST)) && iter->child) {
+                    next1 = mlaux->match->set.d[i]->child;
+                    if (!next1) {
+                        parent = mlaux->match->set.d[i];
+                    }
+                    mlaux->match->set.d[i] = NULL;
+                    next2 = iter->child;
+                    break;
+                }
+                i++;
+            }
+
+            /* if no cousin exists, continue next loop on higher level */
+            if (!iter) {
+                elem2 = elem2->parent;
+
+                /* remove matchlist item */
+                ly_set_free(matchlist->match);
+                mlaux = matchlist;
+                matchlist = matchlist->prev;
+                free(mlaux);
+
+                if (!matchlist->prev) { /* elem2->parent == second->parent */
+                    /* done */
+                    break;
+                }
+            }
+        }
+    }
+
+    ly_set_free(matchlist->match);
+    free(matchlist);
+    matchlist = NULL;
+
+    ly_set_free(ordset_keys);
+    ordset_keys = NULL;
+
+    /* 2) deleted nodes */
+    LY_TREE_DFS_BEGIN(first, next1, elem1) {
+        /* search for elem1s deleted in the second */
+        if (elem1->validity & LYD_VAL_INUSE) {
+            /* erase temporary LYD_VAL_INUSE flag and continue into children */
+            elem1->validity &= ~LYD_VAL_INUSE;
+        } else {
+            /* elem1 has no matching node in second, add it into result */
+            if (lyd_difflist_add(result, &size, index++, LYD_DIFF_DELETED, elem1, NULL)) {
+                goto error;
+            }
+
+            /* skip subtree processing of data missing in the second tree */
+            goto dfs_nextsibling;
+        }
+
+        /* modified LY_TREE_DFS_END() */
+        /* select element for the next run - children first */
+        if (elem1->schema->nodetype & (LYS_LEAF | LYS_LEAFLIST | LYS_ANYXML)) {
+            next1 = NULL;
+        } else {
+            next1 = elem1->child;
+        }
+        if (!next1) {
+dfs_nextsibling:
+            /* try siblings */
+            next1 = elem1->next;
+        }
+        while (!next1) {
+            /* parent is already processed, go to its sibling */
+
+            elem1 = elem1->parent;
+            if (elem1 == first->parent) {
+                /* we are done, no next element to process */
+                break;
+            }
+
+            next1 = elem1->next;
+        }
+    }
+
+    /* 3) moved nodes (when user-ordered) */
+    for (i = 0; i < ordset->number; i++) {
+        ordered = (struct diff_ordered *)ordset->set.g[i];
+        if (!ordered->dist->dist) {
+            /* the dist list is sorted here, but the biggest dist is 0,
+             * so nothing changed in order of these items between first
+             * and second. We can continue with another user-ordered list.
+             */
+            continue;
+        }
+
+        /* get needed movements
+         * - from the biggest distances try to apply node movements
+         * on first tree node until they will be ordered as in the
+         * second tree - i.e. until there will be no position difference
+         */
+
+        for (dist_iter = ordered->dist; ; dist_iter = dist_iter->next) {
+            /* dist list is sorted at the beginning, since applying a move causes
+             * just a small change in other distances, we assume the the biggest
+             * dist is the next one (note that dist list is implemented as ring
+             * list). This way we avoid sorting distances after each move. The loop
+             * stops when all distances are zero.
+             */
+            dist_aux = dist_iter;
+            while (!dist_iter->dist) {
+                /* no dist, so no move. Try another, but when
+                 * there is no dist at all, stop the loop
+                 */
+                dist_iter = dist_iter->next;
+                if (dist_iter == dist_aux) {
+                    /* all dist we zeroed */
+                    goto movedone;
+                }
+            }
+            /* something to move */
+
+            /* get the item to move */
+            for (k = 0; k < ordered->count; k++) {
+                if (ordered->items[k].dist == dist_iter) {
+                    break;
+                }
+            }
+
+            /* apply the move (distance) */
+            memcpy(&item_aux, &ordered->items[k], sizeof item_aux);
+            if (dist_iter->dist > 0) {
+                /* move to right (other move to left) */
+                while (dist_iter->dist) {
+                    memcpy(&ordered->items[k], &ordered->items[k + 1], sizeof *ordered->items);
+                    ordered->items[k].dist->dist++; /* update moved item distance */
+                    dist_iter->dist--;
+                    k++;
+                }
+            } else {
+                /* move to left (other move to right) */
+                while (dist_iter->dist) {
+                    memcpy(&ordered->items[k], &ordered->items[k - 1], sizeof *ordered->items);
+                    ordered->items[k].dist->dist--; /* update moved item distance */
+                    dist_iter->dist++;
+                    k--;
+                }
+            }
+            memcpy(&ordered->items[k], &item_aux, sizeof *ordered->items);
+
+            /* store the transaction into the difflist */
+            if (lyd_difflist_add(result, &size, index++, LYD_DIFF_MOVEDAFTER1, item_aux.first,
+                                 (k > 0) ? ordered->items[k - 1].first : NULL)) {
+                goto error;
+            }
+            continue;
+
+movedone:
+            break;
+        }
+    }
+
+    diff_ordset_free(ordset);
+
+    if (index2) {
+        /* append result2 with newly created
+         * (and possibly moved) nodes */
+        if (index + index2 + 1 >= size) {
+            /* result must be enlarged */
+            size = index + index2 + 1;
+            new = realloc(result->type, size * sizeof *result->type);
+            if (!new) {
+                LOGMEM;
+                goto error;
+            }
+            result->type = new;
+
+            new = realloc(result->first, size * sizeof *result->first);
+            if (!new) {
+                LOGMEM;
+                goto error;
+            }
+            result->first = new;
+
+            new = realloc(result->second, size * sizeof *result->second);
+            if (!new) {
+                LOGMEM ;
+                goto error;
+            }
+            result->second = new;
+        }
+
+        /* append */
+        memcpy(&result->type[index], result2->type, (index2 + 1) * sizeof *result->type);
+        memcpy(&result->first[index], result2->first, (index2 + 1) * sizeof *result->first);
+        memcpy(&result->second[index], result2->second, (index2 + 1) * sizeof *result->second);
+    }
+    lyd_free_diff(result2);
+
+    ly_errno = LY_SUCCESS;
+    return result;
+
+error:
+
+    while (matchlist) {
+        mlaux = matchlist;
+        matchlist = mlaux->prev;
+        ly_set_free(mlaux->match);
+        free(mlaux);
+
+    }
+    ly_set_free(ordset_keys);
+    diff_ordset_free(ordset);
+
+    lyd_free_diff(result);
+    lyd_free_diff(result2);
+
+    return NULL;
 }
 
 static void
@@ -1498,18 +2264,20 @@ lyd_insert(struct lyd_node *parent, struct lyd_node *node)
         return EXIT_FAILURE;
     }
 
-    if (node->parent != parent || lyp_is_rpc(node->schema)) {
+    if (node->parent != parent || (invalid = lyp_is_rpc(node->schema))) {
         /* it is not just moving under a parent node or it is in an RPC where
          * nodes order matters, so the validation will be necessary */
-        invalid = 1;
+        invalid++;
     }
 
-    if (node->parent || node->next || node->prev->next) {
-        lyd_unlink(node);
+    if (node->parent || node->prev->next) {
+        lyd_unlink_internal(node, invalid);
     }
 
-    /* auto delete nodes from other cases, if any */
-    lyv_multicases(node, NULL, parent->child, 1, NULL);
+    if (invalid == 1) {
+        /* auto delete nodes from other cases, if any */
+        lyv_multicases(node, NULL, parent->child, 1, NULL);
+    }
 
     if (!parent->child) {
         /* add as the only child of the parent */
@@ -1555,13 +2323,13 @@ lyd_insert_sibling(struct lyd_node *sibling, struct lyd_node *node, int before)
         return EXIT_FAILURE;
     }
 
-    if (node->parent != sibling->parent || !node->parent || (invalid = lyp_is_rpc(node->schema))) {
+    if (node->parent != sibling->parent || (invalid = lyp_is_rpc(node->schema)) || !node->parent) {
         /* a) it is not just moving under a parent node (invalid = 1) or
-         * b) it is top-level where we don't know if it is the same tree (invalid = 1), or
-         * c) it is in an RPC where nodes order matters (invalid = 2),
+         * b) it is in an RPC where nodes order matters (invalid = 2) or
+         * c) it is top-level where we don't know if it is the same tree (invalid = 1),
          * so the validation will be necessary */
-        if (!node->parent) {
-            /* b) search in siblings */
+        if (!node->parent && !invalid) {
+            /* c) search in siblings */
             for (iter = node->prev; iter != node; iter = iter->prev) {
                 if (iter == sibling) {
                     break;
@@ -1571,7 +2339,7 @@ lyd_insert_sibling(struct lyd_node *sibling, struct lyd_node *node, int before)
                 /* node and siblings are not currently in the same data tree */
                 invalid++;
             }
-        } else { /* a) and c) */
+        } else { /* a) and b) */
             invalid++;
         }
     }
@@ -1596,7 +2364,7 @@ lyd_insert_sibling(struct lyd_node *sibling, struct lyd_node *node, int before)
     }
 
     if (node->parent || node->next || node->prev->next) {
-        lyd_unlink(node);
+        lyd_unlink_internal(node, invalid);
     }
 
     node->parent = sibling->parent;
@@ -1831,6 +2599,22 @@ lyd_schema_sort(struct lyd_node *sibling, int recursive)
 }
 
 API int
+lyd_validate_leafref(struct lyd_node_leaf_list *leafref)
+{
+    if (!leafref || leafref->value_type != LY_TYPE_LEAFREF) {
+        ly_errno = LY_EINVAL;
+        return EXIT_FAILURE;
+    }
+
+    if (leafref->value.leafref) {
+        /* nothing to do */
+        return EXIT_SUCCESS;
+    }
+
+    return resolve_unres_data_item((struct lyd_node *)leafref, UNRES_LEAFREF);
+}
+
+API int
 lyd_validate(struct lyd_node **node, int options, ...)
 {
     struct lyd_node *root, *next1, *next2, *iter, *to_free = NULL;
@@ -1861,10 +2645,15 @@ lyd_validate(struct lyd_node **node, int options, ...)
             LOGERR(LY_EINVAL, "%s: Invalid variable argument.", __func__);
             goto error;
         }
-    } else {
-        ctx = (*node)->schema->module->ctx;
 
-        if (!(options & LYD_OPT_NOSIBLINGS)) {
+        /* LYD_OPT_NOSIBLINGS has no meanings here */
+        options &= ~LYD_OPT_NOSIBLINGS;
+    } else {
+        if (options & LYD_OPT_NOSIBLINGS) {
+            /* ctx is NULL */
+        } else {
+            ctx = (*node)->schema->module->ctx;
+
             /* check that the node is the first sibling */
             while ((*node)->prev->next) {
                 *node = (*node)->prev;
@@ -2006,8 +2795,8 @@ lyd_dup_attr(struct ly_ctx *ctx, struct lyd_node *parent, struct lyd_attr *attr)
     return ret;
 }
 
-API int
-lyd_unlink(struct lyd_node *node)
+static int
+lyd_unlink_internal(struct lyd_node *node, int permanent)
 {
     struct lyd_node *iter, *next;
     struct ly_set *set, *data;
@@ -2018,32 +2807,34 @@ lyd_unlink(struct lyd_node *node)
         return EXIT_FAILURE;
     }
 
-    /* fix leafrefs */
-    LY_TREE_DFS_BEGIN(node, next, iter) {
-        /* the node is target of a leafref */
-        if ((iter->schema->nodetype & (LYS_LEAF | LYS_LEAFLIST)) && iter->schema->child) {
-            set = (struct ly_set *)iter->schema->child;
-            for (i = 0; i < set->number; i++) {
-                data = lyd_get_node2(iter, set->set.s[i]);
-                if (data) {
-                    for (j = 0; j < data->number; j++) {
-                        if (((struct lyd_node_leaf_list *)data->set.d[j])->value.leafref == iter) {
-                            /* remove reference to the node we are going to replace */
-                            ((struct lyd_node_leaf_list *)data->set.d[j])->value.leafref = NULL;
+    if (permanent) {
+        /* fix leafrefs */
+        LY_TREE_DFS_BEGIN(node, next, iter) {
+            /* the node is target of a leafref */
+            if ((iter->schema->nodetype & (LYS_LEAF | LYS_LEAFLIST)) && iter->schema->child) {
+                set = (struct ly_set *)iter->schema->child;
+                for (i = 0; i < set->number; i++) {
+                    data = lyd_get_node2(iter, set->set.s[i]);
+                    if (data) {
+                        for (j = 0; j < data->number; j++) {
+                            if (((struct lyd_node_leaf_list *)data->set.d[j])->value.leafref == iter) {
+                                /* remove reference to the node we are going to replace */
+                                ((struct lyd_node_leaf_list *)data->set.d[j])->value.leafref = NULL;
+                            }
                         }
+                        ly_set_free(data);
+                    } else {
+                        return EXIT_FAILURE;
                     }
-                    ly_set_free(data);
-                } else {
-                    ly_errno = LY_SUCCESS;
                 }
             }
+            LY_TREE_DFS_END(node, next, iter)
         }
-        LY_TREE_DFS_END(node, next, iter)
-    }
 
-    /* invalidate parent to make sure it will be checked in future validation */
-    if (node->parent) {
-        node->parent->validity = LYD_VAL_NOT;
+        /* invalidate parent to make sure it will be checked in future validation */
+        if (node->parent) {
+            node->parent->validity = LYD_VAL_NOT;
+        }
     }
 
     /* unlink from siblings */
@@ -2081,6 +2872,12 @@ lyd_unlink(struct lyd_node *node)
     return EXIT_SUCCESS;
 }
 
+API int
+lyd_unlink(struct lyd_node *node)
+{
+    return lyd_unlink_internal(node, 1);
+}
+
 API struct lyd_node *
 lyd_dup(const struct lyd_node *node, int recursive)
 {
@@ -2113,10 +2910,17 @@ lyd_dup(const struct lyd_node *node, int recursive)
                 return NULL;
             }
 
-            new_leaf->value = ((struct lyd_node_leaf_list *)elem)->value;
             new_leaf->value_str = lydict_insert(elem->schema->module->ctx,
                                                 ((struct lyd_node_leaf_list *)elem)->value_str, 0);
             new_leaf->value_type = ((struct lyd_node_leaf_list *)elem)->value_type;
+
+            /* value_str pointer is shared in these cases */
+            if ((new_leaf->value_type == LY_TYPE_BINARY) || (new_leaf->value_type == LY_TYPE_STRING)) {
+                new_leaf->value.string = new_leaf->value_str;
+            } else {
+                new_leaf->value = ((struct lyd_node_leaf_list *)elem)->value;
+            }
+
             /* bits type must be treated specially */
             if (new_leaf->value_type == LY_TYPE_BITS) {
                 for (type = &((struct lys_node_leaf *)elem->schema)->type; type->der->module; type = &type->der->type) {
@@ -2371,22 +3175,18 @@ lyd_free(struct lyd_node *node)
         }
     } else if (node->schema->nodetype == LYS_ANYXML) {
         if (((struct lyd_node_anyxml *)node)->xml_struct) {
-            lyxml_free(node->schema->module->ctx, ((struct lyd_node_anyxml *)node)->value.xml);
+            lyxml_free_withsiblings(node->schema->module->ctx, ((struct lyd_node_anyxml *)node)->value.xml);
         } else {
             lydict_remove(node->schema->module->ctx, ((struct lyd_node_anyxml *)node)->value.str);
         }
     } else { /* LYS_LEAF | LYS_LEAFLIST */
         /* free value */
         switch (((struct lyd_node_leaf_list *)node)->value_type) {
-        case LY_TYPE_BINARY:
-        case LY_TYPE_STRING:
-            lydict_remove(node->schema->module->ctx, ((struct lyd_node_leaf_list *)node)->value.string);
-            break;
         case LY_TYPE_BITS:
             if (((struct lyd_node_leaf_list *)node)->value.bit) {
                 free(((struct lyd_node_leaf_list *)node)->value.bit);
             }
-            break;
+            /* fallthrough */
         default:
             lydict_remove(node->schema->module->ctx, ((struct lyd_node_leaf_list *)node)->value_str);
             break;
@@ -2537,6 +3337,38 @@ end:
     return dflt;
 }
 
+API char *
+lyd_path(struct lyd_node *node)
+{
+    char *buf_backup = NULL, *buf = ly_buf(), *result = NULL;
+    uint16_t index = LY_BUF_SIZE - 1;
+
+    if (!node) {
+        LOGERR(LY_EINVAL, "%s: NULL node parameter", __func__);
+        return NULL;
+    }
+
+    /* backup the shared internal buffer */
+    if (ly_buf_used && buf[0]) {
+        buf_backup = strndup(buf, LY_BUF_SIZE - 1);
+    }
+    ly_buf_used++;
+
+    /* build the path */
+    buf[index] = '\0';
+    ly_vlog_build_path_reverse(LY_VLOG_LYD, node, buf, &index);
+    result = strdup(&buf[index]);
+
+    /* restore the shared internal buffer */
+    if (buf_backup) {
+        strcpy(buf, buf_backup);
+        free(buf_backup);
+    }
+    ly_buf_used--;
+
+    return result;
+}
+
 static int
 lyd_build_relative_data_path(const struct lyd_node *node, const char *schema_id, char *buf)
 {
@@ -2587,7 +3419,7 @@ lyd_build_relative_data_path(const struct lyd_node *node, const char *schema_id,
 }
 
 int
-lyd_list_equal(struct lyd_node *first, struct lyd_node *second)
+lyd_list_equal(struct lyd_node *first, struct lyd_node *second, int printval)
 {
     struct lys_node_list *slist;
     const struct lys_node *snode = NULL;
@@ -2610,8 +3442,10 @@ lyd_list_equal(struct lyd_node *first, struct lyd_node *second)
         /* compare values */
         if (ly_strequal(((struct lyd_node_leaf_list *)first)->value_str,
                         ((struct lyd_node_leaf_list *)second)->value_str, 1)) {
-            LOGVAL(LYE_DUPLEAFLIST, LY_VLOG_LYD, second, second->schema->name,
-                   ((struct lyd_node_leaf_list *)second)->value_str);
+            if (printval) {
+                LOGVAL(LYE_DUPLEAFLIST, LY_VLOG_LYD, second, second->schema->name,
+                       ((struct lyd_node_leaf_list *)second)->value_str);
+            }
             return 1;
         }
         return 0;
@@ -2652,6 +3486,10 @@ lyd_list_equal(struct lyd_node *first, struct lyd_node *second)
             }
             if (j && (j == slist->unique[i].expr_size)) {
                 /* all unique leafs are the same in this set, create this nice error */
+                if (!printval) {
+                    return 1;
+                }
+
                 path1 = malloc(LY_BUF_SIZE);
                 path2 = malloc(LY_BUF_SIZE);
                 if (!path1 || !path2) {
@@ -2716,7 +3554,9 @@ lyd_list_equal(struct lyd_node *first, struct lyd_node *second)
             }
         }
 
-        LOGVAL(LYE_DUPLIST, LY_VLOG_LYD, second, second->schema->name);
+        if (printval) {
+            LOGVAL(LYE_DUPLIST, LY_VLOG_LYD, second, second->schema->name);
+        }
         return 1;
     default:
         LOGINT;
@@ -2751,7 +3591,7 @@ lyd_get_node(const struct lyd_node *data, const char *expr)
     if (xp_set.type == LYXP_SET_NODE_SET) {
         for (i = 0; i < xp_set.used; ++i) {
             if (xp_set.val.nodes[i].type == LYXP_NODE_ELEM) {
-                if (ly_set_add(set, xp_set.val.nodes[i].node)) {
+                if (ly_set_add(set, xp_set.val.nodes[i].node) < 0) {
                     ly_set_free(set);
                     set = NULL;
                     break;
@@ -2876,14 +3716,14 @@ ly_set_add(struct ly_set *set, void *node)
 
     if (!set || !node) {
         ly_errno = LY_EINVAL;
-        return EXIT_FAILURE;
+        return -1;
     }
 
     /* search for duplication */
     for (i = 0; i < set->number; i++) {
         if (set->set.g[i] == node) {
             /* already in set */
-            return EXIT_SUCCESS;
+            return i;
         }
     }
 
@@ -2891,7 +3731,7 @@ ly_set_add(struct ly_set *set, void *node)
         new = realloc(set->set.g, (set->size + 8) * sizeof *(set->set.g));
         if (!new) {
             LOGMEM;
-            return EXIT_FAILURE;
+            return -1;
         }
         set->size += 8;
         set->set.g = new;
@@ -2899,7 +3739,7 @@ ly_set_add(struct ly_set *set, void *node)
 
     set->set.g[set->number++] = node;
 
-    return EXIT_SUCCESS;
+    return set->number - 1;
 }
 
 API int
@@ -2946,6 +3786,21 @@ ly_set_rm(struct ly_set *set, void *node)
     }
 
     return ly_set_rm_index(set, i);
+}
+
+API int
+ly_set_clean(struct ly_set *set)
+{
+    if (!set) {
+        return EXIT_FAILURE;
+    }
+
+    free(set->set.g);
+    set->size = 0;
+    set->number = 0;
+    set->set.g = NULL;
+
+    return EXIT_SUCCESS;
 }
 
 API int
@@ -3530,7 +4385,7 @@ lyd_wd_top(struct lyd_node **root, struct unres_data *unres, int options, struct
         topset = ly_set_new();
     }
     LY_TREE_FOR(*root, iter) {
-        if (!ctx && !(options & (LYD_OPT_RPC | LYD_OPT_RPCREPLY | LYD_OPT_NOTIF))) {
+        if ((!ctx || (options & LYD_OPT_NOSIBLINGS)) && !(options & (LYD_OPT_RPC | LYD_OPT_RPCREPLY | LYD_OPT_NOTIF))) {
             ly_set_add(topset, lys_node_module(iter->schema)->data);
         }
         if (options & (LYD_OPT_CONFIG | LYD_OPT_EDIT | LYD_OPT_GETCONFIG)) {
@@ -3552,8 +4407,10 @@ lyd_wd_top(struct lyd_node **root, struct unres_data *unres, int options, struct
             }
         }
 
-        if (options & LYD_OPT_NOSIBLINGS) {
-            break;
+        if (!ctx && (options & LYD_OPT_NOSIBLINGS)) {
+            /* done, do not add any missing siblings */
+            ret = EXIT_SUCCESS;
+            goto cleanup;
         }
     }
 
@@ -3563,7 +4420,7 @@ lyd_wd_top(struct lyd_node **root, struct unres_data *unres, int options, struct
         goto cleanup;
     }
 
-    if (ctx) {
+    if (ctx && !(options & LYD_OPT_NOSIBLINGS)) {
         /* add all module data into our internal set */
         for (i = 0; i < (unsigned int)ctx->models.used; i++) {
             if (ctx->models.list[i]->data) {
@@ -3726,6 +4583,12 @@ lyd_defaults_add_unres(struct lyd_node **root, int options, struct ly_ctx *ctx, 
             LOGERR(LY_EINVAL, "Additional invalid data with an RPC, RPC reply, or notification.");
             return EXIT_FAILURE;
         }
+    } else if (*root && (*root)->parent) {
+        /* we have inner node, so it will be considered as
+         * a root of subtree where to add default nodes and
+         * no of its siblings will be affected */
+        options |= LYD_OPT_NOSIBLINGS;
+        ctx = NULL;
     }
 
     /* add default values if needed */
@@ -3766,7 +4629,7 @@ lyd_wd_add(struct ly_ctx *ctx, struct lyd_node **root, int options)
 
     ly_errno = LY_SUCCESS;
 
-    if (!root || (!ctx && !(*root))) {
+    if (!root || (!ctx && !(*root)) || (ctx && !(*root) && (options & LYD_OPT_NOSIBLINGS))) {
         ly_errno = LY_EINVAL;
         return EXIT_FAILURE;
     }
@@ -3786,6 +4649,13 @@ lyd_wd_add(struct ly_ctx *ctx, struct lyd_node **root, int options)
         if (!unres) {
             LOGMEM;
             return EXIT_FAILURE;
+        }
+    }
+
+    if (*root && (ctx || !(options & LYD_OPT_NOSIBLINGS))) {
+        /* check that the node is the first sibling */
+        while ((*root)->prev->next) {
+            *root = (*root)->prev;
         }
     }
 

@@ -97,7 +97,9 @@ typedef union lyd_value_u {
  */
 #define LYD_VAL_OK       0x00    /**< node is successfully validated including whole subtree */
 #define LYD_VAL_UNIQUE   0x01    /**< Unique value(s) changed, applicable only to ::lys_node_list data nodes */
-#define LYD_VAL_NOT      0x0f    /**< node was not validated yet */
+#define LYD_VAL_NOT      0x07    /**< node was not validated yet */
+#define LYD_VAL_INUSE    0x08    /**< Internal flag for note about various processing on data, should be used only
+                                      internally and removed before the libyang returns to the caller */
 /**
  * @}
  */
@@ -204,6 +206,117 @@ struct lyd_node_anyxml {
     uint8_t xml_struct;              /**< 1 for value.xml, 0 for value.str */
     union lyd_node_anyxml_value value; /**< anyxml value, everything is in the dictionary, there can be more XML siblings */
 };
+
+/**
+ * @brief list of possible types of differencies in #lyd_difflist
+ */
+typedef enum {
+    LYD_DIFF_END = 0,        /**< end of the differences list */
+    LYD_DIFF_DELETED,        /**< deleted node
+                                  - Node is present in the first tree, but not in the second tree.
+                                  - To make both trees the same the node in lyd_difflist::first can be deleted from the
+                                    first tree. The pointer at the same index in the lyd_difflist::second array is
+                                    NULL */
+    LYD_DIFF_CHANGED,        /**< value of a leaf or anyxml is changed, the lyd_difflist::first and lyd_difflist::second
+                                  points to the leaf/anyxml instances in the first and the second tree respectively. */
+    LYD_DIFF_MOVEDAFTER1,    /**< user-ordered (leaf-)list item was moved.
+                                  - To make both trees the same, all #LYD_DIFF_MOVEDAFTER1 transactions must be applied
+                                  to the first tree in the strict order they appear in the difflist. The
+                                  lyd_difflist::first points to the first tree node being moved and the
+                                  lyd_difflist::second points to the first tree node after which the first node is
+                                  supposed to be moved. If the second pointer is NULL, the node is being moved into
+                                  the beginning as the first node of the (leaf-)list instances. */
+    LYD_DIFF_CREATED,        /**< newly created node
+                                  - Node is present in the second tree, but not in the first tree.
+                                  - To make both trees the same the node in lyd_difflist::second is supposed to be
+                                    inserted (copied via lyd_dup()) into the node (as a child) at the same index in the
+                                    lyd_difflist::first array (where is its parent). If the lyd_difflist::first at the
+                                    index is NULL, the missing node is top-level. */
+    LYD_DIFF_MOVEDAFTER2     /**< similar to LYD_DIFF_MOVEDAFTER1, but this time the moved item is in the second tree.
+                                  This type is always used in combination with (as a successor of) #LYD_DIFF_CREATED
+                                  as an instruction to move the newly created node to a specific position. Note, that
+                                  due to applicability to the second tree, the meaning of lyd_difflist:first and
+                                  lyd_difflist:second is inverse in comparison to #LYD_DIFF_MOVEDAFTER1. The
+                                  lyd_difflist::second points to the (previously) created node in the second tree and
+                                  the lyd_difflist::first points to the predecessor node in the second tree. If the
+                                  predecessor is NULL, the node is supposed to bes the first sibling. */
+} LYD_DIFFTYPE;
+
+/**
+ * @brief Structure for the result of lyd_diff(), describing differences between two data trees.
+ */
+struct lyd_difflist {
+    LYD_DIFFTYPE *type;      /**< array of the differences types, terminated by #LYD_DIFF_END value. */
+    struct lyd_node **first; /**< array of nodes in the first tree for the specific type of difference, see the
+                                  description of #LYD_DIFFTYPE values for more information. */
+    struct lyd_node **second;/**< array of nodes in the second tree for the specific type of difference, see the
+                                  description of #LYD_DIFFTYPE values for more information. */
+};
+
+/**
+ * @brief Free the result of lyd_diff(). It frees the structure of the lyd_diff() result, not the referenced nodes.
+ *
+ * @param[in] diff The lyd_diff() result to free.
+ */
+void lyd_free_diff(struct lyd_difflist *diff);
+
+/**
+ * @brief Compare two data trees and provide list of differences.
+ *
+ * Note, that the \p first and the \p second must have the same schema parent (or they must be top-level elements).
+ * In case of using #LYD_OPT_NOSIBLINGS, they both must be instances of the same schema node.
+ *
+ * Order of the resulting set follows these rules:
+ * - To change the first tree into the second tree, the resulting transactions are supposed to be applied in the order
+ *   they appear in the result. First, the changed (#LYD_DIFF_CHANGED) nodes are described followed by the deleted
+ *   (#LYD_DIFF_DELETED) nodes. Then, the moving of the user-ordered nodes present in both trees (#LYD_DIFF_MOVEDAFTER1)
+ *   follows and the last transactions in the results are the newly created (#LYD_DIFF_CREATED) nodes. These nodes are
+ *   supposed to be added as the last siblings, but in some case they can need additional move. In such a case, the
+ *   #LYD_DIFF_MOVEDAFTER2 transactions can appear.
+ * - The order of the changed (#LYD_DIFF_CHANGED) and created (#LYD_DIFF_CREATED) follows the nodes order in the
+ *   second tree - the current siblings are processed first and then the children are processed. Note, that this is
+ *   actually not the BFS:
+ *
+ *           1     2
+ *          / \   / \
+ *         3   4 7   8
+ *        / \
+ *       5   6
+ *
+ * - The order of the deleted (#LYD_DIFF_DELETED) nodes is the DFS:
+ *
+ *           1     6
+ *          / \   / \
+ *         2   5 7   8
+ *        / \
+ *       3   4
+ *
+ * To change the first tree into the second one, it is necessary to follow the order of transactions described in
+ * the result. Note, that it is not possible just to use the transactions in the reverse order to transform the
+ * second tree into the first one. The transactions can be generalized (to be used on a different instance of the
+ * first tree) using lyd_path() to get identifiers for the nodes used in the transactions.
+ *
+ * @param[in] first The first (sub)tree to compare. Without #LYD_OPT_NOSIBLINGS option, all siblings are
+ *            taken into comparison. If NULL, all the \p second nodes are supposed to be top level and they will
+ *            be marked as #LYD_DIFF_CREATED.
+ * @param[in] second The second (sub)tree to compare. Without #LYD_OPT_NOSIBLINGS option, all siblings are
+ *            taken into comparison. If NULL, all the \p first nodes will be marked as #LYD_DIFF_DELETED.
+ * @param[in] options The following @ref parseroptions with the described meanings are accepted:
+ *            - #LYD_OPT_NOSIBLINGS - the \p first and the \p second have to instantiate the same schema node and
+ *              only their content (subtree) is compared.
+ * @return NULL on error, the list of differences on success. In case the trees are the same, the first item in the
+ *         lyd_difflist::type array is #LYD_DIFF_END. The returned structure is supposed to be freed by lyd_free_diff().
+ */
+struct lyd_difflist *lyd_diff(struct lyd_node *first, struct lyd_node *second, int options);
+
+/**
+ * @brief Build path (usable as XPath) of the data node.
+ * @param[in] node Data node to be processed. Note that the node should be from a complete data tree, having a subtree
+ *            (after using lyd_unlink()) can cause generating invalid paths.
+ * @return NULL on error, on success the buffer for the resulting path is allocated and caller is supposed to free it
+ * with free().
+ */
+char *lyd_path(struct lyd_node *node);
 
 /**
  * @defgroup parseroptions Data parser options
@@ -684,6 +797,19 @@ struct ly_set *lyd_get_node(const struct lyd_node *data, const char *expr);
 struct ly_set *lyd_get_node2(const struct lyd_node *data, const struct lys_node *schema);
 
 /**
+ * @brief Resolve the leafref.
+ *
+ * This function is considered to be a part of a low level API and it should be used deliberately.
+ *
+ * @param[in] leafref The leafref node to resolve.
+ * @return
+ * - EXIT_SUCCESS on success,
+ * - EXIT_FAILURE when target does not exist,
+ * - -1 on error.
+ */
+int lyd_validate_leafref(struct lyd_node_leaf_list *leafref);
+
+/**
  * @brief Validate \p node data subtree.
  *
  * @param[in,out] node Data tree to be validated. In case the \p options does not includes #LYD_OPT_NOAUTODEL, libyang
@@ -705,23 +831,32 @@ int lyd_validate(struct lyd_node **node, int options, ...);
  * values directly in lyd_validate() and lyd_parse*() functions using appropriate options value. By default, these
  * functions remove the default nodes at the end of their processing.
  *
- * \p ctx parameter and \p options with #LYD_OPT_NOSIBLINGS values can result in 4 different scenarios:
+ * The \p ctx parameter is optional and it is used to get schemas to add a top level default nodes according to the
+ * following rules:
+ * - \p root points to an inner (non top-level) node
+ *   - the \p root is taken as a subroot and default nodes are being added only inside this subtree, \p ctx is not used
+ * - \p root points to a top-level node or to an empty tree
+ *   - \p ctx is specified
+ *     - \p options include #LYD_OPT_NOSIBLINGS
+ *       - default nodes being added are limited to the schemas mentioned by the \p root node and its siblings,
+ *       - NOSIBLINGS has meaning "no sibling schema" here,
+ *       - \p root pointing an empty tree is an error in this case
+ *     - \p options does not include #LYD_OPT_NOSIBLINGS
+ *       - (top-level) default nodes from all schemas in the \p ctx are added into the tree
+ *   - \p ctx is not specified
+ *     - \p options include #LYD_OPT_NOSIBLINGS
+ *       - only the node pointed by \p root is affected, so the node is actually handled as a subroot
+ *       - \p root pointing an empty tree is an error in this case
+ *     - \p options does not include #LYD_OPT_NOSIBLINGS
+ *       - default nodes being added are limited to the schemas mentioned by the \p root node and its siblings,
+ *       - \p root pointing an empty tree is an error in this case
  *
- * - If \p ctx is set and \p options include #LYD_OPT_NOSIBLINGS, tree default nodes will be added ONLY to \p root,
- * top-level default nodes will be added from ALL the modules (so it has no effect for #LYD_WD_TRIM).
- * - If \p ctx is set and \p options do not include #LYD_OPT_NOSIBLINGS, tree default values will be added to ALL
- * the \p root siblings, top-level nodes will be added from ALL the modules.
- * - If \p ctx is NULL and \p options include #LYD_OPT_NOSIBLINGS, tree default nodes will be added ONLY to \p root,
- * top-level default nodes will be added ONLY from the module of \p root.
- * - If \p ctx is NULL and \p options do not include #LYD_OPT_NOSIBLINGS, tree default nodes will be added to ALL
- * the \p root siblings, top-level default nodes will be added from ALL the \p root siblings modules.
- *
- * @param[in] ctx Optional parameter. Exact meaning described in this function description last paragraph.
+ * @param[in] ctx Optional parameter, for details see the previous paragraph.
  * @param[in] root Data tree root. In case of #LYD_WD_TRIM the data tree can be modified so the root can be changed or
  *            removed. In other modes and with empty data tree, new default nodes can be created so the root pointer
  *            will contain/return the newly created data tree.
- * @param[in] options Options for the inserting data to the target data tree options, see @ref parseroptions - only the
- *            LYD_WD_* options are used to select functionality:
+ * @param[in] options Options for the inserting data to the target data tree options, see @ref parseroptions - besides
+ *            the #LYD_OPT_NOSIBLINGS described above, only the LYD_WD_* options are allowed to select functionality:
  * - #LYD_WD_TRIM - remove all nodes that have value equal to their default value
  * - #LYD_WD_EXPLICIT - add only status default nodes
  * - #LYD_WD_ALL - add all (status as well as config) default nodes

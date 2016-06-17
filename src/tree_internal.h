@@ -196,6 +196,16 @@ struct lys_node *lys_node_dup(struct lys_module *module, struct lys_node *parent
 void lys_node_switch(struct lys_node *dst, struct lys_node *src);
 
 /**
+ * @brief Add pointer to \p leafref to \p leafref_target children so that it knows there
+ * are some leafrefs referring it.
+ *
+ * @param[in] leafref_target Leaf that is \p leafref's target.
+ * @param[in] leafref Leaf or leaflist of type #LY_TYPE_LEAFREF referring \p leafref_target.
+ * @return 0 on success, -1 on error.
+ */
+int lys_leaf_add_leafref_target(struct lys_node_leaf *leafref_target, struct lys_node *leafref);
+
+/**
  * @brief Free a schema when condition
  *
  * @param[in] libyang context where the schema of the ondition is used.
@@ -344,11 +354,12 @@ int lys_get_data_sibling(const struct lys_module *mod, const struct lys_node *si
  *
  * @param[in] first First data node to compare.
  * @param[in] second Second node to compare.
+ * @param[in] printval Flag for printing validation errors, useful for internal (non-validation) use of this function
  * @return 1 if both the nodes are the same from the YANG point of view,
  *         0 if they differ,
  *         -1 on error.
  */
-int lyd_list_equal(struct lyd_node *first, struct lyd_node *second);
+int lyd_list_equal(struct lyd_node *first, struct lyd_node *second, int printval);
 
 /**
  * @brief Check for (validate) top-level mandatory nodes of a data tree.
