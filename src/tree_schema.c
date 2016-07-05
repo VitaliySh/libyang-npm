@@ -311,7 +311,7 @@ check_mand_check(const struct lys_node *node, const struct lys_node *stop, const
             }
             /* ignore return - memory error is logged and we will
              * check at least the rest of nodes we have */
-            (void)ly_set_add(set, parent);
+            (void)ly_set_add(set, parent, LY_SET_OPT_USEASLIST);
         }
         if (set) {
             for (i = set->number; i > 0; ) {
@@ -1064,6 +1064,8 @@ lys_parse_mem_(struct ly_ctx *ctx, const char *data, LYS_INFORMAT format, int in
     struct lys_module *mod = NULL;
     unsigned int len;
 
+    ly_errno = LY_SUCCESS;
+
     if (!ctx || !data) {
         LOGERR(LY_EINVAL, "%s: Invalid parameter.", __func__);
         return NULL;
@@ -1314,6 +1316,7 @@ type_dup(struct lys_module *mod, struct lys_node *parent, struct lys_type *new, 
 
         case LY_TYPE_DEC64:
             new->info.dec64.dig = old->info.dec64.dig;
+            new->info.dec64.div = old->info.dec64.div;
             if (old->info.dec64.range) {
                 new->info.dec64.range = lys_restr_dup(mod->ctx, old->info.dec64.range, 1);
             }
@@ -2923,7 +2926,7 @@ lys_leaf_add_leafref_target(struct lys_node_leaf *leafref_target, struct lys_nod
             return -1;
         }
     }
-    ly_set_add((struct ly_set *)leafref_target->child, leafref);
+    ly_set_add((struct ly_set *)leafref_target->child, leafref, 0);
 
     return 0;
 }

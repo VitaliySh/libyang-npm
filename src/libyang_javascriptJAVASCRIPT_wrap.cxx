@@ -3109,6 +3109,21 @@ static void _wrap_delete_ly_set(v8::Persistent<v8::Value> object, void *paramete
       }
 
 
+static SwigV8ReturnValue _wrap_LY_SET_OPT_USEASLIST(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x01));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_ly_set_new(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
@@ -3134,12 +3149,15 @@ static SwigV8ReturnValue _wrap_ly_set_add(const SwigV8Arguments &args) {
   v8::Handle<v8::Value> jsresult;
   ly_set *arg1 = (ly_set *) 0 ;
   void *arg2 = (void *) 0 ;
+  int arg3 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   int res2 ;
+  int val3 ;
+  int ecode3 = 0 ;
   int result;
   
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_ly_set_add.");
+  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_ly_set_add.");
   
   res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_set, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
@@ -3150,8 +3168,14 @@ static SwigV8ReturnValue _wrap_ly_set_add(const SwigV8Arguments &args) {
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ly_set_add" "', argument " "2"" of type '" "void *""'"); 
   }
-  result = (int)ly_set_add(arg1,arg2);
+  ecode3 = SWIG_AsVal_int(args[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "ly_set_add" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = (int)(val3);
+  result = (int)ly_set_add(arg1,arg2,arg3);
   jsresult = SWIG_From_int((int)(result));
+  
   
   
   
@@ -3311,6 +3335,21 @@ static SwigV8ReturnValue _wrap_LYP_FORMAT(v8::Local<v8::String> property, const 
   v8::Handle<v8::Value> jsresult;
   
   jsresult = SWIG_From_int((int)(0x02));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LY_LLSILENT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LY_LLSILENT));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -4007,6 +4046,36 @@ static SwigV8ReturnValue _wrap_LYVE_CIRC_LEAFREFS(v8::Local<v8::String> property
   v8::Handle<v8::Value> jsresult;
   
   jsresult = SWIG_From_int((int)(LYVE_CIRC_LEAFREFS));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYVE_CIRC_IMPORTS(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYVE_CIRC_IMPORTS));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYVE_CIRC_INCLUDES(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYVE_CIRC_INCLUDES));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -6393,7 +6462,7 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_LY_YIN(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_LYS_YIN(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
@@ -10703,6 +10772,68 @@ static SwigV8ReturnValue _wrap_lys_type_info_dec64_dig_get(v8::Local<v8::String>
   arg1 = (lys_type_info_dec64 *)(argp1);
   result =  ((arg1)->dig);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_type_info_dec64_div_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_type_info_dec64 *arg1 = (lys_type_info_dec64 *) 0 ;
+  uint64_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_info_dec64, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_info_dec64_div_set" "', argument " "1"" of type '" "lys_type_info_dec64 *""'"); 
+  }
+  arg1 = (lys_type_info_dec64 *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint64_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_info_dec64_div_set" "', argument " "2"" of type '" "uint64_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_type_info_dec64_div_set" "', argument " "2"" of type '" "uint64_t""'");
+    } else {
+      arg2 = *((uint64_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->div = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_type_info_dec64_div_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_type_info_dec64 *arg1 = (lys_type_info_dec64 *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint64_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_info_dec64, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_info_dec64_div_get" "', argument " "1"" of type '" "lys_type_info_dec64 *""'"); 
+  }
+  arg1 = (lys_type_info_dec64 *)(argp1);
+  result =  ((arg1)->div);
+  jsresult = SWIG_NewPointerObj((new uint64_t((const uint64_t&)(result))), SWIGTYPE_p_uint64_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -38537,8 +38668,10 @@ SWIGV8_AddMemberVariable(_exports_ly_set_set_class, "g", _wrap_ly_set_set_g_get,
 SWIGV8_AddMemberVariable(_exports_ly_set_class, "size", _wrap_ly_set_size_get, _wrap_ly_set_size_set);
 SWIGV8_AddMemberVariable(_exports_ly_set_class, "number", _wrap_ly_set_number_get, _wrap_ly_set_number_set);
 SWIGV8_AddMemberVariable(_exports_ly_set_class, "set", _wrap_ly_set_set_get, _wrap_ly_set_set_set);
+SWIGV8_AddStaticVariable(exports_obj, "LY_SET_OPT_USEASLIST", _wrap_LY_SET_OPT_USEASLIST, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYP_WITHSIBLINGS", _wrap_LYP_WITHSIBLINGS, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYP_FORMAT", _wrap_LYP_FORMAT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LY_LLSILENT", _wrap_LY_LLSILENT, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_LLERR", _wrap_LY_LLERR, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_LLWRN", _wrap_LY_LLWRN, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_LLVRB", _wrap_LY_LLVRB, JS_veto_set_variable);
@@ -38580,6 +38713,8 @@ SWIGV8_AddStaticVariable(exports_obj, "LYVE_INREGEX", _wrap_LYVE_INREGEX, JS_vet
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INRESOLV", _wrap_LYVE_INRESOLV, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INSTATUS", _wrap_LYVE_INSTATUS, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_CIRC_LEAFREFS", _wrap_LYVE_CIRC_LEAFREFS, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_CIRC_IMPORTS", _wrap_LYVE_CIRC_IMPORTS, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_CIRC_INCLUDES", _wrap_LYVE_CIRC_INCLUDES, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_OBSDATA", _wrap_LYVE_OBSDATA, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_NORESOLV", _wrap_LYVE_NORESOLV, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INELEM", _wrap_LYVE_INELEM, JS_veto_set_variable);
@@ -38653,7 +38788,7 @@ SWIGV8_AddStaticVariable(exports_obj, "LYS_OUT_YIN", _wrap_LYS_OUT_YIN, JS_veto_
 SWIGV8_AddStaticVariable(exports_obj, "LYS_OUT_TREE", _wrap_LYS_OUT_TREE, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_OUT_INFO", _wrap_LYS_OUT_INFO, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_YANG", _wrap_LYS_YANG, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LY_YIN", _wrap_LY_YIN, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_YIN", _wrap_LYS_YIN, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_UNKNOWN", _wrap_LYS_UNKNOWN, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_CONTAINER", _wrap_LYS_CONTAINER, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_CHOICE", _wrap_LYS_CHOICE, JS_veto_set_variable);
@@ -38763,6 +38898,7 @@ SWIGV8_AddMemberVariable(_exports_lys_type_info_bits_class, "count", _wrap_lys_t
 SWIGV8_AddStaticVariable(exports_obj, "bits", _wrap_bits_get, _wrap_bits_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_dec64_class, "range", _wrap_lys_type_info_dec64_range_get, _wrap_lys_type_info_dec64_range_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_dec64_class, "dig", _wrap_lys_type_info_dec64_dig_get, _wrap_lys_type_info_dec64_dig_set);
+SWIGV8_AddMemberVariable(_exports_lys_type_info_dec64_class, "div", _wrap_lys_type_info_dec64_div_get, _wrap_lys_type_info_dec64_div_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "name", _wrap_lys_type_enum_name_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "dsc", _wrap_lys_type_enum_dsc_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "ref", _wrap_lys_type_enum_ref_get, JS_veto_set_variable);

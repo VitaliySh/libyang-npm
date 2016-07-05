@@ -21,7 +21,6 @@
 #include <string.h>
 #include <stddef.h>
 #include <sys/types.h>
-#include <pcre.h>
 
 #include "libyang.h"
 #include "common.h"
@@ -65,7 +64,7 @@ static struct lys_node *read_yin_leaflist(struct lys_module *module, struct lys_
 static struct lys_node *read_yin_list(struct lys_module *module,struct lys_node *parent, struct lyxml_elem *yin,
                                       int resolve, struct unres_schema *unres);
 static struct lys_node *read_yin_uses(struct lys_module *module, struct lys_node *parent, struct lyxml_elem *yin,
-                                      int resolve, struct unres_schema *unres);
+                                      struct unres_schema *unres);
 static struct lys_node *read_yin_grouping(struct lys_module *module, struct lys_node *parent, struct lyxml_elem *yin,
                                           int resolve, struct unres_schema *unres);
 static struct lys_when *read_yin_when(struct lys_module *module, struct lyxml_elem *yin);
@@ -228,13 +227,12 @@ int
 fill_yin_type(struct lys_module *module, struct lys_node *parent, struct lyxml_elem *yin, struct lys_type *type,
               struct unres_schema *unres)
 {
-    const char *value, *name, *err_ptr;
+    const char *value, *name;
     struct lyxml_elem *next, *node;
     struct lys_restr **restr;
     struct lys_type_bit bit;
     struct lys_type *type_der;
-    pcre *precomp;
-    int i, j, rc, err_offset;
+    int i, j, rc, val_set;
     int ret = -1;
     int64_t v, v_;
     int64_t p, p_;
@@ -454,6 +452,10 @@ fill_yin_type(struct lys_module *module, struct lys_node *parent, struct lyxml_e
                     goto error;
                 }
                 type->info.dec64.dig = (uint8_t)v;
+                type->info.dec64.div = 10;
+                for (i = 1; i < v; i++) {
+                    type->info.dec64.div *= 10;
+                }
             } else {
                 LOGVAL(LYE_INSTMT, LY_VLOG_NONE, NULL, node->name);
                 goto error;
@@ -507,7 +509,8 @@ fill_yin_type(struct lys_module *module, struct lys_node *parent, struct lyxml_e
             LOGMEM;
             goto error;
         }
-        v = 0;
+
+        val_set = v = 0;
         i = -1;
         LY_TREE_FOR(yin->child, next) {
             i++;
@@ -541,7 +544,6 @@ fill_yin_type(struct lys_module *module, struct lys_node *parent, struct lyxml_e
                 }
             }
 
-            v_ = -1;
             LY_TREE_FOR(next->child, node) {
                 if (!node->ns || strcmp(node->ns->value, LY_NSYIN)) {
                     /* garbage */
@@ -561,7 +563,7 @@ fill_yin_type(struct lys_module *module, struct lys_node *parent, struct lyxml_e
                     type->info.enums.enm[i].value = v_;
 
                     /* keep the highest enum value for automatic increment */
-                    if (type->info.enums.enm[i].value > v) {
+                    if (!val_set || type->info.enums.enm[i].value > v) {
                         v = type->info.enums.enm[i].value;
                         v++;
                     } else {
@@ -575,12 +577,13 @@ fill_yin_type(struct lys_module *module, struct lys_node *parent, struct lyxml_e
                             }
                         }
                     }
+                    val_set = 1;
                 } else {
                     LOGVAL(LYE_INSTMT, LY_VLOG_NONE, NULL, node->name);
                     goto error;
                 }
             }
-            if (v_ == -1) {
+            if (!val_set) {
                 /* assign value automatically */
                 if (v > INT32_MAX) {
                     LOGVAL(LYE_INARG, LY_VLOG_NONE, NULL, "2147483648", "enum/value");
@@ -820,15 +823,11 @@ fill_yin_type(struct lys_module *module, struct lys_node *parent, struct lyxml_e
             LY_TREE_FOR(yin->child, node) {
                 GETVAL(value, node, "value");
 
-                /* check that the regex is valid */
-                precomp = pcre_compile(value, PCRE_NO_AUTO_CAPTURE, &err_ptr, &err_offset, NULL);
-                if (!precomp) {
-                    LOGVAL(LYE_INREGEX, LY_VLOG_NONE, NULL, value, err_ptr);
+                if (lyp_check_pattern(value, NULL)) {
                     free(type->info.str.patterns);
                     type->info.str.patterns = NULL;
                     goto error;
                 }
-                free(precomp);
 
                 type->info.str.patterns[type->info.str.pat_count].expr = lydict_insert(module->ctx, value, 0);
 
@@ -2005,7 +2004,7 @@ fill_yin_augment(struct lys_module *module, struct lys_node *parent, struct lyxm
         } else if (!strcmp(child->name, "list")) {
             node = read_yin_list(module, (struct lys_node *)aug, child, 0, unres);
         } else if (!strcmp(child->name, "uses")) {
-            node = read_yin_uses(module, (struct lys_node *)aug, child, 0, unres);
+            node = read_yin_uses(module, (struct lys_node *)aug, child, unres);
         } else if (!strcmp(child->name, "choice")) {
             node = read_yin_case(module, (struct lys_node *)aug, child, 0, unres);
         } else if (!strcmp(child->name, "case")) {
@@ -2310,7 +2309,12 @@ fill_yin_import(struct lys_module *module, struct lyxml_elem *yin, struct lys_im
             imp->prefix = lydict_insert(module->ctx, value, strlen(value));
         } else if (!strcmp(child->name, "revision-date")) {
             if (imp->rev[0]) {
-                LOGVAL(LYE_TOOMANY, LY_VLOG_NONE, NULL, "revision-date", yin->name);
+                LOGVAL(LYE_TOOMANY, LY_VLOG_NONE, NULL, child->name, yin->name);
+                goto error;
+            } else if (!imp->prefix) {
+                LOGVAL(LYE_INSTMT, LY_VLOG_NONE, NULL, child->name);
+                LOGVAL(LYE_SPEC, LY_VLOG_NONE, NULL,
+                       "The \"prefix\" statement is expected before the \"revision-date\".");
                 goto error;
             }
             GETVAL(value, child, "date");
@@ -2339,7 +2343,12 @@ error:
     return EXIT_FAILURE;
 }
 
-/* logs directly */
+/* logs directly
+ * returns:
+ *  0 - inc successfully filled
+ * -1 - error, inc is cleaned
+ *  1 - duplication, ignore the inc structure, inc is cleaned
+ */
 static int
 fill_yin_include(struct lys_module *module, struct lys_submodule *submodule, struct lyxml_elem *yin,
                  struct lys_include *inc, struct unres_schema *unres)
@@ -2374,7 +2383,7 @@ fill_yin_include(struct lys_module *module, struct lys_submodule *submodule, str
 
 error:
 
-    return EXIT_FAILURE;
+    return -1;
 }
 
 /* logs directly
@@ -2668,7 +2677,7 @@ read_yin_case(struct lys_module *module, struct lys_node *parent, struct lyxml_e
         } else if (!strcmp(sub->name, "choice")) {
             node = read_yin_choice(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "uses")) {
-            node = read_yin_uses(module, retval, sub, resolve, unres);
+            node = read_yin_uses(module, retval, sub, unres);
         } else if (!strcmp(sub->name, "anyxml")) {
             node = read_yin_anyxml(module, retval, sub, resolve, unres);
         }
@@ -3622,7 +3631,7 @@ read_yin_list(struct lys_module *module, struct lys_node *parent, struct lyxml_e
         } else if (!strcmp(sub->name, "choice")) {
             node = read_yin_choice(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "uses")) {
-            node = read_yin_uses(module, retval, sub, resolve, unres);
+            node = read_yin_uses(module, retval, sub, unres);
         } else if (!strcmp(sub->name, "grouping")) {
             node = read_yin_grouping(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "anyxml")) {
@@ -3827,7 +3836,7 @@ read_yin_container(struct lys_module *module, struct lys_node *parent, struct ly
         } else if (!strcmp(sub->name, "choice")) {
             node = read_yin_choice(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "uses")) {
-            node = read_yin_uses(module, retval, sub, resolve, unres);
+            node = read_yin_uses(module, retval, sub, unres);
         } else if (!strcmp(sub->name, "grouping")) {
             node = read_yin_grouping(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "anyxml")) {
@@ -3946,7 +3955,7 @@ read_yin_grouping(struct lys_module *module, struct lys_node *parent, struct lyx
         } else if (!strcmp(sub->name, "choice")) {
             node = read_yin_choice(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "uses")) {
-            node = read_yin_uses(module, retval, sub, resolve, unres);
+            node = read_yin_uses(module, retval, sub, unres);
         } else if (!strcmp(sub->name, "grouping")) {
             node = read_yin_grouping(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "anyxml")) {
@@ -4076,7 +4085,7 @@ read_yin_input_output(struct lys_module *module, struct lys_node *parent, struct
         } else if (!strcmp(sub->name, "choice")) {
             node = read_yin_choice(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "uses")) {
-            node = read_yin_uses(module, retval, sub, resolve, unres);
+            node = read_yin_uses(module, retval, sub, unres);
         } else if (!strcmp(sub->name, "grouping")) {
             node = read_yin_grouping(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "anyxml")) {
@@ -4184,7 +4193,7 @@ read_yin_notif(struct lys_module *module, struct lys_node *parent, struct lyxml_
             if (r) {
                 goto error;
             }
-        } else if (!strcmp(sub->name, "if-features")) {
+        } else if (!strcmp(sub->name, "if-feature")) {
             r = fill_yin_iffeature(retval, sub, &notif->features[notif->features_size], unres);
             notif->features_size++;
             if (r) {
@@ -4210,7 +4219,7 @@ read_yin_notif(struct lys_module *module, struct lys_node *parent, struct lyxml_
         } else if (!strcmp(sub->name, "choice")) {
             node = read_yin_choice(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "uses")) {
-            node = read_yin_uses(module, retval, sub, resolve, unres);
+            node = read_yin_uses(module, retval, sub, unres);
         } else if (!strcmp(sub->name, "grouping")) {
             node = read_yin_grouping(module, retval, sub, resolve, unres);
         } else if (!strcmp(sub->name, "anyxml")) {
@@ -4379,8 +4388,7 @@ error:
  * we just get information but we do not apply augment or refine to it.
  */
 static struct lys_node *
-read_yin_uses(struct lys_module *module, struct lys_node *parent, struct lyxml_elem *yin, int resolve,
-              struct unres_schema *unres)
+read_yin_uses(struct lys_module *module, struct lys_node *parent, struct lyxml_elem *yin, struct unres_schema *unres)
 {
     struct lyxml_elem *sub, *next;
     struct lys_node *retval;
@@ -4402,7 +4410,7 @@ read_yin_uses(struct lys_module *module, struct lys_node *parent, struct lyxml_e
     uses->name = lydict_insert(module->ctx, value, 0);
 
     if (read_yin_common(module, parent, retval, yin, OPT_MODULE
-            | (parent && (parent->nodetype == LYS_GROUPING) ? 0 : OPT_NACMEXT) | (resolve ? OPT_INHERIT : 0))) {
+            | (parent && (parent->nodetype == LYS_GROUPING) ? 0 : OPT_NACMEXT))) {
         goto error;
     }
 
@@ -4493,16 +4501,6 @@ read_yin_uses(struct lys_module *module, struct lys_node *parent, struct lyxml_e
         goto error;
     }
 
-    if (resolve) {
-        /* inherit config flag */
-        if (parent) {
-            retval->flags |= parent->flags & LYS_CONFIG_MASK;
-        } else {
-            /* default config is true */
-            retval->flags |= LYS_CONFIG_W;
-        }
-    }
-
     return retval;
 
 error:
@@ -4527,7 +4525,7 @@ read_sub_module(struct lys_module *module, struct lys_submodule *submodule, stru
     struct lys_include inc;
     const char *value;
     int i, r;
-    int inc_size_aux = 0;
+    size_t size;
     int version_flag = 0;
     /* counters */
     int c_imp = 0, c_rev = 0, c_tpdf = 0, c_ident = 0, c_inc = 0, c_aug = 0, c_ftrs = 0, c_dev = 0;
@@ -4747,11 +4745,14 @@ read_sub_module(struct lys_module *module, struct lys_submodule *submodule, stru
 
     /* allocate arrays for elements with cardinality of 0..n */
     if (c_imp) {
-        trg->imp = calloc(c_imp, sizeof *trg->imp);
+        size = (c_imp * sizeof *trg->imp) + sizeof(void*);
+        trg->imp = calloc(1, size);
         if (!trg->imp) {
             LOGMEM;
             goto error;
         }
+        /* set stop block for possible realloc */
+        trg->imp[c_imp].module = (void*)0x1;
     }
     if (c_rev) {
         trg->rev = calloc(c_rev, sizeof *trg->rev);
@@ -4775,16 +4776,14 @@ read_sub_module(struct lys_module *module, struct lys_submodule *submodule, stru
         }
     }
     if (c_inc) {
-        trg->inc = calloc(c_inc, sizeof *trg->inc);
+        size = (c_inc * sizeof *trg->inc) + sizeof(void*);
+        trg->inc = calloc(1, size);
         if (!trg->inc) {
             LOGMEM;
             goto error;
         }
-        trg->inc_size = c_inc;
-        /* trg->inc_size can be updated by the included submodules,
-         * so we will use inc_size_aux here, trg->inc_size stores the
-         * target size of the array
-         */
+        /* set stop block for possible realloc */
+        trg->inc[c_inc].submodule = (void*)0x1;
     }
     if (c_aug) {
         trg->augment = calloc(c_aug, sizeof *trg->augment);
@@ -4817,35 +4816,18 @@ read_sub_module(struct lys_module *module, struct lys_submodule *submodule, stru
                 goto error;
             }
 
-            /* check duplicities in imported modules */
-            for (i = 0; i < trg->imp_size - 1; i++) {
-                if (!strcmp(trg->imp[i].module->name, trg->imp[trg->imp_size - 1].module->name)) {
-                    LOGVAL(LYE_INARG, LY_VLOG_NONE, NULL, trg->imp[i].module->name, "import");
-                    LOGVAL(LYE_SPEC, LY_VLOG_NONE, NULL, "Importing module \"%s\" repeatedly.", trg->imp[i].module->name);
-                    goto error;
-                }
-            }
-
         } else if (!strcmp(child->name, "include")) {
             memset(&inc, 0, sizeof inc);
             /* 1) pass module, not trg, since we want to pass the main module
              * 2) we cannot pass directly the structure in the array since
              * submodule parser can realloc our array of includes */
             r = fill_yin_include(module, submodule, child, &inc, unres);
-            memcpy(&trg->inc[inc_size_aux], &inc, sizeof inc);
-            inc_size_aux++;
-            if (r) {
+            if (!r) {
+                /* success, copy the filled data into the final array */
+                memcpy(&trg->inc[trg->inc_size], &inc, sizeof inc);
+                trg->inc_size++;
+            } else if (r == -1) {
                 goto error;
-            }
-
-            /* check duplications in include submodules */
-            for (i = 0; i < inc_size_aux - 1; i++) {
-                if (trg->inc[i].submodule && !strcmp(trg->inc[i].submodule->name, trg->inc[inc_size_aux - 1].submodule->name)) {
-                    LOGVAL(LYE_INARG, LY_VLOG_NONE, NULL, trg->inc[i].submodule->name, "include");
-                    LOGVAL(LYE_SPEC, LY_VLOG_NONE, NULL, "Including submodule \"%s\" repeatedly.", trg->inc[i].submodule->name);
-                    trg->inc[inc_size_aux - 1].submodule = NULL;
-                    goto error;
-                }
             }
 
         } else if (!strcmp(child->name, "revision")) {
@@ -4947,8 +4929,23 @@ read_sub_module(struct lys_module *module, struct lys_submodule *submodule, stru
         }
     }
 
-    if (submodule && lyp_propagate_submodule(module, submodule)) {
-        goto error;
+    if (!submodule) {
+        /* update the size of the arrays, they can be smaller due to possible duplicities
+         * found in submodules */
+        if (module->inc_size) {
+            module->inc = ly_realloc(module->inc, module->inc_size * sizeof *module->inc);
+            if (!module->inc) {
+                LOGMEM;
+                goto error;
+            }
+        }
+        if (module->imp_size) {
+            module->imp = ly_realloc(module->imp, module->imp_size * sizeof *module->imp);
+            if (!module->imp) {
+                LOGMEM;
+                goto error;
+            }
+        }
     }
 
     /* process data nodes. Start with groupings to allow uses
@@ -4978,7 +4975,7 @@ read_sub_module(struct lys_module *module, struct lys_submodule *submodule, stru
         } else if (!strcmp(child->name, "choice")) {
             node = read_yin_choice(trg, NULL, child, 1, unres);
         } else if (!strcmp(child->name, "uses")) {
-            node = read_yin_uses(trg, NULL, child, 1, unres);
+            node = read_yin_uses(trg, NULL, child, unres);
         } else if (!strcmp(child->name, "anyxml")) {
             node = read_yin_anyxml(trg, NULL, child, 1, unres);
         } else if (!strcmp(child->name, "rpc")) {
@@ -5165,6 +5162,9 @@ yin_read_module(struct ly_ctx *ctx, const char *data, const char *revision, int 
             goto error;
         }
         for (i = 0; i < module->inc_size; ++i) {
+            if (!module->inc[i].submodule) {
+                continue;
+            }
             if (lys_sub_module_set_dev_aug_target_implement((struct lys_module *)module->inc[i].submodule)) {
                 goto error;
             }
