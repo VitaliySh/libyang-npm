@@ -164,7 +164,7 @@ template <typename T> T SwigValueInit() {
 
 
 #ifndef SWIG_V8_VERSION
-#define SWIG_V8_VERSION 0x050710
+#define SWIG_V8_VERSION 0x054500
 #endif
 
 
@@ -1481,55 +1481,55 @@ SWIGRUNTIME void JS_veto_set_variable(v8::Local<v8::String> property, v8::Local<
 /* -------- TYPES TABLE (BEGIN) -------- */
 
 #define SWIGTYPE_p_FILE swig_types[0]
-#define SWIGTYPE_p_LYD_DIFFTYPE swig_types[1]
-#define SWIGTYPE_p_LYD_FORMAT swig_types[2]
-#define SWIGTYPE_p_LYS_INFORMAT swig_types[3]
-#define SWIGTYPE_p_LYS_OUTFORMAT swig_types[4]
-#define SWIGTYPE_p_LY_DATA_TYPE swig_types[5]
-#define SWIGTYPE_p_LY_ERR swig_types[6]
-#define SWIGTYPE_p_LY_LOG_LEVEL swig_types[7]
-#define SWIGTYPE_p_LY_VECODE swig_types[8]
-#define SWIGTYPE_p_char swig_types[9]
-#define SWIGTYPE_p_f_enum_LY_LOG_LEVEL_p_q_const__char_p_q_const__char__void swig_types[10]
-#define SWIGTYPE_p_f_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char swig_types[11]
-#define SWIGTYPE_p_f_p_q_const__lys_node_p_void__void swig_types[12]
-#define SWIGTYPE_p_f_p_void_p_q_const__void_size_t__ssize_t swig_types[13]
-#define SWIGTYPE_p_int16_t swig_types[14]
-#define SWIGTYPE_p_int32_t swig_types[15]
-#define SWIGTYPE_p_int64_t swig_types[16]
-#define SWIGTYPE_p_int8_t swig_types[17]
-#define SWIGTYPE_p_ly_ctx swig_types[18]
-#define SWIGTYPE_p_ly_set swig_types[19]
-#define SWIGTYPE_p_ly_set_set swig_types[20]
-#define SWIGTYPE_p_lyd_attr swig_types[21]
-#define SWIGTYPE_p_lyd_difflist swig_types[22]
-#define SWIGTYPE_p_lyd_node swig_types[23]
-#define SWIGTYPE_p_lyd_node_anyxml swig_types[24]
-#define SWIGTYPE_p_lyd_node_anyxml_value swig_types[25]
+#define SWIGTYPE_p_LYD_ANYDATA_VALUETYPE swig_types[1]
+#define SWIGTYPE_p_LYD_DIFFTYPE swig_types[2]
+#define SWIGTYPE_p_LYD_FORMAT swig_types[3]
+#define SWIGTYPE_p_LYS_INFORMAT swig_types[4]
+#define SWIGTYPE_p_LYS_OUTFORMAT swig_types[5]
+#define SWIGTYPE_p_LY_DATA_TYPE swig_types[6]
+#define SWIGTYPE_p_LY_ERR swig_types[7]
+#define SWIGTYPE_p_LY_LOG_LEVEL swig_types[8]
+#define SWIGTYPE_p_LY_VECODE swig_types[9]
+#define SWIGTYPE_p_char swig_types[10]
+#define SWIGTYPE_p_f_enum_LY_LOG_LEVEL_p_q_const__char_p_q_const__char__void swig_types[11]
+#define SWIGTYPE_p_f_p_q_const__char_p_q_const__char_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char swig_types[12]
+#define SWIGTYPE_p_f_p_q_const__lys_node_p_void__void swig_types[13]
+#define SWIGTYPE_p_f_p_void_p_q_const__void_size_t__ssize_t swig_types[14]
+#define SWIGTYPE_p_int16_t swig_types[15]
+#define SWIGTYPE_p_int32_t swig_types[16]
+#define SWIGTYPE_p_int64_t swig_types[17]
+#define SWIGTYPE_p_int8_t swig_types[18]
+#define SWIGTYPE_p_ly_ctx swig_types[19]
+#define SWIGTYPE_p_ly_set swig_types[20]
+#define SWIGTYPE_p_ly_set_set swig_types[21]
+#define SWIGTYPE_p_lyd_attr swig_types[22]
+#define SWIGTYPE_p_lyd_difflist swig_types[23]
+#define SWIGTYPE_p_lyd_node swig_types[24]
+#define SWIGTYPE_p_lyd_node_anydata swig_types[25]
 #define SWIGTYPE_p_lyd_node_leaf_list swig_types[26]
-#define SWIGTYPE_p_lyd_node_list swig_types[27]
-#define SWIGTYPE_p_lyd_value_u swig_types[28]
-#define SWIGTYPE_p_lys_deviate swig_types[29]
-#define SWIGTYPE_p_lys_deviate_type swig_types[30]
-#define SWIGTYPE_p_lys_deviation swig_types[31]
-#define SWIGTYPE_p_lys_feature swig_types[32]
-#define SWIGTYPE_p_lys_ident swig_types[33]
+#define SWIGTYPE_p_lyd_value_u swig_types[27]
+#define SWIGTYPE_p_lys_deviate swig_types[28]
+#define SWIGTYPE_p_lys_deviate_type swig_types[29]
+#define SWIGTYPE_p_lys_deviation swig_types[30]
+#define SWIGTYPE_p_lys_feature swig_types[31]
+#define SWIGTYPE_p_lys_ident swig_types[32]
+#define SWIGTYPE_p_lys_iffeature swig_types[33]
 #define SWIGTYPE_p_lys_import swig_types[34]
 #define SWIGTYPE_p_lys_include swig_types[35]
 #define SWIGTYPE_p_lys_module swig_types[36]
 #define SWIGTYPE_p_lys_node swig_types[37]
-#define SWIGTYPE_p_lys_node_anyxml swig_types[38]
+#define SWIGTYPE_p_lys_node_anydata swig_types[38]
 #define SWIGTYPE_p_lys_node_augment swig_types[39]
 #define SWIGTYPE_p_lys_node_case swig_types[40]
 #define SWIGTYPE_p_lys_node_choice swig_types[41]
 #define SWIGTYPE_p_lys_node_container swig_types[42]
 #define SWIGTYPE_p_lys_node_grp swig_types[43]
-#define SWIGTYPE_p_lys_node_leaf swig_types[44]
-#define SWIGTYPE_p_lys_node_leaflist swig_types[45]
-#define SWIGTYPE_p_lys_node_list swig_types[46]
-#define SWIGTYPE_p_lys_node_notif swig_types[47]
-#define SWIGTYPE_p_lys_node_rpc swig_types[48]
-#define SWIGTYPE_p_lys_node_rpc_inout swig_types[49]
+#define SWIGTYPE_p_lys_node_inout swig_types[44]
+#define SWIGTYPE_p_lys_node_leaf swig_types[45]
+#define SWIGTYPE_p_lys_node_leaflist swig_types[46]
+#define SWIGTYPE_p_lys_node_list swig_types[47]
+#define SWIGTYPE_p_lys_node_notif swig_types[48]
+#define SWIGTYPE_p_lys_node_rpc_action swig_types[49]
 #define SWIGTYPE_p_lys_node_uses swig_types[50]
 #define SWIGTYPE_p_lys_nodetype swig_types[51]
 #define SWIGTYPE_p_lys_refine swig_types[52]
@@ -1596,9 +1596,9 @@ static swig_module_info swig_module = {swig_types, 94, 0, 0, 0, 0};
 
 
 #include "libyang.h"
-#include "xml.h"
 #include "tree_schema.h"
 #include "tree_data.h"
+#include "xml.h"
 #include "dict.h"
 
 
@@ -1606,58 +1606,13 @@ void ly_ctx_destroy(struct ly_ctx *ctx) {
         ly_ctx_destroy(ctx, NULL);
 }
 
-struct lys_node *get_lys_node(struct lys_node **node) {
-        return *node;
+
+
+SWIGINTERNINLINE
+v8::Handle<v8::Value> SWIG_From_int  (int value)
+{
+  return SWIGV8_INT32_NEW(value);
 }
-
-struct lys_node_leaf *cast_lys_node_leaf(struct lys_node *node) {
-        return (struct lys_node_leaf *)node;
-}
-
-struct lys_node_list *cast_lys_node_list(struct lys_node *node) {
-        return (struct lys_node_list *)node;
-}
-
-struct lys_node_leaf *get_lys_node_leaf(struct lys_node_leaf **node, int num) {
-        return (struct lys_node_leaf *)node[num];
-}
-
-
-
-
-struct lyd_node *get_lyd_node(struct lyd_node **node) {
-        return (struct lyd_node *)node[0];
-}
-
-struct lyd_node *get_lyd_node_double(struct lyd_node **node) {
-        return (struct lyd_node *)*node;
-}
-
-struct lyd_node_leaf_list *cast_lyd_node_leaf_list(struct lyd_node *node) {
-        return (struct lyd_node_leaf_list *)node;
-}
-
-struct lyd_node_list *cast_lyd_node_list(struct lyd_node *node) {
-        return (struct lyd_node_list *)node;
-}
-
-
-int get_uint8(uint8_t num) {
-        return (int) num;
-}
-
-int get_uint16(uint16_t num) {
-        return (int) num;
-}
-
-int get_int8(int8_t num) {
-        return (int) num;
-}
-
-int get_int16(int16_t num) {
-        return (int) num;
-}
-
 
 
 SWIGINTERN swig_type_info*
@@ -1734,18 +1689,6 @@ SWIGINTERNINLINE v8::Handle<v8::Value>
 SWIG_FromCharPtr(const char *cptr)
 { 
   return SWIG_FromCharPtrAndSize(cptr, (cptr ? strlen(cptr) : 0));
-}
-
-
-SWIGINTERN
-int SWIG_AsVal_int (v8::Handle<v8::Value> valRef, int* val)
-{
-  if (!valRef->IsNumber()) {
-    return SWIG_TypeError;
-  }
-  if(val) *val = valRef->IntegerValue();
-
-  return SWIG_OK;
 }
 
 
@@ -1864,10 +1807,15 @@ SWIG_From_unsigned_SS_int  (unsigned int value)
 }
 
 
-SWIGINTERNINLINE
-v8::Handle<v8::Value> SWIG_From_int  (int value)
+SWIGINTERN
+int SWIG_AsVal_int (v8::Handle<v8::Value> valRef, int* val)
 {
-  return SWIGV8_INT32_NEW(value);
+  if (!valRef->IsNumber()) {
+    return SWIG_TypeError;
+  }
+  if(val) *val = valRef->IntegerValue();
+
+  return SWIG_OK;
 }
 
 
@@ -1893,6 +1841,23 @@ SWIG_AsCharArray(v8::Handle<v8::Value> obj, char *val, size_t size)
     if (alloc == SWIG_NEWOBJ) delete[] cptr;
   }
   return SWIG_TypeError;
+}
+
+
+size_t
+SWIG_strnlen(const char* s, size_t maxlen)
+{
+  const char *p;
+  for (p = s; maxlen-- && *p; p++)
+    ;
+  return p - s;
+}
+
+
+SWIGINTERN
+v8::Handle<v8::Value> SWIG_From_double   (double val)
+{
+  return SWIGV8_NUMBER_NEW(val);
 }
 
 
@@ -1931,16 +1896,6 @@ SWIGINTERNINLINE v8::Handle<v8::Value>
 SWIG_From_char  (char c) 
 { 
   return SWIG_FromCharPtrAndSize(&c,1);
-}
-
-
-size_t
-SWIG_strnlen(const char* s, size_t maxlen)
-{
-  const char *p;
-  for (p = s; maxlen-- && *p; p++)
-    ;
-  return p - s;
 }
 
 
@@ -1996,9 +1951,6 @@ SWIG_AsVal_size_t (v8::Handle<v8::Value> obj, size_t *val)
 
 SWIGV8_ClientData _exports_ly_set_set_clientData;
 SWIGV8_ClientData _exports_ly_set_clientData;
-SWIGV8_ClientData _exports_lyxml_ns_clientData;
-SWIGV8_ClientData _exports_lyxml_attr_clientData;
-SWIGV8_ClientData _exports_lyxml_elem_clientData;
 SWIGV8_ClientData _exports_lys_module_clientData;
 SWIGV8_ClientData _exports_lys_submodule_clientData;
 SWIGV8_ClientData _exports_lys_type_info_binary_clientData;
@@ -2015,19 +1967,20 @@ SWIGV8_ClientData _exports_lys_type_info_str_clientData;
 SWIGV8_ClientData _exports_lys_type_info_union_clientData;
 SWIGV8_ClientData _exports_lys_type_info_clientData;
 SWIGV8_ClientData _exports_lys_type_clientData;
+SWIGV8_ClientData _exports_lys_iffeature_clientData;
 SWIGV8_ClientData _exports_lys_node_clientData;
 SWIGV8_ClientData _exports_lys_node_container_clientData;
 SWIGV8_ClientData _exports_lys_node_choice_clientData;
 SWIGV8_ClientData _exports_lys_node_leaf_clientData;
 SWIGV8_ClientData _exports_lys_node_leaflist_clientData;
 SWIGV8_ClientData _exports_lys_node_list_clientData;
-SWIGV8_ClientData _exports_lys_node_anyxml_clientData;
+SWIGV8_ClientData _exports_lys_node_anydata_clientData;
 SWIGV8_ClientData _exports_lys_node_uses_clientData;
 SWIGV8_ClientData _exports_lys_node_grp_clientData;
 SWIGV8_ClientData _exports_lys_node_case_clientData;
-SWIGV8_ClientData _exports_lys_node_rpc_inout_clientData;
+SWIGV8_ClientData _exports_lys_node_inout_clientData;
 SWIGV8_ClientData _exports_lys_node_notif_clientData;
-SWIGV8_ClientData _exports_lys_node_rpc_clientData;
+SWIGV8_ClientData _exports_lys_node_rpc_action_clientData;
 SWIGV8_ClientData _exports_lys_node_augment_clientData;
 SWIGV8_ClientData _exports_lys_refine_mod_list_clientData;
 SWIGV8_ClientData _exports_lys_refine_mod_clientData;
@@ -2047,9 +2000,56 @@ SWIGV8_ClientData _exports_lyd_attr_clientData;
 SWIGV8_ClientData _exports_lyd_val_clientData;
 SWIGV8_ClientData _exports_lyd_node_clientData;
 SWIGV8_ClientData _exports_lyd_node_leaf_list_clientData;
-SWIGV8_ClientData _exports_lyd_node_anyxml_value_clientData;
-SWIGV8_ClientData _exports_lyd_node_anyxml_clientData;
+SWIGV8_ClientData _exports_lyd_node_anydata_clientData;
 SWIGV8_ClientData _exports_lyd_difflist_clientData;
+SWIGV8_ClientData _exports_lyxml_ns_clientData;
+SWIGV8_ClientData _exports_lyxml_attr_clientData;
+SWIGV8_ClientData _exports_lyxml_elem_clientData;
+
+
+static SwigV8ReturnValue _wrap_LY_VERSION_MAJOR(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LY_VERSION_MINOR(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(11));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LY_VERSION_MICRO(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(45));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
 
 
 static SwigV8ReturnValue _wrap_ly_ctx_new(const SwigV8Arguments &args) {
@@ -2363,7 +2363,7 @@ static SwigV8ReturnValue _wrap_ly_ctx_set_module_clb(const SwigV8Arguments &args
   }
   arg1 = (ly_ctx *)(argp1);
   {
-    int res = SWIG_ConvertFunctionPtr(args[1], (void**)(&arg2), SWIGTYPE_p_f_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char);
+    int res = SWIG_ConvertFunctionPtr(args[1], (void**)(&arg2), SWIGTYPE_p_f_p_q_const__char_p_q_const__char_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char);
     if (!SWIG_IsOK(res)) {
       SWIG_exception_fail(SWIG_ArgError(res), "in method '" "ly_ctx_set_module_clb" "', argument " "2"" of type '" "ly_module_clb""'"); 
     }
@@ -2411,7 +2411,7 @@ static SwigV8ReturnValue _wrap_ly_ctx_get_module_clb(const SwigV8Arguments &args
   }
   arg2 = (void **)(argp2);
   result = (ly_module_clb)ly_ctx_get_module_clb((ly_ctx const *)arg1,arg2);
-  jsresult = SWIG_NewFunctionPtrObj((void *)(result), SWIGTYPE_p_f_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char);
+  jsresult = SWIG_NewFunctionPtrObj((void *)(result), SWIGTYPE_p_f_p_q_const__char_p_q_const__char_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char);
   
   
   
@@ -2624,52 +2624,87 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_ly_ctx_get_node2(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_ly_ctx_remove_module(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   ly_ctx *arg1 = (ly_ctx *) 0 ;
-  lys_node *arg2 = (lys_node *) 0 ;
+  char *arg2 = (char *) 0 ;
   char *arg3 = (char *) 0 ;
-  int arg4 ;
+  void (*arg4)(lys_node const *,void *) = (void (*)(lys_node const *,void *)) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
   int res3 ;
   char *buf3 = 0 ;
   int alloc3 = 0 ;
-  int val4 ;
-  int ecode4 = 0 ;
-  lys_node *result = 0 ;
+  int result;
   
-  if(args.Length() != 4) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_ly_ctx_get_node2.");
+  if(args.Length() != 4) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_ly_ctx_remove_module.");
   
   res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ly_ctx_get_node2" "', argument " "1"" of type '" "ly_ctx *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ly_ctx_remove_module" "', argument " "1"" of type '" "ly_ctx *""'"); 
   }
   arg1 = (ly_ctx *)(argp1);
-  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lys_node, 0 |  0 );
+  res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ly_ctx_get_node2" "', argument " "2"" of type '" "lys_node const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ly_ctx_remove_module" "', argument " "2"" of type '" "char const *""'");
   }
-  arg2 = (lys_node *)(argp2);
+  arg2 = (char *)(buf2);
   res3 = SWIG_AsCharPtrAndSize(args[2], &buf3, NULL, &alloc3);
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "ly_ctx_get_node2" "', argument " "3"" of type '" "char const *""'");
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "ly_ctx_remove_module" "', argument " "3"" of type '" "char const *""'");
   }
   arg3 = (char *)(buf3);
-  ecode4 = SWIG_AsVal_int(args[3], &val4);
-  if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ly_ctx_get_node2" "', argument " "4"" of type '" "int""'");
-  } 
-  arg4 = (int)(val4);
-  result = (lys_node *)ly_ctx_get_node2(arg1,(lys_node const *)arg2,(char const *)arg3,arg4);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
+  {
+    int res = SWIG_ConvertFunctionPtr(args[3], (void**)(&arg4), SWIGTYPE_p_f_p_q_const__lys_node_p_void__void);
+    if (!SWIG_IsOK(res)) {
+      SWIG_exception_fail(SWIG_ArgError(res), "in method '" "ly_ctx_remove_module" "', argument " "4"" of type '" "void (*)(lys_node const *,void *)""'"); 
+    }
+  }
+  result = (int)ly_ctx_remove_module(arg1,(char const *)arg2,(char const *)arg3,arg4);
+  jsresult = SWIG_From_int((int)(result));
   
-  
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
   if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_ly_ctx_clean(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  ly_ctx *arg1 = (ly_ctx *) 0 ;
+  void (*arg2)(lys_node const *,void *) = (void (*)(lys_node const *,void *)) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_ly_ctx_clean.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ly_ctx_clean" "', argument " "1"" of type '" "ly_ctx *""'"); 
+  }
+  arg1 = (ly_ctx *)(argp1);
+  {
+    int res = SWIG_ConvertFunctionPtr(args[1], (void**)(&arg2), SWIGTYPE_p_f_p_q_const__lys_node_p_void__void);
+    if (!SWIG_IsOK(res)) {
+      SWIG_exception_fail(SWIG_ArgError(res), "in method '" "ly_ctx_clean" "', argument " "2"" of type '" "void (*)(lys_node const *,void *)""'"); 
+    }
+  }
+  ly_ctx_clean(arg1,arg2);
+  jsresult = SWIGV8_UNDEFINED();
+  
   
   
   SWIGV8_RETURN(jsresult);
@@ -3196,6 +3231,34 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_ly_set_dup(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  ly_set *arg1 = (ly_set *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ly_set *result = 0 ;
+  
+  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_ly_set_dup.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_set, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ly_set_dup" "', argument " "1"" of type '" "ly_set const *""'"); 
+  }
+  arg1 = (ly_set *)(argp1);
+  result = (ly_set *)ly_set_dup((ly_set const *)arg1);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_ly_set, 0 |  0 );
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
 static SwigV8ReturnValue _wrap_ly_set_add(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
@@ -3229,6 +3292,41 @@ static SwigV8ReturnValue _wrap_ly_set_add(const SwigV8Arguments &args) {
   result = (int)ly_set_add(arg1,arg2,arg3);
   jsresult = SWIG_From_int((int)(result));
   
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_ly_set_contains(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  ly_set *arg1 = (ly_set *) 0 ;
+  void *arg2 = (void *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  int result;
+  
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_ly_set_contains.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_set, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ly_set_contains" "', argument " "1"" of type '" "ly_set const *""'"); 
+  }
+  arg1 = (ly_set *)(argp1);
+  res2 = SWIG_ConvertPtr(args[1],SWIG_as_voidptrptr(&arg2), 0, 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ly_set_contains" "', argument " "2"" of type '" "void *""'"); 
+  }
+  result = (int)ly_set_contains((ly_set const *)arg1,arg2);
+  jsresult = SWIG_From_int((int)(result));
   
   
   
@@ -3388,6 +3486,126 @@ static SwigV8ReturnValue _wrap_LYP_FORMAT(v8::Local<v8::String> property, const 
   v8::Handle<v8::Value> jsresult;
   
   jsresult = SWIG_From_int((int)(0x02));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYP_KEEPEMPTYCONT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x04));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYP_WD_MASK(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0xF0));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYP_WD_EXPLICIT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x00));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYP_WD_TRIM(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x10));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYP_WD_ALL(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x20));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYP_WD_ALL_TAG(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x40));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYP_WD_IMPL_TAG(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x80));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYP_NETCONF(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x100));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -3733,6 +3951,21 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_LYVE_INPAR(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYVE_INPAR));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_LYVE_INID(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
@@ -3883,12 +4116,12 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_LYVE_ENUM_DUPVAL(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_LYVE_ENUM_INVAL(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   
-  jsresult = SWIG_From_int((int)(LYVE_ENUM_DUPVAL));
+  jsresult = SWIG_From_int((int)(LYVE_ENUM_INVAL));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -3898,12 +4131,12 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_LYVE_ENUM_DUPNAME(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_LYVE_ENUM_INNAME(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   
-  jsresult = SWIG_From_int((int)(LYVE_ENUM_DUPNAME));
+  jsresult = SWIG_From_int((int)(LYVE_ENUM_INNAME));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -3928,12 +4161,12 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_LYVE_BITS_DUPVAL(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_LYVE_BITS_INVAL(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   
-  jsresult = SWIG_From_int((int)(LYVE_BITS_DUPVAL));
+  jsresult = SWIG_From_int((int)(LYVE_BITS_INVAL));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -3943,12 +4176,12 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_LYVE_BITS_DUPNAME(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_LYVE_BITS_INNAME(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   
-  jsresult = SWIG_From_int((int)(LYVE_BITS_DUPNAME));
+  jsresult = SWIG_From_int((int)(LYVE_BITS_INNAME));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -4108,6 +4341,21 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_LYVE_CIRC_FEATURES(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYVE_CIRC_FEATURES));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_LYVE_CIRC_IMPORTS(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
@@ -4129,6 +4377,21 @@ static SwigV8ReturnValue _wrap_LYVE_CIRC_INCLUDES(v8::Local<v8::String> property
   v8::Handle<v8::Value> jsresult;
   
   jsresult = SWIG_From_int((int)(LYVE_CIRC_INCLUDES));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYVE_INVER(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYVE_INVER));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -4453,6 +4716,21 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_LYVE_XPATH_INSNODE(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYVE_XPATH_INSNODE));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_LYVE_XPATH_INTOK(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
@@ -4513,6 +4791,36 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_LYVE_XPATH_INMOD(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYVE_XPATH_INMOD));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYVE_XPATH_INFUNC(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYVE_XPATH_INFUNC));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_LYVE_XPATH_INARGCOUNT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
@@ -4534,6 +4842,21 @@ static SwigV8ReturnValue _wrap_LYVE_XPATH_INARGTYPE(v8::Local<v8::String> proper
   v8::Handle<v8::Value> jsresult;
   
   jsresult = SWIG_From_int((int)(LYVE_XPATH_INARGTYPE));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYVE_XPATH_DUMMY(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYVE_XPATH_DUMMY));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -4749,1613 +5072,6 @@ static SwigV8ReturnValue _wrap_ly_errapptag(const SwigV8Arguments &args) {
   
   result = (char *)ly_errapptag();
   jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_LYXML_ATTR_STD(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(LYXML_ATTR_STD));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYXML_ATTR_NS(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(LYXML_ATTR_NS));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lyxml_ns_type_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
-  LYXML_ATTR_TYPE arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_type_set" "', argument " "1"" of type '" "lyxml_ns *""'"); 
-  }
-  arg1 = (lyxml_ns *)(argp1);
-  ecode2 = SWIG_AsVal_int(value, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lyxml_ns_type_set" "', argument " "2"" of type '" "LYXML_ATTR_TYPE""'");
-  } 
-  arg2 = (LYXML_ATTR_TYPE)(val2);
-  if (arg1) (arg1)->type = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_ns_type_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  LYXML_ATTR_TYPE result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_type_get" "', argument " "1"" of type '" "lyxml_ns *""'"); 
-  }
-  arg1 = (lyxml_ns *)(argp1);
-  result = (LYXML_ATTR_TYPE) ((arg1)->type);
-  jsresult = SWIG_From_int((int)(result));
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lyxml_ns_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
-  lyxml_ns *arg2 = (lyxml_ns *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_next_set" "', argument " "1"" of type '" "lyxml_ns *""'"); 
-  }
-  arg1 = (lyxml_ns *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_ns, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_ns_next_set" "', argument " "2"" of type '" "lyxml_ns *""'"); 
-  }
-  arg2 = (lyxml_ns *)(argp2);
-  if (arg1) (arg1)->next = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_ns_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_ns *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_next_get" "', argument " "1"" of type '" "lyxml_ns *""'"); 
-  }
-  arg1 = (lyxml_ns *)(argp1);
-  result = (lyxml_ns *) ((arg1)->next);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lyxml_ns_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_parent_set" "', argument " "1"" of type '" "lyxml_ns *""'"); 
-  }
-  arg1 = (lyxml_ns *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_ns_parent_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  if (arg1) (arg1)->parent = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_ns_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_elem *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_parent_get" "', argument " "1"" of type '" "lyxml_ns *""'"); 
-  }
-  arg1 = (lyxml_ns *)(argp1);
-  result = (lyxml_elem *) ((arg1)->parent);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_ns_prefix_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  char *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_prefix_get" "', argument " "1"" of type '" "lyxml_ns *""'"); 
-  }
-  arg1 = (lyxml_ns *)(argp1);
-  result = (char *) ((arg1)->prefix);
-  jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_ns_value_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  char *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_value_get" "', argument " "1"" of type '" "lyxml_ns *""'"); 
-  }
-  arg1 = (lyxml_ns *)(argp1);
-  result = (char *) ((arg1)->value);
-  jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_new_lyxml_ns(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Object> self = args.Holder();
-  lyxml_ns *result;
-  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lyxml_ns.");
-  result = (lyxml_ns *)new lyxml_ns();
-  
-  
-  
-  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lyxml_ns, SWIG_POINTER_OWN);
-  SWIGV8_RETURN(self);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-static void _wrap_delete_lyxml_ns(v8::Persistent<v8::Value> object, void *parameter) {
-  SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-  static void _wrap_delete_lyxml_ns(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
-    SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-    static void _wrap_delete_lyxml_ns(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
-#else
-      static void _wrap_delete_lyxml_ns(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
-        v8::Local<v8::Object> object = data.GetValue();
-        SWIGV8_Proxy *proxy = data.GetParameter();
-#endif
-        
-        if(proxy->swigCMemOwn && proxy->swigCObject) {
-          lyxml_ns * arg1 = (lyxml_ns *)proxy->swigCObject;
-          delete arg1;
-        }
-        delete proxy;
-        
-#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-        object.Dispose();
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-        object.Dispose(isolate);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x032100)
-        object->Dispose(isolate);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-        object->Dispose();
-#else
-        object.Clear();
-#endif
-      }
-
-
-static void _wrap_lyxml_attr_type_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
-  LYXML_ATTR_TYPE arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_type_set" "', argument " "1"" of type '" "lyxml_attr *""'"); 
-  }
-  arg1 = (lyxml_attr *)(argp1);
-  ecode2 = SWIG_AsVal_int(value, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lyxml_attr_type_set" "', argument " "2"" of type '" "LYXML_ATTR_TYPE""'");
-  } 
-  arg2 = (LYXML_ATTR_TYPE)(val2);
-  if (arg1) (arg1)->type = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_attr_type_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  LYXML_ATTR_TYPE result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_type_get" "', argument " "1"" of type '" "lyxml_attr *""'"); 
-  }
-  arg1 = (lyxml_attr *)(argp1);
-  result = (LYXML_ATTR_TYPE) ((arg1)->type);
-  jsresult = SWIG_From_int((int)(result));
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lyxml_attr_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
-  lyxml_attr *arg2 = (lyxml_attr *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_next_set" "', argument " "1"" of type '" "lyxml_attr *""'"); 
-  }
-  arg1 = (lyxml_attr *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_attr, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_attr_next_set" "', argument " "2"" of type '" "lyxml_attr *""'"); 
-  }
-  arg2 = (lyxml_attr *)(argp2);
-  if (arg1) (arg1)->next = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_attr_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_attr *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_next_get" "', argument " "1"" of type '" "lyxml_attr *""'"); 
-  }
-  arg1 = (lyxml_attr *)(argp1);
-  result = (lyxml_attr *) ((arg1)->next);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_attr, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_attr_ns_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_ns *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_ns_get" "', argument " "1"" of type '" "lyxml_attr *""'"); 
-  }
-  arg1 = (lyxml_attr *)(argp1);
-  result = (lyxml_ns *) ((arg1)->ns);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_attr_name_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  char *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_name_get" "', argument " "1"" of type '" "lyxml_attr *""'"); 
-  }
-  arg1 = (lyxml_attr *)(argp1);
-  result = (char *) ((arg1)->name);
-  jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_attr_value_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  char *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_value_get" "', argument " "1"" of type '" "lyxml_attr *""'"); 
-  }
-  arg1 = (lyxml_attr *)(argp1);
-  result = (char *) ((arg1)->value);
-  jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_new_lyxml_attr(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Object> self = args.Holder();
-  lyxml_attr *result;
-  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lyxml_attr.");
-  result = (lyxml_attr *)new lyxml_attr();
-  
-  
-  
-  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lyxml_attr, SWIG_POINTER_OWN);
-  SWIGV8_RETURN(self);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-static void _wrap_delete_lyxml_attr(v8::Persistent<v8::Value> object, void *parameter) {
-  SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-  static void _wrap_delete_lyxml_attr(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
-    SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-    static void _wrap_delete_lyxml_attr(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
-#else
-      static void _wrap_delete_lyxml_attr(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
-        v8::Local<v8::Object> object = data.GetValue();
-        SWIGV8_Proxy *proxy = data.GetParameter();
-#endif
-        
-        if(proxy->swigCMemOwn && proxy->swigCObject) {
-          lyxml_attr * arg1 = (lyxml_attr *)proxy->swigCObject;
-          delete arg1;
-        }
-        delete proxy;
-        
-#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-        object.Dispose();
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-        object.Dispose(isolate);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x032100)
-        object->Dispose(isolate);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-        object->Dispose();
-#else
-        object.Clear();
-#endif
-      }
-
-
-static void _wrap_lyxml_elem_flags_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  char arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  char val2 ;
-  int ecode2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_flags_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  ecode2 = SWIG_AsVal_char(value, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lyxml_elem_flags_set" "', argument " "2"" of type '" "char""'");
-  } 
-  arg2 = (char)(val2);
-  if (arg1) (arg1)->flags = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_elem_flags_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  char result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_flags_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  result = (char) ((arg1)->flags);
-  jsresult = SWIG_From_char((char)(result));
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYXML_ELEM_MIXED(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x01));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lyxml_elem_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_parent_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_elem_parent_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  if (arg1) (arg1)->parent = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_elem_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_elem *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_parent_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  result = (lyxml_elem *) ((arg1)->parent);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lyxml_elem_attr_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  lyxml_attr *arg2 = (lyxml_attr *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_attr_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_attr, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_elem_attr_set" "', argument " "2"" of type '" "lyxml_attr *""'"); 
-  }
-  arg2 = (lyxml_attr *)(argp2);
-  if (arg1) (arg1)->attr = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_elem_attr_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_attr *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_attr_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  result = (lyxml_attr *) ((arg1)->attr);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_attr, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lyxml_elem_child_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_child_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_elem_child_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  if (arg1) (arg1)->child = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_elem_child_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_elem *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_child_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  result = (lyxml_elem *) ((arg1)->child);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lyxml_elem_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_next_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_elem_next_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  if (arg1) (arg1)->next = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_elem_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_elem *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_next_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  result = (lyxml_elem *) ((arg1)->next);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lyxml_elem_prev_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_prev_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_elem_prev_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  if (arg1) (arg1)->prev = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_elem_prev_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_elem *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_prev_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  result = (lyxml_elem *) ((arg1)->prev);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_elem_name_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  char *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_name_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  result = (char *) ((arg1)->name);
-  jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_elem_ns_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_ns *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_ns_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  result = (lyxml_ns *) ((arg1)->ns);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_elem_content_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  char *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_content_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  result = (char *) ((arg1)->content);
-  jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_new_lyxml_elem(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Object> self = args.Holder();
-  lyxml_elem *result;
-  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lyxml_elem.");
-  result = (lyxml_elem *)new lyxml_elem();
-  
-  
-  
-  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lyxml_elem, SWIG_POINTER_OWN);
-  SWIGV8_RETURN(self);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-static void _wrap_delete_lyxml_elem(v8::Persistent<v8::Value> object, void *parameter) {
-  SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-  static void _wrap_delete_lyxml_elem(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
-    SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-    static void _wrap_delete_lyxml_elem(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
-#else
-      static void _wrap_delete_lyxml_elem(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
-        v8::Local<v8::Object> object = data.GetValue();
-        SWIGV8_Proxy *proxy = data.GetParameter();
-#endif
-        
-        if(proxy->swigCMemOwn && proxy->swigCObject) {
-          lyxml_elem * arg1 = (lyxml_elem *)proxy->swigCObject;
-          delete arg1;
-        }
-        delete proxy;
-        
-#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-        object.Dispose();
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-        object.Dispose(isolate);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x032100)
-        object->Dispose(isolate);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-        object->Dispose();
-#else
-        object.Clear();
-#endif
-      }
-
-
-static SwigV8ReturnValue _wrap_LYXML_PARSE_MULTIROOT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x01));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_parse_mem(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  ly_ctx *arg1 = (ly_ctx *) 0 ;
-  char *arg2 = (char *) 0 ;
-  int arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int res2 ;
-  char *buf2 = 0 ;
-  int alloc2 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  lyxml_elem *result = 0 ;
-  
-  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_parse_mem.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_parse_mem" "', argument " "1"" of type '" "ly_ctx *""'"); 
-  }
-  arg1 = (ly_ctx *)(argp1);
-  res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_parse_mem" "', argument " "2"" of type '" "char const *""'");
-  }
-  arg2 = (char *)(buf2);
-  ecode3 = SWIG_AsVal_int(args[2], &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyxml_parse_mem" "', argument " "3"" of type '" "int""'");
-  } 
-  arg3 = (int)(val3);
-  result = (lyxml_elem *)lyxml_parse_mem(arg1,(char const *)arg2,arg3);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  
-  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_parse_path(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  ly_ctx *arg1 = (ly_ctx *) 0 ;
-  char *arg2 = (char *) 0 ;
-  int arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int res2 ;
-  char *buf2 = 0 ;
-  int alloc2 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  lyxml_elem *result = 0 ;
-  
-  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_parse_path.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_parse_path" "', argument " "1"" of type '" "ly_ctx *""'"); 
-  }
-  arg1 = (ly_ctx *)(argp1);
-  res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_parse_path" "', argument " "2"" of type '" "char const *""'");
-  }
-  arg2 = (char *)(buf2);
-  ecode3 = SWIG_AsVal_int(args[2], &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyxml_parse_path" "', argument " "3"" of type '" "int""'");
-  } 
-  arg3 = (int)(val3);
-  result = (lyxml_elem *)lyxml_parse_path(arg1,(char const *)arg2,arg3);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  
-  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_LYXML_PRINT_OPEN(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x01));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYXML_PRINT_FORMAT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x02));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYXML_PRINT_CLOSE(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x04));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYXML_PRINT_ATTRS(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x08));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYXML_PRINT_SIBLINGS(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x10));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_print_file(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  FILE *arg1 = (FILE *) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  int arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  int result;
-  
-  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_print_file.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_FILE, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_print_file" "', argument " "1"" of type '" "FILE *""'"); 
-  }
-  arg1 = (FILE *)(argp1);
-  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_print_file" "', argument " "2"" of type '" "lyxml_elem const *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  ecode3 = SWIG_AsVal_int(args[2], &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyxml_print_file" "', argument " "3"" of type '" "int""'");
-  } 
-  arg3 = (int)(val3);
-  result = (int)lyxml_print_file(arg1,(lyxml_elem const *)arg2,arg3);
-  jsresult = SWIG_From_int((int)(result));
-  
-  
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_print_fd(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  int arg1 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  int arg3 ;
-  int val1 ;
-  int ecode1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  int result;
-  
-  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_print_fd.");
-  
-  ecode1 = SWIG_AsVal_int(args[0], &val1);
-  if (!SWIG_IsOK(ecode1)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "lyxml_print_fd" "', argument " "1"" of type '" "int""'");
-  } 
-  arg1 = (int)(val1);
-  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_print_fd" "', argument " "2"" of type '" "lyxml_elem const *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  ecode3 = SWIG_AsVal_int(args[2], &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyxml_print_fd" "', argument " "3"" of type '" "int""'");
-  } 
-  arg3 = (int)(val3);
-  result = (int)lyxml_print_fd(arg1,(lyxml_elem const *)arg2,arg3);
-  jsresult = SWIG_From_int((int)(result));
-  
-  
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_print_mem(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  char **arg1 = (char **) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  int arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  int result;
-  
-  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_print_mem.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_p_char, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_print_mem" "', argument " "1"" of type '" "char **""'"); 
-  }
-  arg1 = (char **)(argp1);
-  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_print_mem" "', argument " "2"" of type '" "lyxml_elem const *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  ecode3 = SWIG_AsVal_int(args[2], &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyxml_print_mem" "', argument " "3"" of type '" "int""'");
-  } 
-  arg3 = (int)(val3);
-  result = (int)lyxml_print_mem(arg1,(lyxml_elem const *)arg2,arg3);
-  jsresult = SWIG_From_int((int)(result));
-  
-  
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_print_clb(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  ssize_t (*arg1)(void *,void const *,size_t) = (ssize_t (*)(void *,void const *,size_t)) 0 ;
-  void *arg2 = (void *) 0 ;
-  lyxml_elem *arg3 = (lyxml_elem *) 0 ;
-  int arg4 ;
-  int res2 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  int val4 ;
-  int ecode4 = 0 ;
-  int result;
-  
-  if(args.Length() != 4) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_print_clb.");
-  
-  {
-    int res = SWIG_ConvertFunctionPtr(args[0], (void**)(&arg1), SWIGTYPE_p_f_p_void_p_q_const__void_size_t__ssize_t);
-    if (!SWIG_IsOK(res)) {
-      SWIG_exception_fail(SWIG_ArgError(res), "in method '" "lyxml_print_clb" "', argument " "1"" of type '" "ssize_t (*)(void *,void const *,size_t)""'"); 
-    }
-  }
-  res2 = SWIG_ConvertPtr(args[1],SWIG_as_voidptrptr(&arg2), 0, 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_print_clb" "', argument " "2"" of type '" "void *""'"); 
-  }
-  res3 = SWIG_ConvertPtr(args[2], &argp3,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyxml_print_clb" "', argument " "3"" of type '" "lyxml_elem const *""'"); 
-  }
-  arg3 = (lyxml_elem *)(argp3);
-  ecode4 = SWIG_AsVal_int(args[3], &val4);
-  if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "lyxml_print_clb" "', argument " "4"" of type '" "int""'");
-  } 
-  arg4 = (int)(val4);
-  result = (int)lyxml_print_clb(arg1,arg2,(lyxml_elem const *)arg3,arg4);
-  jsresult = SWIG_From_int((int)(result));
-  
-  
-  
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_free(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  ly_ctx *arg1 = (ly_ctx *) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_free.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_free" "', argument " "1"" of type '" "ly_ctx *""'"); 
-  }
-  arg1 = (ly_ctx *)(argp1);
-  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_free" "', argument " "2"" of type '" "lyxml_elem *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  lyxml_free(arg1,arg2);
-  jsresult = SWIGV8_UNDEFINED();
-  
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_free_withsiblings(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  ly_ctx *arg1 = (ly_ctx *) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_free_withsiblings.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_free_withsiblings" "', argument " "1"" of type '" "ly_ctx *""'"); 
-  }
-  arg1 = (ly_ctx *)(argp1);
-  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_free_withsiblings" "', argument " "2"" of type '" "lyxml_elem *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  lyxml_free_withsiblings(arg1,arg2);
-  jsresult = SWIGV8_UNDEFINED();
-  
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_unlink(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  ly_ctx *arg1 = (ly_ctx *) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_unlink.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_unlink" "', argument " "1"" of type '" "ly_ctx *""'"); 
-  }
-  arg1 = (ly_ctx *)(argp1);
-  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_unlink" "', argument " "2"" of type '" "lyxml_elem *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  lyxml_unlink(arg1,arg2);
-  jsresult = SWIGV8_UNDEFINED();
-  
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_get_attr(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  char *arg2 = (char *) 0 ;
-  char *arg3 = (char *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int res2 ;
-  char *buf2 = 0 ;
-  int alloc2 = 0 ;
-  int res3 ;
-  char *buf3 = 0 ;
-  int alloc3 = 0 ;
-  char *result = 0 ;
-  
-  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_get_attr.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_get_attr" "', argument " "1"" of type '" "lyxml_elem const *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_get_attr" "', argument " "2"" of type '" "char const *""'");
-  }
-  arg2 = (char *)(buf2);
-  res3 = SWIG_AsCharPtrAndSize(args[2], &buf3, NULL, &alloc3);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyxml_get_attr" "', argument " "3"" of type '" "char const *""'");
-  }
-  arg3 = (char *)(buf3);
-  result = (char *)lyxml_get_attr((lyxml_elem const *)arg1,(char const *)arg2,(char const *)arg3);
-  jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
-  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyxml_get_ns(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
-  char *arg2 = (char *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int res2 ;
-  char *buf2 = 0 ;
-  int alloc2 = 0 ;
-  lyxml_ns *result = 0 ;
-  
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_get_ns.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_get_ns" "', argument " "1"" of type '" "lyxml_elem const *""'"); 
-  }
-  arg1 = (lyxml_elem *)(argp1);
-  res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_get_ns" "', argument " "2"" of type '" "char const *""'");
-  }
-  arg2 = (char *)(buf2);
-  result = (lyxml_ns *)lyxml_get_ns((lyxml_elem const *)arg1,(char const *)arg2);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_ns, 0 |  0 );
-  
-  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
   
   SWIGV8_RETURN(jsresult);
   
@@ -6755,6 +5471,36 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_LYS_ACTION(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYS_ACTION));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYS_ANYDATA(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYS_ANYDATA));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_LYS_NO_RPC_NOTIF_NODE(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
@@ -6775,7 +5521,7 @@ static SwigV8ReturnValue _wrap_LYS_ANY(v8::Local<v8::String> property, const Swi
   
   v8::Handle<v8::Value> jsresult;
   
-  jsresult = SWIG_From_int((int)(0x3FFF));
+  jsresult = SWIG_From_int((int)(0x7FFF));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -9785,6 +8531,21 @@ static void _wrap_delete_lys_submodule(v8::Persistent<v8::Value> object, void *p
       }
 
 
+static SwigV8ReturnValue _wrap_LY_TYPE_ERR(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LY_TYPE_ERR));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_LY_TYPE_DER(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
@@ -10338,7 +9099,7 @@ static void _wrap_lys_type_bit_flags_set(v8::Local<v8::String> property, v8::Loc
   SWIGV8_HANDLESCOPE();
   
   lys_type_bit *arg1 = (lys_type_bit *) 0 ;
-  uint8_t arg2 ;
+  uint16_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -10350,14 +9111,14 @@ static void _wrap_lys_type_bit_flags_set(v8::Local<v8::String> property, v8::Loc
   }
   arg1 = (lys_type_bit *)(argp1);
   {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_bit_flags_set" "', argument " "2"" of type '" "uint8_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_bit_flags_set" "', argument " "2"" of type '" "uint16_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_type_bit_flags_set" "', argument " "2"" of type '" "uint8_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_type_bit_flags_set" "', argument " "2"" of type '" "uint16_t""'");
     } else {
-      arg2 = *((uint8_t *)(argp2));
+      arg2 = *((uint16_t *)(argp2));
     }
   }
   if (arg1) (arg1)->flags = arg2;
@@ -10376,7 +9137,7 @@ static SwigV8ReturnValue _wrap_lys_type_bit_flags_get(v8::Local<v8::String> prop
   lys_type_bit *arg1 = (lys_type_bit *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  uint8_t result;
+  uint16_t result;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_bit, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
@@ -10384,7 +9145,190 @@ static SwigV8ReturnValue _wrap_lys_type_bit_flags_get(v8::Local<v8::String> prop
   }
   arg1 = (lys_type_bit *)(argp1);
   result =  ((arg1)->flags);
+  jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_type_bit_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_type_bit *arg1 = (lys_type_bit *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_bit, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_bit_iffeature_size_set" "', argument " "1"" of type '" "lys_type_bit *""'"); 
+  }
+  arg1 = (lys_type_bit *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_bit_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_type_bit_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_type_bit_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_type_bit *arg1 = (lys_type_bit *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_bit, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_bit_iffeature_size_get" "', argument " "1"" of type '" "lys_type_bit *""'"); 
+  }
+  arg1 = (lys_type_bit *)(argp1);
+  result =  ((arg1)->iffeature_size);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_type_bit_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_type_bit *arg1 = (lys_type_bit *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_bit, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_bit_padding_set" "', argument " "1"" of type '" "lys_type_bit *""'"); 
+  }
+  arg1 = (lys_type_bit *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_bit_padding_set" "', argument " "2"" of type '" "uint8_t [1]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)1; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [1]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_type_bit_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_type_bit *arg1 = (lys_type_bit *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_bit, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_bit_padding_get" "', argument " "1"" of type '" "lys_type_bit *""'"); 
+  }
+  arg1 = (lys_type_bit *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_type_bit_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_type_bit *arg1 = (lys_type_bit *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_bit, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_bit_iffeature_set" "', argument " "1"" of type '" "lys_type_bit *""'"); 
+  }
+  arg1 = (lys_type_bit *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_bit_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_type_bit_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_type_bit *arg1 = (lys_type_bit *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_bit, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_bit_iffeature_get" "', argument " "1"" of type '" "lys_type_bit *""'"); 
+  }
+  arg1 = (lys_type_bit *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -10994,7 +9938,7 @@ static void _wrap_lys_type_enum_flags_set(v8::Local<v8::String> property, v8::Lo
   SWIGV8_HANDLESCOPE();
   
   lys_type_enum *arg1 = (lys_type_enum *) 0 ;
-  uint8_t arg2 ;
+  uint16_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -11006,14 +9950,14 @@ static void _wrap_lys_type_enum_flags_set(v8::Local<v8::String> property, v8::Lo
   }
   arg1 = (lys_type_enum *)(argp1);
   {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_enum_flags_set" "', argument " "2"" of type '" "uint8_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_enum_flags_set" "', argument " "2"" of type '" "uint16_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_type_enum_flags_set" "', argument " "2"" of type '" "uint8_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_type_enum_flags_set" "', argument " "2"" of type '" "uint16_t""'");
     } else {
-      arg2 = *((uint8_t *)(argp2));
+      arg2 = *((uint16_t *)(argp2));
     }
   }
   if (arg1) (arg1)->flags = arg2;
@@ -11032,7 +9976,7 @@ static SwigV8ReturnValue _wrap_lys_type_enum_flags_get(v8::Local<v8::String> pro
   lys_type_enum *arg1 = (lys_type_enum *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  uint8_t result;
+  uint16_t result;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_enum, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
@@ -11040,7 +9984,190 @@ static SwigV8ReturnValue _wrap_lys_type_enum_flags_get(v8::Local<v8::String> pro
   }
   arg1 = (lys_type_enum *)(argp1);
   result =  ((arg1)->flags);
+  jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_type_enum_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_type_enum *arg1 = (lys_type_enum *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_enum, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_enum_iffeature_size_set" "', argument " "1"" of type '" "lys_type_enum *""'"); 
+  }
+  arg1 = (lys_type_enum *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_enum_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_type_enum_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_type_enum_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_type_enum *arg1 = (lys_type_enum *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_enum, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_enum_iffeature_size_get" "', argument " "1"" of type '" "lys_type_enum *""'"); 
+  }
+  arg1 = (lys_type_enum *)(argp1);
+  result =  ((arg1)->iffeature_size);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_type_enum_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_type_enum *arg1 = (lys_type_enum *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_enum, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_enum_padding_set" "', argument " "1"" of type '" "lys_type_enum *""'"); 
+  }
+  arg1 = (lys_type_enum *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_enum_padding_set" "', argument " "2"" of type '" "uint8_t [1]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)1; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [1]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_type_enum_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_type_enum *arg1 = (lys_type_enum *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_enum, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_enum_padding_get" "', argument " "1"" of type '" "lys_type_enum *""'"); 
+  }
+  arg1 = (lys_type_enum *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_type_enum_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_type_enum *arg1 = (lys_type_enum *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_enum, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_enum_iffeature_set" "', argument " "1"" of type '" "lys_type_enum *""'"); 
+  }
+  arg1 = (lys_type_enum *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_enum_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_type_enum_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_type_enum *arg1 = (lys_type_enum *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_enum, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_enum_iffeature_get" "', argument " "1"" of type '" "lys_type_enum *""'"); 
+  }
+  arg1 = (lys_type_enum *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -11304,15 +10431,72 @@ static SwigV8ReturnValue _wrap_lys_type_info_ident_ref_get(v8::Local<v8::String>
   lys_type_info_ident *arg1 = (lys_type_info_ident *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  lys_ident *result = 0 ;
+  lys_ident **result = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_info_ident, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_info_ident_ref_get" "', argument " "1"" of type '" "lys_type_info_ident *""'"); 
   }
   arg1 = (lys_type_info_ident *)(argp1);
-  result = (lys_ident *) ((arg1)->ref);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_ident, 0 |  0 );
+  result = (lys_ident **) ((arg1)->ref);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_ident, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_type_info_ident_count_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_type_info_ident *arg1 = (lys_type_info_ident *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_info_ident, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_info_ident_count_set" "', argument " "1"" of type '" "lys_type_info_ident *""'"); 
+  }
+  arg1 = (lys_type_info_ident *)(argp1);
+  ecode2 = SWIG_AsVal_int(value, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lys_type_info_ident_count_set" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = (int)(val2);
+  if (arg1) (arg1)->count = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_type_info_ident_count_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_type_info_ident *arg1 = (lys_type_info_ident *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_info_ident, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_info_ident_count_get" "', argument " "1"" of type '" "lys_type_info_ident *""'"); 
+  }
+  arg1 = (lys_type_info_ident *)(argp1);
+  result = (int) ((arg1)->count);
+  jsresult = SWIG_From_int((int)(result));
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -11674,6 +10858,68 @@ static SwigV8ReturnValue _wrap_lys_type_info_lref_target_get(v8::Local<v8::Strin
   arg1 = (lys_type_info_lref *)(argp1);
   result = (lys_node_leaf *) ((arg1)->target);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node_leaf, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_type_info_lref_req_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_type_info_lref *arg1 = (lys_type_info_lref *) 0 ;
+  int8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_info_lref, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_info_lref_req_set" "', argument " "1"" of type '" "lys_type_info_lref *""'"); 
+  }
+  arg1 = (lys_type_info_lref *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_int8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_type_info_lref_req_set" "', argument " "2"" of type '" "int8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_type_info_lref_req_set" "', argument " "2"" of type '" "int8_t""'");
+    } else {
+      arg2 = *((int8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->req = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_type_info_lref_req_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_type_info_lref *arg1 = (lys_type_info_lref *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_type_info_lref, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_type_info_lref_req_get" "', argument " "1"" of type '" "lys_type_info_lref *""'"); 
+  }
+  arg1 = (lys_type_info_lref *)(argp1);
+  result =  ((arg1)->req);
+  jsresult = SWIG_NewPointerObj((new int8_t((const int8_t&)(result))), SWIGTYPE_p_int8_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -13027,6 +12273,202 @@ static void _wrap_delete_lys_type(v8::Persistent<v8::Value> object, void *parame
       }
 
 
+static SwigV8ReturnValue _wrap_LYS_IFF_NOT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x00));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYS_IFF_AND(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x01));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYS_IFF_OR(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x02));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYS_IFF_F(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x03));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_iffeature_expr_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_iffeature *arg1 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_iffeature_expr_get" "', argument " "1"" of type '" "lys_iffeature *""'"); 
+  }
+  arg1 = (lys_iffeature *)(argp1);
+  result = (uint8_t *) ((arg1)->expr);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_iffeature_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_iffeature *arg1 = (lys_iffeature *) 0 ;
+  lys_feature **arg2 = (lys_feature **) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_iffeature_features_set" "', argument " "1"" of type '" "lys_iffeature *""'"); 
+  }
+  arg1 = (lys_iffeature *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_iffeature_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
+  }
+  arg2 = (lys_feature **)(argp2);
+  if (arg1) (arg1)->features = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_iffeature_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_iffeature *arg1 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_feature **result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_iffeature_features_get" "', argument " "1"" of type '" "lys_iffeature *""'"); 
+  }
+  arg1 = (lys_iffeature *)(argp1);
+  result = (lys_feature **) ((arg1)->features);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_new_lys_iffeature(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Object> self = args.Holder();
+  lys_iffeature *result;
+  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lys_iffeature.");
+  result = (lys_iffeature *)new lys_iffeature();
+  
+  
+  
+  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lys_iffeature, SWIG_POINTER_OWN);
+  SWIGV8_RETURN(self);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
+static void _wrap_delete_lys_iffeature(v8::Persistent<v8::Value> object, void *parameter) {
+  SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
+  static void _wrap_delete_lys_iffeature(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
+    SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
+    static void _wrap_delete_lys_iffeature(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
+#else
+      static void _wrap_delete_lys_iffeature(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
+        v8::Local<v8::Object> object = data.GetValue();
+        SWIGV8_Proxy *proxy = data.GetParameter();
+#endif
+        
+        if(proxy->swigCMemOwn && proxy->swigCObject) {
+          lys_iffeature * arg1 = (lys_iffeature *)proxy->swigCObject;
+          delete arg1;
+        }
+        delete proxy;
+        
+#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
+        object.Dispose();
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
+        object.Dispose(isolate);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x032100)
+        object->Dispose(isolate);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
+        object->Dispose();
+#else
+        object.Clear();
+#endif
+      }
+
+
 static SwigV8ReturnValue _wrap_LYS_NACM_DENYW(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
@@ -13333,6 +12775,51 @@ static SwigV8ReturnValue _wrap_LYS_USESGRP(v8::Local<v8::String> property, const
   v8::Handle<v8::Value> jsresult;
   
   jsresult = SWIG_From_int((int)(0x01));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYS_IMPLICIT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x01));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYS_VALID_DEP(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x200));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYS_DFLTJSON(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x400));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -13886,125 +13373,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node *arg1 = (lys_node *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_features_size_set" "', argument " "1"" of type '" "lys_node *""'"); 
-  }
-  arg1 = (lys_node *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node *arg1 = (lys_node *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_features_size_get" "', argument " "1"" of type '" "lys_node *""'"); 
-  }
-  arg1 = (lys_node *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node *arg1 = (lys_node *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_features_set" "', argument " "1"" of type '" "lys_node *""'"); 
-  }
-  arg1 = (lys_node *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node *arg1 = (lys_node *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_features_get" "', argument " "1"" of type '" "lys_node *""'"); 
-  }
-  arg1 = (lys_node *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -14050,6 +13418,125 @@ static SwigV8ReturnValue _wrap_lys_node_priv_get(v8::Local<v8::String> property,
   arg1 = (lys_node *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node *arg1 = (lys_node *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_iffeature_set" "', argument " "1"" of type '" "lys_node *""'"); 
+  }
+  arg1 = (lys_node *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node *arg1 = (lys_node *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_iffeature_get" "', argument " "1"" of type '" "lys_node *""'"); 
+  }
+  arg1 = (lys_node *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node *arg1 = (lys_node *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_iffeature_size_set" "', argument " "1"" of type '" "lys_node *""'"); 
+  }
+  arg1 = (lys_node *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node *arg1 = (lys_node *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_iffeature_size_get" "', argument " "1"" of type '" "lys_node *""'"); 
+  }
+  arg1 = (lys_node *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -14657,125 +14144,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_container_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_container *arg1 = (lys_node_container *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_features_size_set" "', argument " "1"" of type '" "lys_node_container *""'"); 
-  }
-  arg1 = (lys_node_container *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_container_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_container_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_container_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_container *arg1 = (lys_node_container *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_features_size_get" "', argument " "1"" of type '" "lys_node_container *""'"); 
-  }
-  arg1 = (lys_node_container *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_container_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_container *arg1 = (lys_node_container *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_features_set" "', argument " "1"" of type '" "lys_node_container *""'"); 
-  }
-  arg1 = (lys_node_container *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_container_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_container_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_container *arg1 = (lys_node_container *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_features_get" "', argument " "1"" of type '" "lys_node_container *""'"); 
-  }
-  arg1 = (lys_node_container *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_container_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -14831,12 +14199,12 @@ fail:
 }
 
 
-static void _wrap_lys_node_container_when_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_container_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
   lys_node_container *arg1 = (lys_node_container *) 0 ;
-  lys_when *arg2 = (lys_when *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -14844,15 +14212,15 @@ static void _wrap_lys_node_container_when_set(v8::Local<v8::String> property, v8
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_when_set" "', argument " "1"" of type '" "lys_node_container *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_iffeature_set" "', argument " "1"" of type '" "lys_node_container *""'"); 
   }
   arg1 = (lys_node_container *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_when, SWIG_POINTER_DISOWN |  0 );
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_container_when_set" "', argument " "2"" of type '" "lys_when *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_container_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
   }
-  arg2 = (lys_when *)(argp2);
-  if (arg1) (arg1)->when = arg2;
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
   
   
   
@@ -14862,22 +14230,22 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_container_when_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_container_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   lys_node_container *arg1 = (lys_node_container *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  lys_when *result = 0 ;
+  lys_iffeature *result = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_when_get" "', argument " "1"" of type '" "lys_node_container *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_iffeature_get" "', argument " "1"" of type '" "lys_node_container *""'"); 
   }
   arg1 = (lys_node_container *)(argp1);
-  result = (lys_when *) ((arg1)->when);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_when, 0 |  0 );
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -14888,22 +14256,58 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_container_presence_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static void _wrap_lys_node_container_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_container *arg1 = (lys_node_container *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_iffeature_size_set" "', argument " "1"" of type '" "lys_node_container *""'"); 
+  }
+  arg1 = (lys_node_container *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_container_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_container_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_container_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   lys_node_container *arg1 = (lys_node_container *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  char *result = 0 ;
+  uint8_t result;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_presence_get" "', argument " "1"" of type '" "lys_node_container *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_iffeature_size_get" "', argument " "1"" of type '" "lys_node_container *""'"); 
   }
   arg1 = (lys_node_container *)(argp1);
-  result = (char *) ((arg1)->presence);
-  jsresult = SWIG_FromCharPtr((const char *)result);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -15028,6 +14432,153 @@ static SwigV8ReturnValue _wrap_lys_node_container_tpdf_size_get(v8::Local<v8::St
   arg1 = (lys_node_container *)(argp1);
   result =  ((arg1)->tpdf_size);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_container_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_container *arg1 = (lys_node_container *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_padding_set" "', argument " "1"" of type '" "lys_node_container *""'"); 
+  }
+  arg1 = (lys_node_container *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_container_padding_set" "', argument " "2"" of type '" "uint8_t [1]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)1; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [1]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_container_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_container *arg1 = (lys_node_container *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_padding_get" "', argument " "1"" of type '" "lys_node_container *""'"); 
+  }
+  arg1 = (lys_node_container *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_container_when_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_container *arg1 = (lys_node_container *) 0 ;
+  lys_when *arg2 = (lys_when *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_when_set" "', argument " "1"" of type '" "lys_node_container *""'"); 
+  }
+  arg1 = (lys_node_container *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_when, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_container_when_set" "', argument " "2"" of type '" "lys_when *""'"); 
+  }
+  arg2 = (lys_when *)(argp2);
+  if (arg1) (arg1)->when = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_container_when_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_container *arg1 = (lys_node_container *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_when *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_when_get" "', argument " "1"" of type '" "lys_node_container *""'"); 
+  }
+  arg1 = (lys_node_container *)(argp1);
+  result = (lys_when *) ((arg1)->when);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_when, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_container_presence_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_container *arg1 = (lys_node_container *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_container, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_container_presence_get" "', argument " "1"" of type '" "lys_node_container *""'"); 
+  }
+  arg1 = (lys_node_container *)(argp1);
+  result = (char *) ((arg1)->presence);
+  jsresult = SWIG_FromCharPtr((const char *)result);
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -15749,125 +15300,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_choice_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_choice *arg1 = (lys_node_choice *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_choice, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_choice_features_size_set" "', argument " "1"" of type '" "lys_node_choice *""'"); 
-  }
-  arg1 = (lys_node_choice *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_choice_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_choice_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_choice_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_choice *arg1 = (lys_node_choice *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_choice, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_choice_features_size_get" "', argument " "1"" of type '" "lys_node_choice *""'"); 
-  }
-  arg1 = (lys_node_choice *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_choice_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_choice *arg1 = (lys_node_choice *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_choice, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_choice_features_set" "', argument " "1"" of type '" "lys_node_choice *""'"); 
-  }
-  arg1 = (lys_node_choice *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_choice_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_choice_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_choice *arg1 = (lys_node_choice *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_choice, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_choice_features_get" "', argument " "1"" of type '" "lys_node_choice *""'"); 
-  }
-  arg1 = (lys_node_choice *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_choice_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -15913,6 +15345,189 @@ static SwigV8ReturnValue _wrap_lys_node_choice_priv_get(v8::Local<v8::String> pr
   arg1 = (lys_node_choice *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_choice_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_choice *arg1 = (lys_node_choice *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_choice, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_choice_iffeature_set" "', argument " "1"" of type '" "lys_node_choice *""'"); 
+  }
+  arg1 = (lys_node_choice *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_choice_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_choice_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_choice *arg1 = (lys_node_choice *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_choice, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_choice_iffeature_get" "', argument " "1"" of type '" "lys_node_choice *""'"); 
+  }
+  arg1 = (lys_node_choice *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_choice_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_choice *arg1 = (lys_node_choice *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_choice, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_choice_iffeature_size_set" "', argument " "1"" of type '" "lys_node_choice *""'"); 
+  }
+  arg1 = (lys_node_choice *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_choice_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_choice_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_choice_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_choice *arg1 = (lys_node_choice *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_choice, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_choice_iffeature_size_get" "', argument " "1"" of type '" "lys_node_choice *""'"); 
+  }
+  arg1 = (lys_node_choice *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_choice_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_choice *arg1 = (lys_node_choice *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_choice, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_choice_padding_set" "', argument " "1"" of type '" "lys_node_choice *""'"); 
+  }
+  arg1 = (lys_node_choice *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_choice_padding_set" "', argument " "2"" of type '" "uint8_t [3]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)3; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [3]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_choice_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_choice *arg1 = (lys_node_choice *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_choice, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_choice_padding_get" "', argument " "1"" of type '" "lys_node_choice *""'"); 
+  }
+  arg1 = (lys_node_choice *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -16432,12 +16047,12 @@ fail:
 }
 
 
-static void _wrap_lys_node_leaf_child_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_leaf_backlinks_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
   lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
-  lys_node *arg2 = (lys_node *) 0 ;
+  ly_set *arg2 = (ly_set *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -16445,15 +16060,15 @@ static void _wrap_lys_node_leaf_child_set(v8::Local<v8::String> property, v8::Lo
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_child_set" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_backlinks_set" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
   }
   arg1 = (lys_node_leaf *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_ly_set, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaf_child_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaf_backlinks_set" "', argument " "2"" of type '" "ly_set *""'"); 
   }
-  arg2 = (lys_node *)(argp2);
-  if (arg1) (arg1)->child = arg2;
+  arg2 = (ly_set *)(argp2);
+  if (arg1) (arg1)->backlinks = arg2;
   
   
   
@@ -16463,22 +16078,22 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_leaf_child_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_leaf_backlinks_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  lys_node *result = 0 ;
+  ly_set *result = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_child_get" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_backlinks_get" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
   }
   arg1 = (lys_node_leaf *)(argp1);
-  result = (lys_node *) ((arg1)->child);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
+  result = (ly_set *) ((arg1)->backlinks);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_ly_set, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -16603,125 +16218,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_leaf_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_features_size_set" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
-  }
-  arg1 = (lys_node_leaf *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaf_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_leaf_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_leaf_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_features_size_get" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
-  }
-  arg1 = (lys_node_leaf *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_leaf_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_features_set" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
-  }
-  arg1 = (lys_node_leaf *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaf_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_leaf_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_features_get" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
-  }
-  arg1 = (lys_node_leaf *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_leaf_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -16767,6 +16263,251 @@ static SwigV8ReturnValue _wrap_lys_node_leaf_priv_get(v8::Local<v8::String> prop
   arg1 = (lys_node_leaf *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_leaf_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_iffeature_set" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
+  }
+  arg1 = (lys_node_leaf *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaf_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_leaf_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_iffeature_get" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
+  }
+  arg1 = (lys_node_leaf *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_leaf_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_iffeature_size_set" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
+  }
+  arg1 = (lys_node_leaf *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaf_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_leaf_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_leaf_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_iffeature_size_get" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
+  }
+  arg1 = (lys_node_leaf *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_leaf_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_padding_set" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
+  }
+  arg1 = (lys_node_leaf *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaf_padding_set" "', argument " "2"" of type '" "uint8_t [2]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)2; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [2]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_leaf_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_padding_get" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
+  }
+  arg1 = (lys_node_leaf *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_leaf_must_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_must_size_set" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
+  }
+  arg1 = (lys_node_leaf *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaf_must_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_leaf_must_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->must_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_leaf_must_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_must_size_get" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
+  }
+  arg1 = (lys_node_leaf *)(argp1);
+  result =  ((arg1)->must_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -16907,68 +16648,6 @@ static SwigV8ReturnValue _wrap_lys_node_leaf_units_get(v8::Local<v8::String> pro
   arg1 = (lys_node_leaf *)(argp1);
   result = (char *) ((arg1)->units);
   jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_leaf_must_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_must_size_set" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
-  }
-  arg1 = (lys_node_leaf *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaf_must_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_leaf_must_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->must_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_leaf_must_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_leaf *arg1 = (lys_node_leaf *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaf, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaf_must_size_get" "', argument " "1"" of type '" "lys_node_leaf *""'"); 
-  }
-  arg1 = (lys_node_leaf *)(argp1);
-  result =  ((arg1)->must_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -17659,125 +17338,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_leaflist_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_features_size_set" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
-  }
-  arg1 = (lys_node_leaflist *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaflist_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_leaflist_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_leaflist_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_features_size_get" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
-  }
-  arg1 = (lys_node_leaflist *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_leaflist_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_features_set" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
-  }
-  arg1 = (lys_node_leaflist *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaflist_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_leaflist_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_features_get" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
-  }
-  arg1 = (lys_node_leaflist *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_leaflist_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -17823,6 +17383,313 @@ static SwigV8ReturnValue _wrap_lys_node_leaflist_priv_get(v8::Local<v8::String> 
   arg1 = (lys_node_leaflist *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_leaflist_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_iffeature_set" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaflist_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_leaflist_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_iffeature_get" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_leaflist_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_iffeature_size_set" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaflist_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_leaflist_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_leaflist_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_iffeature_size_get" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_leaflist_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_padding_set" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaflist_padding_set" "', argument " "2"" of type '" "uint8_t [1]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)1; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [1]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_leaflist_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_padding_get" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_leaflist_dflt_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_dflt_size_set" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaflist_dflt_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_leaflist_dflt_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->dflt_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_leaflist_dflt_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_dflt_size_get" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  result =  ((arg1)->dflt_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_leaflist_must_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_must_size_set" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaflist_must_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_leaflist_must_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->must_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_leaflist_must_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_must_size_get" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  result =  ((arg1)->must_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -17973,68 +17840,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_leaflist_must_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_must_size_set" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
-  }
-  arg1 = (lys_node_leaflist *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_leaflist_must_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_leaflist_must_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->must_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_leaflist_must_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_must_size_get" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
-  }
-  arg1 = (lys_node_leaflist *)(argp1);
-  result =  ((arg1)->must_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_leaflist_must_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -18082,6 +17887,32 @@ static SwigV8ReturnValue _wrap_lys_node_leaflist_must_get(v8::Local<v8::String> 
   arg1 = (lys_node_leaflist *)(argp1);
   result = (lys_restr *) ((arg1)->must);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_restr, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_leaflist_dflt_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_leaflist *arg1 = (lys_node_leaflist *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char **result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_leaflist, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_leaflist_dflt_get" "', argument " "1"" of type '" "lys_node_leaflist *""'"); 
+  }
+  arg1 = (lys_node_leaflist *)(argp1);
+  result = (char **) ((arg1)->dflt);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_char, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -18813,125 +18644,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_list_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_list *arg1 = (lys_node_list *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_features_size_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
-  }
-  arg1 = (lys_node_list *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_list_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_list_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_list *arg1 = (lys_node_list *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_features_size_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
-  }
-  arg1 = (lys_node_list *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_list_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_list *arg1 = (lys_node_list *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_features_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
-  }
-  arg1 = (lys_node_list *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_list_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_list *arg1 = (lys_node_list *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_features_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
-  }
-  arg1 = (lys_node_list *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_list_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -18987,12 +18699,12 @@ fail:
 }
 
 
-static void _wrap_lys_node_list_when_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_list_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
   lys_node_list *arg1 = (lys_node_list *) 0 ;
-  lys_when *arg2 = (lys_when *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -19000,15 +18712,15 @@ static void _wrap_lys_node_list_when_set(v8::Local<v8::String> property, v8::Loc
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_when_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_iffeature_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
   }
   arg1 = (lys_node_list *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_when, SWIG_POINTER_DISOWN |  0 );
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_when_set" "', argument " "2"" of type '" "lys_when *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
   }
-  arg2 = (lys_when *)(argp2);
-  if (arg1) (arg1)->when = arg2;
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
   
   
   
@@ -19018,22 +18730,22 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_list_when_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_list_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   lys_node_list *arg1 = (lys_node_list *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  lys_when *result = 0 ;
+  lys_iffeature *result = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_when_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_iffeature_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
   }
   arg1 = (lys_node_list *)(argp1);
-  result = (lys_when *) ((arg1)->when);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_when, 0 |  0 );
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -19044,12 +18756,12 @@ fail:
 }
 
 
-static void _wrap_lys_node_list_min_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_list_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
   lys_node_list *arg1 = (lys_node_list *) 0 ;
-  uint32_t arg2 ;
+  uint8_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -19057,21 +18769,21 @@ static void _wrap_lys_node_list_min_set(v8::Local<v8::String> property, v8::Loca
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_min_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_iffeature_size_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
   }
   arg1 = (lys_node_list *)(argp1);
   {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint32_t,  0 );
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_min_set" "', argument " "2"" of type '" "uint32_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_list_min_set" "', argument " "2"" of type '" "uint32_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_list_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
     } else {
-      arg2 = *((uint32_t *)(argp2));
+      arg2 = *((uint8_t *)(argp2));
     }
   }
-  if (arg1) (arg1)->min = arg2;
+  if (arg1) (arg1)->iffeature_size = arg2;
   
   
   goto fail;
@@ -19080,84 +18792,22 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_list_min_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_list_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   lys_node_list *arg1 = (lys_node_list *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  uint32_t result;
+  uint8_t result;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_min_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_iffeature_size_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
   }
   arg1 = (lys_node_list *)(argp1);
-  result =  ((arg1)->min);
-  jsresult = SWIG_NewPointerObj((new uint32_t((const uint32_t&)(result))), SWIGTYPE_p_uint32_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_list_max_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_list *arg1 = (lys_node_list *) 0 ;
-  uint32_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_max_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
-  }
-  arg1 = (lys_node_list *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint32_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_max_set" "', argument " "2"" of type '" "uint32_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_list_max_set" "', argument " "2"" of type '" "uint32_t""'");
-    } else {
-      arg2 = *((uint32_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->max = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_list_max_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_list *arg1 = (lys_node_list *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint32_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_max_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
-  }
-  arg1 = (lys_node_list *)(argp1);
-  result =  ((arg1)->max);
-  jsresult = SWIG_NewPointerObj((new uint32_t((const uint32_t&)(result))), SWIGTYPE_p_uint32_t, SWIG_POINTER_OWN |  0 );
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -19354,34 +19004,29 @@ fail:
 }
 
 
-static void _wrap_lys_node_list_unique_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_list_when_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
   lys_node_list *arg1 = (lys_node_list *) 0 ;
-  uint8_t arg2 ;
+  lys_when *arg2 = (lys_when *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 ;
+  void *argp2 = 0 ;
   int res2 = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_unique_size_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_when_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
   }
   arg1 = (lys_node_list *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_unique_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_list_unique_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_when, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_when_set" "', argument " "2"" of type '" "lys_when *""'"); 
   }
-  if (arg1) (arg1)->unique_size = arg2;
+  arg2 = (lys_when *)(argp2);
+  if (arg1) (arg1)->when = arg2;
+  
   
   
   goto fail;
@@ -19390,22 +19035,146 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_list_unique_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_list_when_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   lys_node_list *arg1 = (lys_node_list *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  uint8_t result;
+  lys_when *result = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_unique_size_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_when_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
   }
   arg1 = (lys_node_list *)(argp1);
-  result =  ((arg1)->unique_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  result = (lys_when *) ((arg1)->when);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_when, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_list_min_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_list *arg1 = (lys_node_list *) 0 ;
+  uint32_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_min_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
+  }
+  arg1 = (lys_node_list *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint32_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_min_set" "', argument " "2"" of type '" "uint32_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_list_min_set" "', argument " "2"" of type '" "uint32_t""'");
+    } else {
+      arg2 = *((uint32_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->min = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_list_min_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_list *arg1 = (lys_node_list *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint32_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_min_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
+  }
+  arg1 = (lys_node_list *)(argp1);
+  result =  ((arg1)->min);
+  jsresult = SWIG_NewPointerObj((new uint32_t((const uint32_t&)(result))), SWIGTYPE_p_uint32_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_list_max_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_list *arg1 = (lys_node_list *) 0 ;
+  uint32_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_max_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
+  }
+  arg1 = (lys_node_list *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint32_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_max_set" "', argument " "2"" of type '" "uint32_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_list_max_set" "', argument " "2"" of type '" "uint32_t""'");
+    } else {
+      arg2 = *((uint32_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->max = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_list_max_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_list *arg1 = (lys_node_list *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint32_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_max_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
+  }
+  arg1 = (lys_node_list *)(argp1);
+  result =  ((arg1)->max);
+  jsresult = SWIG_NewPointerObj((new uint32_t((const uint32_t&)(result))), SWIGTYPE_p_uint32_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -19644,6 +19413,131 @@ fail:
 }
 
 
+static void _wrap_lys_node_list_keys_str_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_list *arg1 = (lys_node_list *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_keys_str_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
+  }
+  arg1 = (lys_node_list *)(argp1);
+  res2 = SWIG_AsCharPtrAndSize(value, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_keys_str_set" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = (char *)(buf2);
+  if (arg2) {
+    size_t size = strlen((const char *)((const char *)(arg2))) + 1;
+    arg1->keys_str = (char const *)(char*)(memcpy((new char[size]), arg2, sizeof(char)*(size)));
+  } else {
+    arg1->keys_str = 0;
+  }
+  
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_list_keys_str_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_list *arg1 = (lys_node_list *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_keys_str_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
+  }
+  arg1 = (lys_node_list *)(argp1);
+  result = (char *) ((arg1)->keys_str);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_list_unique_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_list *arg1 = (lys_node_list *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_unique_size_set" "', argument " "1"" of type '" "lys_node_list *""'"); 
+  }
+  arg1 = (lys_node_list *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_list_unique_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_list_unique_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->unique_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_list_unique_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_list *arg1 = (lys_node_list *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_list, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_list_unique_size_get" "', argument " "1"" of type '" "lys_node_list *""'"); 
+  }
+  arg1 = (lys_node_list *)(argp1);
+  result =  ((arg1)->unique_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_new_lys_node_list(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
@@ -19697,20 +19591,20 @@ static void _wrap_delete_lys_node_list(v8::Persistent<v8::Value> object, void *p
       }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_name_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_name_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   char *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_name_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_name_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (char *) ((arg1)->name);
   jsresult = SWIG_FromCharPtr((const char *)result);
   
@@ -19723,20 +19617,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_dsc_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_dsc_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   char *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_dsc_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_dsc_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (char *) ((arg1)->dsc);
   jsresult = SWIG_FromCharPtr((const char *)result);
   
@@ -19749,20 +19643,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_ref_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_ref_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   char *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_ref_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_ref_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (char *) ((arg1)->ref);
   jsresult = SWIG_FromCharPtr((const char *)result);
   
@@ -19775,29 +19669,29 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_flags_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_flags_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   uint16_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_flags_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_flags_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   {
     res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_flags_set" "', argument " "2"" of type '" "uint16_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_flags_set" "', argument " "2"" of type '" "uint16_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_anyxml_flags_set" "', argument " "2"" of type '" "uint16_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_anydata_flags_set" "', argument " "2"" of type '" "uint16_t""'");
     } else {
       arg2 = *((uint16_t *)(argp2));
     }
@@ -19811,20 +19705,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_flags_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_flags_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   uint16_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_flags_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_flags_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result =  ((arg1)->flags);
   jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
   
@@ -19837,29 +19731,29 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_nacm_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_nacm_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   uint16_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_nacm_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_nacm_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   {
     res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_nacm_set" "', argument " "2"" of type '" "uint16_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_nacm_set" "', argument " "2"" of type '" "uint16_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_anyxml_nacm_set" "', argument " "2"" of type '" "uint16_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_anydata_nacm_set" "', argument " "2"" of type '" "uint16_t""'");
     } else {
       arg2 = *((uint16_t *)(argp2));
     }
@@ -19873,20 +19767,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_nacm_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_nacm_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   uint16_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_nacm_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_nacm_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result =  ((arg1)->nacm);
   jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
   
@@ -19899,25 +19793,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_module_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_module_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   lys_module *arg2 = (lys_module *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_module_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_module_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_module, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_module_set" "', argument " "2"" of type '" "lys_module *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_module_set" "', argument " "2"" of type '" "lys_module *""'"); 
   }
   arg2 = (lys_module *)(argp2);
   if (arg1) (arg1)->module = arg2;
@@ -19930,20 +19824,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_module_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_module_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_module *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_module_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_module_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (lys_module *) ((arg1)->module);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_module, 0 |  0 );
   
@@ -19956,25 +19850,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_nodetype_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_nodetype_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   LYS_NODE arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_nodetype_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_nodetype_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   ecode2 = SWIG_AsVal_int(value, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lys_node_anyxml_nodetype_set" "', argument " "2"" of type '" "LYS_NODE""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lys_node_anydata_nodetype_set" "', argument " "2"" of type '" "LYS_NODE""'");
   } 
   arg2 = (LYS_NODE)(val2);
   if (arg1) (arg1)->nodetype = arg2;
@@ -19987,20 +19881,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_nodetype_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_nodetype_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   LYS_NODE result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_nodetype_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_nodetype_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (LYS_NODE) ((arg1)->nodetype);
   jsresult = SWIG_From_int((int)(result));
   
@@ -20013,25 +19907,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_parent_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_parent_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_parent_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_parent_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->parent = arg2;
@@ -20044,20 +19938,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_parent_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_parent_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (lys_node *) ((arg1)->parent);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -20070,25 +19964,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_child_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_child_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_child_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_child_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_child_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_child_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->child = arg2;
@@ -20101,20 +19995,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_child_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_child_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_child_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_child_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (lys_node *) ((arg1)->child);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -20127,25 +20021,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_next_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_next_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_next_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_next_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->next = arg2;
@@ -20158,20 +20052,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_next_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_next_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (lys_node *) ((arg1)->next);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -20184,25 +20078,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_prev_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_prev_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_prev_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_prev_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_prev_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_prev_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->prev = arg2;
@@ -20215,20 +20109,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_prev_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_prev_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_prev_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_prev_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (lys_node *) ((arg1)->prev);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -20241,143 +20135,24 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_features_size_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
-  }
-  arg1 = (lys_node_anyxml *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_anyxml_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_anyxml_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_features_size_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
-  }
-  arg1 = (lys_node_anyxml *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_anyxml_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_features_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
-  }
-  arg1 = (lys_node_anyxml *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_anyxml_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_features_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
-  }
-  arg1 = (lys_node_anyxml *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_anyxml_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *arg2 = (void *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   int res2 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_priv_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_priv_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value,SWIG_as_voidptrptr(&arg2), 0, SWIG_POINTER_DISOWN);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_priv_set" "', argument " "2"" of type '" "void *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_priv_set" "', argument " "2"" of type '" "void *""'"); 
   }
   if (arg1) (arg1)->priv = arg2;
   
@@ -20389,20 +20164,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_priv_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_priv_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_priv_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_priv_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
   
@@ -20415,28 +20190,28 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_when_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
-  lys_when *arg2 = (lys_when *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_when_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_iffeature_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_when, SWIG_POINTER_DISOWN |  0 );
+  arg1 = (lys_node_anydata *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_when_set" "', argument " "2"" of type '" "lys_when *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
   }
-  arg2 = (lys_when *)(argp2);
-  if (arg1) (arg1)->when = arg2;
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
   
   
   
@@ -20446,22 +20221,22 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_when_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  lys_when *result = 0 ;
+  lys_iffeature *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_when_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_iffeature_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
-  result = (lys_when *) ((arg1)->when);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_when, 0 |  0 );
+  arg1 = (lys_node_anydata *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -20472,29 +20247,155 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_must_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   uint8_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_must_size_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_iffeature_size_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   {
     res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_must_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_anyxml_must_size_set" "', argument " "2"" of type '" "uint8_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_anydata_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_anydata_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_iffeature_size_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
+  }
+  arg1 = (lys_node_anydata *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_anydata_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_padding_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
+  }
+  arg1 = (lys_node_anydata *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_padding_set" "', argument " "2"" of type '" "uint8_t [2]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)2; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [2]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_anydata_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_padding_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
+  }
+  arg1 = (lys_node_anydata *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_anydata_must_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_must_size_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
+  }
+  arg1 = (lys_node_anydata *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_must_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_anydata_must_size_set" "', argument " "2"" of type '" "uint8_t""'");
     } else {
       arg2 = *((uint8_t *)(argp2));
     }
@@ -20508,20 +20409,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_must_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_must_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   uint8_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_must_size_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_must_size_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result =  ((arg1)->must_size);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
@@ -20534,25 +20435,82 @@ fail:
 }
 
 
-static void _wrap_lys_node_anyxml_must_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_anydata_when_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
+  lys_when *arg2 = (lys_when *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_when_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
+  }
+  arg1 = (lys_node_anydata *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_when, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_when_set" "', argument " "2"" of type '" "lys_when *""'"); 
+  }
+  arg2 = (lys_when *)(argp2);
+  if (arg1) (arg1)->when = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_anydata_when_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_when *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_when_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
+  }
+  arg1 = (lys_node_anydata *)(argp1);
+  result = (lys_when *) ((arg1)->when);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_when, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_anydata_must_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   lys_restr *arg2 = (lys_restr *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_must_set" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_must_set" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_restr, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anyxml_must_set" "', argument " "2"" of type '" "lys_restr *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_anydata_must_set" "', argument " "2"" of type '" "lys_restr *""'"); 
   }
   arg2 = (lys_restr *)(argp2);
   if (arg1) (arg1)->must = arg2;
@@ -20565,20 +20523,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_anyxml_must_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_anydata_must_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_anyxml *arg1 = (lys_node_anyxml *) 0 ;
+  lys_node_anydata *arg1 = (lys_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_restr *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anyxml_must_get" "', argument " "1"" of type '" "lys_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_anydata_must_get" "', argument " "1"" of type '" "lys_node_anydata *""'"); 
   }
-  arg1 = (lys_node_anyxml *)(argp1);
+  arg1 = (lys_node_anydata *)(argp1);
   result = (lys_restr *) ((arg1)->must);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_restr, 0 |  0 );
   
@@ -20591,17 +20549,17 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_new_lys_node_anyxml(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_new_lys_node_anydata(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Object> self = args.Holder();
-  lys_node_anyxml *result;
-  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lys_node_anyxml.");
-  result = (lys_node_anyxml *)new lys_node_anyxml();
+  lys_node_anydata *result;
+  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lys_node_anydata.");
+  result = (lys_node_anydata *)new lys_node_anydata();
   
   
   
-  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lys_node_anyxml, SWIG_POINTER_OWN);
+  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lys_node_anydata, SWIG_POINTER_OWN);
   SWIGV8_RETURN(self);
   
   goto fail;
@@ -20611,21 +20569,21 @@ fail:
 
 
 #if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-static void _wrap_delete_lys_node_anyxml(v8::Persistent<v8::Value> object, void *parameter) {
+static void _wrap_delete_lys_node_anydata(v8::Persistent<v8::Value> object, void *parameter) {
   SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
 #elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-  static void _wrap_delete_lys_node_anyxml(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
+  static void _wrap_delete_lys_node_anydata(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
     SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
 #elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-    static void _wrap_delete_lys_node_anyxml(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
+    static void _wrap_delete_lys_node_anydata(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
 #else
-      static void _wrap_delete_lys_node_anyxml(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
+      static void _wrap_delete_lys_node_anydata(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
         v8::Local<v8::Object> object = data.GetValue();
         SWIGV8_Proxy *proxy = data.GetParameter();
 #endif
         
         if(proxy->swigCMemOwn && proxy->swigCObject) {
-          lys_node_anyxml * arg1 = (lys_node_anyxml *)proxy->swigCObject;
+          lys_node_anydata * arg1 = (lys_node_anydata *)proxy->swigCObject;
           delete arg1;
         }
         delete proxy;
@@ -21188,125 +21146,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_uses_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_features_size_set" "', argument " "1"" of type '" "lys_node_uses *""'"); 
-  }
-  arg1 = (lys_node_uses *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_uses_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_uses_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_uses_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_features_size_get" "', argument " "1"" of type '" "lys_node_uses *""'"); 
-  }
-  arg1 = (lys_node_uses *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_uses_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_features_set" "', argument " "1"" of type '" "lys_node_uses *""'"); 
-  }
-  arg1 = (lys_node_uses *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_uses_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_uses_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_features_get" "', argument " "1"" of type '" "lys_node_uses *""'"); 
-  }
-  arg1 = (lys_node_uses *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_uses_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -21352,6 +21191,313 @@ static SwigV8ReturnValue _wrap_lys_node_uses_priv_get(v8::Local<v8::String> prop
   arg1 = (lys_node_uses *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_uses_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_iffeature_set" "', argument " "1"" of type '" "lys_node_uses *""'"); 
+  }
+  arg1 = (lys_node_uses *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_uses_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_uses_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_iffeature_get" "', argument " "1"" of type '" "lys_node_uses *""'"); 
+  }
+  arg1 = (lys_node_uses *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_uses_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_iffeature_size_set" "', argument " "1"" of type '" "lys_node_uses *""'"); 
+  }
+  arg1 = (lys_node_uses *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_uses_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_uses_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_uses_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_iffeature_size_get" "', argument " "1"" of type '" "lys_node_uses *""'"); 
+  }
+  arg1 = (lys_node_uses *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_uses_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_padding_set" "', argument " "1"" of type '" "lys_node_uses *""'"); 
+  }
+  arg1 = (lys_node_uses *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_uses_padding_set" "', argument " "2"" of type '" "uint8_t [1]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)1; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [1]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_uses_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_padding_get" "', argument " "1"" of type '" "lys_node_uses *""'"); 
+  }
+  arg1 = (lys_node_uses *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_uses_refine_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_refine_size_set" "', argument " "1"" of type '" "lys_node_uses *""'"); 
+  }
+  arg1 = (lys_node_uses *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_uses_refine_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_uses_refine_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->refine_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_uses_refine_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_refine_size_get" "', argument " "1"" of type '" "lys_node_uses *""'"); 
+  }
+  arg1 = (lys_node_uses *)(argp1);
+  result =  ((arg1)->refine_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_uses_augment_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_augment_size_set" "', argument " "1"" of type '" "lys_node_uses *""'"); 
+  }
+  arg1 = (lys_node_uses *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_uses_augment_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_uses_augment_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->augment_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_uses_augment_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_augment_size_get" "', argument " "1"" of type '" "lys_node_uses *""'"); 
+  }
+  arg1 = (lys_node_uses *)(argp1);
+  result =  ((arg1)->augment_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -21466,130 +21612,6 @@ static SwigV8ReturnValue _wrap_lys_node_uses_grp_get(v8::Local<v8::String> prope
   arg1 = (lys_node_uses *)(argp1);
   result = (lys_node_grp *) ((arg1)->grp);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node_grp, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_uses_refine_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
-  uint16_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_refine_size_set" "', argument " "1"" of type '" "lys_node_uses *""'"); 
-  }
-  arg1 = (lys_node_uses *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_uses_refine_size_set" "', argument " "2"" of type '" "uint16_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_uses_refine_size_set" "', argument " "2"" of type '" "uint16_t""'");
-    } else {
-      arg2 = *((uint16_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->refine_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_uses_refine_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint16_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_refine_size_get" "', argument " "1"" of type '" "lys_node_uses *""'"); 
-  }
-  arg1 = (lys_node_uses *)(argp1);
-  result =  ((arg1)->refine_size);
-  jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_uses_augment_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
-  uint16_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_augment_size_set" "', argument " "1"" of type '" "lys_node_uses *""'"); 
-  }
-  arg1 = (lys_node_uses *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_uses_augment_size_set" "', argument " "2"" of type '" "uint16_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_uses_augment_size_set" "', argument " "2"" of type '" "uint16_t""'");
-    } else {
-      arg2 = *((uint16_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->augment_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_uses_augment_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_uses *arg1 = (lys_node_uses *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint16_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_uses, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_uses_augment_size_get" "', argument " "1"" of type '" "lys_node_uses *""'"); 
-  }
-  arg1 = (lys_node_uses *)(argp1);
-  result =  ((arg1)->augment_size);
-  jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -22311,125 +22333,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_grp_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_grp *arg1 = (lys_node_grp *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_grp, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_grp_features_size_set" "', argument " "1"" of type '" "lys_node_grp *""'"); 
-  }
-  arg1 = (lys_node_grp *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_grp_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_grp_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_grp_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_grp *arg1 = (lys_node_grp *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_grp, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_grp_features_size_get" "', argument " "1"" of type '" "lys_node_grp *""'"); 
-  }
-  arg1 = (lys_node_grp *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_grp_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_grp *arg1 = (lys_node_grp *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_grp, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_grp_features_set" "', argument " "1"" of type '" "lys_node_grp *""'"); 
-  }
-  arg1 = (lys_node_grp *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_grp_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_grp_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_grp *arg1 = (lys_node_grp *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_grp, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_grp_features_get" "', argument " "1"" of type '" "lys_node_grp *""'"); 
-  }
-  arg1 = (lys_node_grp *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_grp_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -22475,6 +22378,189 @@ static SwigV8ReturnValue _wrap_lys_node_grp_priv_get(v8::Local<v8::String> prope
   arg1 = (lys_node_grp *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_grp_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_grp *arg1 = (lys_node_grp *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_grp, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_grp_iffeature_set" "', argument " "1"" of type '" "lys_node_grp *""'"); 
+  }
+  arg1 = (lys_node_grp *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_grp_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_grp_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_grp *arg1 = (lys_node_grp *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_grp, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_grp_iffeature_get" "', argument " "1"" of type '" "lys_node_grp *""'"); 
+  }
+  arg1 = (lys_node_grp *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_grp_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_grp *arg1 = (lys_node_grp *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_grp, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_grp_iffeature_size_set" "', argument " "1"" of type '" "lys_node_grp *""'"); 
+  }
+  arg1 = (lys_node_grp *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_grp_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_grp_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_grp_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_grp *arg1 = (lys_node_grp *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_grp, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_grp_iffeature_size_get" "', argument " "1"" of type '" "lys_node_grp *""'"); 
+  }
+  arg1 = (lys_node_grp *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_grp_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_grp *arg1 = (lys_node_grp *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_grp, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_grp_padding_set" "', argument " "1"" of type '" "lys_node_grp *""'"); 
+  }
+  arg1 = (lys_node_grp *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_grp_padding_set" "', argument " "2"" of type '" "uint8_t [2]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)2; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [2]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_grp_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_grp *arg1 = (lys_node_grp *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_grp, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_grp_padding_get" "', argument " "1"" of type '" "lys_node_grp *""'"); 
+  }
+  arg1 = (lys_node_grp *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -23201,125 +23287,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_case_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_case *arg1 = (lys_node_case *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_case, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_case_features_size_set" "', argument " "1"" of type '" "lys_node_case *""'"); 
-  }
-  arg1 = (lys_node_case *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_case_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_case_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_case_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_case *arg1 = (lys_node_case *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_case, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_case_features_size_get" "', argument " "1"" of type '" "lys_node_case *""'"); 
-  }
-  arg1 = (lys_node_case *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_case_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_case *arg1 = (lys_node_case *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_case, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_case_features_set" "', argument " "1"" of type '" "lys_node_case *""'"); 
-  }
-  arg1 = (lys_node_case *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_case_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_case_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_case *arg1 = (lys_node_case *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_case, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_case_features_get" "', argument " "1"" of type '" "lys_node_case *""'"); 
-  }
-  arg1 = (lys_node_case *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_case_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -23365,6 +23332,189 @@ static SwigV8ReturnValue _wrap_lys_node_case_priv_get(v8::Local<v8::String> prop
   arg1 = (lys_node_case *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_case_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_case *arg1 = (lys_node_case *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_case, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_case_iffeature_set" "', argument " "1"" of type '" "lys_node_case *""'"); 
+  }
+  arg1 = (lys_node_case *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_case_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_case_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_case *arg1 = (lys_node_case *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_case, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_case_iffeature_get" "', argument " "1"" of type '" "lys_node_case *""'"); 
+  }
+  arg1 = (lys_node_case *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_case_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_case *arg1 = (lys_node_case *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_case, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_case_iffeature_size_set" "', argument " "1"" of type '" "lys_node_case *""'"); 
+  }
+  arg1 = (lys_node_case *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_case_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_case_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_case_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_case *arg1 = (lys_node_case *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_case, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_case_iffeature_size_get" "', argument " "1"" of type '" "lys_node_case *""'"); 
+  }
+  arg1 = (lys_node_case *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_case_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_case *arg1 = (lys_node_case *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_case, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_case_padding_set" "', argument " "1"" of type '" "lys_node_case *""'"); 
+  }
+  arg1 = (lys_node_case *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_case_padding_set" "', argument " "2"" of type '" "uint8_t [3]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)3; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [3]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_case_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_case *arg1 = (lys_node_case *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_case, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_case_padding_get" "', argument " "1"" of type '" "lys_node_case *""'"); 
+  }
+  arg1 = (lys_node_case *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -23485,20 +23635,20 @@ static void _wrap_delete_lys_node_case(v8::Persistent<v8::Value> object, void *p
       }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_name_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_name_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   char *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_name_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_name_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   result = (char *) ((arg1)->name);
   jsresult = SWIG_FromCharPtr((const char *)result);
   
@@ -23511,25 +23661,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_fill1_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_inout_fill1_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void **arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_fill1_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_fill1_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_void, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_inout_fill1_set" "', argument " "2"" of type '" "void *[2]""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_fill1_set" "', argument " "2"" of type '" "void *[2]""'"); 
   } 
   arg2 = (void **)(argp2);
   {
@@ -23549,20 +23699,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_fill1_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_fill1_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void **result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_fill1_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_fill1_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   result = (void **)(void **) ((arg1)->fill1);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_void, 0 |  0 );
   
@@ -23575,36 +23725,34 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_fill2_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_inout_flags_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
-  uint16_t *arg2 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
+  uint16_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
+  void *argp2 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_fill2_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_flags_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint16_t, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_inout_fill2_set" "', argument " "2"" of type '" "uint16_t [1]""'"); 
-  } 
-  arg2 = (uint16_t *)(argp2);
+  arg1 = (lys_node_inout *)(argp1);
   {
-    if (arg2) {
-      size_t ii = 0;
-      for (; ii < (size_t)1; ++ii) *(uint16_t *)&arg1->fill2[ii] = *((uint16_t *)arg2 + ii);
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_flags_set" "', argument " "2"" of type '" "uint16_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_inout_flags_set" "', argument " "2"" of type '" "uint16_t""'");
     } else {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""fill2""' of type '""uint16_t [1]""'");
+      arg2 = *((uint16_t *)(argp2));
     }
   }
-  
+  if (arg1) (arg1)->flags = arg2;
   
   
   goto fail;
@@ -23613,22 +23761,22 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_fill2_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_flags_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  uint16_t *result = 0 ;
+  uint16_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_fill2_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_flags_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
-  result = (uint16_t *)(uint16_t *) ((arg1)->fill2);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint16_t, 0 |  0 );
+  arg1 = (lys_node_inout *)(argp1);
+  result =  ((arg1)->flags);
+  jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -23639,25 +23787,87 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_module_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_inout_nacm_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
+  uint16_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_nacm_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
+  }
+  arg1 = (lys_node_inout *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_nacm_set" "', argument " "2"" of type '" "uint16_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_inout_nacm_set" "', argument " "2"" of type '" "uint16_t""'");
+    } else {
+      arg2 = *((uint16_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->nacm = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_inout_nacm_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint16_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_nacm_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
+  }
+  arg1 = (lys_node_inout *)(argp1);
+  result =  ((arg1)->nacm);
+  jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_inout_module_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   lys_module *arg2 = (lys_module *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_module_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_module_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_module, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_inout_module_set" "', argument " "2"" of type '" "lys_module *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_module_set" "', argument " "2"" of type '" "lys_module *""'"); 
   }
   arg2 = (lys_module *)(argp2);
   if (arg1) (arg1)->module = arg2;
@@ -23670,20 +23880,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_module_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_module_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_module *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_module_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_module_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   result = (lys_module *) ((arg1)->module);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_module, 0 |  0 );
   
@@ -23696,25 +23906,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_nodetype_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_inout_nodetype_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   LYS_NODE arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_nodetype_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_nodetype_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   ecode2 = SWIG_AsVal_int(value, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lys_node_rpc_inout_nodetype_set" "', argument " "2"" of type '" "LYS_NODE""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lys_node_inout_nodetype_set" "', argument " "2"" of type '" "LYS_NODE""'");
   } 
   arg2 = (LYS_NODE)(val2);
   if (arg1) (arg1)->nodetype = arg2;
@@ -23727,20 +23937,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_nodetype_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_nodetype_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   LYS_NODE result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_nodetype_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_nodetype_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   result = (LYS_NODE) ((arg1)->nodetype);
   jsresult = SWIG_From_int((int)(result));
   
@@ -23753,25 +23963,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_inout_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_parent_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_parent_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_inout_parent_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_parent_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->parent = arg2;
@@ -23784,20 +23994,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_parent_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_parent_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   result = (lys_node *) ((arg1)->parent);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -23810,25 +24020,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_child_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_inout_child_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_child_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_child_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_inout_child_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_child_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->child = arg2;
@@ -23841,20 +24051,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_child_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_child_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_child_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_child_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   result = (lys_node *) ((arg1)->child);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -23867,25 +24077,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_inout_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_next_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_next_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_inout_next_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_next_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->next = arg2;
@@ -23898,20 +24108,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_next_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_next_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   result = (lys_node *) ((arg1)->next);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -23924,25 +24134,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_prev_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_inout_prev_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_prev_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_prev_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_inout_prev_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_prev_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->prev = arg2;
@@ -23955,20 +24165,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_prev_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_prev_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_prev_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_prev_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   result = (lys_node *) ((arg1)->prev);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -23981,29 +24191,141 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_tpdf_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_inout_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
+  void *arg2 = (void *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_priv_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
+  }
+  arg1 = (lys_node_inout *)(argp1);
+  res2 = SWIG_ConvertPtr(value,SWIG_as_voidptrptr(&arg2), 0, SWIG_POINTER_DISOWN);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_priv_set" "', argument " "2"" of type '" "void *""'"); 
+  }
+  if (arg1) (arg1)->priv = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_inout_priv_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_priv_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
+  }
+  arg1 = (lys_node_inout *)(argp1);
+  result = (void *) ((arg1)->priv);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_inout_tpdf_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
+  lys_tpdf *arg2 = (lys_tpdf *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_tpdf_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
+  }
+  arg1 = (lys_node_inout *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_tpdf, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_tpdf_set" "', argument " "2"" of type '" "lys_tpdf *""'"); 
+  }
+  arg2 = (lys_tpdf *)(argp2);
+  if (arg1) (arg1)->tpdf = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_inout_tpdf_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_tpdf *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_tpdf_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
+  }
+  arg1 = (lys_node_inout *)(argp1);
+  result = (lys_tpdf *) ((arg1)->tpdf);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_tpdf, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_inout_tpdf_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   uint8_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_tpdf_size_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_tpdf_size_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   {
     res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_inout_tpdf_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_tpdf_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_rpc_inout_tpdf_size_set" "', argument " "2"" of type '" "uint8_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_inout_tpdf_size_set" "', argument " "2"" of type '" "uint8_t""'");
     } else {
       arg2 = *((uint8_t *)(argp2));
     }
@@ -24017,20 +24339,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_tpdf_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_tpdf_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   uint8_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_tpdf_size_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_tpdf_size_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
+  arg1 = (lys_node_inout *)(argp1);
   result =  ((arg1)->tpdf_size);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
@@ -24043,28 +24365,90 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_tpdf_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_inout_must_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
-  lys_tpdf *arg2 = (lys_tpdf *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_must_size_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
+  }
+  arg1 = (lys_node_inout *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_must_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_inout_must_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->must_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_inout_must_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_must_size_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
+  }
+  arg1 = (lys_node_inout *)(argp1);
+  result =  ((arg1)->must_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_inout_must_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
+  lys_restr *arg2 = (lys_restr *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_tpdf_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_must_set" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_tpdf, SWIG_POINTER_DISOWN |  0 );
+  arg1 = (lys_node_inout *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_restr, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_inout_tpdf_set" "', argument " "2"" of type '" "lys_tpdf *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_inout_must_set" "', argument " "2"" of type '" "lys_restr *""'"); 
   }
-  arg2 = (lys_tpdf *)(argp2);
-  if (arg1) (arg1)->tpdf = arg2;
+  arg2 = (lys_restr *)(argp2);
+  if (arg1) (arg1)->must = arg2;
   
   
   
@@ -24074,22 +24458,22 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_tpdf_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_inout_must_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
+  lys_node_inout *arg1 = (lys_node_inout *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  lys_tpdf *result = 0 ;
+  lys_restr *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_inout, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_tpdf_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_inout_must_get" "', argument " "1"" of type '" "lys_node_inout *""'"); 
   }
-  arg1 = (lys_node_rpc_inout *)(argp1);
-  result = (lys_tpdf *) ((arg1)->tpdf);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_tpdf, 0 |  0 );
+  arg1 = (lys_node_inout *)(argp1);
+  result = (lys_restr *) ((arg1)->must);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_restr, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -24100,72 +24484,17 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_inout_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
-  void *arg2 = (void *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int res2 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_priv_set" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
-  }
-  arg1 = (lys_node_rpc_inout *)(argp1);
-  res2 = SWIG_ConvertPtr(value,SWIG_as_voidptrptr(&arg2), 0, SWIG_POINTER_DISOWN);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_inout_priv_set" "', argument " "2"" of type '" "void *""'"); 
-  }
-  if (arg1) (arg1)->priv = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_rpc_inout_priv_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_rpc_inout *arg1 = (lys_node_rpc_inout *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_inout, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_inout_priv_get" "', argument " "1"" of type '" "lys_node_rpc_inout *""'"); 
-  }
-  arg1 = (lys_node_rpc_inout *)(argp1);
-  result = (void *) ((arg1)->priv);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_new_lys_node_rpc_inout(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_new_lys_node_inout(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Object> self = args.Holder();
-  lys_node_rpc_inout *result;
-  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lys_node_rpc_inout.");
-  result = (lys_node_rpc_inout *)new lys_node_rpc_inout();
+  lys_node_inout *result;
+  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lys_node_inout.");
+  result = (lys_node_inout *)new lys_node_inout();
   
   
   
-  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lys_node_rpc_inout, SWIG_POINTER_OWN);
+  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lys_node_inout, SWIG_POINTER_OWN);
   SWIGV8_RETURN(self);
   
   goto fail;
@@ -24175,21 +24504,21 @@ fail:
 
 
 #if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-static void _wrap_delete_lys_node_rpc_inout(v8::Persistent<v8::Value> object, void *parameter) {
+static void _wrap_delete_lys_node_inout(v8::Persistent<v8::Value> object, void *parameter) {
   SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
 #elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-  static void _wrap_delete_lys_node_rpc_inout(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
+  static void _wrap_delete_lys_node_inout(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
     SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
 #elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-    static void _wrap_delete_lys_node_rpc_inout(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
+    static void _wrap_delete_lys_node_inout(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
 #else
-      static void _wrap_delete_lys_node_rpc_inout(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
+      static void _wrap_delete_lys_node_inout(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
         v8::Local<v8::Object> object = data.GetValue();
         SWIGV8_Proxy *proxy = data.GetParameter();
 #endif
         
         if(proxy->swigCMemOwn && proxy->swigCObject) {
-          lys_node_rpc_inout * arg1 = (lys_node_rpc_inout *)proxy->swigCObject;
+          lys_node_inout * arg1 = (lys_node_inout *)proxy->swigCObject;
           delete arg1;
         }
         delete proxy;
@@ -24752,125 +25081,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_notif_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_features_size_set" "', argument " "1"" of type '" "lys_node_notif *""'"); 
-  }
-  arg1 = (lys_node_notif *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_notif_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_notif_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_notif_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_features_size_get" "', argument " "1"" of type '" "lys_node_notif *""'"); 
-  }
-  arg1 = (lys_node_notif *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_notif_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_features_set" "', argument " "1"" of type '" "lys_node_notif *""'"); 
-  }
-  arg1 = (lys_node_notif *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_notif_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_notif_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_features_get" "', argument " "1"" of type '" "lys_node_notif *""'"); 
-  }
-  arg1 = (lys_node_notif *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_notif_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -24916,6 +25126,189 @@ static SwigV8ReturnValue _wrap_lys_node_notif_priv_get(v8::Local<v8::String> pro
   arg1 = (lys_node_notif *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_notif_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_iffeature_set" "', argument " "1"" of type '" "lys_node_notif *""'"); 
+  }
+  arg1 = (lys_node_notif *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_notif_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_notif_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_iffeature_get" "', argument " "1"" of type '" "lys_node_notif *""'"); 
+  }
+  arg1 = (lys_node_notif *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_notif_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_iffeature_size_set" "', argument " "1"" of type '" "lys_node_notif *""'"); 
+  }
+  arg1 = (lys_node_notif *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_notif_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_notif_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_notif_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_iffeature_size_get" "', argument " "1"" of type '" "lys_node_notif *""'"); 
+  }
+  arg1 = (lys_node_notif *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_notif_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_padding_set" "', argument " "1"" of type '" "lys_node_notif *""'"); 
+  }
+  arg1 = (lys_node_notif *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_notif_padding_set" "', argument " "2"" of type '" "uint8_t [1]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)1; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [1]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_notif_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_padding_get" "', argument " "1"" of type '" "lys_node_notif *""'"); 
+  }
+  arg1 = (lys_node_notif *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -24988,6 +25381,68 @@ fail:
 }
 
 
+static void _wrap_lys_node_notif_must_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_must_size_set" "', argument " "1"" of type '" "lys_node_notif *""'"); 
+  }
+  arg1 = (lys_node_notif *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_notif_must_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_notif_must_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->must_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_notif_must_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_must_size_get" "', argument " "1"" of type '" "lys_node_notif *""'"); 
+  }
+  arg1 = (lys_node_notif *)(argp1);
+  result =  ((arg1)->must_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static void _wrap_lys_node_notif_tpdf_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -25035,6 +25490,63 @@ static SwigV8ReturnValue _wrap_lys_node_notif_tpdf_get(v8::Local<v8::String> pro
   arg1 = (lys_node_notif *)(argp1);
   result = (lys_tpdf *) ((arg1)->tpdf);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_tpdf, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_notif_must_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
+  lys_restr *arg2 = (lys_restr *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_must_set" "', argument " "1"" of type '" "lys_node_notif *""'"); 
+  }
+  arg1 = (lys_node_notif *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_restr, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_notif_must_set" "', argument " "2"" of type '" "lys_restr *""'"); 
+  }
+  arg2 = (lys_restr *)(argp2);
+  if (arg1) (arg1)->must = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_notif_must_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_notif *arg1 = (lys_node_notif *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_restr *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_notif, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_notif_must_get" "', argument " "1"" of type '" "lys_node_notif *""'"); 
+  }
+  arg1 = (lys_node_notif *)(argp1);
+  result = (lys_restr *) ((arg1)->must);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_restr, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -25098,20 +25610,20 @@ static void _wrap_delete_lys_node_notif(v8::Persistent<v8::Value> object, void *
       }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_name_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_name_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   char *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_name_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_name_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (char *) ((arg1)->name);
   jsresult = SWIG_FromCharPtr((const char *)result);
   
@@ -25124,20 +25636,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_dsc_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_dsc_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   char *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_dsc_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_dsc_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (char *) ((arg1)->dsc);
   jsresult = SWIG_FromCharPtr((const char *)result);
   
@@ -25150,20 +25662,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_ref_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_ref_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   char *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_ref_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_ref_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (char *) ((arg1)->ref);
   jsresult = SWIG_FromCharPtr((const char *)result);
   
@@ -25176,29 +25688,29 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_flags_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_flags_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   uint16_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_flags_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_flags_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   {
     res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_flags_set" "', argument " "2"" of type '" "uint16_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_flags_set" "', argument " "2"" of type '" "uint16_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_rpc_flags_set" "', argument " "2"" of type '" "uint16_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_rpc_action_flags_set" "', argument " "2"" of type '" "uint16_t""'");
     } else {
       arg2 = *((uint16_t *)(argp2));
     }
@@ -25212,20 +25724,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_flags_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_flags_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   uint16_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_flags_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_flags_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result =  ((arg1)->flags);
   jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
   
@@ -25238,29 +25750,29 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_nacm_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_nacm_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   uint16_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_nacm_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_nacm_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   {
     res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_nacm_set" "', argument " "2"" of type '" "uint16_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_nacm_set" "', argument " "2"" of type '" "uint16_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_rpc_nacm_set" "', argument " "2"" of type '" "uint16_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_rpc_action_nacm_set" "', argument " "2"" of type '" "uint16_t""'");
     } else {
       arg2 = *((uint16_t *)(argp2));
     }
@@ -25274,20 +25786,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_nacm_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_nacm_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   uint16_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_nacm_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_nacm_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result =  ((arg1)->nacm);
   jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
   
@@ -25300,25 +25812,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_module_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_module_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   lys_module *arg2 = (lys_module *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_module_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_module_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_module, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_module_set" "', argument " "2"" of type '" "lys_module *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_module_set" "', argument " "2"" of type '" "lys_module *""'"); 
   }
   arg2 = (lys_module *)(argp2);
   if (arg1) (arg1)->module = arg2;
@@ -25331,20 +25843,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_module_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_module_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_module *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_module_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_module_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (lys_module *) ((arg1)->module);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_module, 0 |  0 );
   
@@ -25357,25 +25869,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_nodetype_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_nodetype_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   LYS_NODE arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_nodetype_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_nodetype_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   ecode2 = SWIG_AsVal_int(value, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lys_node_rpc_nodetype_set" "', argument " "2"" of type '" "LYS_NODE""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lys_node_rpc_action_nodetype_set" "', argument " "2"" of type '" "LYS_NODE""'");
   } 
   arg2 = (LYS_NODE)(val2);
   if (arg1) (arg1)->nodetype = arg2;
@@ -25388,20 +25900,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_nodetype_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_nodetype_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   LYS_NODE result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_nodetype_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_nodetype_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (LYS_NODE) ((arg1)->nodetype);
   jsresult = SWIG_From_int((int)(result));
   
@@ -25414,25 +25926,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_parent_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_parent_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_parent_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_parent_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->parent = arg2;
@@ -25445,20 +25957,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_parent_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_parent_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (lys_node *) ((arg1)->parent);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -25471,25 +25983,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_child_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_child_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_child_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_child_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_child_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_child_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->child = arg2;
@@ -25502,20 +26014,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_child_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_child_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_child_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_child_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (lys_node *) ((arg1)->child);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -25528,25 +26040,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_next_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_next_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_next_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_next_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->next = arg2;
@@ -25559,20 +26071,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_next_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_next_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (lys_node *) ((arg1)->next);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -25585,25 +26097,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_prev_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_prev_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_prev_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_prev_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_prev_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_prev_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->prev = arg2;
@@ -25616,20 +26128,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_prev_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_prev_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_prev_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_prev_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (lys_node *) ((arg1)->prev);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -25642,143 +26154,24 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_features_size_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
-  }
-  arg1 = (lys_node_rpc *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_rpc_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_rpc_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_features_size_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
-  }
-  arg1 = (lys_node_rpc *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_rpc_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_features_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
-  }
-  arg1 = (lys_node_rpc *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_rpc_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_features_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
-  }
-  arg1 = (lys_node_rpc *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_rpc_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *arg2 = (void *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   int res2 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_priv_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_priv_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   res2 = SWIG_ConvertPtr(value,SWIG_as_voidptrptr(&arg2), 0, SWIG_POINTER_DISOWN);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_priv_set" "', argument " "2"" of type '" "void *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_priv_set" "', argument " "2"" of type '" "void *""'"); 
   }
   if (arg1) (arg1)->priv = arg2;
   
@@ -25790,20 +26183,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_priv_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_priv_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_priv_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_priv_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
   
@@ -25816,29 +26209,212 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_tpdf_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_iffeature_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
+  }
+  arg1 = (lys_node_rpc_action *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_iffeature_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
+  }
+  arg1 = (lys_node_rpc_action *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_rpc_action_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   uint8_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_tpdf_size_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_iffeature_size_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   {
     res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_tpdf_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_rpc_tpdf_size_set" "', argument " "2"" of type '" "uint8_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_rpc_action_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_iffeature_size_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
+  }
+  arg1 = (lys_node_rpc_action *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_rpc_action_padding_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
+  uint8_t *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_padding_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
+  }
+  arg1 = (lys_node_rpc_action *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_uint8_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_padding_set" "', argument " "2"" of type '" "uint8_t [2]""'"); 
+  } 
+  arg2 = (uint8_t *)(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)2; ++ii) *(uint8_t *)&arg1->padding[ii] = *((uint8_t *)arg2 + ii);
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""padding""' of type '""uint8_t [2]""'");
+    }
+  }
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_padding_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_padding_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
+  }
+  arg1 = (lys_node_rpc_action *)(argp1);
+  result = (uint8_t *)(uint8_t *) ((arg1)->padding);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uint8_t, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_rpc_action_tpdf_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_tpdf_size_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
+  }
+  arg1 = (lys_node_rpc_action *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_tpdf_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_rpc_action_tpdf_size_set" "', argument " "2"" of type '" "uint8_t""'");
     } else {
       arg2 = *((uint8_t *)(argp2));
     }
@@ -25852,20 +26428,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_tpdf_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_tpdf_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   uint8_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_tpdf_size_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_tpdf_size_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result =  ((arg1)->tpdf_size);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
@@ -25878,25 +26454,25 @@ fail:
 }
 
 
-static void _wrap_lys_node_rpc_tpdf_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_node_rpc_action_tpdf_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   lys_tpdf *arg2 = (lys_tpdf *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_tpdf_set" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_tpdf_set" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_tpdf, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_tpdf_set" "', argument " "2"" of type '" "lys_tpdf *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_rpc_action_tpdf_set" "', argument " "2"" of type '" "lys_tpdf *""'"); 
   }
   arg2 = (lys_tpdf *)(argp2);
   if (arg1) (arg1)->tpdf = arg2;
@@ -25909,20 +26485,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_node_rpc_tpdf_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_node_rpc_action_tpdf_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lys_node_rpc *arg1 = (lys_node_rpc *) 0 ;
+  lys_node_rpc_action *arg1 = (lys_node_rpc_action *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_tpdf *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_rpc_action, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_tpdf_get" "', argument " "1"" of type '" "lys_node_rpc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_rpc_action_tpdf_get" "', argument " "1"" of type '" "lys_node_rpc_action *""'"); 
   }
-  arg1 = (lys_node_rpc *)(argp1);
+  arg1 = (lys_node_rpc_action *)(argp1);
   result = (lys_tpdf *) ((arg1)->tpdf);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_tpdf, 0 |  0 );
   
@@ -25935,17 +26511,17 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_new_lys_node_rpc(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_new_lys_node_rpc_action(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Object> self = args.Holder();
-  lys_node_rpc *result;
-  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lys_node_rpc.");
-  result = (lys_node_rpc *)new lys_node_rpc();
+  lys_node_rpc_action *result;
+  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lys_node_rpc_action.");
+  result = (lys_node_rpc_action *)new lys_node_rpc_action();
   
   
   
-  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lys_node_rpc, SWIG_POINTER_OWN);
+  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lys_node_rpc_action, SWIG_POINTER_OWN);
   SWIGV8_RETURN(self);
   
   goto fail;
@@ -25955,21 +26531,21 @@ fail:
 
 
 #if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-static void _wrap_delete_lys_node_rpc(v8::Persistent<v8::Value> object, void *parameter) {
+static void _wrap_delete_lys_node_rpc_action(v8::Persistent<v8::Value> object, void *parameter) {
   SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
 #elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-  static void _wrap_delete_lys_node_rpc(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
+  static void _wrap_delete_lys_node_rpc_action(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
     SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
 #elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-    static void _wrap_delete_lys_node_rpc(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
+    static void _wrap_delete_lys_node_rpc_action(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
 #else
-      static void _wrap_delete_lys_node_rpc(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
+      static void _wrap_delete_lys_node_rpc_action(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
         v8::Local<v8::Object> object = data.GetValue();
         SWIGV8_Proxy *proxy = data.GetParameter();
 #endif
         
         if(proxy->swigCMemOwn && proxy->swigCObject) {
-          lys_node_rpc * arg1 = (lys_node_rpc *)proxy->swigCObject;
+          lys_node_rpc_action * arg1 = (lys_node_rpc_action *)proxy->swigCObject;
           delete arg1;
         }
         delete proxy;
@@ -26532,125 +27108,6 @@ fail:
 }
 
 
-static void _wrap_lys_node_augment_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_augment *arg1 = (lys_node_augment *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_augment, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_augment_features_size_set" "', argument " "1"" of type '" "lys_node_augment *""'"); 
-  }
-  arg1 = (lys_node_augment *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_augment_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_augment_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->features_size = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_augment_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_augment *arg1 = (lys_node_augment *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  uint8_t result;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_augment, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_augment_features_size_get" "', argument " "1"" of type '" "lys_node_augment *""'"); 
-  }
-  arg1 = (lys_node_augment *)(argp1);
-  result =  ((arg1)->features_size);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lys_node_augment_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_node_augment *arg1 = (lys_node_augment *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_augment, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_augment_features_set" "', argument " "1"" of type '" "lys_node_augment *""'"); 
-  }
-  arg1 = (lys_node_augment *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_augment_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
-  }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_node_augment_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_augment *arg1 = (lys_node_augment *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_feature **result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_augment, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_augment_features_get" "', argument " "1"" of type '" "lys_node_augment *""'"); 
-  }
-  arg1 = (lys_node_augment *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
 static void _wrap_lys_node_augment_priv_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -26696,6 +27153,125 @@ static SwigV8ReturnValue _wrap_lys_node_augment_priv_get(v8::Local<v8::String> p
   arg1 = (lys_node_augment *)(argp1);
   result = (void *) ((arg1)->priv);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_void, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_augment_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_augment *arg1 = (lys_node_augment *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_augment, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_augment_iffeature_set" "', argument " "1"" of type '" "lys_node_augment *""'"); 
+  }
+  arg1 = (lys_node_augment *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_augment_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_augment_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_augment *arg1 = (lys_node_augment *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_augment, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_augment_iffeature_get" "', argument " "1"" of type '" "lys_node_augment *""'"); 
+  }
+  arg1 = (lys_node_augment *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_node_augment_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_node_augment *arg1 = (lys_node_augment *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_augment, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_augment_iffeature_size_set" "', argument " "1"" of type '" "lys_node_augment *""'"); 
+  }
+  arg1 = (lys_node_augment *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_node_augment_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_node_augment_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_augment_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node_augment *arg1 = (lys_node_augment *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_node_augment, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_augment_iffeature_size_get" "', argument " "1"" of type '" "lys_node_augment *""'"); 
+  }
+  arg1 = (lys_node_augment *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -26934,32 +27510,6 @@ static void _wrap_delete_lys_refine_mod_list(v8::Persistent<v8::Value> object, v
         object.Clear();
 #endif
       }
-
-
-static SwigV8ReturnValue _wrap_lys_refine_mod_dflt_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_refine_mod *arg1 = (lys_refine_mod *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  char *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_refine_mod, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_refine_mod_dflt_get" "', argument " "1"" of type '" "lys_refine_mod *""'"); 
-  }
-  arg1 = (lys_refine_mod *)(argp1);
-  result = (char *) ((arg1)->dflt);
-  jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
 
 
 static SwigV8ReturnValue _wrap_lys_refine_mod_presence_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
@@ -27362,6 +27912,130 @@ fail:
 }
 
 
+static void _wrap_lys_refine_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_refine *arg1 = (lys_refine *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_refine, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_refine_iffeature_size_set" "', argument " "1"" of type '" "lys_refine *""'"); 
+  }
+  arg1 = (lys_refine *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_refine_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_refine_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_refine_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_refine *arg1 = (lys_refine *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_refine, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_refine_iffeature_size_get" "', argument " "1"" of type '" "lys_refine *""'"); 
+  }
+  arg1 = (lys_refine *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_refine_dflt_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_refine *arg1 = (lys_refine *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_refine, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_refine_dflt_size_set" "', argument " "1"" of type '" "lys_refine *""'"); 
+  }
+  arg1 = (lys_refine *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_refine_dflt_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_refine_dflt_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->dflt_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_refine_dflt_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_refine *arg1 = (lys_refine *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_refine, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_refine_dflt_size_get" "', argument " "1"" of type '" "lys_refine *""'"); 
+  }
+  arg1 = (lys_refine *)(argp1);
+  result =  ((arg1)->dflt_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static void _wrap_lys_refine_must_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
@@ -27409,6 +28083,89 @@ static SwigV8ReturnValue _wrap_lys_refine_must_get(v8::Local<v8::String> propert
   arg1 = (lys_refine *)(argp1);
   result = (lys_restr *) ((arg1)->must);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_restr, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_refine_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_refine *arg1 = (lys_refine *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_refine, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_refine_iffeature_set" "', argument " "1"" of type '" "lys_refine *""'"); 
+  }
+  arg1 = (lys_refine *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_refine_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_refine_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_refine *arg1 = (lys_refine *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_refine, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_refine_iffeature_get" "', argument " "1"" of type '" "lys_refine *""'"); 
+  }
+  arg1 = (lys_refine *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_refine_dflt_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_refine *arg1 = (lys_refine *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char **result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_refine, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_refine_dflt_get" "', argument " "1"" of type '" "lys_refine *""'"); 
+  }
+  arg1 = (lys_refine *)(argp1);
+  result = (char **) ((arg1)->dflt);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_char, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -27708,6 +28465,68 @@ fail:
 }
 
 
+static void _wrap_lys_deviate_dflt_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_deviate *arg1 = (lys_deviate *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_deviate, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_deviate_dflt_size_set" "', argument " "1"" of type '" "lys_deviate *""'"); 
+  }
+  arg1 = (lys_deviate *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_deviate_dflt_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_deviate_dflt_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->dflt_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_deviate_dflt_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_deviate *arg1 = (lys_deviate *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_deviate, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_deviate_dflt_size_get" "', argument " "1"" of type '" "lys_deviate *""'"); 
+  }
+  arg1 = (lys_deviate *)(argp1);
+  result =  ((arg1)->dflt_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_lys_deviate_dflt_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
@@ -27715,15 +28534,15 @@ static SwigV8ReturnValue _wrap_lys_deviate_dflt_get(v8::Local<v8::String> proper
   lys_deviate *arg1 = (lys_deviate *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  char *result = 0 ;
+  char **result = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_deviate, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_deviate_dflt_get" "', argument " "1"" of type '" "lys_deviate *""'"); 
   }
   arg1 = (lys_deviate *)(argp1);
-  result = (char *) ((arg1)->dflt);
-  jsresult = SWIG_FromCharPtr((const char *)result);
+  result = (char **) ((arg1)->dflt);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_char, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -28810,58 +29629,48 @@ fail:
 }
 
 
-static void _wrap_lys_import_external_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lys_import *arg1 = (lys_import *) 0 ;
-  uint8_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_import, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_import_external_set" "', argument " "1"" of type '" "lys_import *""'"); 
-  }
-  arg1 = (lys_import *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_import_external_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_import_external_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->external = arg2;
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lys_import_external_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_import_dsc_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   lys_import *arg1 = (lys_import *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  uint8_t result;
+  char *result = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_import, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_import_external_get" "', argument " "1"" of type '" "lys_import *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_import_dsc_get" "', argument " "1"" of type '" "lys_import *""'"); 
   }
   arg1 = (lys_import *)(argp1);
-  result =  ((arg1)->external);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  result = (char *) ((arg1)->dsc);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_import_ref_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_import *arg1 = (lys_import *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_import, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_import_ref_get" "', argument " "1"" of type '" "lys_import *""'"); 
+  }
+  arg1 = (lys_import *)(argp1);
+  result = (char *) ((arg1)->ref);
+  jsresult = SWIG_FromCharPtr((const char *)result);
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -29036,6 +29845,58 @@ static SwigV8ReturnValue _wrap_lys_include_rev_get(v8::Local<v8::String> propert
     
     jsresult = SWIG_FromCharPtrAndSize(result, size);
   }
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_include_dsc_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_include *arg1 = (lys_include *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_include, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_include_dsc_get" "', argument " "1"" of type '" "lys_include *""'"); 
+  }
+  arg1 = (lys_include *)(argp1);
+  result = (char *) ((arg1)->dsc);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_include_ref_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_include *arg1 = (lys_include *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_include, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_include_ref_get" "', argument " "1"" of type '" "lys_include *""'"); 
+  }
+  arg1 = (lys_include *)(argp1);
+  result = (char *) ((arg1)->ref);
+  jsresult = SWIG_FromCharPtr((const char *)result);
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -29777,6 +30638,68 @@ fail:
 }
 
 
+static void _wrap_lys_unique_trg_type_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_unique *arg1 = (lys_unique *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_unique, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_unique_trg_type_set" "', argument " "1"" of type '" "lys_unique *""'"); 
+  }
+  arg1 = (lys_unique *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_unique_trg_type_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_unique_trg_type_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->trg_type = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_unique_trg_type_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_unique *arg1 = (lys_unique *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_unique, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_unique_trg_type_get" "', argument " "1"" of type '" "lys_unique *""'"); 
+  }
+  arg1 = (lys_unique *)(argp1);
+  result =  ((arg1)->trg_type);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_new_lys_unique(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
@@ -30089,7 +31012,7 @@ fail:
 }
 
 
-static void _wrap_lys_feature_features_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_feature_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
@@ -30102,21 +31025,21 @@ static void _wrap_lys_feature_features_size_set(v8::Local<v8::String> property, 
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_feature, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_feature_features_size_set" "', argument " "1"" of type '" "lys_feature *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_feature_iffeature_size_set" "', argument " "1"" of type '" "lys_feature *""'"); 
   }
   arg1 = (lys_feature *)(argp1);
   {
     res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_feature_features_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_feature_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_feature_features_size_set" "', argument " "2"" of type '" "uint8_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_feature_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
     } else {
       arg2 = *((uint8_t *)(argp2));
     }
   }
-  if (arg1) (arg1)->features_size = arg2;
+  if (arg1) (arg1)->iffeature_size = arg2;
   
   
   goto fail;
@@ -30125,7 +31048,7 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_feature_features_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_feature_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
@@ -30136,10 +31059,10 @@ static SwigV8ReturnValue _wrap_lys_feature_features_size_get(v8::Local<v8::Strin
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_feature, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_feature_features_size_get" "', argument " "1"" of type '" "lys_feature *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_feature_iffeature_size_get" "', argument " "1"" of type '" "lys_feature *""'"); 
   }
   arg1 = (lys_feature *)(argp1);
-  result =  ((arg1)->features_size);
+  result =  ((arg1)->iffeature_size);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
   
@@ -30151,12 +31074,12 @@ fail:
 }
 
 
-static void _wrap_lys_feature_features_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lys_feature_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
   lys_feature *arg1 = (lys_feature *) 0 ;
-  lys_feature **arg2 = (lys_feature **) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -30164,15 +31087,15 @@ static void _wrap_lys_feature_features_set(v8::Local<v8::String> property, v8::L
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_feature, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_feature_features_set" "', argument " "1"" of type '" "lys_feature *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_feature_iffeature_set" "', argument " "1"" of type '" "lys_feature *""'"); 
   }
   arg1 = (lys_feature *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_feature, 0 |  0 );
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_feature_features_set" "', argument " "2"" of type '" "lys_feature **""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_feature_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
   }
-  arg2 = (lys_feature **)(argp2);
-  if (arg1) (arg1)->features = arg2;
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
   
   
   
@@ -30182,22 +31105,79 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lys_feature_features_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lys_feature_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   lys_feature *arg1 = (lys_feature *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  lys_feature **result = 0 ;
+  lys_iffeature *result = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_feature, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_feature_features_get" "', argument " "1"" of type '" "lys_feature *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_feature_iffeature_get" "', argument " "1"" of type '" "lys_feature *""'"); 
   }
   arg1 = (lys_feature *)(argp1);
-  result = (lys_feature **) ((arg1)->features);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_feature, 0 |  0 );
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_feature_depfeatures_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_feature *arg1 = (lys_feature *) 0 ;
+  ly_set *arg2 = (ly_set *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_feature, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_feature_depfeatures_set" "', argument " "1"" of type '" "lys_feature *""'"); 
+  }
+  arg1 = (lys_feature *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_ly_set, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_feature_depfeatures_set" "', argument " "2"" of type '" "ly_set *""'"); 
+  }
+  arg2 = (ly_set *)(argp2);
+  if (arg1) (arg1)->depfeatures = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_feature_depfeatures_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_feature *arg1 = (lys_feature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ly_set *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_feature, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_feature_depfeatures_get" "', argument " "1"" of type '" "lys_feature *""'"); 
+  }
+  arg1 = (lys_feature *)(argp1);
+  result = (ly_set *) ((arg1)->depfeatures);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_ly_set, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -30658,7 +31638,7 @@ static void _wrap_lys_ident_flags_set(v8::Local<v8::String> property, v8::Local<
   SWIGV8_HANDLESCOPE();
   
   lys_ident *arg1 = (lys_ident *) 0 ;
-  uint8_t arg2 ;
+  uint16_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -30670,14 +31650,14 @@ static void _wrap_lys_ident_flags_set(v8::Local<v8::String> property, v8::Local<
   }
   arg1 = (lys_ident *)(argp1);
   {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint16_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_ident_flags_set" "', argument " "2"" of type '" "uint8_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_ident_flags_set" "', argument " "2"" of type '" "uint16_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_ident_flags_set" "', argument " "2"" of type '" "uint8_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_ident_flags_set" "', argument " "2"" of type '" "uint16_t""'");
     } else {
-      arg2 = *((uint8_t *)(argp2));
+      arg2 = *((uint16_t *)(argp2));
     }
   }
   if (arg1) (arg1)->flags = arg2;
@@ -30696,7 +31676,7 @@ static SwigV8ReturnValue _wrap_lys_ident_flags_get(v8::Local<v8::String> propert
   lys_ident *arg1 = (lys_ident *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  uint8_t result;
+  uint16_t result;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_ident, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
@@ -30704,7 +31684,7 @@ static SwigV8ReturnValue _wrap_lys_ident_flags_get(v8::Local<v8::String> propert
   }
   arg1 = (lys_ident *)(argp1);
   result =  ((arg1)->flags);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  jsresult = SWIG_NewPointerObj((new uint16_t((const uint16_t&)(result))), SWIGTYPE_p_uint16_t, SWIG_POINTER_OWN |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -30772,12 +31752,193 @@ fail:
 }
 
 
+static void _wrap_lys_ident_iffeature_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_ident *arg1 = (lys_ident *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_ident, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_ident_iffeature_size_set" "', argument " "1"" of type '" "lys_ident *""'"); 
+  }
+  arg1 = (lys_ident *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_ident_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_ident_iffeature_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->iffeature_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_ident_iffeature_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_ident *arg1 = (lys_ident *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_ident, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_ident_iffeature_size_get" "', argument " "1"" of type '" "lys_ident *""'"); 
+  }
+  arg1 = (lys_ident *)(argp1);
+  result =  ((arg1)->iffeature_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_ident_base_size_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_ident *arg1 = (lys_ident *) 0 ;
+  uint8_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_ident, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_ident_base_size_set" "', argument " "1"" of type '" "lys_ident *""'"); 
+  }
+  arg1 = (lys_ident *)(argp1);
+  {
+    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_ident_base_size_set" "', argument " "2"" of type '" "uint8_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lys_ident_base_size_set" "', argument " "2"" of type '" "uint8_t""'");
+    } else {
+      arg2 = *((uint8_t *)(argp2));
+    }
+  }
+  if (arg1) (arg1)->base_size = arg2;
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_ident_base_size_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_ident *arg1 = (lys_ident *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  uint8_t result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_ident, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_ident_base_size_get" "', argument " "1"" of type '" "lys_ident *""'"); 
+  }
+  arg1 = (lys_ident *)(argp1);
+  result =  ((arg1)->base_size);
+  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lys_ident_iffeature_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lys_ident *arg1 = (lys_ident *) 0 ;
+  lys_iffeature *arg2 = (lys_iffeature *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_ident, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_ident_iffeature_set" "', argument " "1"" of type '" "lys_ident *""'"); 
+  }
+  arg1 = (lys_ident *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_iffeature, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_ident_iffeature_set" "', argument " "2"" of type '" "lys_iffeature *""'"); 
+  }
+  arg2 = (lys_iffeature *)(argp2);
+  if (arg1) (arg1)->iffeature = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lys_ident_iffeature_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_ident *arg1 = (lys_ident *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lys_iffeature *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_ident, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_ident_iffeature_get" "', argument " "1"" of type '" "lys_ident *""'"); 
+  }
+  arg1 = (lys_ident *)(argp1);
+  result = (lys_iffeature *) ((arg1)->iffeature);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_iffeature, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static void _wrap_lys_ident_base_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
   lys_ident *arg1 = (lys_ident *) 0 ;
-  lys_ident *arg2 = (lys_ident *) 0 ;
+  lys_ident **arg2 = (lys_ident **) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -30788,11 +31949,11 @@ static void _wrap_lys_ident_base_set(v8::Local<v8::String> property, v8::Local<v
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_ident_base_set" "', argument " "1"" of type '" "lys_ident *""'"); 
   }
   arg1 = (lys_ident *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_ident, SWIG_POINTER_DISOWN |  0 );
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_ident, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_ident_base_set" "', argument " "2"" of type '" "lys_ident *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_ident_base_set" "', argument " "2"" of type '" "lys_ident **""'"); 
   }
-  arg2 = (lys_ident *)(argp2);
+  arg2 = (lys_ident **)(argp2);
   if (arg1) (arg1)->base = arg2;
   
   
@@ -30810,15 +31971,15 @@ static SwigV8ReturnValue _wrap_lys_ident_base_get(v8::Local<v8::String> property
   lys_ident *arg1 = (lys_ident *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  lys_ident *result = 0 ;
+  lys_ident **result = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_ident, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_ident_base_get" "', argument " "1"" of type '" "lys_ident *""'"); 
   }
   arg1 = (lys_ident *)(argp1);
-  result = (lys_ident *) ((arg1)->base);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_ident, 0 |  0 );
+  result = (lys_ident **) ((arg1)->base);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_ident, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -30834,7 +31995,7 @@ static void _wrap_lys_ident_der_set(v8::Local<v8::String> property, v8::Local<v8
   SWIGV8_HANDLESCOPE();
   
   lys_ident *arg1 = (lys_ident *) 0 ;
-  lys_ident **arg2 = (lys_ident **) 0 ;
+  ly_set *arg2 = (ly_set *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -30845,11 +32006,11 @@ static void _wrap_lys_ident_der_set(v8::Local<v8::String> property, v8::Local<v8
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_ident_der_set" "', argument " "1"" of type '" "lys_ident *""'"); 
   }
   arg1 = (lys_ident *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_p_lys_ident, 0 |  0 );
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_ly_set, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_ident_der_set" "', argument " "2"" of type '" "lys_ident **""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_ident_der_set" "', argument " "2"" of type '" "ly_set *""'"); 
   }
-  arg2 = (lys_ident **)(argp2);
+  arg2 = (ly_set *)(argp2);
   if (arg1) (arg1)->der = arg2;
   
   
@@ -30867,15 +32028,15 @@ static SwigV8ReturnValue _wrap_lys_ident_der_get(v8::Local<v8::String> property,
   lys_ident *arg1 = (lys_ident *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  lys_ident **result = 0 ;
+  ly_set *result = 0 ;
   
   res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lys_ident, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_ident_der_get" "', argument " "1"" of type '" "lys_ident *""'"); 
   }
   arg1 = (lys_ident *)(argp1);
-  result = (lys_ident **) ((arg1)->der);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_p_lys_ident, 0 |  0 );
+  result = (ly_set *) ((arg1)->der);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_ly_set, 0 |  0 );
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -31240,7 +32401,7 @@ static SwigV8ReturnValue _wrap_lys_is_disabled(const SwigV8Arguments &args) {
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
-  lys_feature *result = 0 ;
+  lys_node *result = 0 ;
   
   if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lys_is_disabled.");
   
@@ -31254,8 +32415,8 @@ static SwigV8ReturnValue _wrap_lys_is_disabled(const SwigV8Arguments &args) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lys_is_disabled" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = (int)(val2);
-  result = (lys_feature *)lys_is_disabled((lys_node const *)arg1,arg2);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_feature, 0 |  0 );
+  result = (lys_node *)lys_is_disabled((lys_node const *)arg1,arg2);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
   
   
@@ -31382,6 +32543,369 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_LYS_GETNEXT_WITHUSES(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x10));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYS_GETNEXT_INTOUSES(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x20));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYS_GETNEXT_INTONPCONT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x40));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_find_xpath(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node *arg1 = (lys_node *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  ly_set *result = 0 ;
+  
+  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lys_find_xpath.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_find_xpath" "', argument " "1"" of type '" "lys_node const *""'"); 
+  }
+  arg1 = (lys_node *)(argp1);
+  res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lys_find_xpath" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = (char *)(buf2);
+  ecode3 = SWIG_AsVal_int(args[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lys_find_xpath" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = (int)(val3);
+  result = (ly_set *)lys_find_xpath((lys_node const *)arg1,(char const *)arg2,arg3);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_ly_set, 0 |  0 );
+  
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_LYS_FIND_OUTPUT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x01));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXP_NODE_ROOT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYXP_NODE_ROOT));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXP_NODE_ROOT_CONFIG(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYXP_NODE_ROOT_CONFIG));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXP_NODE_ELEM(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYXP_NODE_ELEM));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXP_NODE_TEXT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYXP_NODE_TEXT));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXP_NODE_ATTR(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYXP_NODE_ATTR));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_xpath_atomize(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node *arg1 = (lys_node *) 0 ;
+  enum lyxp_node_type arg2 ;
+  char *arg3 = (char *) 0 ;
+  int arg4 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int res3 ;
+  char *buf3 = 0 ;
+  int alloc3 = 0 ;
+  int val4 ;
+  int ecode4 = 0 ;
+  ly_set *result = 0 ;
+  
+  if(args.Length() != 4) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lys_xpath_atomize.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_xpath_atomize" "', argument " "1"" of type '" "lys_node const *""'"); 
+  }
+  arg1 = (lys_node *)(argp1);
+  ecode2 = SWIG_AsVal_int(args[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lys_xpath_atomize" "', argument " "2"" of type '" "enum lyxp_node_type""'");
+  } 
+  arg2 = (enum lyxp_node_type)(val2);
+  res3 = SWIG_AsCharPtrAndSize(args[2], &buf3, NULL, &alloc3);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lys_xpath_atomize" "', argument " "3"" of type '" "char const *""'");
+  }
+  arg3 = (char *)(buf3);
+  ecode4 = SWIG_AsVal_int(args[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "lys_xpath_atomize" "', argument " "4"" of type '" "int""'");
+  } 
+  arg4 = (int)(val4);
+  result = (ly_set *)lys_xpath_atomize((lys_node const *)arg1,arg2,(char const *)arg3,arg4);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_ly_set, 0 |  0 );
+  
+  
+  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_LYXP_MUST(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x01));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXP_WHEN(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x02));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_node_xpath_atomize(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node *arg1 = (lys_node *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  ly_set *result = 0 ;
+  
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lys_node_xpath_atomize.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_node_xpath_atomize" "', argument " "1"" of type '" "lys_node const *""'"); 
+  }
+  arg1 = (lys_node *)(argp1);
+  ecode2 = SWIG_AsVal_int(args[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lys_node_xpath_atomize" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = (int)(val2);
+  result = (ly_set *)lys_node_xpath_atomize((lys_node const *)arg1,arg2);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_ly_set, 0 |  0 );
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_LYXP_RECURSIVE(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x01));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXP_NO_LOCAL(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x02));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lys_path(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_node *arg1 = (lys_node *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lys_path.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_path" "', argument " "1"" of type '" "lys_node const *""'"); 
+  }
+  arg1 = (lys_node *)(argp1);
+  result = (char *)lys_path((lys_node const *)arg1);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
 static SwigV8ReturnValue _wrap_lys_parent(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
@@ -31456,6 +32980,34 @@ static SwigV8ReturnValue _wrap_lys_main_module(const SwigV8Arguments &args) {
   arg1 = (lys_module *)(argp1);
   result = (lys_module *)lys_main_module((lys_module const *)arg1);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_module, 0 |  0 );
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lys_set_implemented(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lys_module *arg1 = (lys_module *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int result;
+  
+  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lys_set_implemented.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lys_module, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lys_set_implemented" "', argument " "1"" of type '" "lys_module const *""'"); 
+  }
+  arg1 = (lys_module *)(argp1);
+  result = (int)lys_set_implemented((lys_module const *)arg1);
+  jsresult = SWIG_From_int((int)(result));
   
   
   SWIGV8_RETURN(jsresult);
@@ -31767,6 +33319,126 @@ static SwigV8ReturnValue _wrap_LYD_JSON(v8::Local<v8::String> property, const Sw
   v8::Handle<v8::Value> jsresult;
   
   jsresult = SWIG_From_int((int)(LYD_JSON));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYD_ANYDATA_CONSTSTRING(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYD_ANYDATA_CONSTSTRING));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYD_ANYDATA_STRING(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYD_ANYDATA_STRING));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYD_ANYDATA_JSON(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYD_ANYDATA_JSON));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYD_ANYDATA_JSOND(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYD_ANYDATA_JSOND));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYD_ANYDATA_SXML(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYD_ANYDATA_SXML));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYD_ANYDATA_SXMLD(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYD_ANYDATA_SXMLD));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYD_ANYDATA_XML(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYD_ANYDATA_XML));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYD_ANYDATA_DATATREE(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYD_ANYDATA_DATATREE));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -33035,6 +34707,21 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_LYD_VAL_MAND(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x02));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_LYD_VAL_NOT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
@@ -34207,198 +35894,25 @@ static void _wrap_delete_lyd_node_leaf_list(v8::Persistent<v8::Value> object, vo
       }
 
 
-static void _wrap_lyd_node_anyxml_value_str_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lyd_node_anydata_schema_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lyd_node_anyxml_value *arg1 = (lyd_node_anyxml_value *) 0 ;
-  char *arg2 = (char *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int res2 ;
-  char *buf2 = 0 ;
-  int alloc2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml_value, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_value_str_set" "', argument " "1"" of type '" "lyd_node_anyxml_value *""'"); 
-  }
-  arg1 = (lyd_node_anyxml_value *)(argp1);
-  res2 = SWIG_AsCharPtrAndSize(value, &buf2, NULL, &alloc2);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anyxml_value_str_set" "', argument " "2"" of type '" "char const *""'");
-  }
-  arg2 = (char *)(buf2);
-  if (arg2) {
-    size_t size = strlen((const char *)((const char *)(arg2))) + 1;
-    arg1->str = (char const *)(char*)(memcpy((new char[size]), arg2, sizeof(char)*(size)));
-  } else {
-    arg1->str = 0;
-  }
-  
-  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_value_str_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml_value *arg1 = (lyd_node_anyxml_value *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  char *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml_value, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_value_str_get" "', argument " "1"" of type '" "lyd_node_anyxml_value *""'"); 
-  }
-  arg1 = (lyd_node_anyxml_value *)(argp1);
-  result = (char *) ((arg1)->str);
-  jsresult = SWIG_FromCharPtr((const char *)result);
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static void _wrap_lyd_node_anyxml_value_xml_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyd_node_anyxml_value *arg1 = (lyd_node_anyxml_value *) 0 ;
-  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml_value, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_value_xml_set" "', argument " "1"" of type '" "lyd_node_anyxml_value *""'"); 
-  }
-  arg1 = (lyd_node_anyxml_value *)(argp1);
-  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anyxml_value_xml_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
-  }
-  arg2 = (lyxml_elem *)(argp2);
-  if (arg1) (arg1)->xml = arg2;
-  
-  
-  
-  goto fail;
-fail:
-  return;
-}
-
-
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_value_xml_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml_value *arg1 = (lyd_node_anyxml_value *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyxml_elem *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml_value, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_value_xml_get" "', argument " "1"" of type '" "lyd_node_anyxml_value *""'"); 
-  }
-  arg1 = (lyd_node_anyxml_value *)(argp1);
-  result = (lyxml_elem *) ((arg1)->xml);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_new_lyd_node_anyxml_value(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Object> self = args.Holder();
-  lyd_node_anyxml_value *result;
-  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lyd_node_anyxml_value.");
-  result = (lyd_node_anyxml_value *)new lyd_node_anyxml_value();
-  
-  
-  
-  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lyd_node_anyxml_value, SWIG_POINTER_OWN);
-  SWIGV8_RETURN(self);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-static void _wrap_delete_lyd_node_anyxml_value(v8::Persistent<v8::Value> object, void *parameter) {
-  SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-  static void _wrap_delete_lyd_node_anyxml_value(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
-    SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-    static void _wrap_delete_lyd_node_anyxml_value(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
-#else
-      static void _wrap_delete_lyd_node_anyxml_value(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
-        v8::Local<v8::Object> object = data.GetValue();
-        SWIGV8_Proxy *proxy = data.GetParameter();
-#endif
-        
-        if(proxy->swigCMemOwn && proxy->swigCObject) {
-          lyd_node_anyxml_value * arg1 = (lyd_node_anyxml_value *)proxy->swigCObject;
-          delete arg1;
-        }
-        delete proxy;
-        
-#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-        object.Dispose();
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-        object.Dispose(isolate);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x032100)
-        object->Dispose(isolate);
-#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-        object->Dispose();
-#else
-        object.Clear();
-#endif
-      }
-
-
-static void _wrap_lyd_node_anyxml_schema_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
-  const SwigV8PropertyCallbackInfoVoid &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   lys_node *arg2 = (lys_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_schema_set" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_schema_set" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lys_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anyxml_schema_set" "', argument " "2"" of type '" "lys_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anydata_schema_set" "', argument " "2"" of type '" "lys_node *""'"); 
   }
   arg2 = (lys_node *)(argp2);
   if (arg1) (arg1)->schema = arg2;
@@ -34411,20 +35925,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_schema_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lyd_node_anydata_schema_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lys_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_schema_get" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_schema_get" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   result = (lys_node *) ((arg1)->schema);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
   
@@ -34437,29 +35951,29 @@ fail:
 }
 
 
-static void _wrap_lyd_node_anyxml_validity_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lyd_node_anydata_validity_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   uint8_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_validity_set" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_validity_set" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   {
     res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anyxml_validity_set" "', argument " "2"" of type '" "uint8_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anydata_validity_set" "', argument " "2"" of type '" "uint8_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lyd_node_anyxml_validity_set" "', argument " "2"" of type '" "uint8_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lyd_node_anydata_validity_set" "', argument " "2"" of type '" "uint8_t""'");
     } else {
       arg2 = *((uint8_t *)(argp2));
     }
@@ -34473,20 +35987,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_validity_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lyd_node_anydata_validity_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   uint8_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_validity_get" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_validity_get" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   result =  ((arg1)->validity);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
@@ -34499,20 +36013,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_dflt_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lyd_node_anydata_dflt_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   uint8_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_dflt_get" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_dflt_get" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   result =  ((arg1)->dflt);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
@@ -34525,29 +36039,29 @@ fail:
 }
 
 
-static void _wrap_lyd_node_anyxml_when_status_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lyd_node_anydata_when_status_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   uint8_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_when_status_set" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_when_status_set" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   {
     res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anyxml_when_status_set" "', argument " "2"" of type '" "uint8_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anydata_when_status_set" "', argument " "2"" of type '" "uint8_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lyd_node_anyxml_when_status_set" "', argument " "2"" of type '" "uint8_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lyd_node_anydata_when_status_set" "', argument " "2"" of type '" "uint8_t""'");
     } else {
       arg2 = *((uint8_t *)(argp2));
     }
@@ -34561,20 +36075,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_when_status_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lyd_node_anydata_when_status_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   uint8_t result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_when_status_get" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_when_status_get" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   result =  ((arg1)->when_status);
   jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
   
@@ -34587,25 +36101,25 @@ fail:
 }
 
 
-static void _wrap_lyd_node_anyxml_attr_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lyd_node_anydata_attr_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   lyd_attr *arg2 = (lyd_attr *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_attr_set" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_attr_set" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyd_attr, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anyxml_attr_set" "', argument " "2"" of type '" "lyd_attr *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anydata_attr_set" "', argument " "2"" of type '" "lyd_attr *""'"); 
   }
   arg2 = (lyd_attr *)(argp2);
   if (arg1) (arg1)->attr = arg2;
@@ -34618,20 +36132,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_attr_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lyd_node_anydata_attr_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lyd_attr *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_attr_get" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_attr_get" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   result = (lyd_attr *) ((arg1)->attr);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_attr, 0 |  0 );
   
@@ -34644,25 +36158,25 @@ fail:
 }
 
 
-static void _wrap_lyd_node_anyxml_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lyd_node_anydata_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   lyd_node *arg2 = (lyd_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_next_set" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_next_set" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyd_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anyxml_next_set" "', argument " "2"" of type '" "lyd_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anydata_next_set" "', argument " "2"" of type '" "lyd_node *""'"); 
   }
   arg2 = (lyd_node *)(argp2);
   if (arg1) (arg1)->next = arg2;
@@ -34675,20 +36189,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lyd_node_anydata_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lyd_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_next_get" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_next_get" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   result = (lyd_node *) ((arg1)->next);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
   
@@ -34701,25 +36215,25 @@ fail:
 }
 
 
-static void _wrap_lyd_node_anyxml_prev_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lyd_node_anydata_prev_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   lyd_node *arg2 = (lyd_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_prev_set" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_prev_set" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyd_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anyxml_prev_set" "', argument " "2"" of type '" "lyd_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anydata_prev_set" "', argument " "2"" of type '" "lyd_node *""'"); 
   }
   arg2 = (lyd_node *)(argp2);
   if (arg1) (arg1)->prev = arg2;
@@ -34732,20 +36246,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_prev_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lyd_node_anydata_prev_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lyd_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_prev_get" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_prev_get" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   result = (lyd_node *) ((arg1)->prev);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
   
@@ -34758,25 +36272,25 @@ fail:
 }
 
 
-static void _wrap_lyd_node_anyxml_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lyd_node_anydata_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   lyd_node *arg2 = (lyd_node *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_parent_set" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_parent_set" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyd_node, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anyxml_parent_set" "', argument " "2"" of type '" "lyd_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anydata_parent_set" "', argument " "2"" of type '" "lyd_node *""'"); 
   }
   arg2 = (lyd_node *)(argp2);
   if (arg1) (arg1)->parent = arg2;
@@ -34789,20 +36303,20 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lyd_node_anydata_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   lyd_node *result = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_parent_get" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_parent_get" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
+  arg1 = (lyd_node_anydata *)(argp1);
   result = (lyd_node *) ((arg1)->parent);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
   
@@ -34815,34 +36329,29 @@ fail:
 }
 
 
-static void _wrap_lyd_node_anyxml_xml_struct_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+static void _wrap_lyd_node_anydata_value_type_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
   const SwigV8PropertyCallbackInfoVoid &info) {
   SWIGV8_HANDLESCOPE();
   
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
-  uint8_t arg2 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
+  LYD_ANYDATA_VALUETYPE arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_xml_struct_set" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_value_type_set" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
-  {
-    res2 = SWIG_ConvertPtr(value, &argp2, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_node_anyxml_xml_struct_set" "', argument " "2"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "lyd_node_anyxml_xml_struct_set" "', argument " "2"" of type '" "uint8_t""'");
-    } else {
-      arg2 = *((uint8_t *)(argp2));
-    }
-  }
-  if (arg1) (arg1)->xml_struct = arg2;
+  arg1 = (lyd_node_anydata *)(argp1);
+  ecode2 = SWIG_AsVal_int(value, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lyd_node_anydata_value_type_set" "', argument " "2"" of type '" "LYD_ANYDATA_VALUETYPE""'");
+  } 
+  arg2 = (LYD_ANYDATA_VALUETYPE)(val2);
+  if (arg1) (arg1)->value_type = arg2;
+  
   
   
   goto fail;
@@ -34851,22 +36360,22 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_xml_struct_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+static SwigV8ReturnValue _wrap_lyd_node_anydata_value_type_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
+  lyd_node_anydata *arg1 = (lyd_node_anydata *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  uint8_t result;
+  LYD_ANYDATA_VALUETYPE result;
   
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anydata, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_xml_struct_get" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anydata_value_type_get" "', argument " "1"" of type '" "lyd_node_anydata *""'"); 
   }
-  arg1 = (lyd_node_anyxml *)(argp1);
-  result =  ((arg1)->xml_struct);
-  jsresult = SWIG_NewPointerObj((new uint8_t((const uint8_t&)(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  arg1 = (lyd_node_anydata *)(argp1);
+  result = (LYD_ANYDATA_VALUETYPE) ((arg1)->value_type);
+  jsresult = SWIG_From_int((int)(result));
   
   
   SWIGV8_RETURN_INFO(jsresult, info);
@@ -34877,43 +36386,17 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_node_anyxml_value_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyd_node_anyxml *arg1 = (lyd_node_anyxml *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyd_node_anyxml_value *result = 0 ;
-  
-  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyd_node_anyxml, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_node_anyxml_value_get" "', argument " "1"" of type '" "lyd_node_anyxml *""'"); 
-  }
-  arg1 = (lyd_node_anyxml *)(argp1);
-  result = (lyd_node_anyxml_value *)& ((arg1)->value);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node_anyxml_value, 0 |  0 );
-  
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_new_lyd_node_anyxml(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_new_lyd_node_anydata(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Object> self = args.Holder();
-  lyd_node_anyxml *result;
-  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lyd_node_anyxml.");
-  result = (lyd_node_anyxml *)new lyd_node_anyxml();
+  lyd_node_anydata *result;
+  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lyd_node_anydata.");
+  result = (lyd_node_anydata *)new lyd_node_anydata();
   
   
   
-  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lyd_node_anyxml, SWIG_POINTER_OWN);
+  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lyd_node_anydata, SWIG_POINTER_OWN);
   SWIGV8_RETURN(self);
   
   goto fail;
@@ -34923,21 +36406,21 @@ fail:
 
 
 #if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
-static void _wrap_delete_lyd_node_anyxml(v8::Persistent<v8::Value> object, void *parameter) {
+static void _wrap_delete_lyd_node_anydata(v8::Persistent<v8::Value> object, void *parameter) {
   SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
 #elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
-  static void _wrap_delete_lyd_node_anyxml(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
+  static void _wrap_delete_lyd_node_anydata(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
     SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
 #elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
-    static void _wrap_delete_lyd_node_anyxml(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
+    static void _wrap_delete_lyd_node_anydata(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
 #else
-      static void _wrap_delete_lyd_node_anyxml(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
+      static void _wrap_delete_lyd_node_anydata(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
         v8::Local<v8::Object> object = data.GetValue();
         SWIGV8_Proxy *proxy = data.GetParameter();
 #endif
         
         if(proxy->swigCMemOwn && proxy->swigCObject) {
-          lyd_node_anyxml * arg1 = (lyd_node_anyxml *)proxy->swigCObject;
+          lyd_node_anydata * arg1 = (lyd_node_anydata *)proxy->swigCObject;
           delete arg1;
         }
         delete proxy;
@@ -35343,6 +36826,36 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_LYD_DIFFOPT_NOSIBLINGS(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x0800));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYD_DIFFOPT_WITHDEFAULTS(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x0001));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_lyd_path(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
@@ -35587,111 +37100,6 @@ static SwigV8ReturnValue _wrap_LYD_OPT_NOAUTODEL(v8::Local<v8::String> property,
   v8::Handle<v8::Value> jsresult;
   
   jsresult = SWIG_From_int((int)(0x2000));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYD_OPT_KEEPEMPTYCONT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x4000));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYD_WD_MASK(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x1F0000));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYD_WD_EXPLICIT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x100000));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYD_WD_TRIM(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x010000));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYD_WD_ALL(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x020000));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYD_WD_ALL_TAG(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x040000));
-  
-  SWIGV8_RETURN_INFO(jsresult, info);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
-}
-
-
-static SwigV8ReturnValue _wrap_LYD_WD_IMPL_TAG(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  
-  jsresult = SWIG_From_int((int)(0x080000));
   
   SWIGV8_RETURN_INFO(jsresult, info);
   
@@ -36060,14 +37468,15 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_new_anyxml_str(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_lyd_new_anydata(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   lyd_node *arg1 = (lyd_node *) 0 ;
   lys_module *arg2 = (lys_module *) 0 ;
   char *arg3 = (char *) 0 ;
-  char *arg4 = (char *) 0 ;
+  void *arg4 = (void *) 0 ;
+  LYD_ANYDATA_VALUETYPE arg5 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -36076,93 +37485,42 @@ static SwigV8ReturnValue _wrap_lyd_new_anyxml_str(const SwigV8Arguments &args) {
   char *buf3 = 0 ;
   int alloc3 = 0 ;
   int res4 ;
-  char *buf4 = 0 ;
-  int alloc4 = 0 ;
+  int val5 ;
+  int ecode5 = 0 ;
   lyd_node *result = 0 ;
   
-  if(args.Length() != 4) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_new_anyxml_str.");
+  if(args.Length() != 5) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_new_anydata.");
   
   res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_new_anyxml_str" "', argument " "1"" of type '" "lyd_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_new_anydata" "', argument " "1"" of type '" "lyd_node *""'"); 
   }
   arg1 = (lyd_node *)(argp1);
   res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lys_module, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_new_anyxml_str" "', argument " "2"" of type '" "lys_module const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_new_anydata" "', argument " "2"" of type '" "lys_module const *""'"); 
   }
   arg2 = (lys_module *)(argp2);
   res3 = SWIG_AsCharPtrAndSize(args[2], &buf3, NULL, &alloc3);
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyd_new_anyxml_str" "', argument " "3"" of type '" "char const *""'");
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyd_new_anydata" "', argument " "3"" of type '" "char const *""'");
   }
   arg3 = (char *)(buf3);
-  res4 = SWIG_AsCharPtrAndSize(args[3], &buf4, NULL, &alloc4);
+  res4 = SWIG_ConvertPtr(args[3],SWIG_as_voidptrptr(&arg4), 0, 0);
   if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "lyd_new_anyxml_str" "', argument " "4"" of type '" "char *""'");
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "lyd_new_anydata" "', argument " "4"" of type '" "void *""'"); 
   }
-  arg4 = (char *)(buf4);
-  result = (lyd_node *)lyd_new_anyxml_str(arg1,(lys_module const *)arg2,(char const *)arg3,arg4);
+  ecode5 = SWIG_AsVal_int(args[4], &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "lyd_new_anydata" "', argument " "5"" of type '" "LYD_ANYDATA_VALUETYPE""'");
+  } 
+  arg5 = (LYD_ANYDATA_VALUETYPE)(val5);
+  result = (lyd_node *)lyd_new_anydata(arg1,(lys_module const *)arg2,(char const *)arg3,arg4,arg5);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
   
   
   if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
-  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
   
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyd_new_anyxml_xml(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyd_node *arg1 = (lyd_node *) 0 ;
-  lys_module *arg2 = (lys_module *) 0 ;
-  char *arg3 = (char *) 0 ;
-  lyxml_elem *arg4 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  int res3 ;
-  char *buf3 = 0 ;
-  int alloc3 = 0 ;
-  void *argp4 = 0 ;
-  int res4 = 0 ;
-  lyd_node *result = 0 ;
-  
-  if(args.Length() != 4) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_new_anyxml_xml.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_new_anyxml_xml" "', argument " "1"" of type '" "lyd_node *""'"); 
-  }
-  arg1 = (lyd_node *)(argp1);
-  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lys_module, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_new_anyxml_xml" "', argument " "2"" of type '" "lys_module const *""'"); 
-  }
-  arg2 = (lys_module *)(argp2);
-  res3 = SWIG_AsCharPtrAndSize(args[2], &buf3, NULL, &alloc3);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyd_new_anyxml_xml" "', argument " "3"" of type '" "char const *""'");
-  }
-  arg3 = (char *)(buf3);
-  res4 = SWIG_ConvertPtr(args[3], &argp4,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "lyd_new_anyxml_xml" "', argument " "4"" of type '" "lyxml_elem *""'"); 
-  }
-  arg4 = (lyxml_elem *)(argp4);
-  result = (lyd_node *)lyd_new_anyxml_xml(arg1,(lys_module const *)arg2,(char const *)arg3,arg4);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
-  
-  
-  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
   
   
   SWIGV8_RETURN(jsresult);
@@ -36277,14 +37635,15 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_new_output_anyxml_str(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_lyd_new_output_anydata(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
   lyd_node *arg1 = (lyd_node *) 0 ;
   lys_module *arg2 = (lys_module *) 0 ;
   char *arg3 = (char *) 0 ;
-  char *arg4 = (char *) 0 ;
+  void *arg4 = (void *) 0 ;
+  LYD_ANYDATA_VALUETYPE arg5 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -36293,93 +37652,42 @@ static SwigV8ReturnValue _wrap_lyd_new_output_anyxml_str(const SwigV8Arguments &
   char *buf3 = 0 ;
   int alloc3 = 0 ;
   int res4 ;
-  char *buf4 = 0 ;
-  int alloc4 = 0 ;
+  int val5 ;
+  int ecode5 = 0 ;
   lyd_node *result = 0 ;
   
-  if(args.Length() != 4) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_new_output_anyxml_str.");
+  if(args.Length() != 5) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_new_output_anydata.");
   
   res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_new_output_anyxml_str" "', argument " "1"" of type '" "lyd_node *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_new_output_anydata" "', argument " "1"" of type '" "lyd_node *""'"); 
   }
   arg1 = (lyd_node *)(argp1);
   res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lys_module, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_new_output_anyxml_str" "', argument " "2"" of type '" "lys_module const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_new_output_anydata" "', argument " "2"" of type '" "lys_module const *""'"); 
   }
   arg2 = (lys_module *)(argp2);
   res3 = SWIG_AsCharPtrAndSize(args[2], &buf3, NULL, &alloc3);
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyd_new_output_anyxml_str" "', argument " "3"" of type '" "char const *""'");
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyd_new_output_anydata" "', argument " "3"" of type '" "char const *""'");
   }
   arg3 = (char *)(buf3);
-  res4 = SWIG_AsCharPtrAndSize(args[3], &buf4, NULL, &alloc4);
+  res4 = SWIG_ConvertPtr(args[3],SWIG_as_voidptrptr(&arg4), 0, 0);
   if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "lyd_new_output_anyxml_str" "', argument " "4"" of type '" "char *""'");
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "lyd_new_output_anydata" "', argument " "4"" of type '" "void *""'"); 
   }
-  arg4 = (char *)(buf4);
-  result = (lyd_node *)lyd_new_output_anyxml_str(arg1,(lys_module const *)arg2,(char const *)arg3,arg4);
+  ecode5 = SWIG_AsVal_int(args[4], &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "lyd_new_output_anydata" "', argument " "5"" of type '" "LYD_ANYDATA_VALUETYPE""'");
+  } 
+  arg5 = (LYD_ANYDATA_VALUETYPE)(val5);
+  result = (lyd_node *)lyd_new_output_anydata(arg1,(lys_module const *)arg2,(char const *)arg3,arg4,arg5);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
   
   
   if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
-  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
   
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyd_new_output_anyxml_xml(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyd_node *arg1 = (lyd_node *) 0 ;
-  lys_module *arg2 = (lys_module *) 0 ;
-  char *arg3 = (char *) 0 ;
-  lyxml_elem *arg4 = (lyxml_elem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  int res3 ;
-  char *buf3 = 0 ;
-  int alloc3 = 0 ;
-  void *argp4 = 0 ;
-  int res4 = 0 ;
-  lyd_node *result = 0 ;
-  
-  if(args.Length() != 4) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_new_output_anyxml_xml.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_new_output_anyxml_xml" "', argument " "1"" of type '" "lyd_node *""'"); 
-  }
-  arg1 = (lyd_node *)(argp1);
-  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lys_module, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_new_output_anyxml_xml" "', argument " "2"" of type '" "lys_module const *""'"); 
-  }
-  arg2 = (lys_module *)(argp2);
-  res3 = SWIG_AsCharPtrAndSize(args[2], &buf3, NULL, &alloc3);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyd_new_output_anyxml_xml" "', argument " "3"" of type '" "char const *""'");
-  }
-  arg3 = (char *)(buf3);
-  res4 = SWIG_ConvertPtr(args[3], &argp4,SWIGTYPE_p_lyxml_elem, 0 |  0 );
-  if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "lyd_new_output_anyxml_xml" "', argument " "4"" of type '" "lyxml_elem *""'"); 
-  }
-  arg4 = (lyxml_elem *)(argp4);
-  result = (lyd_node *)lyd_new_output_anyxml_xml(arg1,(lys_module const *)arg2,(char const *)arg3,arg4);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
-  
-  
-  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
   
   
   SWIGV8_RETURN(jsresult);
@@ -36442,8 +37750,9 @@ static SwigV8ReturnValue _wrap_lyd_new_path(const SwigV8Arguments &args) {
   lyd_node *arg1 = (lyd_node *) 0 ;
   ly_ctx *arg2 = (ly_ctx *) 0 ;
   char *arg3 = (char *) 0 ;
-  char *arg4 = (char *) 0 ;
-  int arg5 ;
+  void *arg4 = (void *) 0 ;
+  LYD_ANYDATA_VALUETYPE arg5 ;
+  int arg6 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -36452,13 +37761,13 @@ static SwigV8ReturnValue _wrap_lyd_new_path(const SwigV8Arguments &args) {
   char *buf3 = 0 ;
   int alloc3 = 0 ;
   int res4 ;
-  char *buf4 = 0 ;
-  int alloc4 = 0 ;
   int val5 ;
   int ecode5 = 0 ;
+  int val6 ;
+  int ecode6 = 0 ;
   lyd_node *result = 0 ;
   
-  if(args.Length() != 5) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_new_path.");
+  if(args.Length() != 6) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_new_path.");
   
   res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
@@ -36475,22 +37784,27 @@ static SwigV8ReturnValue _wrap_lyd_new_path(const SwigV8Arguments &args) {
     SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyd_new_path" "', argument " "3"" of type '" "char const *""'");
   }
   arg3 = (char *)(buf3);
-  res4 = SWIG_AsCharPtrAndSize(args[3], &buf4, NULL, &alloc4);
+  res4 = SWIG_ConvertPtr(args[3],SWIG_as_voidptrptr(&arg4), 0, 0);
   if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "lyd_new_path" "', argument " "4"" of type '" "char const *""'");
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "lyd_new_path" "', argument " "4"" of type '" "void *""'"); 
   }
-  arg4 = (char *)(buf4);
   ecode5 = SWIG_AsVal_int(args[4], &val5);
   if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "lyd_new_path" "', argument " "5"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "lyd_new_path" "', argument " "5"" of type '" "LYD_ANYDATA_VALUETYPE""'");
   } 
-  arg5 = (int)(val5);
-  result = (lyd_node *)lyd_new_path(arg1,arg2,(char const *)arg3,(char const *)arg4,arg5);
+  arg5 = (LYD_ANYDATA_VALUETYPE)(val5);
+  ecode6 = SWIG_AsVal_int(args[5], &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "lyd_new_path" "', argument " "6"" of type '" "int""'");
+  } 
+  arg6 = (int)(val6);
+  result = (lyd_node *)lyd_new_path(arg1,arg2,(char const *)arg3,arg4,arg5,arg6);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
   
   
   if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
-  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
+  
+  
   
   
   SWIGV8_RETURN(jsresult);
@@ -36584,6 +37898,21 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_LYD_OPT_EXPLICIT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x0100));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
 static SwigV8ReturnValue _wrap_lyd_insert(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
@@ -36609,6 +37938,43 @@ static SwigV8ReturnValue _wrap_lyd_insert(const SwigV8Arguments &args) {
   }
   arg2 = (lyd_node *)(argp2);
   result = (int)lyd_insert(arg1,arg2);
+  jsresult = SWIG_From_int((int)(result));
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyd_insert_sibling(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyd_node **arg1 = (lyd_node **) 0 ;
+  lyd_node *arg2 = (lyd_node *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int result;
+  
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_insert_sibling.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_p_lyd_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_insert_sibling" "', argument " "1"" of type '" "lyd_node **""'"); 
+  }
+  arg1 = (lyd_node **)(argp1);
+  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyd_node, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_insert_sibling" "', argument " "2"" of type '" "lyd_node *""'"); 
+  }
+  arg2 = (lyd_node *)(argp2);
+  result = (int)lyd_insert_sibling(arg1,arg2);
   jsresult = SWIG_From_int((int)(result));
   
   
@@ -36695,6 +38061,52 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_lyd_replace(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyd_node *arg1 = (lyd_node *) 0 ;
+  lyd_node *arg2 = (lyd_node *) 0 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int result;
+  
+  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_replace.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_replace" "', argument " "1"" of type '" "lyd_node *""'"); 
+  }
+  arg1 = (lyd_node *)(argp1);
+  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyd_node, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_replace" "', argument " "2"" of type '" "lyd_node *""'"); 
+  }
+  arg2 = (lyd_node *)(argp2);
+  ecode3 = SWIG_AsVal_int(args[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyd_replace" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = (int)(val3);
+  result = (int)lyd_replace(arg1,arg2,arg3);
+  jsresult = SWIG_From_int((int)(result));
+  
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
 static SwigV8ReturnValue _wrap_lyd_schema_sort(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
@@ -36732,7 +38144,7 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_get_node(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_lyd_find_xpath(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
@@ -36745,19 +38157,19 @@ static SwigV8ReturnValue _wrap_lyd_get_node(const SwigV8Arguments &args) {
   int alloc2 = 0 ;
   ly_set *result = 0 ;
   
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_get_node.");
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_find_xpath.");
   
   res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_get_node" "', argument " "1"" of type '" "lyd_node const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_find_xpath" "', argument " "1"" of type '" "lyd_node const *""'"); 
   }
   arg1 = (lyd_node *)(argp1);
   res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_get_node" "', argument " "2"" of type '" "char const *""'");
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_find_xpath" "', argument " "2"" of type '" "char const *""'");
   }
   arg2 = (char *)(buf2);
-  result = (ly_set *)lyd_get_node((lyd_node const *)arg1,(char const *)arg2);
+  result = (ly_set *)lyd_find_xpath((lyd_node const *)arg1,(char const *)arg2);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_ly_set, 0 |  0 );
   
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -36770,7 +38182,7 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_get_node2(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_lyd_find_instance(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
@@ -36782,21 +38194,49 @@ static SwigV8ReturnValue _wrap_lyd_get_node2(const SwigV8Arguments &args) {
   int res2 = 0 ;
   ly_set *result = 0 ;
   
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_get_node2.");
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_find_instance.");
   
   res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_get_node2" "', argument " "1"" of type '" "lyd_node const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_find_instance" "', argument " "1"" of type '" "lyd_node const *""'"); 
   }
   arg1 = (lyd_node *)(argp1);
   res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lys_node, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_get_node2" "', argument " "2"" of type '" "lys_node const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_find_instance" "', argument " "2"" of type '" "lys_node const *""'"); 
   }
   arg2 = (lys_node *)(argp2);
-  result = (ly_set *)lyd_get_node2((lyd_node const *)arg1,(lys_node const *)arg2);
+  result = (ly_set *)lyd_find_instance((lyd_node const *)arg1,(lys_node const *)arg2);
   jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_ly_set, 0 |  0 );
   
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyd_first_sibling(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyd_node *arg1 = (lyd_node *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyd_node *result = 0 ;
+  
+  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_first_sibling.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_first_sibling" "', argument " "1"" of type '" "lyd_node *""'"); 
+  }
+  arg1 = (lyd_node *)(argp1);
+  result = (lyd_node *)lyd_first_sibling(arg1);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
   
   
   SWIGV8_RETURN(jsresult);
@@ -36841,14 +38281,15 @@ static SwigV8ReturnValue _wrap_lyd_validate(const SwigV8Arguments &args) {
   v8::Handle<v8::Value> jsresult;
   lyd_node **arg1 = (lyd_node **) 0 ;
   int arg2 ;
-  void *arg3 = 0 ;
+  void *arg3 = (void *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
+  int res3 ;
   int result;
   
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_validate.");
+  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_validate.");
   
   res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_p_lyd_node, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
@@ -36860,56 +38301,15 @@ static SwigV8ReturnValue _wrap_lyd_validate(const SwigV8Arguments &args) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lyd_validate" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = (int)(val2);
+  res3 = SWIG_ConvertPtr(args[2],SWIG_as_voidptrptr(&arg3), 0, 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyd_validate" "', argument " "3"" of type '" "void *""'"); 
+  }
   result = (int)lyd_validate(arg1,arg2,arg3);
   jsresult = SWIG_From_int((int)(result));
   
   
   
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_lyd_wd_add(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  ly_ctx *arg1 = (ly_ctx *) 0 ;
-  lyd_node **arg2 = (lyd_node **) 0 ;
-  int arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  int result;
-  
-  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_wd_add.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_wd_add" "', argument " "1"" of type '" "ly_ctx *""'"); 
-  }
-  arg1 = (ly_ctx *)(argp1);
-  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_p_lyd_node, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyd_wd_add" "', argument " "2"" of type '" "lyd_node **""'"); 
-  }
-  arg2 = (lyd_node **)(argp2);
-  ecode3 = SWIG_AsVal_int(args[2], &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyd_wd_add" "', argument " "3"" of type '" "int""'");
-  } 
-  arg3 = (int)(val3);
-  result = (int)lyd_wd_add(arg1,arg2,arg3);
-  jsresult = SWIG_From_int((int)(result));
-  
-  
-  
   
   SWIGV8_RETURN(jsresult);
   
@@ -36919,33 +38319,24 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_lyd_wd_cleanup(const SwigV8Arguments &args) {
+static SwigV8ReturnValue _wrap_lyd_wd_default(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
   v8::Handle<v8::Value> jsresult;
-  lyd_node **arg1 = (lyd_node **) 0 ;
-  int arg2 ;
+  lyd_node_leaf_list *arg1 = (lyd_node_leaf_list *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
   int result;
   
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_wd_cleanup.");
+  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_wd_default.");
   
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_p_lyd_node, 0 |  0 );
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node_leaf_list, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_wd_cleanup" "', argument " "1"" of type '" "lyd_node **""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_wd_default" "', argument " "1"" of type '" "lyd_node_leaf_list *""'"); 
   }
-  arg1 = (lyd_node **)(argp1);
-  ecode2 = SWIG_AsVal_int(args[1], &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lyd_wd_cleanup" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = (int)(val2);
-  result = (int)lyd_wd_cleanup(arg1,arg2);
+  arg1 = (lyd_node_leaf_list *)(argp1);
+  result = (int)lyd_wd_default(arg1);
   jsresult = SWIG_From_int((int)(result));
-  
   
   
   SWIGV8_RETURN(jsresult);
@@ -37403,6 +38794,1678 @@ fail:
 }
 
 
+static SwigV8ReturnValue _wrap_lyd_dec64_to_double(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyd_node *arg1 = (lyd_node *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  double result;
+  
+  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_dec64_to_double.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_dec64_to_double" "', argument " "1"" of type '" "lyd_node const *""'"); 
+  }
+  arg1 = (lyd_node *)(argp1);
+  result = (double)lyd_dec64_to_double((lyd_node const *)arg1);
+  jsresult = SWIG_From_double((double)(result));
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyd_leaf_type(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyd_node_leaf_list *arg1 = (lyd_node_leaf_list *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  lys_type *result = 0 ;
+  
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyd_leaf_type.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node_leaf_list, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyd_leaf_type" "', argument " "1"" of type '" "lyd_node_leaf_list *""'"); 
+  }
+  arg1 = (lyd_node_leaf_list *)(argp1);
+  ecode2 = SWIG_AsVal_int(args[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lyd_leaf_type" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = (int)(val2);
+  result = (lys_type *)lyd_leaf_type(arg1,arg2);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_type, 0 |  0 );
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_LYXML_ATTR_STD(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYXML_ATTR_STD));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXML_ATTR_NS(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(LYXML_ATTR_NS));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lyxml_ns_type_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
+  LYXML_ATTR_TYPE arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_type_set" "', argument " "1"" of type '" "lyxml_ns *""'"); 
+  }
+  arg1 = (lyxml_ns *)(argp1);
+  ecode2 = SWIG_AsVal_int(value, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lyxml_ns_type_set" "', argument " "2"" of type '" "LYXML_ATTR_TYPE""'");
+  } 
+  arg2 = (LYXML_ATTR_TYPE)(val2);
+  if (arg1) (arg1)->type = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_ns_type_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  LYXML_ATTR_TYPE result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_type_get" "', argument " "1"" of type '" "lyxml_ns *""'"); 
+  }
+  arg1 = (lyxml_ns *)(argp1);
+  result = (LYXML_ATTR_TYPE) ((arg1)->type);
+  jsresult = SWIG_From_int((int)(result));
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lyxml_ns_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
+  lyxml_ns *arg2 = (lyxml_ns *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_next_set" "', argument " "1"" of type '" "lyxml_ns *""'"); 
+  }
+  arg1 = (lyxml_ns *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_ns, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_ns_next_set" "', argument " "2"" of type '" "lyxml_ns *""'"); 
+  }
+  arg2 = (lyxml_ns *)(argp2);
+  if (arg1) (arg1)->next = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_ns_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyxml_ns *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_next_get" "', argument " "1"" of type '" "lyxml_ns *""'"); 
+  }
+  arg1 = (lyxml_ns *)(argp1);
+  result = (lyxml_ns *) ((arg1)->next);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lyxml_ns_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_parent_set" "', argument " "1"" of type '" "lyxml_ns *""'"); 
+  }
+  arg1 = (lyxml_ns *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_ns_parent_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  if (arg1) (arg1)->parent = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_ns_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyxml_elem *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_parent_get" "', argument " "1"" of type '" "lyxml_ns *""'"); 
+  }
+  arg1 = (lyxml_ns *)(argp1);
+  result = (lyxml_elem *) ((arg1)->parent);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_ns_prefix_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_prefix_get" "', argument " "1"" of type '" "lyxml_ns *""'"); 
+  }
+  arg1 = (lyxml_ns *)(argp1);
+  result = (char *) ((arg1)->prefix);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_ns_value_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_ns *arg1 = (lyxml_ns *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_ns_value_get" "', argument " "1"" of type '" "lyxml_ns *""'"); 
+  }
+  arg1 = (lyxml_ns *)(argp1);
+  result = (char *) ((arg1)->value);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_new_lyxml_ns(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Object> self = args.Holder();
+  lyxml_ns *result;
+  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lyxml_ns.");
+  result = (lyxml_ns *)new lyxml_ns();
+  
+  
+  
+  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lyxml_ns, SWIG_POINTER_OWN);
+  SWIGV8_RETURN(self);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
+static void _wrap_delete_lyxml_ns(v8::Persistent<v8::Value> object, void *parameter) {
+  SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
+  static void _wrap_delete_lyxml_ns(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
+    SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
+    static void _wrap_delete_lyxml_ns(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
+#else
+      static void _wrap_delete_lyxml_ns(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
+        v8::Local<v8::Object> object = data.GetValue();
+        SWIGV8_Proxy *proxy = data.GetParameter();
+#endif
+        
+        if(proxy->swigCMemOwn && proxy->swigCObject) {
+          lyxml_ns * arg1 = (lyxml_ns *)proxy->swigCObject;
+          delete arg1;
+        }
+        delete proxy;
+        
+#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
+        object.Dispose();
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
+        object.Dispose(isolate);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x032100)
+        object->Dispose(isolate);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
+        object->Dispose();
+#else
+        object.Clear();
+#endif
+      }
+
+
+static void _wrap_lyxml_attr_type_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
+  LYXML_ATTR_TYPE arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_type_set" "', argument " "1"" of type '" "lyxml_attr *""'"); 
+  }
+  arg1 = (lyxml_attr *)(argp1);
+  ecode2 = SWIG_AsVal_int(value, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lyxml_attr_type_set" "', argument " "2"" of type '" "LYXML_ATTR_TYPE""'");
+  } 
+  arg2 = (LYXML_ATTR_TYPE)(val2);
+  if (arg1) (arg1)->type = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_attr_type_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  LYXML_ATTR_TYPE result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_type_get" "', argument " "1"" of type '" "lyxml_attr *""'"); 
+  }
+  arg1 = (lyxml_attr *)(argp1);
+  result = (LYXML_ATTR_TYPE) ((arg1)->type);
+  jsresult = SWIG_From_int((int)(result));
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lyxml_attr_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
+  lyxml_attr *arg2 = (lyxml_attr *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_next_set" "', argument " "1"" of type '" "lyxml_attr *""'"); 
+  }
+  arg1 = (lyxml_attr *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_attr, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_attr_next_set" "', argument " "2"" of type '" "lyxml_attr *""'"); 
+  }
+  arg2 = (lyxml_attr *)(argp2);
+  if (arg1) (arg1)->next = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_attr_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyxml_attr *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_next_get" "', argument " "1"" of type '" "lyxml_attr *""'"); 
+  }
+  arg1 = (lyxml_attr *)(argp1);
+  result = (lyxml_attr *) ((arg1)->next);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_attr, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_attr_ns_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyxml_ns *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_ns_get" "', argument " "1"" of type '" "lyxml_attr *""'"); 
+  }
+  arg1 = (lyxml_attr *)(argp1);
+  result = (lyxml_ns *) ((arg1)->ns);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_attr_name_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_name_get" "', argument " "1"" of type '" "lyxml_attr *""'"); 
+  }
+  arg1 = (lyxml_attr *)(argp1);
+  result = (char *) ((arg1)->name);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_attr_value_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_attr *arg1 = (lyxml_attr *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_attr, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_attr_value_get" "', argument " "1"" of type '" "lyxml_attr *""'"); 
+  }
+  arg1 = (lyxml_attr *)(argp1);
+  result = (char *) ((arg1)->value);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_new_lyxml_attr(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Object> self = args.Holder();
+  lyxml_attr *result;
+  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lyxml_attr.");
+  result = (lyxml_attr *)new lyxml_attr();
+  
+  
+  
+  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lyxml_attr, SWIG_POINTER_OWN);
+  SWIGV8_RETURN(self);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
+static void _wrap_delete_lyxml_attr(v8::Persistent<v8::Value> object, void *parameter) {
+  SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
+  static void _wrap_delete_lyxml_attr(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
+    SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
+    static void _wrap_delete_lyxml_attr(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
+#else
+      static void _wrap_delete_lyxml_attr(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
+        v8::Local<v8::Object> object = data.GetValue();
+        SWIGV8_Proxy *proxy = data.GetParameter();
+#endif
+        
+        if(proxy->swigCMemOwn && proxy->swigCObject) {
+          lyxml_attr * arg1 = (lyxml_attr *)proxy->swigCObject;
+          delete arg1;
+        }
+        delete proxy;
+        
+#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
+        object.Dispose();
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
+        object.Dispose(isolate);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x032100)
+        object->Dispose(isolate);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
+        object->Dispose();
+#else
+        object.Clear();
+#endif
+      }
+
+
+static void _wrap_lyxml_elem_flags_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  char arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char val2 ;
+  int ecode2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_flags_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  ecode2 = SWIG_AsVal_char(value, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "lyxml_elem_flags_set" "', argument " "2"" of type '" "char""'");
+  } 
+  arg2 = (char)(val2);
+  if (arg1) (arg1)->flags = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_elem_flags_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char result;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_flags_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  result = (char) ((arg1)->flags);
+  jsresult = SWIG_From_char((char)(result));
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXML_ELEM_MIXED(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x01));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lyxml_elem_parent_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_parent_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_elem_parent_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  if (arg1) (arg1)->parent = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_elem_parent_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyxml_elem *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_parent_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  result = (lyxml_elem *) ((arg1)->parent);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lyxml_elem_attr_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  lyxml_attr *arg2 = (lyxml_attr *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_attr_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_attr, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_elem_attr_set" "', argument " "2"" of type '" "lyxml_attr *""'"); 
+  }
+  arg2 = (lyxml_attr *)(argp2);
+  if (arg1) (arg1)->attr = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_elem_attr_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyxml_attr *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_attr_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  result = (lyxml_attr *) ((arg1)->attr);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_attr, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lyxml_elem_child_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_child_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_elem_child_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  if (arg1) (arg1)->child = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_elem_child_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyxml_elem *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_child_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  result = (lyxml_elem *) ((arg1)->child);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lyxml_elem_next_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_next_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_elem_next_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  if (arg1) (arg1)->next = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_elem_next_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyxml_elem *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_next_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  result = (lyxml_elem *) ((arg1)->next);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static void _wrap_lyxml_elem_prev_set(v8::Local<v8::String> property, v8::Local<v8::Value> value,
+  const SwigV8PropertyCallbackInfoVoid &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_prev_set" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  res2 = SWIG_ConvertPtr(value, &argp2,SWIGTYPE_p_lyxml_elem, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_elem_prev_set" "', argument " "2"" of type '" "lyxml_elem *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  if (arg1) (arg1)->prev = arg2;
+  
+  
+  
+  goto fail;
+fail:
+  return;
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_elem_prev_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyxml_elem *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_prev_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  result = (lyxml_elem *) ((arg1)->prev);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_elem_name_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_name_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  result = (char *) ((arg1)->name);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_elem_ns_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  lyxml_ns *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_ns_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  result = (lyxml_ns *) ((arg1)->ns);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_elem_content_get(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  char *result = 0 ;
+  
+  res1 = SWIG_ConvertPtr(info.Holder(), &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_elem_content_get" "', argument " "1"" of type '" "lyxml_elem *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  result = (char *) ((arg1)->content);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_new_lyxml_elem(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Object> self = args.Holder();
+  lyxml_elem *result;
+  if(args.Length() != 0) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_new_lyxml_elem.");
+  result = (lyxml_elem *)new lyxml_elem();
+  
+  
+  
+  SWIGV8_SetPrivateData(self, result, SWIGTYPE_p_lyxml_elem, SWIG_POINTER_OWN);
+  SWIGV8_RETURN(self);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
+static void _wrap_delete_lyxml_elem(v8::Persistent<v8::Value> object, void *parameter) {
+  SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
+  static void _wrap_delete_lyxml_elem(v8::Isolate *isolate, v8::Persistent<v8::Value> object, void *parameter) {
+    SWIGV8_Proxy *proxy = static_cast<SWIGV8_Proxy *>(parameter);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
+    static void _wrap_delete_lyxml_elem(v8::Isolate *isolate, v8::Persistent< v8::Object> *object, SWIGV8_Proxy *proxy) {
+#else
+      static void _wrap_delete_lyxml_elem(const v8::WeakCallbackData<v8::Object, SWIGV8_Proxy> &data) {
+        v8::Local<v8::Object> object = data.GetValue();
+        SWIGV8_Proxy *proxy = data.GetParameter();
+#endif
+        
+        if(proxy->swigCMemOwn && proxy->swigCObject) {
+          lyxml_elem * arg1 = (lyxml_elem *)proxy->swigCObject;
+          delete arg1;
+        }
+        delete proxy;
+        
+#if (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031710)
+        object.Dispose();
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x031900)
+        object.Dispose(isolate);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < 0x032100)
+        object->Dispose(isolate);
+#elif (V8_MAJOR_VERSION-0) < 4 && (SWIG_V8_VERSION < SWIGV8_SETWEAK_VERSION)
+        object->Dispose();
+#else
+        object.Clear();
+#endif
+      }
+
+
+static SwigV8ReturnValue _wrap_LYXML_PARSE_MULTIROOT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x01));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_parse_mem(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  ly_ctx *arg1 = (ly_ctx *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  lyxml_elem *result = 0 ;
+  
+  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_parse_mem.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_parse_mem" "', argument " "1"" of type '" "ly_ctx *""'"); 
+  }
+  arg1 = (ly_ctx *)(argp1);
+  res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_parse_mem" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = (char *)(buf2);
+  ecode3 = SWIG_AsVal_int(args[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyxml_parse_mem" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = (int)(val3);
+  result = (lyxml_elem *)lyxml_parse_mem(arg1,(char const *)arg2,arg3);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_parse_path(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  ly_ctx *arg1 = (ly_ctx *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  lyxml_elem *result = 0 ;
+  
+  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_parse_path.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_parse_path" "', argument " "1"" of type '" "ly_ctx *""'"); 
+  }
+  arg1 = (ly_ctx *)(argp1);
+  res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_parse_path" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = (char *)(buf2);
+  ecode3 = SWIG_AsVal_int(args[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyxml_parse_path" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = (int)(val3);
+  result = (lyxml_elem *)lyxml_parse_path(arg1,(char const *)arg2,arg3);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_LYXML_PRINT_OPEN(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x01));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXML_PRINT_FORMAT(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x02));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXML_PRINT_CLOSE(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x04));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXML_PRINT_ATTRS(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x08));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_LYXML_PRINT_SIBLINGS(v8::Local<v8::String> property, const SwigV8PropertyCallbackInfo &info) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  
+  jsresult = SWIG_From_int((int)(0x10));
+  
+  SWIGV8_RETURN_INFO(jsresult, info);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN_INFO(SWIGV8_UNDEFINED(), info);
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_print_file(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  FILE *arg1 = (FILE *) 0 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int result;
+  
+  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_print_file.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_FILE, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_print_file" "', argument " "1"" of type '" "FILE *""'"); 
+  }
+  arg1 = (FILE *)(argp1);
+  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_print_file" "', argument " "2"" of type '" "lyxml_elem const *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  ecode3 = SWIG_AsVal_int(args[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyxml_print_file" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = (int)(val3);
+  result = (int)lyxml_print_file(arg1,(lyxml_elem const *)arg2,arg3);
+  jsresult = SWIG_From_int((int)(result));
+  
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_print_fd(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  int arg1 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  int arg3 ;
+  int val1 ;
+  int ecode1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int result;
+  
+  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_print_fd.");
+  
+  ecode1 = SWIG_AsVal_int(args[0], &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "lyxml_print_fd" "', argument " "1"" of type '" "int""'");
+  } 
+  arg1 = (int)(val1);
+  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_print_fd" "', argument " "2"" of type '" "lyxml_elem const *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  ecode3 = SWIG_AsVal_int(args[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyxml_print_fd" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = (int)(val3);
+  result = (int)lyxml_print_fd(arg1,(lyxml_elem const *)arg2,arg3);
+  jsresult = SWIG_From_int((int)(result));
+  
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_print_mem(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  char **arg1 = (char **) 0 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int result;
+  
+  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_print_mem.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_p_char, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_print_mem" "', argument " "1"" of type '" "char **""'"); 
+  }
+  arg1 = (char **)(argp1);
+  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_print_mem" "', argument " "2"" of type '" "lyxml_elem const *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  ecode3 = SWIG_AsVal_int(args[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "lyxml_print_mem" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = (int)(val3);
+  result = (int)lyxml_print_mem(arg1,(lyxml_elem const *)arg2,arg3);
+  jsresult = SWIG_From_int((int)(result));
+  
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_print_clb(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  ssize_t (*arg1)(void *,void const *,size_t) = (ssize_t (*)(void *,void const *,size_t)) 0 ;
+  void *arg2 = (void *) 0 ;
+  lyxml_elem *arg3 = (lyxml_elem *) 0 ;
+  int arg4 ;
+  int res2 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  int val4 ;
+  int ecode4 = 0 ;
+  int result;
+  
+  if(args.Length() != 4) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_print_clb.");
+  
+  {
+    int res = SWIG_ConvertFunctionPtr(args[0], (void**)(&arg1), SWIGTYPE_p_f_p_void_p_q_const__void_size_t__ssize_t);
+    if (!SWIG_IsOK(res)) {
+      SWIG_exception_fail(SWIG_ArgError(res), "in method '" "lyxml_print_clb" "', argument " "1"" of type '" "ssize_t (*)(void *,void const *,size_t)""'"); 
+    }
+  }
+  res2 = SWIG_ConvertPtr(args[1],SWIG_as_voidptrptr(&arg2), 0, 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_print_clb" "', argument " "2"" of type '" "void *""'"); 
+  }
+  res3 = SWIG_ConvertPtr(args[2], &argp3,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyxml_print_clb" "', argument " "3"" of type '" "lyxml_elem const *""'"); 
+  }
+  arg3 = (lyxml_elem *)(argp3);
+  ecode4 = SWIG_AsVal_int(args[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "lyxml_print_clb" "', argument " "4"" of type '" "int""'");
+  } 
+  arg4 = (int)(val4);
+  result = (int)lyxml_print_clb(arg1,arg2,(lyxml_elem const *)arg3,arg4);
+  jsresult = SWIG_From_int((int)(result));
+  
+  
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_free(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  ly_ctx *arg1 = (ly_ctx *) 0 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_free.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_free" "', argument " "1"" of type '" "ly_ctx *""'"); 
+  }
+  arg1 = (ly_ctx *)(argp1);
+  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_free" "', argument " "2"" of type '" "lyxml_elem *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  lyxml_free(arg1,arg2);
+  jsresult = SWIGV8_UNDEFINED();
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_free_withsiblings(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  ly_ctx *arg1 = (ly_ctx *) 0 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_free_withsiblings.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_free_withsiblings" "', argument " "1"" of type '" "ly_ctx *""'"); 
+  }
+  arg1 = (ly_ctx *)(argp1);
+  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_free_withsiblings" "', argument " "2"" of type '" "lyxml_elem *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  lyxml_free_withsiblings(arg1,arg2);
+  jsresult = SWIGV8_UNDEFINED();
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_unlink(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  ly_ctx *arg1 = (ly_ctx *) 0 ;
+  lyxml_elem *arg2 = (lyxml_elem *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_unlink.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_ly_ctx, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_unlink" "', argument " "1"" of type '" "ly_ctx *""'"); 
+  }
+  arg1 = (ly_ctx *)(argp1);
+  res2 = SWIG_ConvertPtr(args[1], &argp2,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_unlink" "', argument " "2"" of type '" "lyxml_elem *""'"); 
+  }
+  arg2 = (lyxml_elem *)(argp2);
+  lyxml_unlink(arg1,arg2);
+  jsresult = SWIGV8_UNDEFINED();
+  
+  
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_get_attr(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  char *arg2 = (char *) 0 ;
+  char *arg3 = (char *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  int res3 ;
+  char *buf3 = 0 ;
+  int alloc3 = 0 ;
+  char *result = 0 ;
+  
+  if(args.Length() != 3) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_get_attr.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_get_attr" "', argument " "1"" of type '" "lyxml_elem const *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_get_attr" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = (char *)(buf2);
+  res3 = SWIG_AsCharPtrAndSize(args[2], &buf3, NULL, &alloc3);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "lyxml_get_attr" "', argument " "3"" of type '" "char const *""'");
+  }
+  arg3 = (char *)(buf3);
+  result = (char *)lyxml_get_attr((lyxml_elem const *)arg1,(char const *)arg2,(char const *)arg3);
+  jsresult = SWIG_FromCharPtr((const char *)result);
+  
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
+static SwigV8ReturnValue _wrap_lyxml_get_ns(const SwigV8Arguments &args) {
+  SWIGV8_HANDLESCOPE();
+  
+  v8::Handle<v8::Value> jsresult;
+  lyxml_elem *arg1 = (lyxml_elem *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  lyxml_ns *result = 0 ;
+  
+  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_lyxml_get_ns.");
+  
+  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyxml_elem, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "lyxml_get_ns" "', argument " "1"" of type '" "lyxml_elem const *""'"); 
+  }
+  arg1 = (lyxml_elem *)(argp1);
+  res2 = SWIG_AsCharPtrAndSize(args[1], &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "lyxml_get_ns" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = (char *)(buf2);
+  result = (lyxml_ns *)lyxml_get_ns((lyxml_elem const *)arg1,(char const *)arg2);
+  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyxml_ns, 0 |  0 );
+  
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  
+  SWIGV8_RETURN(jsresult);
+  
+  goto fail;
+fail:
+  SWIGV8_RETURN(SWIGV8_UNDEFINED());
+}
+
+
 static SwigV8ReturnValue _wrap_lydict_insert(const SwigV8Arguments &args) {
   SWIGV8_HANDLESCOPE();
   
@@ -37598,374 +40661,10 @@ fail:
 }
 
 
-static SwigV8ReturnValue _wrap_get_lys_node(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node **arg1 = (lys_node **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_node *result = 0 ;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_get_lys_node.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_p_lys_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "get_lys_node" "', argument " "1"" of type '" "lys_node **""'"); 
-  }
-  arg1 = (lys_node **)(argp1);
-  result = (lys_node *)get_lys_node(arg1);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node, 0 |  0 );
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_cast_lys_node_leaf(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node *arg1 = (lys_node *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_node_leaf *result = 0 ;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_cast_lys_node_leaf.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "cast_lys_node_leaf" "', argument " "1"" of type '" "lys_node *""'"); 
-  }
-  arg1 = (lys_node *)(argp1);
-  result = (lys_node_leaf *)cast_lys_node_leaf(arg1);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node_leaf, 0 |  0 );
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_cast_lys_node_list(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node *arg1 = (lys_node *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lys_node_list *result = 0 ;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_cast_lys_node_list.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lys_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "cast_lys_node_list" "', argument " "1"" of type '" "lys_node *""'"); 
-  }
-  arg1 = (lys_node *)(argp1);
-  result = (lys_node_list *)cast_lys_node_list(arg1);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node_list, 0 |  0 );
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_get_lys_node_leaf(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lys_node_leaf **arg1 = (lys_node_leaf **) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  lys_node_leaf *result = 0 ;
-  
-  if(args.Length() != 2) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_get_lys_node_leaf.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_p_lys_node_leaf, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "get_lys_node_leaf" "', argument " "1"" of type '" "lys_node_leaf **""'"); 
-  }
-  arg1 = (lys_node_leaf **)(argp1);
-  ecode2 = SWIG_AsVal_int(args[1], &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "get_lys_node_leaf" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = (int)(val2);
-  result = (lys_node_leaf *)get_lys_node_leaf(arg1,arg2);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lys_node_leaf, 0 |  0 );
-  
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_get_lyd_node(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyd_node **arg1 = (lyd_node **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyd_node *result = 0 ;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_get_lyd_node.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_p_lyd_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "get_lyd_node" "', argument " "1"" of type '" "lyd_node **""'"); 
-  }
-  arg1 = (lyd_node **)(argp1);
-  result = (lyd_node *)get_lyd_node(arg1);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_get_lyd_node_double(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyd_node **arg1 = (lyd_node **) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyd_node *result = 0 ;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_get_lyd_node_double.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_p_lyd_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "get_lyd_node_double" "', argument " "1"" of type '" "lyd_node **""'"); 
-  }
-  arg1 = (lyd_node **)(argp1);
-  result = (lyd_node *)get_lyd_node_double(arg1);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node, 0 |  0 );
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_cast_lyd_node_leaf_list(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyd_node *arg1 = (lyd_node *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyd_node_leaf_list *result = 0 ;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_cast_lyd_node_leaf_list.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "cast_lyd_node_leaf_list" "', argument " "1"" of type '" "lyd_node *""'"); 
-  }
-  arg1 = (lyd_node *)(argp1);
-  result = (lyd_node_leaf_list *)cast_lyd_node_leaf_list(arg1);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node_leaf_list, 0 |  0 );
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_cast_lyd_node_list(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  lyd_node *arg1 = (lyd_node *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  lyd_node_list *result = 0 ;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_cast_lyd_node_list.");
-  
-  res1 = SWIG_ConvertPtr(args[0], &argp1,SWIGTYPE_p_lyd_node, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "cast_lyd_node_list" "', argument " "1"" of type '" "lyd_node *""'"); 
-  }
-  arg1 = (lyd_node *)(argp1);
-  result = (lyd_node_list *)cast_lyd_node_list(arg1);
-  jsresult = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_lyd_node_list, 0 |  0 );
-  
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_get_uint8(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  uint8_t arg1 ;
-  void *argp1 ;
-  int res1 = 0 ;
-  int result;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_get_uint8.");
-  
-  {
-    res1 = SWIG_ConvertPtr(args[0], &argp1, SWIGTYPE_p_uint8_t,  0 );
-    if (!SWIG_IsOK(res1)) {
-      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "get_uint8" "', argument " "1"" of type '" "uint8_t""'"); 
-    }  
-    if (!argp1) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "get_uint8" "', argument " "1"" of type '" "uint8_t""'");
-    } else {
-      arg1 = *((uint8_t *)(argp1));
-    }
-  }
-  result = (int)get_uint8(arg1);
-  jsresult = SWIG_From_int((int)(result));
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_get_uint16(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  uint16_t arg1 ;
-  void *argp1 ;
-  int res1 = 0 ;
-  int result;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_get_uint16.");
-  
-  {
-    res1 = SWIG_ConvertPtr(args[0], &argp1, SWIGTYPE_p_uint16_t,  0 );
-    if (!SWIG_IsOK(res1)) {
-      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "get_uint16" "', argument " "1"" of type '" "uint16_t""'"); 
-    }  
-    if (!argp1) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "get_uint16" "', argument " "1"" of type '" "uint16_t""'");
-    } else {
-      arg1 = *((uint16_t *)(argp1));
-    }
-  }
-  result = (int)get_uint16(arg1);
-  jsresult = SWIG_From_int((int)(result));
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_get_int8(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  int8_t arg1 ;
-  void *argp1 ;
-  int res1 = 0 ;
-  int result;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_get_int8.");
-  
-  {
-    res1 = SWIG_ConvertPtr(args[0], &argp1, SWIGTYPE_p_int8_t,  0 );
-    if (!SWIG_IsOK(res1)) {
-      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "get_int8" "', argument " "1"" of type '" "int8_t""'"); 
-    }  
-    if (!argp1) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "get_int8" "', argument " "1"" of type '" "int8_t""'");
-    } else {
-      arg1 = *((int8_t *)(argp1));
-    }
-  }
-  result = (int)get_int8(arg1);
-  jsresult = SWIG_From_int((int)(result));
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
-static SwigV8ReturnValue _wrap_get_int16(const SwigV8Arguments &args) {
-  SWIGV8_HANDLESCOPE();
-  
-  v8::Handle<v8::Value> jsresult;
-  int16_t arg1 ;
-  void *argp1 ;
-  int res1 = 0 ;
-  int result;
-  
-  if(args.Length() != 1) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for _wrap_get_int16.");
-  
-  {
-    res1 = SWIG_ConvertPtr(args[0], &argp1, SWIGTYPE_p_int16_t,  0 );
-    if (!SWIG_IsOK(res1)) {
-      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "get_int16" "', argument " "1"" of type '" "int16_t""'"); 
-    }  
-    if (!argp1) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "get_int16" "', argument " "1"" of type '" "int16_t""'");
-    } else {
-      arg1 = *((int16_t *)(argp1));
-    }
-  }
-  result = (int)get_int16(arg1);
-  jsresult = SWIG_From_int((int)(result));
-  
-  SWIGV8_RETURN(jsresult);
-  
-  goto fail;
-fail:
-  SWIGV8_RETURN(SWIGV8_UNDEFINED());
-}
-
-
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
 static swig_type_info _swigt__p_FILE = {"_p_FILE", "FILE *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_LYD_ANYDATA_VALUETYPE = {"_p_LYD_ANYDATA_VALUETYPE", "enum LYD_ANYDATA_VALUETYPE *|LYD_ANYDATA_VALUETYPE *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_LYD_DIFFTYPE = {"_p_LYD_DIFFTYPE", "enum LYD_DIFFTYPE *|LYD_DIFFTYPE *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_LYD_FORMAT = {"_p_LYD_FORMAT", "enum LYD_FORMAT *|LYD_FORMAT *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_LYS_INFORMAT = {"_p_LYS_INFORMAT", "enum LYS_INFORMAT *|LYS_INFORMAT *", 0, 0, (void*)0, 0};
@@ -37976,7 +40675,7 @@ static swig_type_info _swigt__p_LY_LOG_LEVEL = {"_p_LY_LOG_LEVEL", "enum LY_LOG_
 static swig_type_info _swigt__p_LY_VECODE = {"_p_LY_VECODE", "enum LY_VECODE *|LY_VECODE *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_enum_LY_LOG_LEVEL_p_q_const__char_p_q_const__char__void = {"_p_f_enum_LY_LOG_LEVEL_p_q_const__char_p_q_const__char__void", "void (*)(enum LY_LOG_LEVEL,char const *,char const *)|void (*)(LY_LOG_LEVEL,char const *,char const *)", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_f_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char = {"_p_f_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char", "char *(*)(char const *,char const *,void *,enum LYS_INFORMAT *,void (**)(void *))|ly_module_clb", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_f_p_q_const__char_p_q_const__char_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char = {"_p_f_p_q_const__char_p_q_const__char_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char", "char *(*)(char const *,char const *,char const *,char const *,void *,enum LYS_INFORMAT *,void (**)(void *))|ly_module_clb", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_q_const__lys_node_p_void__void = {"_p_f_p_q_const__lys_node_p_void__void", "void (*)(lys_node const *,void *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_void_p_q_const__void_size_t__ssize_t = {"_p_f_p_void_p_q_const__void_size_t__ssize_t", "ssize_t (*)(void *,void const *,size_t)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int16_t = {"_p_int16_t", "int16_t *", 0, 0, (void*)0, 0};
@@ -37989,32 +40688,31 @@ static swig_type_info _swigt__p_ly_set_set = {"_p_ly_set_set", "ly_set_set *|p_l
 static swig_type_info _swigt__p_lyd_attr = {"_p_lyd_attr", "lyd_attr *|p_lyd_attr", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lyd_difflist = {"_p_lyd_difflist", "lyd_difflist *|p_lyd_difflist", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lyd_node = {"_p_lyd_node", "p_lyd_node|lyd_node *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_lyd_node_anyxml = {"_p_lyd_node_anyxml", "p_lyd_node_anyxml|lyd_node_anyxml *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_lyd_node_anyxml_value = {"_p_lyd_node_anyxml_value", "lyd_node_anyxml_value *|p_lyd_node_anyxml_value", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_lyd_node_anydata = {"_p_lyd_node_anydata", "lyd_node_anydata *|p_lyd_node_anydata", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lyd_node_leaf_list = {"_p_lyd_node_leaf_list", "lyd_node_leaf_list *|p_lyd_node_leaf_list", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_lyd_node_list = {"_p_lyd_node_list", "lyd_node_list *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lyd_value_u = {"_p_lyd_value_u", "lyd_value_u *|lyd_val *|p_lyd_value_u", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_deviate = {"_p_lys_deviate", "p_lys_deviate|lys_deviate *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_deviate_type = {"_p_lys_deviate_type", "enum lys_deviate_type *|LYS_DEVIATE_TYPE *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_deviation = {"_p_lys_deviation", "lys_deviation *|p_lys_deviation", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_feature = {"_p_lys_feature", "lys_feature *|p_lys_feature", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_ident = {"_p_lys_ident", "lys_ident *|p_lys_ident", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_lys_iffeature = {"_p_lys_iffeature", "lys_iffeature *|p_lys_iffeature", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_import = {"_p_lys_import", "p_lys_import|lys_import *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_include = {"_p_lys_include", "p_lys_include|lys_include *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_module = {"_p_lys_module", "p_lys_module|lys_module *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node = {"_p_lys_node", "p_lys_node|lys_node *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_lys_node_anyxml = {"_p_lys_node_anyxml", "p_lys_node_anyxml|lys_node_anyxml *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_lys_node_anydata = {"_p_lys_node_anydata", "lys_node_anydata *|p_lys_node_anydata", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node_augment = {"_p_lys_node_augment", "lys_node_augment *|p_lys_node_augment", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node_case = {"_p_lys_node_case", "lys_node_case *|p_lys_node_case", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node_choice = {"_p_lys_node_choice", "p_lys_node_choice|lys_node_choice *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node_container = {"_p_lys_node_container", "lys_node_container *|p_lys_node_container", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node_grp = {"_p_lys_node_grp", "p_lys_node_grp|lys_node_grp *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_lys_node_inout = {"_p_lys_node_inout", "lys_node_inout *|p_lys_node_inout", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node_leaf = {"_p_lys_node_leaf", "p_lys_node_leaf|lys_node_leaf *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node_leaflist = {"_p_lys_node_leaflist", "p_lys_node_leaflist|lys_node_leaflist *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node_list = {"_p_lys_node_list", "lys_node_list *|p_lys_node_list", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node_notif = {"_p_lys_node_notif", "lys_node_notif *|p_lys_node_notif", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_lys_node_rpc = {"_p_lys_node_rpc", "p_lys_node_rpc|lys_node_rpc *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_lys_node_rpc_inout = {"_p_lys_node_rpc_inout", "lys_node_rpc_inout *|p_lys_node_rpc_inout", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_lys_node_rpc_action = {"_p_lys_node_rpc_action", "lys_node_rpc_action *|p_lys_node_rpc_action", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_node_uses = {"_p_lys_node_uses", "lys_node_uses *|p_lys_node_uses", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_nodetype = {"_p_lys_nodetype", "enum lys_nodetype *|LYS_NODE *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_lys_refine = {"_p_lys_refine", "lys_refine *|p_lys_refine", 0, 0, (void*)0, 0};
@@ -38062,6 +40760,7 @@ static swig_type_info _swigt__p_void = {"_p_void", "void *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_FILE,
+  &_swigt__p_LYD_ANYDATA_VALUETYPE,
   &_swigt__p_LYD_DIFFTYPE,
   &_swigt__p_LYD_FORMAT,
   &_swigt__p_LYS_INFORMAT,
@@ -38072,7 +40771,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_LY_VECODE,
   &_swigt__p_char,
   &_swigt__p_f_enum_LY_LOG_LEVEL_p_q_const__char_p_q_const__char__void,
-  &_swigt__p_f_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char,
+  &_swigt__p_f_p_q_const__char_p_q_const__char_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char,
   &_swigt__p_f_p_q_const__lys_node_p_void__void,
   &_swigt__p_f_p_void_p_q_const__void_size_t__ssize_t,
   &_swigt__p_int16_t,
@@ -38085,32 +40784,31 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_lyd_attr,
   &_swigt__p_lyd_difflist,
   &_swigt__p_lyd_node,
-  &_swigt__p_lyd_node_anyxml,
-  &_swigt__p_lyd_node_anyxml_value,
+  &_swigt__p_lyd_node_anydata,
   &_swigt__p_lyd_node_leaf_list,
-  &_swigt__p_lyd_node_list,
   &_swigt__p_lyd_value_u,
   &_swigt__p_lys_deviate,
   &_swigt__p_lys_deviate_type,
   &_swigt__p_lys_deviation,
   &_swigt__p_lys_feature,
   &_swigt__p_lys_ident,
+  &_swigt__p_lys_iffeature,
   &_swigt__p_lys_import,
   &_swigt__p_lys_include,
   &_swigt__p_lys_module,
   &_swigt__p_lys_node,
-  &_swigt__p_lys_node_anyxml,
+  &_swigt__p_lys_node_anydata,
   &_swigt__p_lys_node_augment,
   &_swigt__p_lys_node_case,
   &_swigt__p_lys_node_choice,
   &_swigt__p_lys_node_container,
   &_swigt__p_lys_node_grp,
+  &_swigt__p_lys_node_inout,
   &_swigt__p_lys_node_leaf,
   &_swigt__p_lys_node_leaflist,
   &_swigt__p_lys_node_list,
   &_swigt__p_lys_node_notif,
-  &_swigt__p_lys_node_rpc,
-  &_swigt__p_lys_node_rpc_inout,
+  &_swigt__p_lys_node_rpc_action,
   &_swigt__p_lys_node_uses,
   &_swigt__p_lys_nodetype,
   &_swigt__p_lys_refine,
@@ -38158,6 +40856,7 @@ static swig_type_info *swig_type_initial[] = {
 };
 
 static swig_cast_info _swigc__p_FILE[] = {  {&_swigt__p_FILE, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_LYD_ANYDATA_VALUETYPE[] = {  {&_swigt__p_LYD_ANYDATA_VALUETYPE, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_LYD_DIFFTYPE[] = {  {&_swigt__p_LYD_DIFFTYPE, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_LYD_FORMAT[] = {  {&_swigt__p_LYD_FORMAT, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_LYS_INFORMAT[] = {  {&_swigt__p_LYS_INFORMAT, 0, 0, 0},{0, 0, 0, 0}};
@@ -38168,7 +40867,7 @@ static swig_cast_info _swigc__p_LY_LOG_LEVEL[] = {  {&_swigt__p_LY_LOG_LEVEL, 0,
 static swig_cast_info _swigc__p_LY_VECODE[] = {  {&_swigt__p_LY_VECODE, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_enum_LY_LOG_LEVEL_p_q_const__char_p_q_const__char__void[] = {  {&_swigt__p_f_enum_LY_LOG_LEVEL_p_q_const__char_p_q_const__char__void, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_f_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char[] = {  {&_swigt__p_f_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_f_p_q_const__char_p_q_const__char_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char[] = {  {&_swigt__p_f_p_q_const__char_p_q_const__char_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_q_const__lys_node_p_void__void[] = {  {&_swigt__p_f_p_q_const__lys_node_p_void__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_void_p_q_const__void_size_t__ssize_t[] = {  {&_swigt__p_f_p_void_p_q_const__void_size_t__ssize_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int16_t[] = {  {&_swigt__p_int16_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -38181,32 +40880,31 @@ static swig_cast_info _swigc__p_ly_set_set[] = {  {&_swigt__p_ly_set_set, 0, 0, 
 static swig_cast_info _swigc__p_lyd_attr[] = {  {&_swigt__p_lyd_attr, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lyd_difflist[] = {  {&_swigt__p_lyd_difflist, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lyd_node[] = {  {&_swigt__p_lyd_node, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_lyd_node_anyxml[] = {  {&_swigt__p_lyd_node_anyxml, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_lyd_node_anyxml_value[] = {  {&_swigt__p_lyd_node_anyxml_value, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_lyd_node_anydata[] = {  {&_swigt__p_lyd_node_anydata, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lyd_node_leaf_list[] = {  {&_swigt__p_lyd_node_leaf_list, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_lyd_node_list[] = {  {&_swigt__p_lyd_node_list, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lyd_value_u[] = {  {&_swigt__p_lyd_value_u, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_deviate[] = {  {&_swigt__p_lys_deviate, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_deviate_type[] = {  {&_swigt__p_lys_deviate_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_deviation[] = {  {&_swigt__p_lys_deviation, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_feature[] = {  {&_swigt__p_lys_feature, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_ident[] = {  {&_swigt__p_lys_ident, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_lys_iffeature[] = {  {&_swigt__p_lys_iffeature, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_import[] = {  {&_swigt__p_lys_import, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_include[] = {  {&_swigt__p_lys_include, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_module[] = {  {&_swigt__p_lys_module, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node[] = {  {&_swigt__p_lys_node, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_lys_node_anyxml[] = {  {&_swigt__p_lys_node_anyxml, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_lys_node_anydata[] = {  {&_swigt__p_lys_node_anydata, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node_augment[] = {  {&_swigt__p_lys_node_augment, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node_case[] = {  {&_swigt__p_lys_node_case, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node_choice[] = {  {&_swigt__p_lys_node_choice, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node_container[] = {  {&_swigt__p_lys_node_container, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node_grp[] = {  {&_swigt__p_lys_node_grp, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_lys_node_inout[] = {  {&_swigt__p_lys_node_inout, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node_leaf[] = {  {&_swigt__p_lys_node_leaf, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node_leaflist[] = {  {&_swigt__p_lys_node_leaflist, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node_list[] = {  {&_swigt__p_lys_node_list, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node_notif[] = {  {&_swigt__p_lys_node_notif, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_lys_node_rpc[] = {  {&_swigt__p_lys_node_rpc, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_lys_node_rpc_inout[] = {  {&_swigt__p_lys_node_rpc_inout, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_lys_node_rpc_action[] = {  {&_swigt__p_lys_node_rpc_action, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_node_uses[] = {  {&_swigt__p_lys_node_uses, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_nodetype[] = {  {&_swigt__p_lys_nodetype, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_lys_refine[] = {  {&_swigt__p_lys_refine, 0, 0, 0},{0, 0, 0, 0}};
@@ -38254,6 +40952,7 @@ static swig_cast_info _swigc__p_void[] = {  {&_swigt__p_void, 0, 0, 0},{0, 0, 0,
 
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_FILE,
+  _swigc__p_LYD_ANYDATA_VALUETYPE,
   _swigc__p_LYD_DIFFTYPE,
   _swigc__p_LYD_FORMAT,
   _swigc__p_LYS_INFORMAT,
@@ -38264,7 +40963,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_LY_VECODE,
   _swigc__p_char,
   _swigc__p_f_enum_LY_LOG_LEVEL_p_q_const__char_p_q_const__char__void,
-  _swigc__p_f_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char,
+  _swigc__p_f_p_q_const__char_p_q_const__char_p_q_const__char_p_q_const__char_p_void_p_enum_LYS_INFORMAT_p_p_f_p_void__void__p_char,
   _swigc__p_f_p_q_const__lys_node_p_void__void,
   _swigc__p_f_p_void_p_q_const__void_size_t__ssize_t,
   _swigc__p_int16_t,
@@ -38277,32 +40976,31 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_lyd_attr,
   _swigc__p_lyd_difflist,
   _swigc__p_lyd_node,
-  _swigc__p_lyd_node_anyxml,
-  _swigc__p_lyd_node_anyxml_value,
+  _swigc__p_lyd_node_anydata,
   _swigc__p_lyd_node_leaf_list,
-  _swigc__p_lyd_node_list,
   _swigc__p_lyd_value_u,
   _swigc__p_lys_deviate,
   _swigc__p_lys_deviate_type,
   _swigc__p_lys_deviation,
   _swigc__p_lys_feature,
   _swigc__p_lys_ident,
+  _swigc__p_lys_iffeature,
   _swigc__p_lys_import,
   _swigc__p_lys_include,
   _swigc__p_lys_module,
   _swigc__p_lys_node,
-  _swigc__p_lys_node_anyxml,
+  _swigc__p_lys_node_anydata,
   _swigc__p_lys_node_augment,
   _swigc__p_lys_node_case,
   _swigc__p_lys_node_choice,
   _swigc__p_lys_node_container,
   _swigc__p_lys_node_grp,
+  _swigc__p_lys_node_inout,
   _swigc__p_lys_node_leaf,
   _swigc__p_lys_node_leaflist,
   _swigc__p_lys_node_list,
   _swigc__p_lys_node_notif,
-  _swigc__p_lys_node_rpc,
-  _swigc__p_lys_node_rpc_inout,
+  _swigc__p_lys_node_rpc_action,
   _swigc__p_lys_node_uses,
   _swigc__p_lys_nodetype,
   _swigc__p_lys_refine,
@@ -38664,27 +41362,6 @@ _exports_ly_set_clientData.dtor = _wrap_delete_ly_set;
 if (SWIGTYPE_p_ly_set->clientdata == 0) {
   SWIGTYPE_p_ly_set->clientdata = &_exports_ly_set_clientData;
 }
-/* Name: _exports_lyxml_ns, Type: p_lyxml_ns, Dtor: _wrap_delete_lyxml_ns */
-v8::Handle<v8::FunctionTemplate> _exports_lyxml_ns_class = SWIGV8_CreateClassTemplate("_exports_lyxml_ns");
-SWIGV8_SET_CLASS_TEMPL(_exports_lyxml_ns_clientData.class_templ, _exports_lyxml_ns_class);
-_exports_lyxml_ns_clientData.dtor = _wrap_delete_lyxml_ns;
-if (SWIGTYPE_p_lyxml_ns->clientdata == 0) {
-  SWIGTYPE_p_lyxml_ns->clientdata = &_exports_lyxml_ns_clientData;
-}
-/* Name: _exports_lyxml_attr, Type: p_lyxml_attr, Dtor: _wrap_delete_lyxml_attr */
-v8::Handle<v8::FunctionTemplate> _exports_lyxml_attr_class = SWIGV8_CreateClassTemplate("_exports_lyxml_attr");
-SWIGV8_SET_CLASS_TEMPL(_exports_lyxml_attr_clientData.class_templ, _exports_lyxml_attr_class);
-_exports_lyxml_attr_clientData.dtor = _wrap_delete_lyxml_attr;
-if (SWIGTYPE_p_lyxml_attr->clientdata == 0) {
-  SWIGTYPE_p_lyxml_attr->clientdata = &_exports_lyxml_attr_clientData;
-}
-/* Name: _exports_lyxml_elem, Type: p_lyxml_elem, Dtor: _wrap_delete_lyxml_elem */
-v8::Handle<v8::FunctionTemplate> _exports_lyxml_elem_class = SWIGV8_CreateClassTemplate("_exports_lyxml_elem");
-SWIGV8_SET_CLASS_TEMPL(_exports_lyxml_elem_clientData.class_templ, _exports_lyxml_elem_class);
-_exports_lyxml_elem_clientData.dtor = _wrap_delete_lyxml_elem;
-if (SWIGTYPE_p_lyxml_elem->clientdata == 0) {
-  SWIGTYPE_p_lyxml_elem->clientdata = &_exports_lyxml_elem_clientData;
-}
 /* Name: _exports_lys_module, Type: p_lys_module, Dtor: _wrap_delete_lys_module */
 v8::Handle<v8::FunctionTemplate> _exports_lys_module_class = SWIGV8_CreateClassTemplate("_exports_lys_module");
 SWIGV8_SET_CLASS_TEMPL(_exports_lys_module_clientData.class_templ, _exports_lys_module_class);
@@ -38797,6 +41474,13 @@ _exports_lys_type_clientData.dtor = _wrap_delete_lys_type;
 if (SWIGTYPE_p_lys_type->clientdata == 0) {
   SWIGTYPE_p_lys_type->clientdata = &_exports_lys_type_clientData;
 }
+/* Name: _exports_lys_iffeature, Type: p_lys_iffeature, Dtor: _wrap_delete_lys_iffeature */
+v8::Handle<v8::FunctionTemplate> _exports_lys_iffeature_class = SWIGV8_CreateClassTemplate("_exports_lys_iffeature");
+SWIGV8_SET_CLASS_TEMPL(_exports_lys_iffeature_clientData.class_templ, _exports_lys_iffeature_class);
+_exports_lys_iffeature_clientData.dtor = _wrap_delete_lys_iffeature;
+if (SWIGTYPE_p_lys_iffeature->clientdata == 0) {
+  SWIGTYPE_p_lys_iffeature->clientdata = &_exports_lys_iffeature_clientData;
+}
 /* Name: _exports_lys_node, Type: p_lys_node, Dtor: _wrap_delete_lys_node */
 v8::Handle<v8::FunctionTemplate> _exports_lys_node_class = SWIGV8_CreateClassTemplate("_exports_lys_node");
 SWIGV8_SET_CLASS_TEMPL(_exports_lys_node_clientData.class_templ, _exports_lys_node_class);
@@ -38839,12 +41523,12 @@ _exports_lys_node_list_clientData.dtor = _wrap_delete_lys_node_list;
 if (SWIGTYPE_p_lys_node_list->clientdata == 0) {
   SWIGTYPE_p_lys_node_list->clientdata = &_exports_lys_node_list_clientData;
 }
-/* Name: _exports_lys_node_anyxml, Type: p_lys_node_anyxml, Dtor: _wrap_delete_lys_node_anyxml */
-v8::Handle<v8::FunctionTemplate> _exports_lys_node_anyxml_class = SWIGV8_CreateClassTemplate("_exports_lys_node_anyxml");
-SWIGV8_SET_CLASS_TEMPL(_exports_lys_node_anyxml_clientData.class_templ, _exports_lys_node_anyxml_class);
-_exports_lys_node_anyxml_clientData.dtor = _wrap_delete_lys_node_anyxml;
-if (SWIGTYPE_p_lys_node_anyxml->clientdata == 0) {
-  SWIGTYPE_p_lys_node_anyxml->clientdata = &_exports_lys_node_anyxml_clientData;
+/* Name: _exports_lys_node_anydata, Type: p_lys_node_anydata, Dtor: _wrap_delete_lys_node_anydata */
+v8::Handle<v8::FunctionTemplate> _exports_lys_node_anydata_class = SWIGV8_CreateClassTemplate("_exports_lys_node_anydata");
+SWIGV8_SET_CLASS_TEMPL(_exports_lys_node_anydata_clientData.class_templ, _exports_lys_node_anydata_class);
+_exports_lys_node_anydata_clientData.dtor = _wrap_delete_lys_node_anydata;
+if (SWIGTYPE_p_lys_node_anydata->clientdata == 0) {
+  SWIGTYPE_p_lys_node_anydata->clientdata = &_exports_lys_node_anydata_clientData;
 }
 /* Name: _exports_lys_node_uses, Type: p_lys_node_uses, Dtor: _wrap_delete_lys_node_uses */
 v8::Handle<v8::FunctionTemplate> _exports_lys_node_uses_class = SWIGV8_CreateClassTemplate("_exports_lys_node_uses");
@@ -38867,12 +41551,12 @@ _exports_lys_node_case_clientData.dtor = _wrap_delete_lys_node_case;
 if (SWIGTYPE_p_lys_node_case->clientdata == 0) {
   SWIGTYPE_p_lys_node_case->clientdata = &_exports_lys_node_case_clientData;
 }
-/* Name: _exports_lys_node_rpc_inout, Type: p_lys_node_rpc_inout, Dtor: _wrap_delete_lys_node_rpc_inout */
-v8::Handle<v8::FunctionTemplate> _exports_lys_node_rpc_inout_class = SWIGV8_CreateClassTemplate("_exports_lys_node_rpc_inout");
-SWIGV8_SET_CLASS_TEMPL(_exports_lys_node_rpc_inout_clientData.class_templ, _exports_lys_node_rpc_inout_class);
-_exports_lys_node_rpc_inout_clientData.dtor = _wrap_delete_lys_node_rpc_inout;
-if (SWIGTYPE_p_lys_node_rpc_inout->clientdata == 0) {
-  SWIGTYPE_p_lys_node_rpc_inout->clientdata = &_exports_lys_node_rpc_inout_clientData;
+/* Name: _exports_lys_node_inout, Type: p_lys_node_inout, Dtor: _wrap_delete_lys_node_inout */
+v8::Handle<v8::FunctionTemplate> _exports_lys_node_inout_class = SWIGV8_CreateClassTemplate("_exports_lys_node_inout");
+SWIGV8_SET_CLASS_TEMPL(_exports_lys_node_inout_clientData.class_templ, _exports_lys_node_inout_class);
+_exports_lys_node_inout_clientData.dtor = _wrap_delete_lys_node_inout;
+if (SWIGTYPE_p_lys_node_inout->clientdata == 0) {
+  SWIGTYPE_p_lys_node_inout->clientdata = &_exports_lys_node_inout_clientData;
 }
 /* Name: _exports_lys_node_notif, Type: p_lys_node_notif, Dtor: _wrap_delete_lys_node_notif */
 v8::Handle<v8::FunctionTemplate> _exports_lys_node_notif_class = SWIGV8_CreateClassTemplate("_exports_lys_node_notif");
@@ -38881,12 +41565,12 @@ _exports_lys_node_notif_clientData.dtor = _wrap_delete_lys_node_notif;
 if (SWIGTYPE_p_lys_node_notif->clientdata == 0) {
   SWIGTYPE_p_lys_node_notif->clientdata = &_exports_lys_node_notif_clientData;
 }
-/* Name: _exports_lys_node_rpc, Type: p_lys_node_rpc, Dtor: _wrap_delete_lys_node_rpc */
-v8::Handle<v8::FunctionTemplate> _exports_lys_node_rpc_class = SWIGV8_CreateClassTemplate("_exports_lys_node_rpc");
-SWIGV8_SET_CLASS_TEMPL(_exports_lys_node_rpc_clientData.class_templ, _exports_lys_node_rpc_class);
-_exports_lys_node_rpc_clientData.dtor = _wrap_delete_lys_node_rpc;
-if (SWIGTYPE_p_lys_node_rpc->clientdata == 0) {
-  SWIGTYPE_p_lys_node_rpc->clientdata = &_exports_lys_node_rpc_clientData;
+/* Name: _exports_lys_node_rpc_action, Type: p_lys_node_rpc_action, Dtor: _wrap_delete_lys_node_rpc_action */
+v8::Handle<v8::FunctionTemplate> _exports_lys_node_rpc_action_class = SWIGV8_CreateClassTemplate("_exports_lys_node_rpc_action");
+SWIGV8_SET_CLASS_TEMPL(_exports_lys_node_rpc_action_clientData.class_templ, _exports_lys_node_rpc_action_class);
+_exports_lys_node_rpc_action_clientData.dtor = _wrap_delete_lys_node_rpc_action;
+if (SWIGTYPE_p_lys_node_rpc_action->clientdata == 0) {
+  SWIGTYPE_p_lys_node_rpc_action->clientdata = &_exports_lys_node_rpc_action_clientData;
 }
 /* Name: _exports_lys_node_augment, Type: p_lys_node_augment, Dtor: _wrap_delete_lys_node_augment */
 v8::Handle<v8::FunctionTemplate> _exports_lys_node_augment_class = SWIGV8_CreateClassTemplate("_exports_lys_node_augment");
@@ -39021,19 +41705,12 @@ _exports_lyd_node_leaf_list_clientData.dtor = _wrap_delete_lyd_node_leaf_list;
 if (SWIGTYPE_p_lyd_node_leaf_list->clientdata == 0) {
   SWIGTYPE_p_lyd_node_leaf_list->clientdata = &_exports_lyd_node_leaf_list_clientData;
 }
-/* Name: _exports_lyd_node_anyxml_value, Type: p_lyd_node_anyxml_value, Dtor: _wrap_delete_lyd_node_anyxml_value */
-v8::Handle<v8::FunctionTemplate> _exports_lyd_node_anyxml_value_class = SWIGV8_CreateClassTemplate("_exports_lyd_node_anyxml_value");
-SWIGV8_SET_CLASS_TEMPL(_exports_lyd_node_anyxml_value_clientData.class_templ, _exports_lyd_node_anyxml_value_class);
-_exports_lyd_node_anyxml_value_clientData.dtor = _wrap_delete_lyd_node_anyxml_value;
-if (SWIGTYPE_p_lyd_node_anyxml_value->clientdata == 0) {
-  SWIGTYPE_p_lyd_node_anyxml_value->clientdata = &_exports_lyd_node_anyxml_value_clientData;
-}
-/* Name: _exports_lyd_node_anyxml, Type: p_lyd_node_anyxml, Dtor: _wrap_delete_lyd_node_anyxml */
-v8::Handle<v8::FunctionTemplate> _exports_lyd_node_anyxml_class = SWIGV8_CreateClassTemplate("_exports_lyd_node_anyxml");
-SWIGV8_SET_CLASS_TEMPL(_exports_lyd_node_anyxml_clientData.class_templ, _exports_lyd_node_anyxml_class);
-_exports_lyd_node_anyxml_clientData.dtor = _wrap_delete_lyd_node_anyxml;
-if (SWIGTYPE_p_lyd_node_anyxml->clientdata == 0) {
-  SWIGTYPE_p_lyd_node_anyxml->clientdata = &_exports_lyd_node_anyxml_clientData;
+/* Name: _exports_lyd_node_anydata, Type: p_lyd_node_anydata, Dtor: _wrap_delete_lyd_node_anydata */
+v8::Handle<v8::FunctionTemplate> _exports_lyd_node_anydata_class = SWIGV8_CreateClassTemplate("_exports_lyd_node_anydata");
+SWIGV8_SET_CLASS_TEMPL(_exports_lyd_node_anydata_clientData.class_templ, _exports_lyd_node_anydata_class);
+_exports_lyd_node_anydata_clientData.dtor = _wrap_delete_lyd_node_anydata;
+if (SWIGTYPE_p_lyd_node_anydata->clientdata == 0) {
+  SWIGTYPE_p_lyd_node_anydata->clientdata = &_exports_lyd_node_anydata_clientData;
 }
 /* Name: _exports_lyd_difflist, Type: p_lyd_difflist, Dtor: _wrap_delete_lyd_difflist */
 v8::Handle<v8::FunctionTemplate> _exports_lyd_difflist_class = SWIGV8_CreateClassTemplate("_exports_lyd_difflist");
@@ -39042,10 +41719,34 @@ _exports_lyd_difflist_clientData.dtor = _wrap_delete_lyd_difflist;
 if (SWIGTYPE_p_lyd_difflist->clientdata == 0) {
   SWIGTYPE_p_lyd_difflist->clientdata = &_exports_lyd_difflist_clientData;
 }
+/* Name: _exports_lyxml_ns, Type: p_lyxml_ns, Dtor: _wrap_delete_lyxml_ns */
+v8::Handle<v8::FunctionTemplate> _exports_lyxml_ns_class = SWIGV8_CreateClassTemplate("_exports_lyxml_ns");
+SWIGV8_SET_CLASS_TEMPL(_exports_lyxml_ns_clientData.class_templ, _exports_lyxml_ns_class);
+_exports_lyxml_ns_clientData.dtor = _wrap_delete_lyxml_ns;
+if (SWIGTYPE_p_lyxml_ns->clientdata == 0) {
+  SWIGTYPE_p_lyxml_ns->clientdata = &_exports_lyxml_ns_clientData;
+}
+/* Name: _exports_lyxml_attr, Type: p_lyxml_attr, Dtor: _wrap_delete_lyxml_attr */
+v8::Handle<v8::FunctionTemplate> _exports_lyxml_attr_class = SWIGV8_CreateClassTemplate("_exports_lyxml_attr");
+SWIGV8_SET_CLASS_TEMPL(_exports_lyxml_attr_clientData.class_templ, _exports_lyxml_attr_class);
+_exports_lyxml_attr_clientData.dtor = _wrap_delete_lyxml_attr;
+if (SWIGTYPE_p_lyxml_attr->clientdata == 0) {
+  SWIGTYPE_p_lyxml_attr->clientdata = &_exports_lyxml_attr_clientData;
+}
+/* Name: _exports_lyxml_elem, Type: p_lyxml_elem, Dtor: _wrap_delete_lyxml_elem */
+v8::Handle<v8::FunctionTemplate> _exports_lyxml_elem_class = SWIGV8_CreateClassTemplate("_exports_lyxml_elem");
+SWIGV8_SET_CLASS_TEMPL(_exports_lyxml_elem_clientData.class_templ, _exports_lyxml_elem_class);
+_exports_lyxml_elem_clientData.dtor = _wrap_delete_lyxml_elem;
+if (SWIGTYPE_p_lyxml_elem->clientdata == 0) {
+  SWIGTYPE_p_lyxml_elem->clientdata = &_exports_lyxml_elem_clientData;
+}
 
 
   /* register wrapper functions */
-  SWIGV8_AddMemberVariable(_exports_ly_set_set_class, "s", _wrap_ly_set_set_s_get, _wrap_ly_set_set_s_set);
+  SWIGV8_AddStaticVariable(exports_obj, "LY_VERSION_MAJOR", _wrap_LY_VERSION_MAJOR, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LY_VERSION_MINOR", _wrap_LY_VERSION_MINOR, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LY_VERSION_MICRO", _wrap_LY_VERSION_MICRO, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_ly_set_set_class, "s", _wrap_ly_set_set_s_get, _wrap_ly_set_set_s_set);
 SWIGV8_AddMemberVariable(_exports_ly_set_set_class, "d", _wrap_ly_set_set_d_get, _wrap_ly_set_set_d_set);
 SWIGV8_AddMemberVariable(_exports_ly_set_set_class, "g", _wrap_ly_set_set_g_get, _wrap_ly_set_set_g_set);
 SWIGV8_AddMemberVariable(_exports_ly_set_class, "size", _wrap_ly_set_size_get, _wrap_ly_set_size_set);
@@ -39054,6 +41755,14 @@ SWIGV8_AddMemberVariable(_exports_ly_set_class, "set", _wrap_ly_set_set_get, _wr
 SWIGV8_AddStaticVariable(exports_obj, "LY_SET_OPT_USEASLIST", _wrap_LY_SET_OPT_USEASLIST, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYP_WITHSIBLINGS", _wrap_LYP_WITHSIBLINGS, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYP_FORMAT", _wrap_LYP_FORMAT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYP_KEEPEMPTYCONT", _wrap_LYP_KEEPEMPTYCONT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYP_WD_MASK", _wrap_LYP_WD_MASK, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYP_WD_EXPLICIT", _wrap_LYP_WD_EXPLICIT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYP_WD_TRIM", _wrap_LYP_WD_TRIM, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYP_WD_ALL", _wrap_LYP_WD_ALL, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYP_WD_ALL_TAG", _wrap_LYP_WD_ALL_TAG, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYP_WD_IMPL_TAG", _wrap_LYP_WD_IMPL_TAG, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYP_NETCONF", _wrap_LYP_NETCONF, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_LLSILENT", _wrap_LY_LLSILENT, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_LLERR", _wrap_LY_LLERR, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_LLWRN", _wrap_LY_LLWRN, JS_veto_set_variable);
@@ -39071,6 +41780,7 @@ SWIGV8_AddStaticVariable(exports_obj, "LYVE_XML_INVAL", _wrap_LYVE_XML_INVAL, JS
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_XML_INCHAR", _wrap_LYVE_XML_INCHAR, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_EOF", _wrap_LYVE_EOF, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INSTMT", _wrap_LYVE_INSTMT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_INPAR", _wrap_LYVE_INPAR, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INID", _wrap_LYVE_INID, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INDATE", _wrap_LYVE_INDATE, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INARG", _wrap_LYVE_INARG, JS_veto_set_variable);
@@ -39081,11 +41791,11 @@ SWIGV8_AddStaticVariable(exports_obj, "LYVE_DUPID", _wrap_LYVE_DUPID, JS_veto_se
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_DUPLEAFLIST", _wrap_LYVE_DUPLEAFLIST, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_DUPLIST", _wrap_LYVE_DUPLIST, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_NOUNIQ", _wrap_LYVE_NOUNIQ, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYVE_ENUM_DUPVAL", _wrap_LYVE_ENUM_DUPVAL, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYVE_ENUM_DUPNAME", _wrap_LYVE_ENUM_DUPNAME, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_ENUM_INVAL", _wrap_LYVE_ENUM_INVAL, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_ENUM_INNAME", _wrap_LYVE_ENUM_INNAME, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_ENUM_WS", _wrap_LYVE_ENUM_WS, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYVE_BITS_DUPVAL", _wrap_LYVE_BITS_DUPVAL, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYVE_BITS_DUPNAME", _wrap_LYVE_BITS_DUPNAME, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_BITS_INVAL", _wrap_LYVE_BITS_INVAL, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_BITS_INNAME", _wrap_LYVE_BITS_INNAME, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INMOD", _wrap_LYVE_INMOD, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_KEY_NLEAF", _wrap_LYVE_KEY_NLEAF, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_KEY_TYPE", _wrap_LYVE_KEY_TYPE, JS_veto_set_variable);
@@ -39096,8 +41806,10 @@ SWIGV8_AddStaticVariable(exports_obj, "LYVE_INREGEX", _wrap_LYVE_INREGEX, JS_vet
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INRESOLV", _wrap_LYVE_INRESOLV, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INSTATUS", _wrap_LYVE_INSTATUS, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_CIRC_LEAFREFS", _wrap_LYVE_CIRC_LEAFREFS, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_CIRC_FEATURES", _wrap_LYVE_CIRC_FEATURES, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_CIRC_IMPORTS", _wrap_LYVE_CIRC_IMPORTS, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_CIRC_INCLUDES", _wrap_LYVE_CIRC_INCLUDES, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_INVER", _wrap_LYVE_INVER, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_OBSDATA", _wrap_LYVE_OBSDATA, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_NORESOLV", _wrap_LYVE_NORESOLV, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_INELEM", _wrap_LYVE_INELEM, JS_veto_set_variable);
@@ -39119,12 +41831,16 @@ SWIGV8_AddStaticVariable(exports_obj, "LYVE_NOMAX", _wrap_LYVE_NOMAX, JS_veto_se
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_NOREQINS", _wrap_LYVE_NOREQINS, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_NOLEAFREF", _wrap_LYVE_NOLEAFREF, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_NOMANDCHOICE", _wrap_LYVE_NOMANDCHOICE, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_XPATH_INSNODE", _wrap_LYVE_XPATH_INSNODE, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_XPATH_INTOK", _wrap_LYVE_XPATH_INTOK, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_XPATH_EOF", _wrap_LYVE_XPATH_EOF, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_XPATH_INOP", _wrap_LYVE_XPATH_INOP, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_XPATH_INCTX", _wrap_LYVE_XPATH_INCTX, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_XPATH_INMOD", _wrap_LYVE_XPATH_INMOD, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_XPATH_INFUNC", _wrap_LYVE_XPATH_INFUNC, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_XPATH_INARGCOUNT", _wrap_LYVE_XPATH_INARGCOUNT, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_XPATH_INARGTYPE", _wrap_LYVE_XPATH_INARGTYPE, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYVE_XPATH_DUMMY", _wrap_LYVE_XPATH_DUMMY, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_PATH_INCHAR", _wrap_LYVE_PATH_INCHAR, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_PATH_INMOD", _wrap_LYVE_PATH_INMOD, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_PATH_MISSMOD", _wrap_LYVE_PATH_MISSMOD, JS_veto_set_variable);
@@ -39133,34 +41849,6 @@ SWIGV8_AddStaticVariable(exports_obj, "LYVE_PATH_INKEY", _wrap_LYVE_PATH_INKEY, 
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_PATH_MISSKEY", _wrap_LYVE_PATH_MISSKEY, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_PATH_EXISTS", _wrap_LYVE_PATH_EXISTS, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYVE_PATH_MISSPAR", _wrap_LYVE_PATH_MISSPAR, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYXML_ATTR_STD", _wrap_LYXML_ATTR_STD, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYXML_ATTR_NS", _wrap_LYXML_ATTR_NS, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lyxml_ns_class, "type", _wrap_lyxml_ns_type_get, _wrap_lyxml_ns_type_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_ns_class, "next", _wrap_lyxml_ns_next_get, _wrap_lyxml_ns_next_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_ns_class, "parent", _wrap_lyxml_ns_parent_get, _wrap_lyxml_ns_parent_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_ns_class, "prefix", _wrap_lyxml_ns_prefix_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lyxml_ns_class, "value", _wrap_lyxml_ns_value_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lyxml_attr_class, "type", _wrap_lyxml_attr_type_get, _wrap_lyxml_attr_type_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_attr_class, "next", _wrap_lyxml_attr_next_get, _wrap_lyxml_attr_next_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_attr_class, "ns", _wrap_lyxml_attr_ns_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lyxml_attr_class, "name", _wrap_lyxml_attr_name_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lyxml_attr_class, "value", _wrap_lyxml_attr_value_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "flags", _wrap_lyxml_elem_flags_get, _wrap_lyxml_elem_flags_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "LYXML_ELEM_MIXED", _wrap_LYXML_ELEM_MIXED, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "parent", _wrap_lyxml_elem_parent_get, _wrap_lyxml_elem_parent_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "attr", _wrap_lyxml_elem_attr_get, _wrap_lyxml_elem_attr_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "child", _wrap_lyxml_elem_child_get, _wrap_lyxml_elem_child_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "next", _wrap_lyxml_elem_next_get, _wrap_lyxml_elem_next_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "prev", _wrap_lyxml_elem_prev_get, _wrap_lyxml_elem_prev_set);
-SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "name", _wrap_lyxml_elem_name_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "ns", _wrap_lyxml_elem_ns_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "content", _wrap_lyxml_elem_content_get, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYXML_PARSE_MULTIROOT", _wrap_LYXML_PARSE_MULTIROOT, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYXML_PRINT_OPEN", _wrap_LYXML_PRINT_OPEN, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYXML_PRINT_FORMAT", _wrap_LYXML_PRINT_FORMAT, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYXML_PRINT_CLOSE", _wrap_LYXML_PRINT_CLOSE, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYXML_PRINT_ATTRS", _wrap_LYXML_PRINT_ATTRS, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYXML_PRINT_SIBLINGS", _wrap_LYXML_PRINT_SIBLINGS, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_REV_SIZE", _wrap_LY_REV_SIZE, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_IN_UNKNOWN", _wrap_LYS_IN_UNKNOWN, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_IN_YANG", _wrap_LYS_IN_YANG, JS_veto_set_variable);
@@ -39187,6 +41875,8 @@ SWIGV8_AddStaticVariable(exports_obj, "LYS_OUTPUT", _wrap_LYS_OUTPUT, JS_veto_se
 SWIGV8_AddStaticVariable(exports_obj, "LYS_GROUPING", _wrap_LYS_GROUPING, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_USES", _wrap_LYS_USES, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_AUGMENT", _wrap_LYS_AUGMENT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_ACTION", _wrap_LYS_ACTION, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_ANYDATA", _wrap_LYS_ANYDATA, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_NO_RPC_NOTIF_NODE", _wrap_LYS_NO_RPC_NOTIF_NODE, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_ANY", _wrap_LYS_ANY, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_module_class, "ctx", _wrap_lys_module_ctx_get, _wrap_lys_module_ctx_set);
@@ -39246,6 +41936,7 @@ SWIGV8_AddMemberVariable(_exports_lys_submodule_class, "features", _wrap_lys_sub
 SWIGV8_AddMemberVariable(_exports_lys_submodule_class, "augment", _wrap_lys_submodule_augment_get, _wrap_lys_submodule_augment_set);
 SWIGV8_AddMemberVariable(_exports_lys_submodule_class, "deviation", _wrap_lys_submodule_deviation_get, _wrap_lys_submodule_deviation_set);
 SWIGV8_AddMemberVariable(_exports_lys_submodule_class, "belongsto", _wrap_lys_submodule_belongsto_get, _wrap_lys_submodule_belongsto_set);
+SWIGV8_AddStaticVariable(exports_obj, "LY_TYPE_ERR", _wrap_LY_TYPE_ERR, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_TYPE_DER", _wrap_LY_TYPE_DER, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_TYPE_BINARY", _wrap_LY_TYPE_BINARY, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_TYPE_BITS", _wrap_LY_TYPE_BITS, JS_veto_set_variable);
@@ -39275,6 +41966,9 @@ SWIGV8_AddMemberVariable(_exports_lys_type_bit_class, "name", _wrap_lys_type_bit
 SWIGV8_AddMemberVariable(_exports_lys_type_bit_class, "dsc", _wrap_lys_type_bit_dsc_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_type_bit_class, "ref", _wrap_lys_type_bit_ref_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_type_bit_class, "flags", _wrap_lys_type_bit_flags_get, _wrap_lys_type_bit_flags_set);
+SWIGV8_AddMemberVariable(_exports_lys_type_bit_class, "iffeature_size", _wrap_lys_type_bit_iffeature_size_get, _wrap_lys_type_bit_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_type_bit_class, "padding", _wrap_lys_type_bit_padding_get, _wrap_lys_type_bit_padding_set);
+SWIGV8_AddMemberVariable(_exports_lys_type_bit_class, "iffeature", _wrap_lys_type_bit_iffeature_get, _wrap_lys_type_bit_iffeature_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_bit_class, "pos", _wrap_lys_type_bit_pos_get, _wrap_lys_type_bit_pos_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_bits_class, "bit", _wrap_lys_type_info_bits_bit_get, _wrap_lys_type_info_bits_bit_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_bits_class, "count", _wrap_lys_type_info_bits_count_get, _wrap_lys_type_info_bits_count_set);
@@ -39285,14 +41979,19 @@ SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "name", _wrap_lys_type_en
 SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "dsc", _wrap_lys_type_enum_dsc_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "ref", _wrap_lys_type_enum_ref_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "flags", _wrap_lys_type_enum_flags_get, _wrap_lys_type_enum_flags_set);
+SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "iffeature_size", _wrap_lys_type_enum_iffeature_size_get, _wrap_lys_type_enum_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "padding", _wrap_lys_type_enum_padding_get, _wrap_lys_type_enum_padding_set);
+SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "iffeature", _wrap_lys_type_enum_iffeature_get, _wrap_lys_type_enum_iffeature_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_enum_class, "value", _wrap_lys_type_enum_value_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_enums_class, "enm", _wrap_lys_type_info_enums_enm_get, _wrap_lys_type_info_enums_enm_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_enums_class, "count", _wrap_lys_type_info_enums_count_get, _wrap_lys_type_info_enums_count_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_ident_class, "ref", _wrap_lys_type_info_ident_ref_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_type_info_ident_class, "count", _wrap_lys_type_info_ident_count_get, _wrap_lys_type_info_ident_count_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_inst_class, "req", _wrap_lys_type_info_inst_req_get, _wrap_lys_type_info_inst_req_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_num_class, "range", _wrap_lys_type_info_num_range_get, _wrap_lys_type_info_num_range_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_lref_class, "path", _wrap_lys_type_info_lref_path_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_lref_class, "target", _wrap_lys_type_info_lref_target_get, _wrap_lys_type_info_lref_target_set);
+SWIGV8_AddMemberVariable(_exports_lys_type_info_lref_class, "req", _wrap_lys_type_info_lref_req_get, _wrap_lys_type_info_lref_req_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_str_class, "length", _wrap_lys_type_info_str_length_get, _wrap_lys_type_info_str_length_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_str_class, "patterns", _wrap_lys_type_info_str_patterns_get, _wrap_lys_type_info_str_patterns_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_info_str_class, "pat_count", _wrap_lys_type_info_str_pat_count_get, _wrap_lys_type_info_str_pat_count_set);
@@ -39313,6 +42012,12 @@ SWIGV8_AddMemberVariable(_exports_lys_type_class, "base", _wrap_lys_type_base_ge
 SWIGV8_AddMemberVariable(_exports_lys_type_class, "der", _wrap_lys_type_der_get, _wrap_lys_type_der_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_class, "parent", _wrap_lys_type_parent_get, _wrap_lys_type_parent_set);
 SWIGV8_AddMemberVariable(_exports_lys_type_class, "info", _wrap_lys_type_info_get, _wrap_lys_type_info_set);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_IFF_NOT", _wrap_LYS_IFF_NOT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_IFF_AND", _wrap_LYS_IFF_AND, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_IFF_OR", _wrap_LYS_IFF_OR, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_IFF_F", _wrap_LYS_IFF_F, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_iffeature_class, "expr", _wrap_lys_iffeature_expr_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_iffeature_class, "features", _wrap_lys_iffeature_features_get, _wrap_lys_iffeature_features_set);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_NACM_DENYW", _wrap_LYS_NACM_DENYW, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_NACM_DENYA", _wrap_LYS_NACM_DENYA, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_CONFIG_W", _wrap_LYS_CONFIG_W, JS_veto_set_variable);
@@ -39334,6 +42039,9 @@ SWIGV8_AddStaticVariable(exports_obj, "LYS_FENABLED", _wrap_LYS_FENABLED, JS_vet
 SWIGV8_AddStaticVariable(exports_obj, "LYS_UNIQUE", _wrap_LYS_UNIQUE, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_AUTOASSIGNED", _wrap_LYS_AUTOASSIGNED, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_USESGRP", _wrap_LYS_USESGRP, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_IMPLICIT", _wrap_LYS_IMPLICIT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_VALID_DEP", _wrap_LYS_VALID_DEP, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_DFLTJSON", _wrap_LYS_DFLTJSON, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_class, "name", _wrap_lys_node_name_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_class, "dsc", _wrap_lys_node_dsc_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_class, "ref", _wrap_lys_node_ref_get, JS_veto_set_variable);
@@ -39345,9 +42053,9 @@ SWIGV8_AddMemberVariable(_exports_lys_node_class, "parent", _wrap_lys_node_paren
 SWIGV8_AddMemberVariable(_exports_lys_node_class, "child", _wrap_lys_node_child_get, _wrap_lys_node_child_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_class, "next", _wrap_lys_node_next_get, _wrap_lys_node_next_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_class, "prev", _wrap_lys_node_prev_get, _wrap_lys_node_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_class, "features_size", _wrap_lys_node_features_size_get, _wrap_lys_node_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_class, "features", _wrap_lys_node_features_get, _wrap_lys_node_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_class, "priv", _wrap_lys_node_priv_get, _wrap_lys_node_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_class, "iffeature", _wrap_lys_node_iffeature_get, _wrap_lys_node_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_class, "iffeature_size", _wrap_lys_node_iffeature_size_get, _wrap_lys_node_iffeature_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "name", _wrap_lys_node_container_name_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "dsc", _wrap_lys_node_container_dsc_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "ref", _wrap_lys_node_container_ref_get, JS_veto_set_variable);
@@ -39359,13 +42067,14 @@ SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "parent", _wrap_lys_
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "child", _wrap_lys_node_container_child_get, _wrap_lys_node_container_child_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "next", _wrap_lys_node_container_next_get, _wrap_lys_node_container_next_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "prev", _wrap_lys_node_container_prev_get, _wrap_lys_node_container_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "features_size", _wrap_lys_node_container_features_size_get, _wrap_lys_node_container_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "features", _wrap_lys_node_container_features_get, _wrap_lys_node_container_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "priv", _wrap_lys_node_container_priv_get, _wrap_lys_node_container_priv_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "when", _wrap_lys_node_container_when_get, _wrap_lys_node_container_when_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "presence", _wrap_lys_node_container_presence_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "iffeature", _wrap_lys_node_container_iffeature_get, _wrap_lys_node_container_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "iffeature_size", _wrap_lys_node_container_iffeature_size_get, _wrap_lys_node_container_iffeature_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "must_size", _wrap_lys_node_container_must_size_get, _wrap_lys_node_container_must_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "tpdf_size", _wrap_lys_node_container_tpdf_size_get, _wrap_lys_node_container_tpdf_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "padding", _wrap_lys_node_container_padding_get, _wrap_lys_node_container_padding_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "when", _wrap_lys_node_container_when_get, _wrap_lys_node_container_when_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "presence", _wrap_lys_node_container_presence_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "must", _wrap_lys_node_container_must_get, _wrap_lys_node_container_must_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_container_class, "tpdf", _wrap_lys_node_container_tpdf_get, _wrap_lys_node_container_tpdf_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "name", _wrap_lys_node_choice_name_get, JS_veto_set_variable);
@@ -39379,9 +42088,10 @@ SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "parent", _wrap_lys_nod
 SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "child", _wrap_lys_node_choice_child_get, _wrap_lys_node_choice_child_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "next", _wrap_lys_node_choice_next_get, _wrap_lys_node_choice_next_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "prev", _wrap_lys_node_choice_prev_get, _wrap_lys_node_choice_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "features_size", _wrap_lys_node_choice_features_size_get, _wrap_lys_node_choice_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "features", _wrap_lys_node_choice_features_get, _wrap_lys_node_choice_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "priv", _wrap_lys_node_choice_priv_get, _wrap_lys_node_choice_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "iffeature", _wrap_lys_node_choice_iffeature_get, _wrap_lys_node_choice_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "iffeature_size", _wrap_lys_node_choice_iffeature_size_get, _wrap_lys_node_choice_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "padding", _wrap_lys_node_choice_padding_get, _wrap_lys_node_choice_padding_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "when", _wrap_lys_node_choice_when_get, _wrap_lys_node_choice_when_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_choice_class, "dflt", _wrap_lys_node_choice_dflt_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "name", _wrap_lys_node_leaf_name_get, JS_veto_set_variable);
@@ -39392,16 +42102,17 @@ SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "nacm", _wrap_lys_node_le
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "module", _wrap_lys_node_leaf_module_get, _wrap_lys_node_leaf_module_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "nodetype", _wrap_lys_node_leaf_nodetype_get, _wrap_lys_node_leaf_nodetype_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "parent", _wrap_lys_node_leaf_parent_get, _wrap_lys_node_leaf_parent_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "child", _wrap_lys_node_leaf_child_get, _wrap_lys_node_leaf_child_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "backlinks", _wrap_lys_node_leaf_backlinks_get, _wrap_lys_node_leaf_backlinks_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "next", _wrap_lys_node_leaf_next_get, _wrap_lys_node_leaf_next_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "prev", _wrap_lys_node_leaf_prev_get, _wrap_lys_node_leaf_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "features_size", _wrap_lys_node_leaf_features_size_get, _wrap_lys_node_leaf_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "features", _wrap_lys_node_leaf_features_get, _wrap_lys_node_leaf_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "priv", _wrap_lys_node_leaf_priv_get, _wrap_lys_node_leaf_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "iffeature", _wrap_lys_node_leaf_iffeature_get, _wrap_lys_node_leaf_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "iffeature_size", _wrap_lys_node_leaf_iffeature_size_get, _wrap_lys_node_leaf_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "padding", _wrap_lys_node_leaf_padding_get, _wrap_lys_node_leaf_padding_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "must_size", _wrap_lys_node_leaf_must_size_get, _wrap_lys_node_leaf_must_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "when", _wrap_lys_node_leaf_when_get, _wrap_lys_node_leaf_when_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "type", _wrap_lys_node_leaf_type_get, _wrap_lys_node_leaf_type_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "units", _wrap_lys_node_leaf_units_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "must_size", _wrap_lys_node_leaf_must_size_get, _wrap_lys_node_leaf_must_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "must", _wrap_lys_node_leaf_must_get, _wrap_lys_node_leaf_must_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaf_class, "dflt", _wrap_lys_node_leaf_dflt_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "name", _wrap_lys_node_leaflist_name_get, JS_veto_set_variable);
@@ -39415,14 +42126,17 @@ SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "parent", _wrap_lys_n
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "child", _wrap_lys_node_leaflist_child_get, _wrap_lys_node_leaflist_child_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "next", _wrap_lys_node_leaflist_next_get, _wrap_lys_node_leaflist_next_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "prev", _wrap_lys_node_leaflist_prev_get, _wrap_lys_node_leaflist_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "features_size", _wrap_lys_node_leaflist_features_size_get, _wrap_lys_node_leaflist_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "features", _wrap_lys_node_leaflist_features_get, _wrap_lys_node_leaflist_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "priv", _wrap_lys_node_leaflist_priv_get, _wrap_lys_node_leaflist_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "iffeature", _wrap_lys_node_leaflist_iffeature_get, _wrap_lys_node_leaflist_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "iffeature_size", _wrap_lys_node_leaflist_iffeature_size_get, _wrap_lys_node_leaflist_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "padding", _wrap_lys_node_leaflist_padding_get, _wrap_lys_node_leaflist_padding_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "dflt_size", _wrap_lys_node_leaflist_dflt_size_get, _wrap_lys_node_leaflist_dflt_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "must_size", _wrap_lys_node_leaflist_must_size_get, _wrap_lys_node_leaflist_must_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "when", _wrap_lys_node_leaflist_when_get, _wrap_lys_node_leaflist_when_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "type", _wrap_lys_node_leaflist_type_get, _wrap_lys_node_leaflist_type_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "units", _wrap_lys_node_leaflist_units_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "must_size", _wrap_lys_node_leaflist_must_size_get, _wrap_lys_node_leaflist_must_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "must", _wrap_lys_node_leaflist_must_get, _wrap_lys_node_leaflist_must_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "dflt", _wrap_lys_node_leaflist_dflt_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "min", _wrap_lys_node_leaflist_min_get, _wrap_lys_node_leaflist_min_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_leaflist_class, "max", _wrap_lys_node_leaflist_max_get, _wrap_lys_node_leaflist_max_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "name", _wrap_lys_node_list_name_get, JS_veto_set_variable);
@@ -39436,37 +42150,39 @@ SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "parent", _wrap_lys_node_
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "child", _wrap_lys_node_list_child_get, _wrap_lys_node_list_child_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "next", _wrap_lys_node_list_next_get, _wrap_lys_node_list_next_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "prev", _wrap_lys_node_list_prev_get, _wrap_lys_node_list_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "features_size", _wrap_lys_node_list_features_size_get, _wrap_lys_node_list_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "features", _wrap_lys_node_list_features_get, _wrap_lys_node_list_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "priv", _wrap_lys_node_list_priv_get, _wrap_lys_node_list_priv_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "when", _wrap_lys_node_list_when_get, _wrap_lys_node_list_when_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "min", _wrap_lys_node_list_min_get, _wrap_lys_node_list_min_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "max", _wrap_lys_node_list_max_get, _wrap_lys_node_list_max_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "iffeature", _wrap_lys_node_list_iffeature_get, _wrap_lys_node_list_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "iffeature_size", _wrap_lys_node_list_iffeature_size_get, _wrap_lys_node_list_iffeature_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "must_size", _wrap_lys_node_list_must_size_get, _wrap_lys_node_list_must_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "tpdf_size", _wrap_lys_node_list_tpdf_size_get, _wrap_lys_node_list_tpdf_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "keys_size", _wrap_lys_node_list_keys_size_get, _wrap_lys_node_list_keys_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "unique_size", _wrap_lys_node_list_unique_size_get, _wrap_lys_node_list_unique_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "when", _wrap_lys_node_list_when_get, _wrap_lys_node_list_when_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "min", _wrap_lys_node_list_min_get, _wrap_lys_node_list_min_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "max", _wrap_lys_node_list_max_get, _wrap_lys_node_list_max_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "must", _wrap_lys_node_list_must_get, _wrap_lys_node_list_must_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "tpdf", _wrap_lys_node_list_tpdf_get, _wrap_lys_node_list_tpdf_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "keys", _wrap_lys_node_list_keys_get, _wrap_lys_node_list_keys_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "unique", _wrap_lys_node_list_unique_get, _wrap_lys_node_list_unique_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "name", _wrap_lys_node_anyxml_name_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "dsc", _wrap_lys_node_anyxml_dsc_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "ref", _wrap_lys_node_anyxml_ref_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "flags", _wrap_lys_node_anyxml_flags_get, _wrap_lys_node_anyxml_flags_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "nacm", _wrap_lys_node_anyxml_nacm_get, _wrap_lys_node_anyxml_nacm_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "module", _wrap_lys_node_anyxml_module_get, _wrap_lys_node_anyxml_module_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "nodetype", _wrap_lys_node_anyxml_nodetype_get, _wrap_lys_node_anyxml_nodetype_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "parent", _wrap_lys_node_anyxml_parent_get, _wrap_lys_node_anyxml_parent_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "child", _wrap_lys_node_anyxml_child_get, _wrap_lys_node_anyxml_child_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "next", _wrap_lys_node_anyxml_next_get, _wrap_lys_node_anyxml_next_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "prev", _wrap_lys_node_anyxml_prev_get, _wrap_lys_node_anyxml_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "features_size", _wrap_lys_node_anyxml_features_size_get, _wrap_lys_node_anyxml_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "features", _wrap_lys_node_anyxml_features_get, _wrap_lys_node_anyxml_features_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "priv", _wrap_lys_node_anyxml_priv_get, _wrap_lys_node_anyxml_priv_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "when", _wrap_lys_node_anyxml_when_get, _wrap_lys_node_anyxml_when_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "must_size", _wrap_lys_node_anyxml_must_size_get, _wrap_lys_node_anyxml_must_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_anyxml_class, "must", _wrap_lys_node_anyxml_must_get, _wrap_lys_node_anyxml_must_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "keys_str", _wrap_lys_node_list_keys_str_get, _wrap_lys_node_list_keys_str_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_list_class, "unique_size", _wrap_lys_node_list_unique_size_get, _wrap_lys_node_list_unique_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "name", _wrap_lys_node_anydata_name_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "dsc", _wrap_lys_node_anydata_dsc_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "ref", _wrap_lys_node_anydata_ref_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "flags", _wrap_lys_node_anydata_flags_get, _wrap_lys_node_anydata_flags_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "nacm", _wrap_lys_node_anydata_nacm_get, _wrap_lys_node_anydata_nacm_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "module", _wrap_lys_node_anydata_module_get, _wrap_lys_node_anydata_module_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "nodetype", _wrap_lys_node_anydata_nodetype_get, _wrap_lys_node_anydata_nodetype_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "parent", _wrap_lys_node_anydata_parent_get, _wrap_lys_node_anydata_parent_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "child", _wrap_lys_node_anydata_child_get, _wrap_lys_node_anydata_child_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "next", _wrap_lys_node_anydata_next_get, _wrap_lys_node_anydata_next_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "prev", _wrap_lys_node_anydata_prev_get, _wrap_lys_node_anydata_prev_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "priv", _wrap_lys_node_anydata_priv_get, _wrap_lys_node_anydata_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "iffeature", _wrap_lys_node_anydata_iffeature_get, _wrap_lys_node_anydata_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "iffeature_size", _wrap_lys_node_anydata_iffeature_size_get, _wrap_lys_node_anydata_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "padding", _wrap_lys_node_anydata_padding_get, _wrap_lys_node_anydata_padding_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "must_size", _wrap_lys_node_anydata_must_size_get, _wrap_lys_node_anydata_must_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "when", _wrap_lys_node_anydata_when_get, _wrap_lys_node_anydata_when_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_anydata_class, "must", _wrap_lys_node_anydata_must_get, _wrap_lys_node_anydata_must_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "name", _wrap_lys_node_uses_name_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "dsc", _wrap_lys_node_uses_dsc_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "ref", _wrap_lys_node_uses_ref_get, JS_veto_set_variable);
@@ -39478,13 +42194,14 @@ SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "parent", _wrap_lys_node_
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "child", _wrap_lys_node_uses_child_get, _wrap_lys_node_uses_child_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "next", _wrap_lys_node_uses_next_get, _wrap_lys_node_uses_next_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "prev", _wrap_lys_node_uses_prev_get, _wrap_lys_node_uses_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "features_size", _wrap_lys_node_uses_features_size_get, _wrap_lys_node_uses_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "features", _wrap_lys_node_uses_features_get, _wrap_lys_node_uses_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "priv", _wrap_lys_node_uses_priv_get, _wrap_lys_node_uses_priv_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "when", _wrap_lys_node_uses_when_get, _wrap_lys_node_uses_when_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "grp", _wrap_lys_node_uses_grp_get, _wrap_lys_node_uses_grp_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "iffeature", _wrap_lys_node_uses_iffeature_get, _wrap_lys_node_uses_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "iffeature_size", _wrap_lys_node_uses_iffeature_size_get, _wrap_lys_node_uses_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "padding", _wrap_lys_node_uses_padding_get, _wrap_lys_node_uses_padding_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "refine_size", _wrap_lys_node_uses_refine_size_get, _wrap_lys_node_uses_refine_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "augment_size", _wrap_lys_node_uses_augment_size_get, _wrap_lys_node_uses_augment_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "when", _wrap_lys_node_uses_when_get, _wrap_lys_node_uses_when_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "grp", _wrap_lys_node_uses_grp_get, _wrap_lys_node_uses_grp_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "refine", _wrap_lys_node_uses_refine_get, _wrap_lys_node_uses_refine_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_uses_class, "augment", _wrap_lys_node_uses_augment_get, _wrap_lys_node_uses_augment_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "name", _wrap_lys_node_grp_name_get, JS_veto_set_variable);
@@ -39498,9 +42215,10 @@ SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "parent", _wrap_lys_node_g
 SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "child", _wrap_lys_node_grp_child_get, _wrap_lys_node_grp_child_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "next", _wrap_lys_node_grp_next_get, _wrap_lys_node_grp_next_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "prev", _wrap_lys_node_grp_prev_get, _wrap_lys_node_grp_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "features_size", _wrap_lys_node_grp_features_size_get, _wrap_lys_node_grp_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "features", _wrap_lys_node_grp_features_get, _wrap_lys_node_grp_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "priv", _wrap_lys_node_grp_priv_get, _wrap_lys_node_grp_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "iffeature", _wrap_lys_node_grp_iffeature_get, _wrap_lys_node_grp_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "iffeature_size", _wrap_lys_node_grp_iffeature_size_get, _wrap_lys_node_grp_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "padding", _wrap_lys_node_grp_padding_get, _wrap_lys_node_grp_padding_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "tpdf_size", _wrap_lys_node_grp_tpdf_size_get, _wrap_lys_node_grp_tpdf_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_grp_class, "tpdf", _wrap_lys_node_grp_tpdf_get, _wrap_lys_node_grp_tpdf_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "name", _wrap_lys_node_case_name_get, JS_veto_set_variable);
@@ -39514,22 +42232,26 @@ SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "parent", _wrap_lys_node_
 SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "child", _wrap_lys_node_case_child_get, _wrap_lys_node_case_child_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "next", _wrap_lys_node_case_next_get, _wrap_lys_node_case_next_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "prev", _wrap_lys_node_case_prev_get, _wrap_lys_node_case_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "features_size", _wrap_lys_node_case_features_size_get, _wrap_lys_node_case_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "features", _wrap_lys_node_case_features_get, _wrap_lys_node_case_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "priv", _wrap_lys_node_case_priv_get, _wrap_lys_node_case_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "iffeature", _wrap_lys_node_case_iffeature_get, _wrap_lys_node_case_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "iffeature_size", _wrap_lys_node_case_iffeature_size_get, _wrap_lys_node_case_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "padding", _wrap_lys_node_case_padding_get, _wrap_lys_node_case_padding_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_case_class, "when", _wrap_lys_node_case_when_get, _wrap_lys_node_case_when_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "name", _wrap_lys_node_rpc_inout_name_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "fill1", _wrap_lys_node_rpc_inout_fill1_get, _wrap_lys_node_rpc_inout_fill1_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "fill2", _wrap_lys_node_rpc_inout_fill2_get, _wrap_lys_node_rpc_inout_fill2_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "module", _wrap_lys_node_rpc_inout_module_get, _wrap_lys_node_rpc_inout_module_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "nodetype", _wrap_lys_node_rpc_inout_nodetype_get, _wrap_lys_node_rpc_inout_nodetype_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "parent", _wrap_lys_node_rpc_inout_parent_get, _wrap_lys_node_rpc_inout_parent_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "child", _wrap_lys_node_rpc_inout_child_get, _wrap_lys_node_rpc_inout_child_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "next", _wrap_lys_node_rpc_inout_next_get, _wrap_lys_node_rpc_inout_next_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "prev", _wrap_lys_node_rpc_inout_prev_get, _wrap_lys_node_rpc_inout_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "tpdf_size", _wrap_lys_node_rpc_inout_tpdf_size_get, _wrap_lys_node_rpc_inout_tpdf_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "tpdf", _wrap_lys_node_rpc_inout_tpdf_get, _wrap_lys_node_rpc_inout_tpdf_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_inout_class, "priv", _wrap_lys_node_rpc_inout_priv_get, _wrap_lys_node_rpc_inout_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "name", _wrap_lys_node_inout_name_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "fill1", _wrap_lys_node_inout_fill1_get, _wrap_lys_node_inout_fill1_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "flags", _wrap_lys_node_inout_flags_get, _wrap_lys_node_inout_flags_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "nacm", _wrap_lys_node_inout_nacm_get, _wrap_lys_node_inout_nacm_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "module", _wrap_lys_node_inout_module_get, _wrap_lys_node_inout_module_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "nodetype", _wrap_lys_node_inout_nodetype_get, _wrap_lys_node_inout_nodetype_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "parent", _wrap_lys_node_inout_parent_get, _wrap_lys_node_inout_parent_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "child", _wrap_lys_node_inout_child_get, _wrap_lys_node_inout_child_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "next", _wrap_lys_node_inout_next_get, _wrap_lys_node_inout_next_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "prev", _wrap_lys_node_inout_prev_get, _wrap_lys_node_inout_prev_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "priv", _wrap_lys_node_inout_priv_get, _wrap_lys_node_inout_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "tpdf", _wrap_lys_node_inout_tpdf_get, _wrap_lys_node_inout_tpdf_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "tpdf_size", _wrap_lys_node_inout_tpdf_size_get, _wrap_lys_node_inout_tpdf_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "must_size", _wrap_lys_node_inout_must_size_get, _wrap_lys_node_inout_must_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_inout_class, "must", _wrap_lys_node_inout_must_get, _wrap_lys_node_inout_must_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "name", _wrap_lys_node_notif_name_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "dsc", _wrap_lys_node_notif_dsc_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "ref", _wrap_lys_node_notif_ref_get, JS_veto_set_variable);
@@ -39541,27 +42263,31 @@ SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "parent", _wrap_lys_node
 SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "child", _wrap_lys_node_notif_child_get, _wrap_lys_node_notif_child_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "next", _wrap_lys_node_notif_next_get, _wrap_lys_node_notif_next_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "prev", _wrap_lys_node_notif_prev_get, _wrap_lys_node_notif_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "features_size", _wrap_lys_node_notif_features_size_get, _wrap_lys_node_notif_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "features", _wrap_lys_node_notif_features_get, _wrap_lys_node_notif_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "priv", _wrap_lys_node_notif_priv_get, _wrap_lys_node_notif_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "iffeature", _wrap_lys_node_notif_iffeature_get, _wrap_lys_node_notif_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "iffeature_size", _wrap_lys_node_notif_iffeature_size_get, _wrap_lys_node_notif_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "padding", _wrap_lys_node_notif_padding_get, _wrap_lys_node_notif_padding_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "tpdf_size", _wrap_lys_node_notif_tpdf_size_get, _wrap_lys_node_notif_tpdf_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "must_size", _wrap_lys_node_notif_must_size_get, _wrap_lys_node_notif_must_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "tpdf", _wrap_lys_node_notif_tpdf_get, _wrap_lys_node_notif_tpdf_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "name", _wrap_lys_node_rpc_name_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "dsc", _wrap_lys_node_rpc_dsc_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "ref", _wrap_lys_node_rpc_ref_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "flags", _wrap_lys_node_rpc_flags_get, _wrap_lys_node_rpc_flags_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "nacm", _wrap_lys_node_rpc_nacm_get, _wrap_lys_node_rpc_nacm_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "module", _wrap_lys_node_rpc_module_get, _wrap_lys_node_rpc_module_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "nodetype", _wrap_lys_node_rpc_nodetype_get, _wrap_lys_node_rpc_nodetype_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "parent", _wrap_lys_node_rpc_parent_get, _wrap_lys_node_rpc_parent_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "child", _wrap_lys_node_rpc_child_get, _wrap_lys_node_rpc_child_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "next", _wrap_lys_node_rpc_next_get, _wrap_lys_node_rpc_next_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "prev", _wrap_lys_node_rpc_prev_get, _wrap_lys_node_rpc_prev_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "features_size", _wrap_lys_node_rpc_features_size_get, _wrap_lys_node_rpc_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "features", _wrap_lys_node_rpc_features_get, _wrap_lys_node_rpc_features_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "priv", _wrap_lys_node_rpc_priv_get, _wrap_lys_node_rpc_priv_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "tpdf_size", _wrap_lys_node_rpc_tpdf_size_get, _wrap_lys_node_rpc_tpdf_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_rpc_class, "tpdf", _wrap_lys_node_rpc_tpdf_get, _wrap_lys_node_rpc_tpdf_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_notif_class, "must", _wrap_lys_node_notif_must_get, _wrap_lys_node_notif_must_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "name", _wrap_lys_node_rpc_action_name_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "dsc", _wrap_lys_node_rpc_action_dsc_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "ref", _wrap_lys_node_rpc_action_ref_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "flags", _wrap_lys_node_rpc_action_flags_get, _wrap_lys_node_rpc_action_flags_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "nacm", _wrap_lys_node_rpc_action_nacm_get, _wrap_lys_node_rpc_action_nacm_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "module", _wrap_lys_node_rpc_action_module_get, _wrap_lys_node_rpc_action_module_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "nodetype", _wrap_lys_node_rpc_action_nodetype_get, _wrap_lys_node_rpc_action_nodetype_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "parent", _wrap_lys_node_rpc_action_parent_get, _wrap_lys_node_rpc_action_parent_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "child", _wrap_lys_node_rpc_action_child_get, _wrap_lys_node_rpc_action_child_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "next", _wrap_lys_node_rpc_action_next_get, _wrap_lys_node_rpc_action_next_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "prev", _wrap_lys_node_rpc_action_prev_get, _wrap_lys_node_rpc_action_prev_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "priv", _wrap_lys_node_rpc_action_priv_get, _wrap_lys_node_rpc_action_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "iffeature", _wrap_lys_node_rpc_action_iffeature_get, _wrap_lys_node_rpc_action_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "iffeature_size", _wrap_lys_node_rpc_action_iffeature_size_get, _wrap_lys_node_rpc_action_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "padding", _wrap_lys_node_rpc_action_padding_get, _wrap_lys_node_rpc_action_padding_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "tpdf_size", _wrap_lys_node_rpc_action_tpdf_size_get, _wrap_lys_node_rpc_action_tpdf_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_rpc_action_class, "tpdf", _wrap_lys_node_rpc_action_tpdf_get, _wrap_lys_node_rpc_action_tpdf_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "target_name", _wrap_lys_node_augment_target_name_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "dsc", _wrap_lys_node_augment_dsc_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "ref", _wrap_lys_node_augment_ref_get, JS_veto_set_variable);
@@ -39573,12 +42299,11 @@ SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "parent", _wrap_lys_no
 SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "child", _wrap_lys_node_augment_child_get, _wrap_lys_node_augment_child_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "when", _wrap_lys_node_augment_when_get, _wrap_lys_node_augment_when_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "target", _wrap_lys_node_augment_target_get, _wrap_lys_node_augment_target_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "features_size", _wrap_lys_node_augment_features_size_get, _wrap_lys_node_augment_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "features", _wrap_lys_node_augment_features_get, _wrap_lys_node_augment_features_set);
 SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "priv", _wrap_lys_node_augment_priv_get, _wrap_lys_node_augment_priv_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "iffeature", _wrap_lys_node_augment_iffeature_get, _wrap_lys_node_augment_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_node_augment_class, "iffeature_size", _wrap_lys_node_augment_iffeature_size_get, _wrap_lys_node_augment_iffeature_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_refine_mod_list_class, "min", _wrap_lys_refine_mod_list_min_get, _wrap_lys_refine_mod_list_min_set);
 SWIGV8_AddMemberVariable(_exports_lys_refine_mod_list_class, "max", _wrap_lys_refine_mod_list_max_get, _wrap_lys_refine_mod_list_max_set);
-SWIGV8_AddMemberVariable(_exports_lys_refine_mod_class, "dflt", _wrap_lys_refine_mod_dflt_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_refine_mod_class, "presence", _wrap_lys_refine_mod_presence_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_refine_mod_class, "list", _wrap_lys_refine_mod_list_get, _wrap_lys_refine_mod_list_set);
 SWIGV8_AddMemberVariable(_exports_lys_refine_class, "target_name", _wrap_lys_refine_target_name_get, JS_veto_set_variable);
@@ -39587,7 +42312,11 @@ SWIGV8_AddMemberVariable(_exports_lys_refine_class, "ref", _wrap_lys_refine_ref_
 SWIGV8_AddMemberVariable(_exports_lys_refine_class, "flags", _wrap_lys_refine_flags_get, _wrap_lys_refine_flags_set);
 SWIGV8_AddMemberVariable(_exports_lys_refine_class, "target_type", _wrap_lys_refine_target_type_get, _wrap_lys_refine_target_type_set);
 SWIGV8_AddMemberVariable(_exports_lys_refine_class, "must_size", _wrap_lys_refine_must_size_get, _wrap_lys_refine_must_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_refine_class, "iffeature_size", _wrap_lys_refine_iffeature_size_get, _wrap_lys_refine_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_refine_class, "dflt_size", _wrap_lys_refine_dflt_size_get, _wrap_lys_refine_dflt_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_refine_class, "must", _wrap_lys_refine_must_get, _wrap_lys_refine_must_set);
+SWIGV8_AddMemberVariable(_exports_lys_refine_class, "iffeature", _wrap_lys_refine_iffeature_get, _wrap_lys_refine_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_refine_class, "dflt", _wrap_lys_refine_dflt_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_refine_class, "mod", _wrap_lys_refine_mod_get, _wrap_lys_refine_mod_set);
 SWIGV8_AddStaticVariable(exports_obj, "LY_DEVIATE_NO", _wrap_LY_DEVIATE_NO, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LY_DEVIATE_ADD", _wrap_LY_DEVIATE_ADD, JS_veto_set_variable);
@@ -39595,6 +42324,7 @@ SWIGV8_AddStaticVariable(exports_obj, "LY_DEVIATE_RPL", _wrap_LY_DEVIATE_RPL, JS
 SWIGV8_AddStaticVariable(exports_obj, "LY_DEVIATE_DEL", _wrap_LY_DEVIATE_DEL, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_deviate_class, "mod", _wrap_lys_deviate_mod_get, _wrap_lys_deviate_mod_set);
 SWIGV8_AddMemberVariable(_exports_lys_deviate_class, "flags", _wrap_lys_deviate_flags_get, _wrap_lys_deviate_flags_set);
+SWIGV8_AddMemberVariable(_exports_lys_deviate_class, "dflt_size", _wrap_lys_deviate_dflt_size_get, _wrap_lys_deviate_dflt_size_set);
 SWIGV8_AddMemberVariable(_exports_lys_deviate_class, "dflt", _wrap_lys_deviate_dflt_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_deviate_class, "min", _wrap_lys_deviate_min_get, _wrap_lys_deviate_min_set);
 SWIGV8_AddMemberVariable(_exports_lys_deviate_class, "max", _wrap_lys_deviate_max_get, _wrap_lys_deviate_max_set);
@@ -39615,9 +42345,12 @@ SWIGV8_AddMemberVariable(_exports_lys_deviation_class, "deviate", _wrap_lys_devi
 SWIGV8_AddMemberVariable(_exports_lys_import_class, "module", _wrap_lys_import_module_get, _wrap_lys_import_module_set);
 SWIGV8_AddMemberVariable(_exports_lys_import_class, "prefix", _wrap_lys_import_prefix_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_import_class, "rev", _wrap_lys_import_rev_get, _wrap_lys_import_rev_set);
-SWIGV8_AddMemberVariable(_exports_lys_import_class, "external", _wrap_lys_import_external_get, _wrap_lys_import_external_set);
+SWIGV8_AddMemberVariable(_exports_lys_import_class, "dsc", _wrap_lys_import_dsc_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_import_class, "ref", _wrap_lys_import_ref_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_include_class, "submodule", _wrap_lys_include_submodule_get, _wrap_lys_include_submodule_set);
 SWIGV8_AddMemberVariable(_exports_lys_include_class, "rev", _wrap_lys_include_rev_get, _wrap_lys_include_rev_set);
+SWIGV8_AddMemberVariable(_exports_lys_include_class, "dsc", _wrap_lys_include_dsc_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lys_include_class, "ref", _wrap_lys_include_ref_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_include_class, "external", _wrap_lys_include_external_get, _wrap_lys_include_external_set);
 SWIGV8_AddMemberVariable(_exports_lys_revision_class, "date", _wrap_lys_revision_date_get, _wrap_lys_revision_date_set);
 SWIGV8_AddMemberVariable(_exports_lys_revision_class, "dsc", _wrap_lys_revision_dsc_get, JS_veto_set_variable);
@@ -39632,14 +42365,16 @@ SWIGV8_AddMemberVariable(_exports_lys_tpdf_class, "units", _wrap_lys_tpdf_units_
 SWIGV8_AddMemberVariable(_exports_lys_tpdf_class, "dflt", _wrap_lys_tpdf_dflt_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_unique_class, "expr", _wrap_lys_unique_expr_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_unique_class, "expr_size", _wrap_lys_unique_expr_size_get, _wrap_lys_unique_expr_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_unique_class, "trg_type", _wrap_lys_unique_trg_type_get, _wrap_lys_unique_trg_type_set);
 SWIGV8_AddMemberVariable(_exports_lys_feature_class, "name", _wrap_lys_feature_name_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_feature_class, "dsc", _wrap_lys_feature_dsc_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_feature_class, "ref", _wrap_lys_feature_ref_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_feature_class, "flags", _wrap_lys_feature_flags_get, _wrap_lys_feature_flags_set);
 SWIGV8_AddMemberVariable(_exports_lys_feature_class, "padding", _wrap_lys_feature_padding_get, _wrap_lys_feature_padding_set);
 SWIGV8_AddMemberVariable(_exports_lys_feature_class, "module", _wrap_lys_feature_module_get, _wrap_lys_feature_module_set);
-SWIGV8_AddMemberVariable(_exports_lys_feature_class, "features_size", _wrap_lys_feature_features_size_get, _wrap_lys_feature_features_size_set);
-SWIGV8_AddMemberVariable(_exports_lys_feature_class, "features", _wrap_lys_feature_features_get, _wrap_lys_feature_features_set);
+SWIGV8_AddMemberVariable(_exports_lys_feature_class, "iffeature_size", _wrap_lys_feature_iffeature_size_get, _wrap_lys_feature_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_feature_class, "iffeature", _wrap_lys_feature_iffeature_get, _wrap_lys_feature_iffeature_set);
+SWIGV8_AddMemberVariable(_exports_lys_feature_class, "depfeatures", _wrap_lys_feature_depfeatures_get, _wrap_lys_feature_depfeatures_set);
 SWIGV8_AddMemberVariable(_exports_lys_restr_class, "expr", _wrap_lys_restr_expr_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_restr_class, "dsc", _wrap_lys_restr_dsc_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_restr_class, "ref", _wrap_lys_restr_ref_get, JS_veto_set_variable);
@@ -39653,15 +42388,39 @@ SWIGV8_AddMemberVariable(_exports_lys_ident_class, "dsc", _wrap_lys_ident_dsc_ge
 SWIGV8_AddMemberVariable(_exports_lys_ident_class, "ref", _wrap_lys_ident_ref_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lys_ident_class, "flags", _wrap_lys_ident_flags_get, _wrap_lys_ident_flags_set);
 SWIGV8_AddMemberVariable(_exports_lys_ident_class, "module", _wrap_lys_ident_module_get, _wrap_lys_ident_module_set);
+SWIGV8_AddMemberVariable(_exports_lys_ident_class, "iffeature_size", _wrap_lys_ident_iffeature_size_get, _wrap_lys_ident_iffeature_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_ident_class, "base_size", _wrap_lys_ident_base_size_get, _wrap_lys_ident_base_size_set);
+SWIGV8_AddMemberVariable(_exports_lys_ident_class, "iffeature", _wrap_lys_ident_iffeature_get, _wrap_lys_ident_iffeature_set);
 SWIGV8_AddMemberVariable(_exports_lys_ident_class, "base", _wrap_lys_ident_base_get, _wrap_lys_ident_base_set);
 SWIGV8_AddMemberVariable(_exports_lys_ident_class, "der", _wrap_lys_ident_der_get, _wrap_lys_ident_der_set);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_GETNEXT_WITHCHOICE", _wrap_LYS_GETNEXT_WITHCHOICE, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_GETNEXT_WITHCASE", _wrap_LYS_GETNEXT_WITHCASE, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_GETNEXT_WITHGROUPING", _wrap_LYS_GETNEXT_WITHGROUPING, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYS_GETNEXT_WITHINOUT", _wrap_LYS_GETNEXT_WITHINOUT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_GETNEXT_WITHUSES", _wrap_LYS_GETNEXT_WITHUSES, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_GETNEXT_INTOUSES", _wrap_LYS_GETNEXT_INTOUSES, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_GETNEXT_INTONPCONT", _wrap_LYS_GETNEXT_INTONPCONT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYS_FIND_OUTPUT", _wrap_LYS_FIND_OUTPUT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXP_NODE_ROOT", _wrap_LYXP_NODE_ROOT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXP_NODE_ROOT_CONFIG", _wrap_LYXP_NODE_ROOT_CONFIG, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXP_NODE_ELEM", _wrap_LYXP_NODE_ELEM, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXP_NODE_TEXT", _wrap_LYXP_NODE_TEXT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXP_NODE_ATTR", _wrap_LYXP_NODE_ATTR, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXP_MUST", _wrap_LYXP_MUST, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXP_WHEN", _wrap_LYXP_WHEN, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXP_RECURSIVE", _wrap_LYXP_RECURSIVE, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXP_NO_LOCAL", _wrap_LYXP_NO_LOCAL, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_UNKNOWN", _wrap_LYD_UNKNOWN, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_XML", _wrap_LYD_XML, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_JSON", _wrap_LYD_JSON, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_ANYDATA_CONSTSTRING", _wrap_LYD_ANYDATA_CONSTSTRING, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_ANYDATA_STRING", _wrap_LYD_ANYDATA_STRING, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_ANYDATA_JSON", _wrap_LYD_ANYDATA_JSON, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_ANYDATA_JSOND", _wrap_LYD_ANYDATA_JSOND, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_ANYDATA_SXML", _wrap_LYD_ANYDATA_SXML, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_ANYDATA_SXMLD", _wrap_LYD_ANYDATA_SXMLD, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_ANYDATA_XML", _wrap_LYD_ANYDATA_XML, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_ANYDATA_DATATREE", _wrap_LYD_ANYDATA_DATATREE, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lyd_attr_class, "next", _wrap_lyd_attr_next_get, _wrap_lyd_attr_next_set);
 SWIGV8_AddMemberVariable(_exports_lyd_attr_class, "module", _wrap_lyd_attr_module_get, _wrap_lyd_attr_module_set);
 SWIGV8_AddMemberVariable(_exports_lyd_attr_class, "name", _wrap_lyd_attr_name_get, JS_veto_set_variable);
@@ -39685,6 +42444,7 @@ SWIGV8_AddMemberVariable(_exports_lyd_val_class, "uint32", _wrap_lyd_val_uint32_
 SWIGV8_AddMemberVariable(_exports_lyd_val_class, "uint64", _wrap_lyd_val_uint64_get, _wrap_lyd_val_uint64_set);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_VAL_OK", _wrap_LYD_VAL_OK, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_VAL_UNIQUE", _wrap_LYD_VAL_UNIQUE, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_VAL_MAND", _wrap_LYD_VAL_MAND, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_VAL_NOT", _wrap_LYD_VAL_NOT, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_VAL_INUSE", _wrap_LYD_VAL_INUSE, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lyd_node_class, "schema", _wrap_lyd_node_schema_get, _wrap_lyd_node_schema_set);
@@ -39707,18 +42467,15 @@ SWIGV8_AddMemberVariable(_exports_lyd_node_leaf_list_class, "parent", _wrap_lyd_
 SWIGV8_AddMemberVariable(_exports_lyd_node_leaf_list_class, "value_str", _wrap_lyd_node_leaf_list_value_str_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lyd_node_leaf_list_class, "value", _wrap_lyd_node_leaf_list_value_get, JS_veto_set_variable);
 SWIGV8_AddMemberVariable(_exports_lyd_node_leaf_list_class, "value_type", _wrap_lyd_node_leaf_list_value_type_get, _wrap_lyd_node_leaf_list_value_type_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_value_class, "str", _wrap_lyd_node_anyxml_value_str_get, _wrap_lyd_node_anyxml_value_str_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_value_class, "xml", _wrap_lyd_node_anyxml_value_xml_get, _wrap_lyd_node_anyxml_value_xml_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_class, "schema", _wrap_lyd_node_anyxml_schema_get, _wrap_lyd_node_anyxml_schema_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_class, "validity", _wrap_lyd_node_anyxml_validity_get, _wrap_lyd_node_anyxml_validity_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_class, "dflt", _wrap_lyd_node_anyxml_dflt_get, JS_veto_set_variable);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_class, "when_status", _wrap_lyd_node_anyxml_when_status_get, _wrap_lyd_node_anyxml_when_status_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_class, "attr", _wrap_lyd_node_anyxml_attr_get, _wrap_lyd_node_anyxml_attr_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_class, "next", _wrap_lyd_node_anyxml_next_get, _wrap_lyd_node_anyxml_next_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_class, "prev", _wrap_lyd_node_anyxml_prev_get, _wrap_lyd_node_anyxml_prev_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_class, "parent", _wrap_lyd_node_anyxml_parent_get, _wrap_lyd_node_anyxml_parent_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_class, "xml_struct", _wrap_lyd_node_anyxml_xml_struct_get, _wrap_lyd_node_anyxml_xml_struct_set);
-SWIGV8_AddMemberVariable(_exports_lyd_node_anyxml_class, "value", _wrap_lyd_node_anyxml_value_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyd_node_anydata_class, "schema", _wrap_lyd_node_anydata_schema_get, _wrap_lyd_node_anydata_schema_set);
+SWIGV8_AddMemberVariable(_exports_lyd_node_anydata_class, "validity", _wrap_lyd_node_anydata_validity_get, _wrap_lyd_node_anydata_validity_set);
+SWIGV8_AddMemberVariable(_exports_lyd_node_anydata_class, "dflt", _wrap_lyd_node_anydata_dflt_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyd_node_anydata_class, "when_status", _wrap_lyd_node_anydata_when_status_get, _wrap_lyd_node_anydata_when_status_set);
+SWIGV8_AddMemberVariable(_exports_lyd_node_anydata_class, "attr", _wrap_lyd_node_anydata_attr_get, _wrap_lyd_node_anydata_attr_set);
+SWIGV8_AddMemberVariable(_exports_lyd_node_anydata_class, "next", _wrap_lyd_node_anydata_next_get, _wrap_lyd_node_anydata_next_set);
+SWIGV8_AddMemberVariable(_exports_lyd_node_anydata_class, "prev", _wrap_lyd_node_anydata_prev_get, _wrap_lyd_node_anydata_prev_set);
+SWIGV8_AddMemberVariable(_exports_lyd_node_anydata_class, "parent", _wrap_lyd_node_anydata_parent_get, _wrap_lyd_node_anydata_parent_set);
+SWIGV8_AddMemberVariable(_exports_lyd_node_anydata_class, "value_type", _wrap_lyd_node_anydata_value_type_get, _wrap_lyd_node_anydata_value_type_set);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_DIFF_END", _wrap_LYD_DIFF_END, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_DIFF_DELETED", _wrap_LYD_DIFF_DELETED, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_DIFF_CHANGED", _wrap_LYD_DIFF_CHANGED, JS_veto_set_variable);
@@ -39728,6 +42485,8 @@ SWIGV8_AddStaticVariable(exports_obj, "LYD_DIFF_MOVEDAFTER2", _wrap_LYD_DIFF_MOV
 SWIGV8_AddMemberVariable(_exports_lyd_difflist_class, "type", _wrap_lyd_difflist_type_get, _wrap_lyd_difflist_type_set);
 SWIGV8_AddMemberVariable(_exports_lyd_difflist_class, "first", _wrap_lyd_difflist_first_get, _wrap_lyd_difflist_first_set);
 SWIGV8_AddMemberVariable(_exports_lyd_difflist_class, "second", _wrap_lyd_difflist_second_get, _wrap_lyd_difflist_second_set);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_DIFFOPT_NOSIBLINGS", _wrap_LYD_DIFFOPT_NOSIBLINGS, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_DIFFOPT_WITHDEFAULTS", _wrap_LYD_DIFFOPT_WITHDEFAULTS, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_OPT_DATA", _wrap_LYD_OPT_DATA, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_OPT_CONFIG", _wrap_LYD_OPT_CONFIG, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_OPT_GET", _wrap_LYD_OPT_GET, JS_veto_set_variable);
@@ -39743,16 +42502,38 @@ SWIGV8_AddStaticVariable(exports_obj, "LYD_OPT_OBSOLETE", _wrap_LYD_OPT_OBSOLETE
 SWIGV8_AddStaticVariable(exports_obj, "LYD_OPT_NOSIBLINGS", _wrap_LYD_OPT_NOSIBLINGS, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_OPT_TRUSTED", _wrap_LYD_OPT_TRUSTED, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_OPT_NOAUTODEL", _wrap_LYD_OPT_NOAUTODEL, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYD_OPT_KEEPEMPTYCONT", _wrap_LYD_OPT_KEEPEMPTYCONT, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYD_WD_MASK", _wrap_LYD_WD_MASK, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYD_WD_EXPLICIT", _wrap_LYD_WD_EXPLICIT, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYD_WD_TRIM", _wrap_LYD_WD_TRIM, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYD_WD_ALL", _wrap_LYD_WD_ALL, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYD_WD_ALL_TAG", _wrap_LYD_WD_ALL_TAG, JS_veto_set_variable);
-SWIGV8_AddStaticVariable(exports_obj, "LYD_WD_IMPL_TAG", _wrap_LYD_WD_IMPL_TAG, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_PATH_OPT_UPDATE", _wrap_LYD_PATH_OPT_UPDATE, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_PATH_OPT_NOPARENT", _wrap_LYD_PATH_OPT_NOPARENT, JS_veto_set_variable);
 SWIGV8_AddStaticVariable(exports_obj, "LYD_PATH_OPT_OUTPUT", _wrap_LYD_PATH_OPT_OUTPUT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYD_OPT_EXPLICIT", _wrap_LYD_OPT_EXPLICIT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXML_ATTR_STD", _wrap_LYXML_ATTR_STD, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXML_ATTR_NS", _wrap_LYXML_ATTR_NS, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyxml_ns_class, "type", _wrap_lyxml_ns_type_get, _wrap_lyxml_ns_type_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_ns_class, "next", _wrap_lyxml_ns_next_get, _wrap_lyxml_ns_next_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_ns_class, "parent", _wrap_lyxml_ns_parent_get, _wrap_lyxml_ns_parent_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_ns_class, "prefix", _wrap_lyxml_ns_prefix_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyxml_ns_class, "value", _wrap_lyxml_ns_value_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyxml_attr_class, "type", _wrap_lyxml_attr_type_get, _wrap_lyxml_attr_type_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_attr_class, "next", _wrap_lyxml_attr_next_get, _wrap_lyxml_attr_next_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_attr_class, "ns", _wrap_lyxml_attr_ns_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyxml_attr_class, "name", _wrap_lyxml_attr_name_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyxml_attr_class, "value", _wrap_lyxml_attr_value_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "flags", _wrap_lyxml_elem_flags_get, _wrap_lyxml_elem_flags_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "LYXML_ELEM_MIXED", _wrap_LYXML_ELEM_MIXED, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "parent", _wrap_lyxml_elem_parent_get, _wrap_lyxml_elem_parent_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "attr", _wrap_lyxml_elem_attr_get, _wrap_lyxml_elem_attr_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "child", _wrap_lyxml_elem_child_get, _wrap_lyxml_elem_child_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "next", _wrap_lyxml_elem_next_get, _wrap_lyxml_elem_next_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "prev", _wrap_lyxml_elem_prev_get, _wrap_lyxml_elem_prev_set);
+SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "name", _wrap_lyxml_elem_name_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "ns", _wrap_lyxml_elem_ns_get, JS_veto_set_variable);
+SWIGV8_AddMemberVariable(_exports_lyxml_elem_class, "content", _wrap_lyxml_elem_content_get, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXML_PARSE_MULTIROOT", _wrap_LYXML_PARSE_MULTIROOT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXML_PRINT_OPEN", _wrap_LYXML_PRINT_OPEN, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXML_PRINT_FORMAT", _wrap_LYXML_PRINT_FORMAT, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXML_PRINT_CLOSE", _wrap_LYXML_PRINT_CLOSE, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXML_PRINT_ATTRS", _wrap_LYXML_PRINT_ATTRS, JS_veto_set_variable);
+SWIGV8_AddStaticVariable(exports_obj, "LYXML_PRINT_SIBLINGS", _wrap_LYXML_PRINT_SIBLINGS, JS_veto_set_variable);
 
 
   /* setup inheritances */
@@ -39771,24 +42552,6 @@ _exports_ly_set_class_0->SetCallHandler(_wrap_new_ly_set);
 _exports_ly_set_class_0->Inherit(_exports_ly_set_class);
 _exports_ly_set_class_0->SetHiddenPrototype(true);
 v8::Handle<v8::Object> _exports_ly_set_obj = _exports_ly_set_class_0->GetFunction();
-/* Class: lyxml_ns (_exports_lyxml_ns) */
-v8::Handle<v8::FunctionTemplate> _exports_lyxml_ns_class_0 = SWIGV8_CreateClassTemplate("lyxml_ns");
-_exports_lyxml_ns_class_0->SetCallHandler(_wrap_new_lyxml_ns);
-_exports_lyxml_ns_class_0->Inherit(_exports_lyxml_ns_class);
-_exports_lyxml_ns_class_0->SetHiddenPrototype(true);
-v8::Handle<v8::Object> _exports_lyxml_ns_obj = _exports_lyxml_ns_class_0->GetFunction();
-/* Class: lyxml_attr (_exports_lyxml_attr) */
-v8::Handle<v8::FunctionTemplate> _exports_lyxml_attr_class_0 = SWIGV8_CreateClassTemplate("lyxml_attr");
-_exports_lyxml_attr_class_0->SetCallHandler(_wrap_new_lyxml_attr);
-_exports_lyxml_attr_class_0->Inherit(_exports_lyxml_attr_class);
-_exports_lyxml_attr_class_0->SetHiddenPrototype(true);
-v8::Handle<v8::Object> _exports_lyxml_attr_obj = _exports_lyxml_attr_class_0->GetFunction();
-/* Class: lyxml_elem (_exports_lyxml_elem) */
-v8::Handle<v8::FunctionTemplate> _exports_lyxml_elem_class_0 = SWIGV8_CreateClassTemplate("lyxml_elem");
-_exports_lyxml_elem_class_0->SetCallHandler(_wrap_new_lyxml_elem);
-_exports_lyxml_elem_class_0->Inherit(_exports_lyxml_elem_class);
-_exports_lyxml_elem_class_0->SetHiddenPrototype(true);
-v8::Handle<v8::Object> _exports_lyxml_elem_obj = _exports_lyxml_elem_class_0->GetFunction();
 /* Class: lys_module (_exports_lys_module) */
 v8::Handle<v8::FunctionTemplate> _exports_lys_module_class_0 = SWIGV8_CreateClassTemplate("lys_module");
 _exports_lys_module_class_0->SetCallHandler(_wrap_new_lys_module);
@@ -39885,6 +42648,12 @@ _exports_lys_type_class_0->SetCallHandler(_wrap_new_lys_type);
 _exports_lys_type_class_0->Inherit(_exports_lys_type_class);
 _exports_lys_type_class_0->SetHiddenPrototype(true);
 v8::Handle<v8::Object> _exports_lys_type_obj = _exports_lys_type_class_0->GetFunction();
+/* Class: lys_iffeature (_exports_lys_iffeature) */
+v8::Handle<v8::FunctionTemplate> _exports_lys_iffeature_class_0 = SWIGV8_CreateClassTemplate("lys_iffeature");
+_exports_lys_iffeature_class_0->SetCallHandler(_wrap_new_lys_iffeature);
+_exports_lys_iffeature_class_0->Inherit(_exports_lys_iffeature_class);
+_exports_lys_iffeature_class_0->SetHiddenPrototype(true);
+v8::Handle<v8::Object> _exports_lys_iffeature_obj = _exports_lys_iffeature_class_0->GetFunction();
 /* Class: lys_node (_exports_lys_node) */
 v8::Handle<v8::FunctionTemplate> _exports_lys_node_class_0 = SWIGV8_CreateClassTemplate("lys_node");
 _exports_lys_node_class_0->SetCallHandler(_wrap_new_lys_node);
@@ -39921,12 +42690,12 @@ _exports_lys_node_list_class_0->SetCallHandler(_wrap_new_lys_node_list);
 _exports_lys_node_list_class_0->Inherit(_exports_lys_node_list_class);
 _exports_lys_node_list_class_0->SetHiddenPrototype(true);
 v8::Handle<v8::Object> _exports_lys_node_list_obj = _exports_lys_node_list_class_0->GetFunction();
-/* Class: lys_node_anyxml (_exports_lys_node_anyxml) */
-v8::Handle<v8::FunctionTemplate> _exports_lys_node_anyxml_class_0 = SWIGV8_CreateClassTemplate("lys_node_anyxml");
-_exports_lys_node_anyxml_class_0->SetCallHandler(_wrap_new_lys_node_anyxml);
-_exports_lys_node_anyxml_class_0->Inherit(_exports_lys_node_anyxml_class);
-_exports_lys_node_anyxml_class_0->SetHiddenPrototype(true);
-v8::Handle<v8::Object> _exports_lys_node_anyxml_obj = _exports_lys_node_anyxml_class_0->GetFunction();
+/* Class: lys_node_anydata (_exports_lys_node_anydata) */
+v8::Handle<v8::FunctionTemplate> _exports_lys_node_anydata_class_0 = SWIGV8_CreateClassTemplate("lys_node_anydata");
+_exports_lys_node_anydata_class_0->SetCallHandler(_wrap_new_lys_node_anydata);
+_exports_lys_node_anydata_class_0->Inherit(_exports_lys_node_anydata_class);
+_exports_lys_node_anydata_class_0->SetHiddenPrototype(true);
+v8::Handle<v8::Object> _exports_lys_node_anydata_obj = _exports_lys_node_anydata_class_0->GetFunction();
 /* Class: lys_node_uses (_exports_lys_node_uses) */
 v8::Handle<v8::FunctionTemplate> _exports_lys_node_uses_class_0 = SWIGV8_CreateClassTemplate("lys_node_uses");
 _exports_lys_node_uses_class_0->SetCallHandler(_wrap_new_lys_node_uses);
@@ -39945,24 +42714,24 @@ _exports_lys_node_case_class_0->SetCallHandler(_wrap_new_lys_node_case);
 _exports_lys_node_case_class_0->Inherit(_exports_lys_node_case_class);
 _exports_lys_node_case_class_0->SetHiddenPrototype(true);
 v8::Handle<v8::Object> _exports_lys_node_case_obj = _exports_lys_node_case_class_0->GetFunction();
-/* Class: lys_node_rpc_inout (_exports_lys_node_rpc_inout) */
-v8::Handle<v8::FunctionTemplate> _exports_lys_node_rpc_inout_class_0 = SWIGV8_CreateClassTemplate("lys_node_rpc_inout");
-_exports_lys_node_rpc_inout_class_0->SetCallHandler(_wrap_new_lys_node_rpc_inout);
-_exports_lys_node_rpc_inout_class_0->Inherit(_exports_lys_node_rpc_inout_class);
-_exports_lys_node_rpc_inout_class_0->SetHiddenPrototype(true);
-v8::Handle<v8::Object> _exports_lys_node_rpc_inout_obj = _exports_lys_node_rpc_inout_class_0->GetFunction();
+/* Class: lys_node_inout (_exports_lys_node_inout) */
+v8::Handle<v8::FunctionTemplate> _exports_lys_node_inout_class_0 = SWIGV8_CreateClassTemplate("lys_node_inout");
+_exports_lys_node_inout_class_0->SetCallHandler(_wrap_new_lys_node_inout);
+_exports_lys_node_inout_class_0->Inherit(_exports_lys_node_inout_class);
+_exports_lys_node_inout_class_0->SetHiddenPrototype(true);
+v8::Handle<v8::Object> _exports_lys_node_inout_obj = _exports_lys_node_inout_class_0->GetFunction();
 /* Class: lys_node_notif (_exports_lys_node_notif) */
 v8::Handle<v8::FunctionTemplate> _exports_lys_node_notif_class_0 = SWIGV8_CreateClassTemplate("lys_node_notif");
 _exports_lys_node_notif_class_0->SetCallHandler(_wrap_new_lys_node_notif);
 _exports_lys_node_notif_class_0->Inherit(_exports_lys_node_notif_class);
 _exports_lys_node_notif_class_0->SetHiddenPrototype(true);
 v8::Handle<v8::Object> _exports_lys_node_notif_obj = _exports_lys_node_notif_class_0->GetFunction();
-/* Class: lys_node_rpc (_exports_lys_node_rpc) */
-v8::Handle<v8::FunctionTemplate> _exports_lys_node_rpc_class_0 = SWIGV8_CreateClassTemplate("lys_node_rpc");
-_exports_lys_node_rpc_class_0->SetCallHandler(_wrap_new_lys_node_rpc);
-_exports_lys_node_rpc_class_0->Inherit(_exports_lys_node_rpc_class);
-_exports_lys_node_rpc_class_0->SetHiddenPrototype(true);
-v8::Handle<v8::Object> _exports_lys_node_rpc_obj = _exports_lys_node_rpc_class_0->GetFunction();
+/* Class: lys_node_rpc_action (_exports_lys_node_rpc_action) */
+v8::Handle<v8::FunctionTemplate> _exports_lys_node_rpc_action_class_0 = SWIGV8_CreateClassTemplate("lys_node_rpc_action");
+_exports_lys_node_rpc_action_class_0->SetCallHandler(_wrap_new_lys_node_rpc_action);
+_exports_lys_node_rpc_action_class_0->Inherit(_exports_lys_node_rpc_action_class);
+_exports_lys_node_rpc_action_class_0->SetHiddenPrototype(true);
+v8::Handle<v8::Object> _exports_lys_node_rpc_action_obj = _exports_lys_node_rpc_action_class_0->GetFunction();
 /* Class: lys_node_augment (_exports_lys_node_augment) */
 v8::Handle<v8::FunctionTemplate> _exports_lys_node_augment_class_0 = SWIGV8_CreateClassTemplate("lys_node_augment");
 _exports_lys_node_augment_class_0->SetCallHandler(_wrap_new_lys_node_augment);
@@ -40077,24 +42846,36 @@ _exports_lyd_node_leaf_list_class_0->SetCallHandler(_wrap_new_lyd_node_leaf_list
 _exports_lyd_node_leaf_list_class_0->Inherit(_exports_lyd_node_leaf_list_class);
 _exports_lyd_node_leaf_list_class_0->SetHiddenPrototype(true);
 v8::Handle<v8::Object> _exports_lyd_node_leaf_list_obj = _exports_lyd_node_leaf_list_class_0->GetFunction();
-/* Class: lyd_node_anyxml_value (_exports_lyd_node_anyxml_value) */
-v8::Handle<v8::FunctionTemplate> _exports_lyd_node_anyxml_value_class_0 = SWIGV8_CreateClassTemplate("lyd_node_anyxml_value");
-_exports_lyd_node_anyxml_value_class_0->SetCallHandler(_wrap_new_lyd_node_anyxml_value);
-_exports_lyd_node_anyxml_value_class_0->Inherit(_exports_lyd_node_anyxml_value_class);
-_exports_lyd_node_anyxml_value_class_0->SetHiddenPrototype(true);
-v8::Handle<v8::Object> _exports_lyd_node_anyxml_value_obj = _exports_lyd_node_anyxml_value_class_0->GetFunction();
-/* Class: lyd_node_anyxml (_exports_lyd_node_anyxml) */
-v8::Handle<v8::FunctionTemplate> _exports_lyd_node_anyxml_class_0 = SWIGV8_CreateClassTemplate("lyd_node_anyxml");
-_exports_lyd_node_anyxml_class_0->SetCallHandler(_wrap_new_lyd_node_anyxml);
-_exports_lyd_node_anyxml_class_0->Inherit(_exports_lyd_node_anyxml_class);
-_exports_lyd_node_anyxml_class_0->SetHiddenPrototype(true);
-v8::Handle<v8::Object> _exports_lyd_node_anyxml_obj = _exports_lyd_node_anyxml_class_0->GetFunction();
+/* Class: lyd_node_anydata (_exports_lyd_node_anydata) */
+v8::Handle<v8::FunctionTemplate> _exports_lyd_node_anydata_class_0 = SWIGV8_CreateClassTemplate("lyd_node_anydata");
+_exports_lyd_node_anydata_class_0->SetCallHandler(_wrap_new_lyd_node_anydata);
+_exports_lyd_node_anydata_class_0->Inherit(_exports_lyd_node_anydata_class);
+_exports_lyd_node_anydata_class_0->SetHiddenPrototype(true);
+v8::Handle<v8::Object> _exports_lyd_node_anydata_obj = _exports_lyd_node_anydata_class_0->GetFunction();
 /* Class: lyd_difflist (_exports_lyd_difflist) */
 v8::Handle<v8::FunctionTemplate> _exports_lyd_difflist_class_0 = SWIGV8_CreateClassTemplate("lyd_difflist");
 _exports_lyd_difflist_class_0->SetCallHandler(_wrap_new_lyd_difflist);
 _exports_lyd_difflist_class_0->Inherit(_exports_lyd_difflist_class);
 _exports_lyd_difflist_class_0->SetHiddenPrototype(true);
 v8::Handle<v8::Object> _exports_lyd_difflist_obj = _exports_lyd_difflist_class_0->GetFunction();
+/* Class: lyxml_ns (_exports_lyxml_ns) */
+v8::Handle<v8::FunctionTemplate> _exports_lyxml_ns_class_0 = SWIGV8_CreateClassTemplate("lyxml_ns");
+_exports_lyxml_ns_class_0->SetCallHandler(_wrap_new_lyxml_ns);
+_exports_lyxml_ns_class_0->Inherit(_exports_lyxml_ns_class);
+_exports_lyxml_ns_class_0->SetHiddenPrototype(true);
+v8::Handle<v8::Object> _exports_lyxml_ns_obj = _exports_lyxml_ns_class_0->GetFunction();
+/* Class: lyxml_attr (_exports_lyxml_attr) */
+v8::Handle<v8::FunctionTemplate> _exports_lyxml_attr_class_0 = SWIGV8_CreateClassTemplate("lyxml_attr");
+_exports_lyxml_attr_class_0->SetCallHandler(_wrap_new_lyxml_attr);
+_exports_lyxml_attr_class_0->Inherit(_exports_lyxml_attr_class);
+_exports_lyxml_attr_class_0->SetHiddenPrototype(true);
+v8::Handle<v8::Object> _exports_lyxml_attr_obj = _exports_lyxml_attr_class_0->GetFunction();
+/* Class: lyxml_elem (_exports_lyxml_elem) */
+v8::Handle<v8::FunctionTemplate> _exports_lyxml_elem_class_0 = SWIGV8_CreateClassTemplate("lyxml_elem");
+_exports_lyxml_elem_class_0->SetCallHandler(_wrap_new_lyxml_elem);
+_exports_lyxml_elem_class_0->Inherit(_exports_lyxml_elem_class);
+_exports_lyxml_elem_class_0->SetHiddenPrototype(true);
+v8::Handle<v8::Object> _exports_lyxml_elem_obj = _exports_lyxml_elem_class_0->GetFunction();
 
 
   /* add static class functions and variables */
@@ -40112,9 +42893,12 @@ SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_get_module_by_ns", _wrap_ly_ctx_ge
 SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_get_submodule", _wrap_ly_ctx_get_submodule);
 SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_get_submodule2", _wrap_ly_ctx_get_submodule2);
 SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_get_node", _wrap_ly_ctx_get_node);
-SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_get_node2", _wrap_ly_ctx_get_node2);
+SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_remove_module", _wrap_ly_ctx_remove_module);
+SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_clean", _wrap_ly_ctx_clean);
 SWIGV8_AddStaticFunction(exports_obj, "ly_set_new", _wrap_ly_set_new);
+SWIGV8_AddStaticFunction(exports_obj, "ly_set_dup", _wrap_ly_set_dup);
 SWIGV8_AddStaticFunction(exports_obj, "ly_set_add", _wrap_ly_set_add);
+SWIGV8_AddStaticFunction(exports_obj, "ly_set_contains", _wrap_ly_set_contains);
 SWIGV8_AddStaticFunction(exports_obj, "ly_set_clean", _wrap_ly_set_clean);
 SWIGV8_AddStaticFunction(exports_obj, "ly_set_rm", _wrap_ly_set_rm);
 SWIGV8_AddStaticFunction(exports_obj, "ly_set_rm_index", _wrap_ly_set_rm_index);
@@ -40127,17 +42911,6 @@ SWIGV8_AddStaticFunction(exports_obj, "ly_vecode_location", _wrap_ly_vecode_loca
 SWIGV8_AddStaticFunction(exports_obj, "ly_errmsg", _wrap_ly_errmsg);
 SWIGV8_AddStaticFunction(exports_obj, "ly_errpath", _wrap_ly_errpath);
 SWIGV8_AddStaticFunction(exports_obj, "ly_errapptag", _wrap_ly_errapptag);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_parse_mem", _wrap_lyxml_parse_mem);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_parse_path", _wrap_lyxml_parse_path);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_print_file", _wrap_lyxml_print_file);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_print_fd", _wrap_lyxml_print_fd);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_print_mem", _wrap_lyxml_print_mem);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_print_clb", _wrap_lyxml_print_clb);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_free", _wrap_lyxml_free);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_free_withsiblings", _wrap_lyxml_free_withsiblings);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_unlink", _wrap_lyxml_unlink);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_get_attr", _wrap_lyxml_get_attr);
-SWIGV8_AddStaticFunction(exports_obj, "lyxml_get_ns", _wrap_lyxml_get_ns);
 SWIGV8_AddStaticFunction(exports_obj, "lys_parse_mem", _wrap_lys_parse_mem);
 SWIGV8_AddStaticFunction(exports_obj, "lys_parse_fd", _wrap_lys_parse_fd);
 SWIGV8_AddStaticFunction(exports_obj, "lys_parse_path", _wrap_lys_parse_path);
@@ -40147,9 +42920,14 @@ SWIGV8_AddStaticFunction(exports_obj, "lys_features_disable", _wrap_lys_features
 SWIGV8_AddStaticFunction(exports_obj, "lys_features_state", _wrap_lys_features_state);
 SWIGV8_AddStaticFunction(exports_obj, "lys_is_disabled", _wrap_lys_is_disabled);
 SWIGV8_AddStaticFunction(exports_obj, "lys_getnext", _wrap_lys_getnext);
+SWIGV8_AddStaticFunction(exports_obj, "lys_find_xpath", _wrap_lys_find_xpath);
+SWIGV8_AddStaticFunction(exports_obj, "lys_xpath_atomize", _wrap_lys_xpath_atomize);
+SWIGV8_AddStaticFunction(exports_obj, "lys_node_xpath_atomize", _wrap_lys_node_xpath_atomize);
+SWIGV8_AddStaticFunction(exports_obj, "lys_path", _wrap_lys_path);
 SWIGV8_AddStaticFunction(exports_obj, "lys_parent", _wrap_lys_parent);
 SWIGV8_AddStaticFunction(exports_obj, "lys_node_module", _wrap_lys_node_module);
 SWIGV8_AddStaticFunction(exports_obj, "lys_main_module", _wrap_lys_main_module);
+SWIGV8_AddStaticFunction(exports_obj, "lys_set_implemented", _wrap_lys_set_implemented);
 SWIGV8_AddStaticFunction(exports_obj, "lys_set_private", _wrap_lys_set_private);
 SWIGV8_AddStaticFunction(exports_obj, "lys_print_mem", _wrap_lys_print_mem);
 SWIGV8_AddStaticFunction(exports_obj, "lys_print_fd", _wrap_lys_print_fd);
@@ -40165,25 +42943,25 @@ SWIGV8_AddStaticFunction(exports_obj, "lyd_parse_xml", _wrap_lyd_parse_xml);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_new", _wrap_lyd_new);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_new_leaf", _wrap_lyd_new_leaf);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_change_leaf", _wrap_lyd_change_leaf);
-SWIGV8_AddStaticFunction(exports_obj, "lyd_new_anyxml_str", _wrap_lyd_new_anyxml_str);
-SWIGV8_AddStaticFunction(exports_obj, "lyd_new_anyxml_xml", _wrap_lyd_new_anyxml_xml);
+SWIGV8_AddStaticFunction(exports_obj, "lyd_new_anydata", _wrap_lyd_new_anydata);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_new_output", _wrap_lyd_new_output);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_new_output_leaf", _wrap_lyd_new_output_leaf);
-SWIGV8_AddStaticFunction(exports_obj, "lyd_new_output_anyxml_str", _wrap_lyd_new_output_anyxml_str);
-SWIGV8_AddStaticFunction(exports_obj, "lyd_new_output_anyxml_xml", _wrap_lyd_new_output_anyxml_xml);
+SWIGV8_AddStaticFunction(exports_obj, "lyd_new_output_anydata", _wrap_lyd_new_output_anydata);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_new_path", _wrap_lyd_new_path);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_dup", _wrap_lyd_dup);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_merge", _wrap_lyd_merge);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_insert", _wrap_lyd_insert);
+SWIGV8_AddStaticFunction(exports_obj, "lyd_insert_sibling", _wrap_lyd_insert_sibling);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_insert_before", _wrap_lyd_insert_before);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_insert_after", _wrap_lyd_insert_after);
+SWIGV8_AddStaticFunction(exports_obj, "lyd_replace", _wrap_lyd_replace);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_schema_sort", _wrap_lyd_schema_sort);
-SWIGV8_AddStaticFunction(exports_obj, "lyd_get_node", _wrap_lyd_get_node);
-SWIGV8_AddStaticFunction(exports_obj, "lyd_get_node2", _wrap_lyd_get_node2);
+SWIGV8_AddStaticFunction(exports_obj, "lyd_find_xpath", _wrap_lyd_find_xpath);
+SWIGV8_AddStaticFunction(exports_obj, "lyd_find_instance", _wrap_lyd_find_instance);
+SWIGV8_AddStaticFunction(exports_obj, "lyd_first_sibling", _wrap_lyd_first_sibling);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_validate_leafref", _wrap_lyd_validate_leafref);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_validate", _wrap_lyd_validate);
-SWIGV8_AddStaticFunction(exports_obj, "lyd_wd_add", _wrap_lyd_wd_add);
-SWIGV8_AddStaticFunction(exports_obj, "lyd_wd_cleanup", _wrap_lyd_wd_cleanup);
+SWIGV8_AddStaticFunction(exports_obj, "lyd_wd_default", _wrap_lyd_wd_default);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_unlink", _wrap_lyd_unlink);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_free", _wrap_lyd_free);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_free_withsiblings", _wrap_lyd_free_withsiblings);
@@ -40194,30 +42972,28 @@ SWIGV8_AddStaticFunction(exports_obj, "lyd_print_mem", _wrap_lyd_print_mem);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_print_fd", _wrap_lyd_print_fd);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_print_file", _wrap_lyd_print_file);
 SWIGV8_AddStaticFunction(exports_obj, "lyd_print_clb", _wrap_lyd_print_clb);
+SWIGV8_AddStaticFunction(exports_obj, "lyd_dec64_to_double", _wrap_lyd_dec64_to_double);
+SWIGV8_AddStaticFunction(exports_obj, "lyd_leaf_type", _wrap_lyd_leaf_type);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_parse_mem", _wrap_lyxml_parse_mem);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_parse_path", _wrap_lyxml_parse_path);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_print_file", _wrap_lyxml_print_file);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_print_fd", _wrap_lyxml_print_fd);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_print_mem", _wrap_lyxml_print_mem);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_print_clb", _wrap_lyxml_print_clb);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_free", _wrap_lyxml_free);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_free_withsiblings", _wrap_lyxml_free_withsiblings);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_unlink", _wrap_lyxml_unlink);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_get_attr", _wrap_lyxml_get_attr);
+SWIGV8_AddStaticFunction(exports_obj, "lyxml_get_ns", _wrap_lyxml_get_ns);
 SWIGV8_AddStaticFunction(exports_obj, "lydict_insert", _wrap_lydict_insert);
 SWIGV8_AddStaticFunction(exports_obj, "lydict_insert_zc", _wrap_lydict_insert_zc);
 SWIGV8_AddStaticFunction(exports_obj, "lydict_remove", _wrap_lydict_remove);
 SWIGV8_AddStaticFunction(exports_obj, "ly_ctx_destroy", _wrap___wrap_ly_ctx_destroy);
-SWIGV8_AddStaticFunction(exports_obj, "get_lys_node", _wrap_get_lys_node);
-SWIGV8_AddStaticFunction(exports_obj, "cast_lys_node_leaf", _wrap_cast_lys_node_leaf);
-SWIGV8_AddStaticFunction(exports_obj, "cast_lys_node_list", _wrap_cast_lys_node_list);
-SWIGV8_AddStaticFunction(exports_obj, "get_lys_node_leaf", _wrap_get_lys_node_leaf);
-SWIGV8_AddStaticFunction(exports_obj, "get_lyd_node", _wrap_get_lyd_node);
-SWIGV8_AddStaticFunction(exports_obj, "get_lyd_node_double", _wrap_get_lyd_node_double);
-SWIGV8_AddStaticFunction(exports_obj, "cast_lyd_node_leaf_list", _wrap_cast_lyd_node_leaf_list);
-SWIGV8_AddStaticFunction(exports_obj, "cast_lyd_node_list", _wrap_cast_lyd_node_list);
-SWIGV8_AddStaticFunction(exports_obj, "get_uint8", _wrap_get_uint8);
-SWIGV8_AddStaticFunction(exports_obj, "get_uint16", _wrap_get_uint16);
-SWIGV8_AddStaticFunction(exports_obj, "get_int8", _wrap_get_int8);
-SWIGV8_AddStaticFunction(exports_obj, "get_int16", _wrap_get_int16);
 
 
   /* register classes */
   exports_obj->Set(SWIGV8_SYMBOL_NEW("ly_set_set"), _exports_ly_set_set_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("ly_set"), _exports_ly_set_obj);
-exports_obj->Set(SWIGV8_SYMBOL_NEW("lyxml_ns"), _exports_lyxml_ns_obj);
-exports_obj->Set(SWIGV8_SYMBOL_NEW("lyxml_attr"), _exports_lyxml_attr_obj);
-exports_obj->Set(SWIGV8_SYMBOL_NEW("lyxml_elem"), _exports_lyxml_elem_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_module"), _exports_lys_module_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_submodule"), _exports_lys_submodule_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_type_info_binary"), _exports_lys_type_info_binary_obj);
@@ -40234,19 +43010,20 @@ exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_type_info_str"), _exports_lys_type_info_
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_type_info_union"), _exports_lys_type_info_union_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_type_info"), _exports_lys_type_info_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_type"), _exports_lys_type_obj);
+exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_iffeature"), _exports_lys_iffeature_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node"), _exports_lys_node_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_container"), _exports_lys_node_container_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_choice"), _exports_lys_node_choice_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_leaf"), _exports_lys_node_leaf_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_leaflist"), _exports_lys_node_leaflist_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_list"), _exports_lys_node_list_obj);
-exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_anyxml"), _exports_lys_node_anyxml_obj);
+exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_anydata"), _exports_lys_node_anydata_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_uses"), _exports_lys_node_uses_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_grp"), _exports_lys_node_grp_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_case"), _exports_lys_node_case_obj);
-exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_rpc_inout"), _exports_lys_node_rpc_inout_obj);
+exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_inout"), _exports_lys_node_inout_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_notif"), _exports_lys_node_notif_obj);
-exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_rpc"), _exports_lys_node_rpc_obj);
+exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_rpc_action"), _exports_lys_node_rpc_action_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_node_augment"), _exports_lys_node_augment_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_refine_mod_list"), _exports_lys_refine_mod_list_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lys_refine_mod"), _exports_lys_refine_mod_obj);
@@ -40266,9 +43043,11 @@ exports_obj->Set(SWIGV8_SYMBOL_NEW("lyd_attr"), _exports_lyd_attr_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lyd_val"), _exports_lyd_val_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lyd_node"), _exports_lyd_node_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lyd_node_leaf_list"), _exports_lyd_node_leaf_list_obj);
-exports_obj->Set(SWIGV8_SYMBOL_NEW("lyd_node_anyxml_value"), _exports_lyd_node_anyxml_value_obj);
-exports_obj->Set(SWIGV8_SYMBOL_NEW("lyd_node_anyxml"), _exports_lyd_node_anyxml_obj);
+exports_obj->Set(SWIGV8_SYMBOL_NEW("lyd_node_anydata"), _exports_lyd_node_anydata_obj);
 exports_obj->Set(SWIGV8_SYMBOL_NEW("lyd_difflist"), _exports_lyd_difflist_obj);
+exports_obj->Set(SWIGV8_SYMBOL_NEW("lyxml_ns"), _exports_lyxml_ns_obj);
+exports_obj->Set(SWIGV8_SYMBOL_NEW("lyxml_attr"), _exports_lyxml_attr_obj);
+exports_obj->Set(SWIGV8_SYMBOL_NEW("lyxml_elem"), _exports_lyxml_elem_obj);
 
 
   /* create and register namespace objects */

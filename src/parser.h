@@ -42,7 +42,8 @@ struct lyd_node *xml_read_data(struct ly_ctx *ctx, const char *data, int options
  * @defgroup jsondata JSON data format support
  * @{
  */
-struct lyd_node *lyd_parse_json(struct ly_ctx *ctx, const struct lys_node *parent, const char *data, int options);
+struct lyd_node *lyd_parse_json(struct ly_ctx *ctx, const char *data, int options, const struct lyd_node *rpc_act,
+                                const struct lyd_node *data_tree);
 
 /**@} jsondata */
 
@@ -57,31 +58,36 @@ enum LY_IDENT {
 };
 
 struct lys_module *lyp_search_file(struct ly_ctx *ctx, struct lys_module *module, const char *name,
-                                   const char *revision, struct unres_schema *unres);
+                                   const char *revision, int implement, struct unres_schema *unres);
 
 struct lys_type *lyp_get_next_union_type(struct lys_type *type, struct lys_type *prev_type, int *found);
 
-int lyp_parse_value(struct lyd_node_leaf_list *leaf, struct lyxml_elem *xml, int resolve);
+struct lys_type *lyp_parse_value(struct lys_type *type, const char **value_, struct lyxml_elem *xml,
+                                         struct lyd_node *tree, struct lyd_node_leaf_list *leaf, int resolvable,
+                                         int dflt);
 
 int lyp_check_length_range(const char *expr, struct lys_type *type);
 
 int lyp_check_pattern(const char *pattern, pcre **pcre_precomp);
 
 int fill_yin_type(struct lys_module *module, struct lys_node *parent, struct lyxml_elem *yin, struct lys_type *type,
-                  struct unres_schema *unres);
+                  int tpdftype, struct unres_schema *unres);
 
 int lyp_check_status(uint16_t flags1, struct lys_module *mod1, const char *name1,
                      uint16_t flags2, struct lys_module *mod2, const char *name2,
                      const struct lys_node *node);
 
 int dup_typedef_check(const char *type, struct lys_tpdf *tpdf, int size);
+
+int dup_identities_check(const char *id, struct lys_module *module);
+
 /**
- * @brief Get know if the node is part of the RPC's input/output
+ * @brief Get know if the node is part of the RPC/action's input/output
  *
  * @param node Schema node to be examined.
  * @return 1 for true, 0 for false
  */
-int lyp_is_rpc(struct lys_node *node);
+int lyp_is_rpc_action(struct lys_node *node);
 
 /**
  * @brief Check validity of parser options.
@@ -93,7 +99,8 @@ int lyp_check_options(int options);
 
 int lyp_check_identifier(const char *id, enum LY_IDENT type, struct lys_module *module, struct lys_node *parent);
 int lyp_check_date(const char *date);
-int lyp_check_mandatory(struct lys_node *node);
+int lyp_check_mandatory_augment(struct lys_node_augment *node);
+int lyp_check_mandatory_choice(struct lys_node *node);
 
 int lyp_check_include(struct lys_module *module, struct lys_submodule *submodule, const char *value,
                       struct lys_include *inc, struct unres_schema *unres);
@@ -124,5 +131,6 @@ int lyp_ctx_add_module(struct lys_module **module);
  *
  */
 unsigned int pututf8(char *dst, int32_t value);
+unsigned int copyutf8(char *dst, const char *src);
 
 #endif /* LY_PARSER_H_ */

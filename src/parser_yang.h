@@ -34,13 +34,20 @@
 #define LYS_RPC_OUTPUT 0x02
 #define LYS_DATADEF 0x04
 #define LYS_TYPE_DEF 0x08
-#define LYS_TYPE_BASE 0x40
+#define CONFIG_INHERIT_DISABLE 0x00
+#define CONFIG_INHERIT_ENABLE  0x01
+#define CONFIG_IGNORE 0x02
+#define CONFIG_MASK 0x03
+#define LYS_CHOICE_DEFAULT 0x10
 
 struct lys_node_array{
     uint8_t if_features;
     uint8_t must;
+    union {
+        uint8_t tpdf;
+        uint8_t dflt;
+    };
     uint8_t unique;
-    uint8_t tpdf;
     union {
         uint uni;
         uint16_t flags;
@@ -50,6 +57,8 @@ struct lys_node_array{
         uint pattern;
         uint bit;
         uint deviate;
+        uint keys;
+        uint base;
     };
     uint16_t refine;
     uint16_t augment;
@@ -70,22 +79,19 @@ struct lys_array_size {
     struct lys_node_array *node;
 };
 
-struct type_choice {
-  char *s;
-  struct lys_node_choice *ptr_choice;
-};
-
 struct type_node {
     union {
         struct lys_node_leaflist *ptr_leaflist;
         struct lys_node_list *ptr_list;
         struct lys_node_leaf *ptr_leaf;
         struct lys_tpdf *ptr_tpdf;
+        struct lys_node_anydata *ptr_anydata;
         struct lys_node_augment *ptr_augment;
-        struct lys_node_rpc *ptr_rpc;
-        struct lys_node_rpc_inout *ptr_inout;
+        struct lys_node_rpc_action *ptr_rpc;
+        struct lys_node_inout *ptr_inout;
+        struct lys_node_choice *ptr_choice;
     };
-    uint8_t flag;
+    uint flag;
 };
 
 struct type_deviation {
@@ -94,11 +100,7 @@ struct type_deviation {
     struct lys_deviate *deviate;
     struct lys_restr **trg_must;
     uint8_t *trg_must_size;
-};
-
-struct type_uses {
-    struct lys_node_uses *ptr_uses;
-    int config_inherit;
+    struct ly_set *dflt_check;
 };
 
 struct yang_type {
@@ -110,11 +112,13 @@ struct yang_type {
 
 #include "parser_yang_bis.h"
 
-char * yang_read_string(const char *input, int size, int indent);
+char *yang_read_string(const char *input, char *output, int size, int offset, int indent, int version);
 
 int yang_read_common(struct lys_module *module,char *value, enum yytokentype type);
 
-int yang_read_prefix(struct lys_module *module, void *save, char *value, enum yytokentype type);
+int yang_read_prefix(struct lys_module *module, struct lys_import *imp, char *value);
+
+int yang_check_version(struct lys_module *module, struct lys_submodule *submodule, char *value, int repeat);
 
 /**
  * @brief Add node to the array
@@ -139,6 +143,8 @@ int yang_read_if_feature(struct lys_module *module, void *ptr, char *value, stru
 
 void *yang_read_identity(struct lys_module *module, char *value);
 
+int yang_read_identyref(struct lys_module *module, struct yang_type *stype, char *expr, struct unres_schema *unres);
+
 int yang_read_base(struct lys_module *module, struct lys_ident *ident, char *value, struct unres_schema *unres);
 
 void *yang_read_must(struct lys_module *module, struct lys_node *node, char *value, enum yytokentype type);
@@ -149,7 +155,7 @@ int yang_read_presence(struct lys_module *module, struct lys_node_container *con
 
 int yang_read_config(void *node, int value, enum yytokentype type);
 
-void store_flags(struct lys_node *node, uint8_t flags, int config_inherit);
+int store_flags(struct lys_node *node, uint8_t flags, int config_opt);
 
 void *yang_read_when(struct lys_module *module, struct lys_node *node, enum yytokentype type, char *value);
 
@@ -165,6 +171,8 @@ void *yang_read_when(struct lys_module *module, struct lys_node *node, enum yyto
 */
 void * yang_read_node(struct lys_module *module, struct lys_node *parent, char *value, int nodetype, int sizeof_struct);
 
+void *yang_read_action(struct lys_module *module, struct lys_node *parent, char *value);
+
 int yang_read_default(struct lys_module *module, void *node, char *value, enum yytokentype type);
 
 int yang_read_units(struct lys_module *module, void *node, char *value, enum yytokentype type);
@@ -177,11 +185,15 @@ void *yang_read_type(struct lys_module *module, void *parent, char *value, enum 
 
 void *yang_read_length(struct lys_module *module, struct yang_type *typ, char *value);
 
-int yang_check_type(struct lys_module *module, struct lys_node *parent, struct yang_type *typ, struct unres_schema *unres);
+int yang_check_type(struct lys_module *module, struct lys_node *parent, struct yang_type *typ, int tpdftype, struct unres_schema *unres);
 
 void yang_delete_type(struct lys_module *module, struct yang_type *stype);
 
-void *yang_read_pattern(struct lys_module *module, struct yang_type *typ, char *value);
+int yang_read_leafref_path(struct lys_module *module, struct yang_type *stype, char *value);
+
+int yang_read_require_instance(struct yang_type *stype, int req);
+
+int yang_read_pattern(struct lys_module *module, struct lys_restr *pattern, char *value, char modifier);
 
 void *yang_read_range(struct  lys_module *module, struct yang_type *typ, char *value);
 
@@ -215,7 +227,9 @@ int yang_fill_unique(struct lys_module *module, struct lys_node_list *list, stru
 
 int yang_read_deviate_unique(struct type_deviation *dev, uint8_t c_uniq);
 
-int yang_read_deviate_default(struct ly_ctx *ctx, struct type_deviation *dev, char *value);
+int yang_read_deviate_default(struct lys_module *module, struct type_deviation *dev, uint8_t c_dflt);
+
+int yang_fill_deviate_default(struct ly_ctx *ctx, struct type_deviation *dev, char *exp);
 
 int yang_read_deviate_config(struct type_deviation *dev, uint8_t value);
 
@@ -230,10 +244,10 @@ int yang_check_deviate_must(struct ly_ctx *ctx, struct type_deviation *dev);
 
 int yang_check_deviate_unique(struct lys_module *module, struct type_deviation *dev, char *value);
 
-int yang_check_deviation(struct lys_module *module, struct type_deviation *dev, struct unres_schema *unres);
+int yang_check_deviation(struct lys_module *module, struct ly_set *dflt_check, struct unres_schema *unres);
 
 int yang_fill_include(struct lys_module *module, struct lys_submodule *submodule, char *value,
-                      char *rev, struct unres_schema *unres);
+                      struct lys_include *inc, struct unres_schema *unres);
 
 int yang_use_extension(struct lys_module *module, struct lys_node *data_node, void *actual, char *value);
 

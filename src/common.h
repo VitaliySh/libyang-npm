@@ -62,18 +62,30 @@ char *get_current_dir_name(void);
 
 #define LY_BUF_SIZE 1024
 #define LY_APPTAG_LEN 128
+struct ly_err_item {
+    LY_ERR no;
+    LY_VECODE code;
+    char *msg;
+    char *path;
+    struct ly_err_item *next;
+};
 struct ly_err {
     LY_ERR no;
     LY_VECODE code;
     uint8_t vlog_hide;
     uint8_t buf_used;
     uint16_t path_index;
+    uint8_t path_obj_type;
+    struct ly_err_item *errlist; /* list of stored errors */
     const void *path_obj;
     char msg[LY_BUF_SIZE];
     char path[LY_BUF_SIZE];
     char apptag[LY_APPTAG_LEN];
     char buf[LY_BUF_SIZE];
 };
+struct ly_err *ly_err_location(void);
+void ly_err_clean(int with_errno);
+void ly_err_repeat(void);
 
 /**
  * @brief libyang internal thread-specific buffer of LY_BUF_SIZE size
@@ -91,15 +103,13 @@ char *ly_buf(void);
 /*
  * logger
  */
-extern volatile uint8_t ly_log_level;
+extern volatile int8_t ly_log_level;
 
 void ly_log(LY_LOG_LEVEL level, const char *format, ...);
 
 #define LOGERR(errno, str, args...)                                 \
     if (errno) { ly_errno = errno; }                                \
-    if (ly_log_level >= LY_LLERR) {                                 \
-        ly_log(LY_LLERR, str, ##args);                              \
-    }
+    ly_log(LY_LLERR, str, ##args);
 
 #define LOGWRN(str, args...)                                        \
 	if (ly_log_level >= LY_LLWRN) {                                 \
@@ -137,6 +147,7 @@ typedef enum {
     LYE_EOF,
     LYE_INSTMT,
     LYE_INCHILDSTMT,
+    LYE_INPAR,
     LYE_INID,
     LYE_INDATE,
     LYE_INARG,
@@ -148,9 +159,13 @@ typedef enum {
     LYE_DUPLEAFLIST,
     LYE_DUPLIST,
     LYE_NOUNIQ,
+    LYE_ENUM_INVAL,
+    LYE_ENUM_INNAME,
     LYE_ENUM_DUPVAL,
     LYE_ENUM_DUPNAME,
     LYE_ENUM_WS,
+    LYE_BITS_INVAL,
+    LYE_BITS_INNAME,
     LYE_BITS_DUPVAL,
     LYE_BITS_DUPNAME,
     LYE_INMOD,
@@ -164,8 +179,10 @@ typedef enum {
     LYE_INRESOLV,
     LYE_INSTATUS,
     LYE_CIRC_LEAFREFS,
+    LYE_CIRC_FEATURES,
     LYE_CIRC_IMPORTS,
     LYE_CIRC_INCLUDES,
+    LYE_INVER,
 
     LYE_OBSDATA,
     LYE_OBSTYPE,
@@ -191,13 +208,17 @@ typedef enum {
     LYE_NOLEAFREF,
     LYE_NOMANDCHOICE,
 
+    LYE_XPATH_INSNODE,
     LYE_XPATH_INTOK,
     LYE_XPATH_EOF,
     LYE_XPATH_INOP_1,
     LYE_XPATH_INOP_2,
     LYE_XPATH_INCTX,
+    LYE_XPATH_INMOD,
+    LYE_XPATH_INFUNC,
     LYE_XPATH_INARGCOUNT,
     LYE_XPATH_INARGTYPE,
+    LYE_XPATH_DUMMY,
 
     LYE_PATH_INCHAR,
     LYE_PATH_INMOD,
@@ -217,11 +238,27 @@ enum LY_VLOG_ELEM {
     LY_VLOG_STR  /* const char* */
 };
 void ly_vlog_hide(int hide);
+uint8_t *ly_vlog_hide_location(void);
 void ly_vlog(LY_ECODE code, enum LY_VLOG_ELEM elem_type, const void *elem, ...);
-#define LOGVAL(code, elem_type, elem, args...) ly_vlog(code, elem_type, elem, ##args)
-#define LOGPATH(elem_type, elem) ly_vlog(LYE_PATH, elem_type, elem)
+#define LOGVAL(code, elem_type, elem, args...)                      \
+    ly_vlog(code, elem_type, elem, ##args);
+
+#define LOGPATH(elem_type, elem)                                    \
+    ly_vlog(LYE_PATH, elem_type, elem);
 
 void ly_vlog_build_path_reverse(enum LY_VLOG_ELEM elem_type, const void *elem, char *path, uint16_t *index);
+
+/*
+ * - if \p module specified, it searches for submodules, they can be loaded only from a file or via module callback,
+ *   they cannot be get from context
+ * - if \p module is not specified
+ *   - if specific revision is specified, the first try is to get module from the context
+ *   - if no specific revision is specified, it tries to get the newest module - first it searches for the file and
+ *     then checks that the schema loaded from the same source isn't already in context. If the source wasn't
+ *     previously loaded, it is parsed.
+ */
+const struct lys_module *ly_ctx_load_sub_module(struct ly_ctx *ctx, struct lys_module *module, const char *name,
+                                                const char *revision, int implement, struct unres_schema *unres);
 
 /**
  * @brief Basic functionality like strpbrk(3). However, it searches string \p s
@@ -311,6 +348,12 @@ const char *transform_xml2json(struct ly_ctx *ctx, const char *expr, struct lyxm
 const char *transform_schema2json(const struct lys_module *module, const char *expr);
 
 /**
+ * @brief Same as transform_schema2json, but dumbed down, because if-feature expressions
+ *        are not valid XPath expressions.
+ */
+const char *transform_iffeat_schema2json(const struct lys_module *module, const char *expr);
+
+/**
  * @brief Wrapper for realloc() call. The only difference is that if it fails to
  * allocate the requested memory, the original memory is freed as well.
  *
@@ -333,5 +376,9 @@ int ly_strequal_(const char *s1, const char *s2);
 #define ly_strequal0(s1, s2) ly_strequal_(s1, s2)
 #define ly_strequal1(s1, s2) (s1 == s2)
 #define ly_strequal(s1, s2, d) ly_strequal##d(s1, s2)
+
+int64_t dec_pow(uint8_t exp);
+
+int dec64cmp(int64_t num1, uint8_t dig1, int64_t num2, uint8_t dig2);
 
 #endif /* LY_COMMON_H_ */
