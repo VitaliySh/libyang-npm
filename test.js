@@ -1,4 +1,6 @@
-var yang = require("./build/Release/yang.node")
+var yang = require("./index")
 
 var ctx = yang.ly_ctx_new("./files");
-var module = yang.lys_parse_path(ctx, "./files/hello.yin", yang.LYS_IN_YIN);
+var module = yang.lys_parse_path(ctx, "./files/b.yang", yang.LYS_IN_YANG);
+
+console.log(module.name);
