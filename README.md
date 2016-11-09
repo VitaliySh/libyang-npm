@@ -4,13 +4,16 @@ node-libyang
 A Low-level Node.js binding for [libyang](https://github.com/CESNET/libyang)
 ----------------------------------------------------------------
 
-### Installing
+### Installation
 
-To compile, you'll need to have libpcre3-dev (Perl Compatible Regular Expressions) installed on your system. `npm install libyang` should do the rest.
+```sh
+$ npm install libyang
+```
+### API
 
-To install pcre on Ubuntu
-
-apt-get install libpcre3 libpcre3-dev
+```js
+var yang = require('libyang')
+```
 
 <a name="maintainers"></a>
 Maintainers
